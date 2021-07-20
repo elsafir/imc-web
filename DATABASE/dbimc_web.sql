@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 11 Jul 2021 pada 19.06
--- Versi server: 10.4.17-MariaDB
--- Versi PHP: 7.4.13
+-- Waktu pembuatan: 20 Jul 2021 pada 14.07
+-- Versi server: 10.4.20-MariaDB
+-- Versi PHP: 7.4.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -40,10 +40,11 @@ CREATE TABLE `community` (
 --
 
 INSERT INTO `community` (`id_community`, `id_region`, `nama_anggota`, `id_jabatan`, `foto_anggota`) VALUES
-(1, 4, 'Ayamsakit', 1, NULL),
+(1, 4, 'Ayamsakit', 1, 'IMG_8673.JPG'),
 (2, 2, 'Muhammad Ilyas Arradya', 1, NULL),
 (3, 1, 'Muh. Yusril Hardiansyah. B. S.P', 2, NULL),
-(4, 3, 'Dyaul Mu\'sinat', 3, NULL);
+(4, 3, 'Dyaul Mu\'sinat', 3, NULL),
+(5, 1, 'Aqidatul Izzah Ramli', 4, 'WhatsApp Image 2021-07-04 at 18.09.45.jpeg');
 
 -- --------------------------------------------------------
 
@@ -144,10 +145,11 @@ CREATE TABLE `pengguna` (
 --
 
 INSERT INTO `pengguna` (`id_pengguna`, `id_community`, `username`, `password`, `level`, `status`) VALUES
-(1, 1, 'admin', '$2y$10$JRQHPac0c6/yss6gTwltJ.FuR7HV49X50tdJioutxj8l5QLJo5TR.', 'Administrator', 'Aktif'),
+(1, 1, 'admin', '$2y$10$Toa.64Elg8v2sEyb7Y0XYuppKGo1I90MfHz3RalfR5I/D2aIt4I6y', 'Administrator', 'Aktif'),
 (2, 2, 'ilyas', '$2y$10$JRQHPac0c6/yss6gTwltJ.FuR7HV49X50tdJioutxj8l5QLJo5TR.', 'User', 'Aktif'),
 (3, 3, 'yusril', '$2y$10$JRQHPac0c6/yss6gTwltJ.FuR7HV49X50tdJioutxj8l5QLJo5TR.', 'User', 'Aktif'),
-(4, 4, 'dyaul', '$2y$10$JRQHPac0c6/yss6gTwltJ.FuR7HV49X50tdJioutxj8l5QLJo5TR.', 'User', 'Aktif');
+(4, 4, 'dyaul', '$2y$10$JRQHPac0c6/yss6gTwltJ.FuR7HV49X50tdJioutxj8l5QLJo5TR.', 'User', 'Aktif'),
+(5, 5, 'aqi', '$2y$10$9SmPxOqqCvdR4rR3HU7FdOEHLcCFb8oE6Qsi7m8Vkq7guKMYNaEjG', 'User', 'Tidak Aktif');
 
 -- --------------------------------------------------------
 
@@ -262,7 +264,7 @@ ALTER TABLE `region`
 -- AUTO_INCREMENT untuk tabel `community`
 --
 ALTER TABLE `community`
-  MODIFY `id_community` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_community` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT untuk tabel `events`
@@ -286,7 +288,7 @@ ALTER TABLE `jenis_program`
 -- AUTO_INCREMENT untuk tabel `pengguna`
 --
 ALTER TABLE `pengguna`
-  MODIFY `id_pengguna` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_pengguna` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT untuk tabel `program`
