@@ -49,6 +49,7 @@
                           $judul_program=$i['judul_program'];
                           $detail_program=$i['detail_program'];
                           $foto_program=$i['foto_program'];
+                          $slug_p=$i['slug_p'];
                       ?>
                             <div class="col-md-4 mt-3 mb-3" id="row_1">
                                 <div class="card">
@@ -68,7 +69,7 @@
                                                   </a>
                                                   <?php endif; ?> 
                                             <p><?php echo substr($detail_program, 0, 90); ?></p>
-                                            <a class="btn btn-outline-blue" href="<?= base_url('Chome/detailProgram/') ?>/<?php echo $id_program; ?>">Read More >></a>
+                                            <a class="btn btn-outline-blue" href="<?= base_url('Chome/detailProgram/') ?>/<?php echo $slug_p; ?>">Read More >></a>
                                         </div>
                                     </div>
                                 </div>

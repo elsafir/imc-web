@@ -31,16 +31,16 @@ class Mprogram extends Model{
 		return $query; 
     }
 
-    public function tampilMenuProgram($id_jenis_program){
+    public function tampilMenuProgram($slug_js){
 
-        $query= $this->db->query( "SELECT * FROM program INNER JOIN jenis_program ON program.id_jenis_program = jenis_program.id_jenis_program INNER JOIN pengguna ON program.id_pengguna=pengguna.id_pengguna  INNER JOIN community ON pengguna.id_community = community.id_community WHERE jenis_program.id_jenis_program='$id_jenis_program' ORDER BY id_program DESC LIMIT 3");
+        $query= $this->db->query( "SELECT * FROM program INNER JOIN jenis_program ON program.id_jenis_program = jenis_program.id_jenis_program INNER JOIN pengguna ON program.id_pengguna=pengguna.id_pengguna  INNER JOIN community ON pengguna.id_community = community.id_community WHERE jenis_program.slug_js='$slug_js' ORDER BY id_program DESC LIMIT 3");
         return $query;   
     }
 
 
-    public function tampilDetailProgram($id_program){
+    public function tampilDetailProgram($slug_p){
 
-        $query= $this->db->query( "SELECT * FROM program INNER JOIN jenis_program ON program.id_jenis_program = jenis_program.id_jenis_program INNER JOIN pengguna ON program.id_pengguna=pengguna.id_pengguna  INNER JOIN community ON pengguna.id_community = community.id_community WHERE program.id_program='$id_program'");
+        $query= $this->db->query( "SELECT * FROM program INNER JOIN jenis_program ON program.id_jenis_program = jenis_program.id_jenis_program INNER JOIN pengguna ON program.id_pengguna=pengguna.id_pengguna  INNER JOIN community ON pengguna.id_community = community.id_community WHERE program.slug_p='$slug_p'");
         return $query;  
     }
 

@@ -28,6 +28,7 @@
                           $judul_events=$i['judul_events'];
                           $detail_events=$i['detail_events'];
                           $foto_events=$i['foto_events'];
+                          $slug_e=$i['slug_e'];
                       ?>
             <div class="row justify-content-around  align-items-center">
                 <div class="col-md-4 mb-3 mt-5">
@@ -52,7 +53,7 @@
                         <p><b>- <?php echo $nama_anggota ?> -</b></p>
                         <p><?php echo substr($detail_events, 0, 90); ?></p>
                         <div class="full">
-                            <a class="hvr-radial-out button-theme" href="<?= base_url('Chome/detailEvents/') ?>/<?php echo $id_events; ?>">Read more</a>
+                            <a class="hvr-radial-out button-theme" href="<?= base_url('Chome/detailEvents/') ?>/<?php echo $slug_e; ?>">Read more</a>
                         </div>
                     </div>
                 </div>

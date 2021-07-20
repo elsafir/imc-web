@@ -13,9 +13,9 @@ class Mcommunity extends Model{
 		return $query;	 
     }
 
-    public function tampilMenuCommunity($id_region){
+    public function tampilMenuCommunity($slug_r){
 
-        $query= $this->db->query( "SELECT * FROM community INNER JOIN region ON community.id_region = region.id_region INNER JOIN jabatan ON community.id_jabatan = jabatan.id_jabatan WHERE region.id_region='$id_region'");
+        $query= $this->db->query( "SELECT * FROM community INNER JOIN region ON community.id_region = region.id_region INNER JOIN jabatan ON community.id_jabatan = jabatan.id_jabatan WHERE region.slug_r='$slug_r'");
         return $query;   
     }
 
