@@ -23,6 +23,12 @@
                 </div>
             <?php } ?>
 
+            <?php if(!empty(session()->getFlashdata('gagal'))){ ?>
+                <div class="alert alert-danger">
+                    <?php echo session()->getFlashdata('gagal');?>
+                </div>
+            <?php } ?>
+
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambah-data">
                   <i class="fa fa-plus"></i> Tambah Data
                 </button>
@@ -129,6 +135,12 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
+
+                        <?php if(!empty(session()->getFlashdata('gagal'))){ ?>
+                <div class="alert alert-danger">
+                    <?php echo session()->getFlashdata('gagal');?>
+                </div>
+            <?php } ?>
 
                         <form role="form" name="myform" method="post" action="/CkelolaUser_admin/tambah" enctype="multipart/form-data">
 

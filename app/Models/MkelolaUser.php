@@ -33,5 +33,10 @@ class MkelolaUser extends Model{
         return $query;
     }
 
+    public function cekUsername($username){
+         $query = $this->db->table('pengguna')->getWhere(array('username' => $username));
+         return $query;
+    }
+
 
 }

@@ -44,7 +44,7 @@ class Mevents extends Model{
 
 
     public function pilihEvents($id_events){
-         $query = $this->getWhere(['id_events' => $id_events]);
+         $query = $this->db->table('events')->getWhere(array('id_events' => $id_events));
          return $query;
     }
 

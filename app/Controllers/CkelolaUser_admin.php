@@ -37,9 +37,20 @@ class CkelolaUser_admin extends BaseController{
           'level' => $this->request->getPost('level')
         );
 
+        $username = $this->request->getPost('username');
+        $cek = $model->cekUsername($username)->getRow();
+       // $hasil = count($cek);
+
+        if ($cek) {
+
+        	return redirect()->to('/CkelolaUser_admin')->with('gagal', 'DATA TIDAK TERSIMPAN! USERNAME SUDAH ADA!!!');
+        }else{
+
 
         $model->tambahKelolaUser($data);
         return redirect()->to('/CkelolaUser_admin')->with('berhasil', 'DATA BERHASIL DISIMPAN');
+
+    	}
     }
 
 

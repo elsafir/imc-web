@@ -31,7 +31,7 @@ class Mcommunity extends Model{
 
 
     public function pilihCommunity($id_community){
-         $query = $this->getWhere(['id_community' => $id_community]);
+        $query  = $this->db->table('community')->getWhere(array('id_community' => $id_community));
          return $query;
     }
 

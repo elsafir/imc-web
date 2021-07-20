@@ -52,7 +52,7 @@ class Mprogram extends Model{
     }
 
         public function pilihProgram($id_program){
-         $query = $this->getWhere(['id_program' => $id_program]);
+         $query = $this->db->table('program')->getWhere(array('id_program' => $id_program));
          return $query;
     }
 
