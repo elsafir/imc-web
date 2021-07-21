@@ -21,7 +21,8 @@
 
     <!-- end section -->
 
-                     
+
+
     <!--section-->
     <section class="program" id="economy">
         <div class="container">
@@ -30,18 +31,17 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
+                              <?php
+                              foreach($jp1 as $i):
+                              $tentang_jenis_program=$i['tentang_jenis_program'];
+                              ?>
                                 <div class="heading_main text_align_center mt-3 mb-3">
-                                    <h4>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt debitis
-                                        corrupti
-                                        fugit
-                                        soluta, ea quo nobis pariatur consequatur incidunt tempore nisi impedit
-                                        provident
-                                        cumque
-                                        maiores! Nam unde maxime vero ullam."</h4>
+                                    <h4><?php echo $tentang_jenis_program ?></h4>
                                 </div>
+                                <?php endforeach;?>
                             </div>
 
-                            <?php 
+                            <?php
                        foreach($mp as $i):
 
                           $id_program=$i['id_program'];
@@ -54,9 +54,9 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="text_align_center">
-                                            <h2><span><?php echo $judul_program ?></span></h2> 
+                                            <h2><span><?php echo $judul_program ?></span></h2>
                                             <p><b>- <?php echo $nama_anggota ?> -</b></p>
-                                           
+
 
                                             <?php if ($foto_program != NULL): ?>
                                                     <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
@@ -66,7 +66,7 @@
                                                       <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
                                                     <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;"/>
                                                   </a>
-                                                  <?php endif; ?> 
+                                                  <?php endif; ?>
                                             <p><?php echo substr($detail_program, 0, 90); ?></p>
                                             <a class="btn btn-outline-blue" href="<?= base_url('Chome/detailProgram/') ?>/<?php echo $id_program; ?>">Read More >></a>
                                         </div>
@@ -74,10 +74,10 @@
                                 </div>
                             </div>
 
-                             
+
                                 <?php endforeach;?>
 
-                            
+
                         </div>
                     </div>
                 </div>
@@ -86,4 +86,4 @@
     </section>
     <!--close section-->
 
-    <?= $this->endSection(); ?> 
+    <?= $this->endSection(); ?>

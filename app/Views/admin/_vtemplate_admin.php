@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="/assets2/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
 
 
-  
+
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -62,7 +62,7 @@
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
-    
+
       <li class="nav-item">
     <span style="font-size: 23px; margin-right: 20px;">Indonesia Millenial Connect</span>
           <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#logout">Log Out</button>
@@ -86,7 +86,7 @@
   <div class="modal fade" id="logout">
         <div class="modal-dialog">
           <div class="modal-content">
-            
+
             <div class="modal-body">
               <p><b>Apakah anda yakin ingin keluar?</b></p>
             </div>
@@ -134,13 +134,13 @@
         </div>
       </div>
 
-     
+
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-         
+
           <li class="nav-item">
             <a href="<?= base_url('Cadmin') ?>" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -171,7 +171,7 @@
               <p>
                 Data Komunitas
                 <i class="fas fa-angle-left right"></i>
-             
+
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -193,7 +193,7 @@
                   <p>IMC Medan</p>
                 </a>
               </li>
-              
+
             </ul>
           </li> -->
 
@@ -241,7 +241,7 @@
             </a>
           </li> -->
 
-          
+
 
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
@@ -249,12 +249,12 @@
               <p>
                 Data Master
                 <i class="fas fa-angle-left right"></i>
-             
+
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?= base_url('jenisprogram') ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Jenis Program</p>
                 </a>
@@ -277,7 +277,7 @@
                   <p>Data Pengguna</p>
                 </a>
               </li>
-              
+
             </ul>
           </li>
           <hr>
@@ -289,14 +289,14 @@
               </p>
             </a>
           </li>
-         
-         
-          
-            
-          
-          
-          
-    
+
+
+
+
+
+
+
+
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

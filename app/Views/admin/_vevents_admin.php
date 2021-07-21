@@ -6,17 +6,17 @@
 
 <?= $this->section('breadcrumb'); ?>
 <li class="breadcrumb-item active"><i class="nav-icon fas fa-book"></i> Data Events</li>
-<?= $this->endSection(); ?>  
+<?= $this->endSection(); ?>
 
 <?= $this->section('content_admin'); ?>
-<!-- ============================================================================== -->    
+<!-- ============================================================================== -->
 
            <div class="row">
           <div class="col-md-12">
 
           <div class="card card-primary card-outline">
               <div class="card-header">
-                
+
                 <?php if(!empty(session()->getFlashdata('berhasil'))){ ?>
                 <div class="alert alert-success">
                     <?php echo session()->getFlashdata('berhasil');?>
@@ -53,7 +53,7 @@
                 </thead>
                 <tbody>
 
-                  <?php 
+                  <?php
                   $no=1;
                        foreach($data as $i):
 
@@ -64,7 +64,7 @@
                       ?>
 
                 <tr>
-                  <td><?php echo $no++; ?></td> 
+                  <td><?php echo $no++; ?></td>
                   <td><?php echo $judul_events; ?></td>
                   <td><?php echo substr($detail_events, 0, 200); ?></td>
 
@@ -93,7 +93,7 @@
                 </tr>
 
                 <?php endforeach;?>
-                
+
                 </tbody>
                 <tfoot>
                 <tr>
@@ -105,9 +105,9 @@
                 </tr>
                 </tfoot>
               </table>
-           
 
-                
+
+
               </div>
               <!-- /.card-body -->
             </div>
@@ -122,7 +122,7 @@
 
 
 
- <!-- =====================MODAL TAMBAH DATA========================= -->    
+ <!-- =====================MODAL TAMBAH DATA========================= -->
 <div class="modal fade" id="tambah-data" data-backdrop="static">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -143,7 +143,7 @@
                             <h4><i class="icon fa fa-info"></i> Keterangan :</h4>
                             <p>Isilah form events anda dengan lengkap, terutama yang bertanda (*)</p>
                         </div>
-                    
+
 
 
                         <div class="form-group">
@@ -161,10 +161,10 @@
                         <div class="form-group">
                           <label for="formGroupExampleInput">Upload Foto*</label>
                           <input type="file" name="file_upload" class="form-control">
-                        </div> 
+                        </div>
 
 
-         
+
 
                         </div>
 
@@ -190,7 +190,7 @@
 
 
 
-<?php 
+<?php
                 foreach($data as $i):
                     $id_events=$i['id_events'];
                     $id_pengguna=$i['id_pengguna'];
@@ -199,7 +199,7 @@
                     $foto_events=$i['foto_events'];
                 ?>
 
-<!-- =====================MODAL LIHAT DATA========================= -->    
+<!-- =====================MODAL LIHAT DATA========================= -->
 
    <div class="modal fade" id="lihat-data<?php echo $id_events;?>" data-backdrop="static">
         <div class="modal-dialog modal-lg">
@@ -229,12 +229,12 @@
                       <img src="/img/noimage.jpg" style="width: 180px; height: 180px;" class="img-circle img-thumbnail">
                       <?php endif; ?>
                 <br><br>
-                
+
 
                 <h4><b>FORM EVENTS</b></h4>
                 <p><b><?php echo $judul_events;?></b></p>
               </center><br>
-              
+
               <hr>
 
 
@@ -252,7 +252,7 @@
                     <div class="col-sm-10">
                           <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 400px; height: 200px;" name="detail_events" disabled><?php echo $detail_events;?></textarea>
                         </div>
-                        
+
                         </div>
                   </div>
 
@@ -263,7 +263,7 @@
 
 
 
-          
+
           </div>
           <!-- /.modal-content -->
         </div>
@@ -275,7 +275,7 @@
 
 
 
-  <!-- =====================MODAL EDIT DATA========================= -->    
+  <!-- =====================MODAL EDIT DATA========================= -->
 <div class="modal fade" id="edit-data<?php echo $id_events;?>" data-backdrop="static">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -318,10 +318,10 @@
                       </a>
                       <?php endif; ?>
                           <input type="file" name="file_upload" class="form-control">
-                        </div> 
+                        </div>
 
 
-                       
+
 
                         </div>
 
@@ -354,16 +354,16 @@
 <div class="modal fade" id="hapus-data<?php echo $id_events;?>">
         <div class="modal-dialog">
           <div class="modal-content">
-            
+
             <form action="/Cevents_admin/hapus/<?php echo $id_events;?>" method="post">
             <div class="modal-body">
               <p><b>Apakah anda yakin ingin menghapus data ini?</b></p>
             </div>
             <div class="modal-footer">
-              
+
               <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Tidak</button>
 
-              
+
               <button type="submit" class="btn btn-primary">Yakin</button>
             </div>
           </form>
