@@ -14,7 +14,7 @@ class Jenisprogram extends Model
 	protected $returnType           = 'array';
 	protected $useSoftDeletes       = false;
 	protected $protectFields        = true;
-	protected $allowedFields        = ['id_jenis_program','jenis_program','tentang_jenis_program','slugs'];
+	protected $allowedFields        = ['id_jenis_program','jenis_program','tentang_jenis_program','slug_js'];
 
 	// Dates
 	protected $useTimestamps        = false;

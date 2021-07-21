@@ -74,19 +74,22 @@ class jenisprogram extends ResourceController
 				$validation = $this->validate([
 						'jenis_program' => 'required'
 				]);
+				 $slug = url_title($this->request->getPost('jenis_program'), '-', true);
 
 				if ($validation == true) {
 						 $data = array(
 				'id_jenis_program' =>  $id_jenis_program,
 				'jenis_program'   => $this->request->getPost('jenis_program'),
-				'tentang_jenis_program'   => $this->request->getPost('tentang_jenis_program')
+				'tentang_jenis_program'   => $this->request->getPost('tentang_jenis_program'),
+				'slug_js'   => $slug
 				);
 				 } else {
 
 						 $data = array(
 							 'id_jenis_program' =>  $id_jenis_program,
 							 'jenis_program'   => $this->request->getPost('jenis_program'),
-							 'tentang_jenis_program'  => $this->request->getPost('tentang_jenis_program')
+							 'tentang_jenis_program'  => $this->request->getPost('tentang_jenis_program'),
+							 'slug_js'   => $slug
 						);
 				 }
 
@@ -112,9 +115,12 @@ class jenisprogram extends ResourceController
 	 */
 	public function update($id = null)
 	{
+		 $slug = url_title($this->request->getPost('jenis_program'), '-', true);
+
 		$data = [
 		'jenis_program'	=> $this->request->getVar('jenis_program'),
-		'tentang_jenis_program'	=> $this->request->getVar('tentang_jenis_program')
+		'tentang_jenis_program'	=> $this->request->getVar('tentang_jenis_program'),
+		'slug_js'   => $slug
 	];
 
 	$this->model->where('id_jenis_program', $id)->set($data)->update();

@@ -24,7 +24,7 @@ class Chome extends BaseController
 		$model = new Mprogram();
 		$model1 = new Mregion();
 		$x['jp']= $model->tampilJenisProgram()->getResultArray();
-		$x['jp1']= $model->tampilJenisProgram1($id_jenis_program)->getResultArray();
+		$x['jp1']= $model->tampilJenisProgram1($slug_js)->getResultArray(); //pemanggilan pada Mprogram yg where
 		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
 		$x['mp']= $model->tampilMenuProgram($slug_js)->getResultArray();
 		return view('frontend/_vprogram_front',$x);
