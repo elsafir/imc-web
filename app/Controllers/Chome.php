@@ -20,13 +20,13 @@ class Chome extends BaseController
 		return view('frontend/_vhome_front',$x);
 	}
 
-	public function menuProgram($id_jenis_program){
+	public function menuProgram($slug_js){
 		$model = new Mprogram();
 		$model1 = new Mregion();
 		$x['jp']= $model->tampilJenisProgram()->getResultArray();
 		$x['jp1']= $model->tampilJenisProgram1($id_jenis_program)->getResultArray();
 		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
-		$x['mp']= $model->tampilMenuProgram($id_jenis_program)->getResultArray();
+		$x['mp']= $model->tampilMenuProgram($slug_js)->getResultArray();
 		return view('frontend/_vprogram_front',$x);
 	}
 
@@ -40,32 +40,32 @@ class Chome extends BaseController
 		return view('frontend/_vevents_front',$x);
 	}
 
-	public function menuCommunity($id_region){
+	public function menuCommunity($slug_r){
 		$model = new Mprogram();
 		$model1 = new Mregion();
 		$model2 = new Mcommunity();
 		$x['jp']= $model->tampilJenisProgram()->getResultArray();
 		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
-		$x['mc']= $model2->tampilMenuCommunity($id_region)->getResultArray();
+		$x['mc']= $model2->tampilMenuCommunity($slug_r)->getResultArray();
 		return view('frontend/_vcommunity_front',$x);
 	}
 
-	public function detailProgram($id_program){
+	public function detailProgram($slug_p){
 		$model = new Mprogram();
 		$model1 = new Mregion();
 		$x['jp']= $model->tampilJenisProgram()->getResultArray();
 		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
-		$x['dp']= $model->tampilDetailProgram($id_program)->getResultArray();
+		$x['dp']= $model->tampilDetailProgram($slug_p)->getResultArray();
 		return view('frontend/_vdetailprogram_front',$x);
 	}
 
-	public function detailEvents($id_events){
+	public function detailEvents($slug_e){
 		$model = new Mprogram();
 		$model1 = new Mregion();
 		$model2 = new Mevents();
 		$x['jp']= $model->tampilJenisProgram()->getResultArray();
 		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
-		$x['de']= $model2->tampilDetailEvents($id_events)->getResultArray();
+		$x['de']= $model2->tampilDetailEvents($slug_e)->getResultArray();
 		return view('frontend/_vdetailevents_front',$x);
 	}
 

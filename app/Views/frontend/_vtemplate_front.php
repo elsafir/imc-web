@@ -76,9 +76,9 @@
                             <div class="container">
                                 <ul class="dropdown-menu">
                                     <?php foreach($jp as $i):
-                                    $id_jenis_program=$i['id_jenis_program'];
+                                    $slug_js=$i['slug_js'];
                                     $jenis_program=$i['jenis_program'];?>
-                                    <li><a href="<?= base_url('Chome/menuProgram/') ?>/<?php echo $id_jenis_program; ?>"><?php echo $jenis_program ?></a></li>
+                                    <li><a href="<?= base_url('Chome/menuProgram/') ?>/<?php echo $slug_js; ?>"><?php echo $jenis_program ?></a></li>
                                     <?php endforeach ?>
                                 </ul>
                             </div>
@@ -94,9 +94,9 @@
                             <div class="container">
                                 <ul class="dropdown-menu">
                                      <?php foreach($jr as $i):
-                                    $id_region=$i['id_region'];
+                                    $slug_r=$i['slug_r'];
                                     $region=$i['region'];?>
-                                    <li><a href="<?= base_url('Chome/menuCommunity/') ?>/<?php echo $id_region; ?>"><?php echo $region ?></a></li>
+                                    <li><a href="<?= base_url('Chome/menuCommunity/') ?>/<?php echo $slug_r; ?>"><?php echo $region ?></a></li>
                                     <?php endforeach ?>
                                 </ul>
                             </div>

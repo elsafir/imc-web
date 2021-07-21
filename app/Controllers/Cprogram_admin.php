@@ -37,14 +37,16 @@ class Cprogram_admin extends BaseController{
             'file_upload' => 'uploaded[file_upload]|mime_in[file_upload,image/jpg,image/jpeg,image/gif,image/png]|max_size[file_upload,4096]'
         ]);
 
-
+        $slug = url_title($this->request->getPost('judul_program'), '-', true);
  
         if ($validation == FALSE) {
              $data = array(
         'id_jenis_program' => $this->request->getPost('id_jenis_program'),
         'id_pengguna' =>  $id_pengguna,
         'judul_program'   => $this->request->getPost('judul_program'),
-        'detail_program'   => $this->request->getPost('detail_program')
+        'detail_program'   => $this->request->getPost('detail_program'),
+        'slug_p'   => $slug
+
         );
          } else {
             $upload = $this->request->getFile('file_upload');
@@ -52,10 +54,11 @@ class Cprogram_admin extends BaseController{
 
              $data = array(
             'id_jenis_program' => $this->request->getPost('id_jenis_program'),
-              'id_pengguna' =>  $id_pengguna,
+            'id_pengguna' =>  $id_pengguna,
             'judul_program'    => $this->request->getPost('judul_program'),
             'detail_program'  => $this->request->getPost('detail_program'),
-            'foto_program'             => $upload->getName()
+            'foto_program'             => $upload->getName(),
+            'slug_p'   => $slug
             );
          }
 
@@ -85,13 +88,16 @@ class Cprogram_admin extends BaseController{
             'file_upload' => 'uploaded[file_upload]|mime_in[file_upload,image/jpg,image/jpeg,image/gif,image/png]|max_size[file_upload,4096]'
         ]);
 
+        $slug = url_title($this->request->getPost('judul_program'), '-', true);
+
         if ($validation == FALSE) {
 
              $data = array(
         'id_jenis_program' => $this->request->getPost('id_jenis_program'),
         'id_pengguna' => $this->request->getPost('id_pengguna'),
         'judul_program'   => $this->request->getPost('judul_program'),
-        'detail_program'   => $this->request->getPost('detail_program')
+        'detail_program'   => $this->request->getPost('detail_program'),
+        'slug_p'   => $slug
         );
          } else {
 
@@ -109,7 +115,8 @@ class Cprogram_admin extends BaseController{
             'id_pengguna' => $this->request->getPost('id_pengguna'),
             'judul_program'    => $this->request->getPost('judul_program'),
             'detail_program'  => $this->request->getPost('detail_program'),
-            'foto_program'            => $upload->getName()
+            'foto_program'            => $upload->getName(),
+            'slug_p'   => $slug
             );
          }
 

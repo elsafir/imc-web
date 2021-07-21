@@ -28,9 +28,8 @@ class Mevents extends Model{
         return $query;
     }
 
-    public function tampilDetailEvents($id_events){
-
-        $query= $this->db->query( "SELECT * FROM events INNER JOIN pengguna ON events.id_pengguna=pengguna.id_pengguna  INNER JOIN community ON pengguna.id_community = community.id_community WHERE events.id_events='$id_events'");
+    public function tampilDetailEvents($slug_e){
+        $query= $this->db->query( "SELECT * FROM events INNER JOIN pengguna ON events.id_pengguna=pengguna.id_pengguna  INNER JOIN community ON pengguna.id_community = community.id_community WHERE events.slug_e='$slug_e'");
         return $query;
     }
 
@@ -44,7 +43,7 @@ class Mevents extends Model{
 
 
     public function pilihEvents($id_events){
-         $query = $this->getWhere(['id_events' => $id_events]);
+         $query = $this->db->table('events')->getWhere(array('id_events' => $id_events));
          return $query;
     }
 
