@@ -12,7 +12,7 @@ class Mregion extends Model{
     }
 
 	public function tampilJenisRegion(){
-        $query= $this->db->query("SELECT * FROM region");
+        $query= $this->db->query("SELECT * FROM region WHERE region!='pusat'");
 		return $query; 
     }
 
