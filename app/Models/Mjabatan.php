@@ -10,6 +10,15 @@ class Mjabatan extends Model{
         $query= $this->db->query("SELECT * FROM jabatan");
 		return $query; 
     }
+  public function tambahJabatan($data){
+      $query = $this->db->table('jabatan')->insert($data);
+      return $query;
+    }
 
+  public function ubahJabatan($data,$id_jabatan){
+    $query = $this->db->table('jabatan')->update($data, array('id_jabatan' => $id_jabatan));
+
+    return $query;
+}
 
 }

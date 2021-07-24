@@ -152,7 +152,7 @@
           
 
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="<?= base_url('Ccommunity_user') ?>" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 Data Komunitas
@@ -169,7 +169,7 @@
             </a>
           </li>
                     <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="<?= base_url('Cevents_user') ?>" class="nav-link">
               <i class="nav-icon fas fa-book"></i>
               <p>
                 Events
