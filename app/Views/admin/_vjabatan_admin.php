@@ -1,11 +1,12 @@
 <?= $this->extend('admin/_vtemplate_admin'); ?>
 
 <?= $this->section('title'); ?>
-<h1><i class="nav-icon fas fa-chart-line"></i> Data jabatan</h1>
+<h1><i class="far fa-circle nav-icon"></i> Data jabatan</h1>
 <?= $this->endSection(); ?>
 
 <?= $this->section('breadcrumb'); ?>
-<li class="breadcrumb-item active"><i class="nav-icon fas fa-chart-line"></i> Data jabatan</li>
+<li class="breadcrumb-item"><i class="nav-icon fas fa-copy"></i> Data Master</li>
+<li class="breadcrumb-item active"><i class="far fa-circle nav-icon"></i> Data jabatan</li>
 <?= $this->endSection(); ?>  
 
 <?= $this->section('content_admin'); ?>
@@ -44,7 +45,7 @@
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th style="width:10px;">No</th>
+              <!--     <th style="width:10px;">No</th> -->
                   <th>Jabatan</th>
                   <th style="width:10px;">Aksi</th>
                 </tr>
@@ -61,7 +62,7 @@
                       ?>
 
                 <tr>
-                  <td><?php echo $no++; ?></td> 
+          <!--         <td><?php echo $no++; ?></td>  -->
                   <td><?php echo $jabatan; ?></td>
 
                   </td>
@@ -69,7 +70,7 @@
 
                   <td>
 
-                    <span class="badge bg-warning"><a href="#" data-toggle="modal" data-target="#edit-data<?php echo $id_jabatan;?>"><i class="fa fa-edit"> </i></a></span>
+                    <span class="badge bg-warning"><a href="#" data-toggle="modal" data-target="#edit-data<?php echo $id_jabatan;?>"><i class="fa fa-edit"> Ubah</i></a></span>
 
                  </td>
                 </tr>
@@ -79,7 +80,7 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                  <th>No</th>
+                 <!--  <th>No</th> -->
                   <th>jabatan</th>
                   <th>Aksi</th>
                 </tr>
@@ -113,7 +114,7 @@
               </button>
             </div>
 
-                        <form role="form" name="myform" method="post" action="/Cjabatan/tambah" enctype="multipart/form-data">
+                        <form role="form" name="myform" method="post" action="/Cjabatan_admin/tambah" enctype="multipart/form-data">
 
                         <div class="modal-body">
 
@@ -175,7 +176,7 @@
               </button>
             </div>
 
-                      <form role="form" name="myform" method="post" action="/Cjabatan/ubah" enctype="multipart/form-data">
+                      <form role="form" name="myform" method="post" action="/Cjabatan_admin/ubah" enctype="multipart/form-data">
 
                         <div class="modal-body">
 

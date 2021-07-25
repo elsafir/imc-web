@@ -254,7 +254,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?= base_url('jenisprogram') ?>" class="nav-link">
+                <a href="<?= base_url('CjenisProgram_admin') ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Jenis Program</p>
                 </a>
@@ -266,7 +266,7 @@
                 </a>
               </li>
                <li class="nav-item">
-                <a href="<?= base_url('Cjabatan') ?>" class="nav-link">
+                <a href="<?= base_url('Cjabatan_admin') ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Jabatan</p>
                 </a>

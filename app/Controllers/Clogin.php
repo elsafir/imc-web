@@ -40,6 +40,7 @@ class Clogin extends BaseController{
                     'nama_anggota'  => $user->nama_anggota,
                     'level'  		=> $user->level,
                     'status'  		=> $user->status,
+                    'id_region'  	=> $user->id_region,
                     'region'  		=> $user->region
                 ];
 
@@ -67,6 +68,7 @@ class Clogin extends BaseController{
                     'id_pengguna'   => $user->id_pengguna,
                     'nama_anggota'  => $user->nama_anggota,
                     'level'  		=> $user->level,
+                    'id_region'  	=> $user->id_region,
                     'region'  		=> $user->region
                 ];
                 

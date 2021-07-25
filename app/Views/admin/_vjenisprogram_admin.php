@@ -1,134 +1,252 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-  <?= $this->extend('admin/_vtemplate_admin'); ?>
+<?= $this->extend('admin/_vtemplate_admin'); ?>
 
-  <?= $this->section('title'); ?>
-  <h1><i class="nav-icon fas fa-book"></i> Jenis Program</h1>
-  <?= $this->endSection(); ?>
+<?= $this->section('title'); ?>
+<h1><i class="far fa-circle nav-icon"></i> Jenis Program</h1>
+<?= $this->endSection(); ?>
 
-  <?= $this->section('breadcrumb'); ?>
-  <li class="breadcrumb-item active"><i class="nav-icon fas fa-book"></i> Jenis Program</li>
-  <?= $this->endSection(); ?>
+<?= $this->section('breadcrumb'); ?>
+<li class="breadcrumb-item"><i class="nav-icon fas fa-copy"></i> Data Master</li>
+<li class="breadcrumb-item active"><i class="far fa-circle nav-icon"></i> Jenis Program</li>
+<?= $this->endSection(); ?>  
 
-    <?= $this->section('content_admin'); ?>
-    <div class="container">
-        <div class="card my-3">
-            <div class="card-header">
-                <h3>Data Program</h3>
-            </div>
-            <div class="card-body">
-                    <!-- Tambah Pop Up Berhasil -->
-                    <?php if(!empty(session()->getFlashdata('berhasil'))){ ?>
-                      <div class="alert alert-success">
+<?= $this->section('content_admin'); ?>
+<!-- ============================================================================== -->    
+
+           <div class="row">
+          <div class="col-md-12">
+
+          <div class="card card-primary card-outline">
+              <div class="card-header">
+                
+                <?php if(!empty(session()->getFlashdata('berhasil'))){ ?>
+                <div class="alert alert-success">
                     <?php echo session()->getFlashdata('berhasil');?>
+                </div>
+            <?php } ?>
+
+            <?php if(!empty(session()->getFlashdata('gagal'))){ ?>
+                <div class="alert alert-danger">
+                    <?php echo session()->getFlashdata('gagal');?>
+                </div>
+            <?php } ?>
+
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambah-data">
+                  <i class="fa fa-plus"></i> Tambah Data
+                </button>
+
+
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
               </div>
-                  <?php } ?>
-                  <!-- Button Berhasil -->
-              <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#tambah-data">
-                <a href="#" style="color:white;"><i class="fa fa-plus"></i> Tambah Data Program</a>
-              </button>
 
-                <table class="table table-bordered table-striped">
-                    <tr>
-                        <th>Jenis Program</th>
-                        <th>Tentang Program</th>
-                        <th>Action</th>
-                    </tr>
-                    <?php foreach($jenis_program as $js) :
-                        $tentang_jenis_program=$js['tentang_jenis_program'];
-                       ?>
-                    <tr>
-                        <td><?= $js['jenis_program'] ?></td>
-                        <td><?php echo substr($tentang_jenis_program, 0, 100); ?></td>
-                        <td>
-                            <ul class="nav">
-                                <a href="<?= base_url('jenisprogram/'.$js['id_jenis_program'].'/edit') ?>" class="btn btn-success me-2" style="width:100%;">Edit</a>
-                                <!-- Delete -->
-                                <!-- <a href="#" data-href="<?= base_url('jenisprogram/'.$js['id_jenis_program']) ?>" onclick="confirmToDelete(this)" class="btn btn-sm btn-outline-danger">Delete</a> -->
-                            </ul>
-                        </td>
-                    </tr>
-                    <?php endforeach; ?>
-                </table>
+              <!-- /.card-header -->
+              <div class="card-body">
+
+              <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                  <th style="width:10px;">No</th>
+                  <th>Jenis Program</th>
+                  <th>Tentang</th>
+                  <th style="width:10px;">Aksi</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                  <?php 
+                  $no=1;
+                       foreach($data as $i):
+
+                          $id_jenis_program=$i['id_jenis_program'];
+                          $jenis_program=$i['jenis_program'];
+                          $tentang_jenis_program=$i['tentang_jenis_program'];
+
+                      ?>
+
+                <tr>
+                  <td><?php echo $no++; ?></td> 
+                  <td><?php echo $jenis_program; ?></td>
+                  <td><?php echo substr($tentang_jenis_program, 0, 200); ?></td>
+
+
+
+                  <td>
+
+                    <span class="badge bg-warning"><a href="#" data-toggle="modal" data-target="#edit-data<?php echo $id_jenis_program;?>"><i class="fa fa-edit"> Ubah</i></a></span>
+
+                  </td>
+                </tr>
+
+                <?php endforeach;?>
+                
+                </tbody>
+                <tfoot>
+                <tr>
+                  <th style="width:10px;">No</th>
+                   <th>Jenis Program</th>
+                  <th>Tentang</th>
+                  <th style="width:10px;">Aksi</th>
+                </tr>
+                </tfoot>
+              </table>
+           
+
+                
+              </div>
+              <!-- /.card-body -->
             </div>
+            <!-- /.card -->
+
+          </div>
         </div>
-    </div>
-    <!-- =====================MODAL TAMBAH DATA========================= -->
-   <div class="modal fade" id="tambah-data" data-backdrop="static">
-           <div class="modal-dialog modal-lg">
-             <div class="modal-content">
-               <div class="modal-header">
-                 <h4 class="modal-title"><i class="fa fa-plus"></i> Tambah Data Program</h4>
-                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                   <span aria-hidden="true">&times;</span>
-                 </button>
-               </div>
-              <form role="form" name="myform" method="post" action="/jenisprogram/create" enctype="multipart/form-data">
-                     <div class="modal-body">
+        <!-- /.row -->
+
+  <!-- ============================================================================== -->
+
+
+
+
+ <!-- =====================MODAL TAMBAH DATA========================= -->    
+<div class="modal fade" id="tambah-data" data-backdrop="static">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title"><i class="fa fa-plus"></i> Tambah Data Jenis Program</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+                        <?php if(!empty(session()->getFlashdata('gagal'))){ ?>
+                <div class="alert alert-danger">
+                    <?php echo session()->getFlashdata('gagal');?>
+                </div>
+            <?php } ?>
+
+                        <form role="form" name="myform" method="post" action="/CjenisProgram_admin/create" enctype="multipart/form-data">
+
+                        <div class="modal-body">
+
+
                           <div class="alert alert-warning alert-dismissible">
-                               <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                               <h4><i class="icon fa fa-info"></i> Perhatian :</h4>
-                               <p>Pada Form ini dipergunakan untuk membuat Program yang ada Di IM Connect </p>
-                           </div>
-
-                           <div class="form-group">
-                             <label>Jenis Program</label>
-                             <input class="form-control" type="text" placeholder="Nama Program" style="width: 400px;" name="jenis_program" required>
-                           </div>
-
-                           <div class="form-group">
-                             <label>Tentang Program</label>
-                             <textarea class="form-control" rows="3" placeholder="Tentang ..." style="width: 400px; height: 200px;" name="tentang_jenis_program" required=""><?php echo $tentang_jenis_program;?></textarea>
-                           </div>
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            <h4><i class="icon fa fa-info"></i> Keterangan :</h4>
+                            <p>Isilah form jenis program anda dengan lengkap, terutama yang bertanda (*)</p>
                         </div>
 
-                           <div class="modal-footer">
-                             <button class="btn btn-primary" type="submit" title="Tambah"><i class="fa fa-check"></i></button>
-                             <button class="btn btn-warning" type="Reset" title="undo"><i class="fa fa-redo"></i></button>
-                             <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true" title="keluar"><i class="fa fa-times-circle"></i></button>
-                             </div>
-                    </form>
+
+
+            
+                        <div class="form-group">
+                          <label>Jenis Program*</label>
+                          <input class="form-control" type="text" placeholder="Jenis Program" style="width: 200px;" name="jenis_program" required>
+                        </div>
+
+
+                        <div class="form-group">
+                          <label>Tentang Jenis Program*</label>
+                          <textarea class="form-control" rows="3" placeholder="Tentang ..." style="width: 400px; height: 200px;" name="tentang_jenis_program"></textarea>
+                        </div>
+
+
+         
+
+                        </div>
+
+
+                        <div class="modal-footer">
+                          <button class="btn btn-primary" type="submit"><i class="fa fa-check"></i></button>
+                          <button class="btn btn-warning" type="Reset"><i class="fa fa-redo"></i></button>
+
+                            <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle"></i></button>
+                          </div>
+                      </form>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                  </div>
+                  <!-- /.modal -->
+<!-- =============================================== -->
+
+
+
+
+
+
+
+<?php 
+                foreach($data as $i):
+                    $id_jenis_program=$i['id_jenis_program'];
+                    $jenis_program=$i['jenis_program'];
+                      $tentang_jenis_program=$i['tentang_jenis_program'];
+
+                ?>
+
+
+  <!-- =====================MODAL EDIT DATA========================= -->    
+<div class="modal fade" id="edit-data<?php echo $id_jenis_program;?>" data-backdrop="static">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title"><i class="fa fa-edit"></i> Ubah Data Jenis Program</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-        </div>
-</div>
-   <?php
-      foreach($jenis_program as $js):
-      $id_jenis_program=$js['id_jenis_program'];
-      $jenis_program=$js['jenis_program'];
-      $tentang_jenis_program=$js['tentang_jenis_program'];
-    ?>
-  <?php endforeach;?>
 
-<!--  fungsi & form delete
-    <div id="confirm-dialog" class="modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <h2 class="h2">Apa Anda Yakin</h2>
-        <p>The data will be deleted and lost forever</p>
-      </div>
-      <div class="modal-footer">
-        <a href="#" role="button" id="delete-button" class="btn btn-danger">Delete</a>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-      </div>
-    </div>
-  </div>
-</div>
+                      <form role="form" name="myform" method="post" action="/CjenisProgram_admin/update" enctype="multipart/form-data">
 
-<script>
-function confirmToDelete(el){
-    $("#delete-button").attr("href", el.dataset.href);
-    $("#confirm-dialog").modal('show');
-}
-</script> -->
+                        <div class="modal-body">
 
-    <?= $this->endSection('content_admin'); ?>
-</body>
-</html>
+                        <input type="hidden" name="id_jenis_program" value="<?php echo $id_jenis_program;?>">
+
+                        <div class="form-group">
+                          <label>Jenis Program*</label>
+                          <input class="form-control" type="text" placeholder="Jenis Program" style="width: 200px;" name="jenis_program" required="" value="<?php echo $jenis_program;?>">
+
+                        </div>
+
+
+                         <div class="form-group">
+                          <label>Tentang Jenis Program</label>
+                          <textarea class="form-control" rows="3" placeholder="Tentang ..." style="width: 400px; height: 200px;" name="tentang_jenis_program" required=""><?php echo $tentang_jenis_program;?></textarea>
+                        </div>
+
+
+                       
+
+                        </div>
+
+
+
+
+
+
+
+                        <div class="modal-footer">
+                          <button class="btn btn-primary" type="submit"><i class="fa fa-check"></i></button>
+                          <button class="btn btn-warning" type="Reset"><i class="fa fa-redo"></i></button>
+
+                            <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle"></i></button>
+                          </div>
+                      </form>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                  </div>
+                  <!-- /.modal -->
+<!-- =============================================== -->
+
+<?php endforeach;?>
+
+
+
+<?= $this->endSection(); ?>

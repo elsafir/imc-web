@@ -15,10 +15,10 @@ class Cprogram_user extends BaseController{
             return redirect()->to(site_url('Clogin'));
         }
 
-        $id_pengguna = session('id_pengguna');
+        $id_region = session('id_region');
 
 		$model = new Mprogram();
-		$x['data']= $model->tampilProgramUser($id_pengguna)->getResultArray();
+		$x['data']= $model->tampilProgramUser($id_region)->getResultArray();
 		$x['jp']= $model->tampilJenisProgram()->getResultArray();
         return view('user/_vprogram_user', $x);
 	}
@@ -51,7 +51,7 @@ class Cprogram_user extends BaseController{
             'id_pengguna' =>  $id_pengguna,
             'judul_program'    => $this->request->getPost('judul_program'),
             'detail_program'  => $this->request->getPost('detail_program'),
-            'foto'             => $upload->getName()
+            'foto_program'             => $upload->getName()
             );
          }
 
@@ -60,6 +60,7 @@ class Cprogram_user extends BaseController{
     }
 
      public function ubah(){
+
         $model = new Mprogram();
 
         $id_program = $this->request->getPost('id_program');
@@ -71,7 +72,7 @@ class Cprogram_user extends BaseController{
 
              $data = array(
         'id_jenis_program' => $this->request->getPost('id_jenis_program'),
-        'id_pengguna' => $this->request->getPost('id_pengguna'),
+        'id_pengguna' =>$this->request->getPost('id_pengguna'),
         'judul_program'   => $this->request->getPost('judul_program'),
         'detail_program'   => $this->request->getPost('detail_program')
         );

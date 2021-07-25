@@ -319,7 +319,7 @@
                         <div class="modal-body">
 
                         <input type="hidden" name="id_program" value="<?php echo $id_program;?>">
-                        <input type="text" name="id_pengguna" value="<?php echo $id_pengguna;?>">
+                        <input type="hidden" name="id_pengguna" value="<?php echo $id_pengguna;?>">
                         <div class="form-group">
                             <label for="exampleSelect1">Jenis Program*</label>
                             <select class="form-control" style="width: 200px;" name="id_jenis_program">

@@ -14,8 +14,11 @@ class Cevents_user extends BaseController{
         }else{
             return redirect()->to(site_url('Clogin'));
         }
+
+        $id_pengguna = session('id_pengguna');
+
         $model = new Mevents();
-		$x['data']= $model->tampilEvents()->getResultArray();
+		$x['data']= $model->tampilEventsUser($id_pengguna)->getResultArray();
         return view('user/_vevent_user', $x);
     }
 }

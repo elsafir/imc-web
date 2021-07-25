@@ -14,6 +14,12 @@ class Mevents extends Model{
 		return $query;
     }
 
+    public function tampilEventsUser($id_pengguna){
+
+        $query= $this->db->query( "SELECT * FROM events INNER JOIN pengguna ON events.id_pengguna=pengguna.id_pengguna WHERE pengguna.id_pengguna='$id_pengguna'");
+        return $query;
+    }
+
 
     public function tampilEventsTerbaru(){
 

@@ -19,9 +19,9 @@ class Mprogram extends Model{
 		return $query;
     }
 
-    public function tampilProgramUser($id_pengguna){
+    public function tampilProgramUser($id_region){
 
-        $query= $this->db->query( "SELECT * FROM program INNER JOIN jenis_program ON program.id_jenis_program = jenis_program.id_jenis_program INNER JOIN pengguna ON program.id_pengguna=pengguna.id_pengguna WHERE pengguna.id_pengguna='$id_pengguna'");
+        $query= $this->db->query( "SELECT * FROM program INNER JOIN jenis_program ON program.id_jenis_program=jenis_program.id_jenis_program INNER JOIN pengguna ON program.id_pengguna=pengguna.id_pengguna INNER JOIN community ON pengguna.id_community=community.id_community INNER JOIN region ON community.id_region=region.id_region WHERE region.id_region='$id_region'");
         return $query;
     }
 

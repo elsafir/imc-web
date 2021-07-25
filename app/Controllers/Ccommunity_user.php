@@ -17,13 +17,15 @@ class Ccommunity_user extends BaseController{
             return redirect()->to(site_url('Clogin'));
         }
 
+        $id_region = session('id_region');
+
 
         $model = new Mcommunity();
-        $model1 = new Mregion();
+        // $model1 = new Mregion();
         $model2 = new Mjabatan();
 
-		$x['data']= $model->tampilCommunity()->getResultArray();
-		$x['rg']= $model1->tampilRegion()->getResultArray();
+		$x['data']= $model->tampilCommunityUser($id_region)->getResultArray();
+		// $x['rg']= $model1->tampilRegion()->getResultArray();
 		$x['jb']= $model2->tampilJabatan()->getResultArray();
         return view('user/_vcommunity_user', $x);
 
@@ -31,6 +33,8 @@ class Ccommunity_user extends BaseController{
 
 
     public function tambah(){
+
+        $id_region = session('id_region');
 
         $model = new Mcommunity();
 
@@ -42,7 +46,7 @@ class Ccommunity_user extends BaseController{
  
         if ($validation == FALSE) {
              $data = array(
-        'id_region' => $this->request->getPost('id_region'),
+        'id_region' => $id_region,
         'nama_anggota'   => $this->request->getPost('nama_anggota'),
         'id_jabatan'   => $this->request->getPost('id_jabatan')
         );
@@ -51,7 +55,7 @@ class Ccommunity_user extends BaseController{
             $upload->move(WRITEPATH . '../public/img/');
 
              $data = array(
-            'id_region' => $this->request->getPost('id_region'),
+            'id_region' => $id_region,
             'nama_anggota'   => $this->request->getPost('nama_anggota'),
             'id_jabatan'   => $this->request->getPost('id_jabatan'),
             'foto_anggota'             => $upload->getName()
@@ -59,7 +63,7 @@ class Ccommunity_user extends BaseController{
          }
 
         $model->tambahCommunity($data);
-        return redirect()->to('/Ccommunity_admin')->with('berhasil', 'DATA BERHASIL DISIMPAN');
+        return redirect()->to('/Ccommunity_user')->with('berhasil', 'DATA BERHASIL DISIMPAN');
     }
 
 
@@ -74,7 +78,7 @@ class Ccommunity_user extends BaseController{
         if ($validation == FALSE) {
 
              $data = array(
-            'id_region' => $this->request->getPost('id_region'),
+            'id_region' => $id_region,
             'nama_anggota'   => $this->request->getPost('nama_anggota'),
             'id_jabatan'   => $this->request->getPost('id_jabatan')
         );
@@ -90,7 +94,7 @@ class Ccommunity_user extends BaseController{
 
              $data = array(
 
-            'id_region' => $this->request->getPost('id_region'),
+            'id_region' => $id_region,
             'nama_anggota'   => $this->request->getPost('nama_anggota'),
             'id_jabatan'   => $this->request->getPost('id_jabatan'),
             'foto_anggota'            => $upload->getName()

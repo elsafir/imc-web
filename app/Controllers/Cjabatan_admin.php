@@ -3,7 +3,7 @@
 namespace App\Controllers;
 use App\Models\Mjabatan;
 
-class Cjabatan extends BaseController{
+class Cjabatan_admin extends BaseController{
 
 	public function index(){
 		//session
@@ -30,7 +30,7 @@ class Cjabatan extends BaseController{
         ];
         //insert data
         $model->tambahJabatan($data);
-        return redirect()->to('/Cjabatan')->with('berhasil', 'DATA BERHASIL DISIMPAN');
+        return redirect()->to('/Cjabatan_admin')->with('berhasil', 'DATA BERHASIL DISIMPAN');
     }
     public function ubah(){
         $model = new Mjabatan();
@@ -42,6 +42,6 @@ class Cjabatan extends BaseController{
          
         $model->ubahJabatan($data,$id_jabatan);
 
-        return redirect()->to('/Cjabatan')->with('berhasil', 'DATA BERHASIL DIUBAH');
+        return redirect()->to('/Cjabatan_admin')->with('berhasil', 'DATA BERHASIL DIUBAH');
     }
 }

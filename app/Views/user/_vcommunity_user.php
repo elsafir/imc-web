@@ -45,7 +45,7 @@
                 <thead>
                 <tr>
                   <th style="width:10px;">No</th>
-                  <th>Region</th>
+                  
                   <th>Nama Anggota</th>
                   <th>jabatan</th>
                   <th style="width:100px;">Foto</th>
@@ -67,7 +67,7 @@
 
                 <tr>
                   <td><?php echo $no++; ?></td> 
-                  <td><?php echo $region; ?></td>
+                 
                   <td><?php echo $nama_anggota?></td>
                   <td><?php echo $jabatan?></td>
 
@@ -101,7 +101,7 @@
                 <tfoot>
                 <tr>
                   <th>No</th>
-                  <th>Region</th>
+                 
                   <th>Nama Anggota</th>
                   <th>jabatan</th>
                   <th>Foto</th>
@@ -150,20 +150,7 @@
                     
 
 
-                         <div class="form-group">
-                              <label for="exampleSelect1">Region*</label>
-                              <select class="form-control" style="width: 200px;" name="id_region">
-                                <option value="== PILIH ==">== PILIH ==</option>
-                                <?php foreach($rg as $i):
-                                $id_region=$i['id_region'];
-                                $region=$i['region'];?>
-                                <option value="<?php echo $id_region ?>"><?php echo $region ?></option>
-                                <?php endforeach ?>
-
-
-
-                              </select>
-                          </div>
+                         
 
 
                         <div class="form-group">
@@ -330,31 +317,7 @@
                         <input type="hidden" name="id_community" value="<?php echo $id_community;?>">
 
 
-                        <div class="form-group">
-                            <label for="exampleSelect1">Region*</label>
-                            <select class="form-control" style="width: 200px;" name="id_region">
-                              <option value="== PILIH ==">== PILIH ==</option>
-                              <?php foreach($rg as $i):
-                                $id_regionn=$i['id_region'];
-                                $region=$i['region'];?>
-
-                                <option value="<?php echo $id_regionn ?>"
-                                  <?php if ($id_region == 
-                                  $id_regionn) { echo "selected"; } ?>
-                                  >
-
-                                  <?php echo $region ?>
-                                  
-                                </option>
-                                <?php endforeach ?>
-
-
-
-                            </select>
-
-
-
-                        </div>
+                       
 
 
                         <div class="form-group">

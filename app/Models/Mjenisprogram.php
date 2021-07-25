@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Jenisprogram extends Model
+class Mjenisprogram extends Model
 {
 	protected $DBGroup              = 'default';
 	protected $table                = 'jenis_program';
