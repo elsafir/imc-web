@@ -149,13 +149,13 @@
                         
                         <div class="form-group">
                           <label>Judul events*</label>
-                          <input class="form-control" type="text" placeholder="Judul events" style="width: 400px;" name="judul_events">
+                          <input class="form-control" type="text" placeholder="Judul events" style="width: 400px;" name="judul_events" required>
                         </div>
 
 
                         <div class="form-group">
                           <label>Detail events*</label>
-                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 400px; height: 200px;" name="detail_events"></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 400px; height: 200px;" name="detail_events" required></textarea>
                         </div>
 
 

@@ -45,7 +45,7 @@
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-              <!--     <th style="width:10px;">No</th> -->
+                  <th style="width:10px;">No</th>
                   <th>Jabatan</th>
                   <th style="width:10px;">Aksi</th>
                 </tr>
@@ -62,7 +62,7 @@
                       ?>
 
                 <tr>
-          <!--         <td><?php echo $no++; ?></td>  -->
+                  <td><?php echo $no++; ?></td>
                   <td><?php echo $jabatan; ?></td>
 
                   </td>
@@ -80,7 +80,7 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                 <!--  <th>No</th> -->
+                  <th>No</th>
                   <th>jabatan</th>
                   <th>Aksi</th>
                 </tr>
@@ -129,7 +129,7 @@
                         
                         <div class="form-group">
                           <label>jabatan*</label>
-                          <input class="form-control" type="text" placeholder="Jabatan" style="width: 400px;" name="jabatan">
+                          <input class="form-control" type="text" placeholder="Jabatan" style="width: 400px;" name="jabatan" required>
                         </div>
                     
                
@@ -184,7 +184,7 @@
                         
                         <div class="form-group">
                           <label>jabatan*</label>
-                          <input class="form-control" type="text" placeholder="Judul jabatan" style="width: 400px;" name="jabatan" required="" value="<?php echo $jabatan;?>">
+                          <input class="form-control" type="text" placeholder="Judul jabatan" style="width: 400px;" name="jabatan" required="" value="<?php echo $jabatan;?>" required>
 
                         </div>
 

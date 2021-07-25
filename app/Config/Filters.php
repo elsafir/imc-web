@@ -67,8 +67,32 @@ class Filters extends BaseConfig
 			[
 				'Cadmin',
 				'Cuser',
+				'Ccommunity_admin',
+				'Ccommunity_admin/*',
+				'Ccommunity_user',
+				'Ccommunity_user/*',
+
+				'Cevents_admin',
+				'Cevents_admin/*',
+				'Cevents_user',
+				'Cevents_user/*',
+
+				'Cjabatan_admin',
+				'Cjabatan_admin/*',
+
+				'CjenisProgram_admin',
+				'CjenisProgram_admin/*',
+
+				'CkelolaUser_admin',
+				'CkelolaUser_admin/*',
+
+				'Cregional_admin',
+				'Cregional_admin/*',
+
 				'Cprogram_admin',
-				'Cprogram_admin/*'
+				'Cprogram_admin/*',
+				'Cprogram_user',
+				'Cprogram_user/*'
 
 
 			]

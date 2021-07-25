@@ -155,13 +155,13 @@
 
                         <div class="form-group">
                           <label>Nama Anggota*</label>
-                          <input class="form-control" type="text" placeholder="Nama Anggota" style="width: 400px;" name="nama_anggota">
+                          <input class="form-control" type="text" placeholder="Nama Anggota" style="width: 400px;" name="nama_anggota" required>
                         </div>
 
 
                         <div class="form-group">
                               <label for="exampleSelect1">Jabatan*</label>
-                              <select class="form-control" style="width: 200px;" name="id_jabatan">
+                              <select class="form-control" style="width: 200px;" name="id_jabatan" required>
                                 <option value="== PILIH ==">== PILIH ==</option>
                                 <?php foreach($jb as $i):
                                 $id_jabatan=$i['id_jabatan'];
@@ -328,7 +328,7 @@
 
                         <div class="form-group">
                             <label for="exampleSelect1">Jabatan*</label>
-                            <select class="form-control" style="width: 200px;" name="id_jabatan">
+                            <select class="form-control" style="width: 200px;" name="id_jabatan" required>
                               <option value="== PILIH ==">== PILIH ==</option>
                               <?php foreach($jb as $i):
                                 $id_jabatann=$i['id_jabatan'];
