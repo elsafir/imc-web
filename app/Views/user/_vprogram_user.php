@@ -151,7 +151,7 @@
 
                         <div class="form-group">
                               <label for="exampleSelect1">Jenis Program*</label>
-                              <select class="form-control" style="width: 200px;" name="id_jenis_program">
+                              <select class="form-control" style="width: 200px;" name="id_jenis_program" required>
                                 <option value="== PILIH ==">== PILIH ==</option>
                                 <?php foreach($jp as $i):
                                 $id_jenis_program=$i['id_jenis_program'];
@@ -167,13 +167,13 @@
 
                         <div class="form-group">
                           <label>Judul Program*</label>
-                          <input class="form-control" type="text" placeholder="Judul Program" style="width: 400px;" name="judul_program">
+                          <input class="form-control" type="text" placeholder="Judul Program" style="width: 400px;" name="judul_program" required>
                         </div>
 
 
                         <div class="form-group">
                           <label>Detail Program*</label>
-                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 400px; height: 200px;" name="detail_program"></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 400px; height: 200px;" name="detail_program" required></textarea>
                         </div>
 
 
@@ -322,7 +322,7 @@
                         <input type="hidden" name="id_pengguna" value="<?php echo $id_pengguna;?>">
                         <div class="form-group">
                             <label for="exampleSelect1">Jenis Program*</label>
-                            <select class="form-control" style="width: 200px;" name="id_jenis_program">
+                            <select class="form-control" style="width: 200px;" name="id_jenis_program" required>
                               <option value="== PILIH ==">== PILIH ==</option>
                               <?php foreach($jp as $i):
                                 $id_jenis_programm=$i['id_jenis_program'];

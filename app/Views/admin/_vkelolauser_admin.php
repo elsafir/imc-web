@@ -272,7 +272,7 @@
 
                          <div class="form-group">
                             <label for="exampleSelect1">Level*</label>
-                            <select class="form-control" style="width: 200px;" name="level">
+                            <select class="form-control" style="width: 200px;" name="level" required>
                               <option value="== PILIH ==">== PILIH ==</option>
                               <option <?php if ($level == "Administrator") { echo "selected"; } ?> value="Administrator">Administrator</option>
                               <option <?php if ($level == "User") { echo "selected"; } ?> value="User">User</option>
@@ -283,7 +283,7 @@
 
                         <div class="form-group">
                             <label for="exampleSelect1">Status*</label>
-                            <select class="form-control" style="width: 200px;" name="status">
+                            <select class="form-control" style="width: 200px;" name="status" required>
                               <option value="== PILIH ==">== PILIH ==</option>
                               <option <?php if ($status == "Aktif") { echo "selected"; } ?> value="Aktif">Aktif</option>
                             <option <?php if ($status == "Tidak Aktif") { echo "selected"; } ?> value="Tidak Aktif">Tidak Aktif</option>
@@ -371,7 +371,7 @@
                 <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-4 col-form-label">Password Default*</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" placeholder="Password" name="password" value="12345678" style="width: 300px;">
+                      <input type="text" class="form-control" placeholder="Password" name="password" value="12345678" style="width: 300px;" required>
                     </div>
                   </div>
 

@@ -151,7 +151,7 @@
 
                         <div class="form-group">
                           <label>Tentang Jenis Program*</label>
-                          <textarea class="form-control" rows="3" placeholder="Tentang ..." style="width: 400px; height: 200px;" name="tentang_jenis_program"></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Tentang ..." style="width: 400px; height: 200px;" name="tentang_jenis_program" required></textarea>
                         </div>
 
 

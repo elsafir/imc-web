@@ -152,7 +152,7 @@
 
                          <div class="form-group">
                               <label for="exampleSelect1">Region*</label>
-                              <select class="form-control" style="width: 200px;" name="id_region">
+                              <select class="form-control" style="width: 200px;" name="id_region" required>
                                 <option value="== PILIH ==">== PILIH ==</option>
                                 <?php foreach($rg as $i):
                                 $id_region=$i['id_region'];
@@ -168,13 +168,13 @@
 
                         <div class="form-group">
                           <label>Nama Anggota*</label>
-                          <input class="form-control" type="text" placeholder="Nama Anggota" style="width: 400px;" name="nama_anggota">
+                          <input class="form-control" type="text" placeholder="Nama Anggota" style="width: 400px;" name="nama_anggota" required>
                         </div>
 
 
                         <div class="form-group">
                               <label for="exampleSelect1">Jabatan*</label>
-                              <select class="form-control" style="width: 200px;" name="id_jabatan">
+                              <select class="form-control" style="width: 200px;" name="id_jabatan" required>
                                 <option value="== PILIH ==">== PILIH ==</option>
                                 <?php foreach($jb as $i):
                                 $id_jabatan=$i['id_jabatan'];
@@ -274,7 +274,7 @@
                   <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Region*</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" disabled="" placeholder="Region" name="region" value="<?php echo $region;?>" style="width: 200px;">
+                      <input type="text" class="form-control" disabled="" placeholder="Region" name="region" value="<?php echo $region;?>" style="width: 200px;" required>
                     </div>
                   </div>
 
@@ -282,14 +282,14 @@
                   <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Nama Anggota*</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" disabled="" placeholder="Nama Anggota" name="nama_anggota" value="<?php echo $nama_anggota;?>" style="width: 400px;">
+                      <input type="text" class="form-control" disabled="" placeholder="Nama Anggota" name="nama_anggota" value="<?php echo $nama_anggota;?>" style="width: 400px;" required>
                     </div>
                   </div>
 
                   <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Jabatan*</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" disabled="" placeholder="Jabatan" name="jabatan" value="<?php echo $jabatan;?>" style="width: 200px;">
+                      <input type="text" class="form-control" disabled="" placeholder="Jabatan" name="jabatan" value="<?php echo $jabatan;?>" style="width: 200px;" required>
                     </div>
                   </div>
 
@@ -332,7 +332,7 @@
 
                         <div class="form-group">
                             <label for="exampleSelect1">Region*</label>
-                            <select class="form-control" style="width: 200px;" name="id_region">
+                            <select class="form-control" style="width: 200px;" name="id_region" required>
                               <option value="== PILIH ==">== PILIH ==</option>
                               <?php foreach($rg as $i):
                                 $id_regionn=$i['id_region'];
@@ -359,13 +359,13 @@
 
                         <div class="form-group">
                           <label>Nama Anggota*</label>
-                          <input class="form-control" type="text" placeholder="Nama Anggota" style="width: 400px;" name="nama_anggota" required="" value="<?php echo $nama_anggota;?>">
+                          <input class="form-control" type="text" placeholder="Nama Anggota" style="width: 400px;" name="nama_anggota" required="" value="<?php echo $nama_anggota;?>" required>
 
                         </div>
 
                         <div class="form-group">
                             <label for="exampleSelect1">Jabatan*</label>
-                            <select class="form-control" style="width: 200px;" name="id_jabatan">
+                            <select class="form-control" style="width: 200px;" name="id_jabatan" required>
                               <option value="== PILIH ==">== PILIH ==</option>
                               <?php foreach($jb as $i):
                                 $id_jabatann=$i['id_jabatan'];
