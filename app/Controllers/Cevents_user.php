@@ -21,4 +21,95 @@ class Cevents_user extends BaseController{
 		$x['data']= $model->tampilEventsUser($id_pengguna)->getResultArray();
         return view('user/_vevent_user', $x);
     }
+    public function tambah(){
+
+        $id_pengguna = session('id_pengguna');
+
+        $model = new Mevents();
+
+        $validation = $this->validate([
+            'file_upload' => 'uploaded[file_upload]|mime_in[file_upload,image/jpg,image/jpeg,image/gif,image/png]|max_size[file_upload,4096]'
+        ]);
+
+
+         $slug = url_title($this->request->getPost('judul_events'), '-', true);
+ 
+        if ($validation == FALSE) {
+             $data = array(
+        'id_pengguna' =>  $id_pengguna,
+        'judul_events'   => $this->request->getPost('judul_events'),
+        'detail_events'   => $this->request->getPost('detail_events'),
+        'slug_e'   => $slug
+        );
+         } else {
+            $upload = $this->request->getFile('file_upload');
+            $upload->move(WRITEPATH . '../public/img/');
+
+             $data = array(
+              'id_pengguna' =>  $id_pengguna,
+            'judul_events'    => $this->request->getPost('judul_events'),
+            'detail_events'  => $this->request->getPost('detail_events'),
+            'foto_events'             => $upload->getName(),
+            'slug_e'   => $slug
+            );
+         }
+
+
+        $model->tambahEvents($data);
+        return redirect()->to('/Cevents_user')->with('berhasil', 'DATA BERHASIL DISIMPAN');
+    }
+
+
+    public function ubah(){
+        $model = new Mevents();
+
+        $id_events = $this->request->getPost('id_events');
+        $validation = $this->validate([
+            'file_upload' => 'uploaded[file_upload]|mime_in[file_upload,image/jpg,image/jpeg,image/gif,image/png]|max_size[file_upload,4096]'
+        ]);
+
+        $slug = url_title($this->request->getPost('judul_events'), '-', true);
+
+        if ($validation == FALSE) {
+
+             $data = array(
+        'id_pengguna' => $this->request->getPost('id_pengguna'),
+        'judul_events'   => $this->request->getPost('judul_events'),
+        'detail_events'   => $this->request->getPost('detail_events'),
+        'slug_e'   => $slug
+        );
+         } else {
+
+            $dt = $model->pilihEvents($id_events)->getRow();
+            $foto = $dt->foto_events;
+            $path = '../public/img/';
+            @unlink($path.$foto);
+
+            $upload = $this->request->getFile('file_upload');
+            $upload->move(WRITEPATH . '../public/img/');
+
+             $data = array(
+
+            'id_pengguna' => $this->request->getPost('id_pengguna'),
+            'judul_events'    => $this->request->getPost('judul_events'),
+            'detail_events'  => $this->request->getPost('detail_events'),
+            'foto_events'            => $upload->getName(),
+            'slug_e'   => $slug
+            );
+         }
+
+
+        $model->ubahEvents($data,$id_events);
+
+        return redirect()->to('/Cevents_user')->with('berhasil', 'DATA BERHASIL DIUBAH');
+    }
+
+
+    public function hapus($id_events){
+        $model = new Mevents();
+
+        $model->deleteEvents($id_events);
+
+        return redirect()->to('/Cevents_user');
+    }
 }
