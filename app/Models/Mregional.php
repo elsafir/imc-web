@@ -12,12 +12,12 @@ class Mregional extends Model
 
     protected $useTimestamps = false;
 
-    public function getRegional($slug = false)
+    public function getRegional($slug_r = false)
     {
-        if ($slug == false){ 
+        if ($slug_r == false){ 
             return $this->findAll();
         }
-        return $this->where(['slug_r' => $slug])-> first();
+        return $this->where(['slug_r' => $slug_r])-> first();
     }
 
     public function ubahRegional($data,$id_region){
@@ -33,6 +33,12 @@ class Mregional extends Model
 	public function tampilJenisRegion(){
         $query= $this->db->query("SELECT * FROM region WHERE region != 'Pusat' ");
 		return $query; 
+    }
+
+    public function tampilMenuCommunity($slug){
+
+        $query= $this->db->query( "SELECT * FROM community INNER JOIN region ON community.id_region = region.id_region INNER JOIN jabatan ON community.id_jabatan = jabatan.id_jabatan WHERE region.slug_r='$slug'");
+        return $query;   
     }
 
 
