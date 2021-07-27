@@ -18,6 +18,8 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php'))
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
+$routes->get('/', 'Chome::index');
+$routes->get('/community/(:segment)', 'Chome::detailCommunity/$1');
 $routes->setDefaultController('Chome');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
