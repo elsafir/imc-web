@@ -10,9 +10,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
+    
                     <div class="full">
-                        <h3>IMC <?= $regionn['region']; ?></h3>
+                        <?php foreach($jrr as $i):
+
+                          $region=$i['region'];
+                      ?>
+                        <h3>IMC <?php echo $region ?></h3>
+                        <?php endforeach;?>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -26,11 +33,19 @@
             <center> <img src="/img/logo-backgound.png" style="width:700px;" alt="" class="img-fluid"></center>
         </div>
 
+        
+
         <div class="container mb-5 mt-5">
             <div class="row">
                 <div class="col-md-13">
-                    <p class="lead" style="text-align: justify;"><?= $regionn['latarbelakang']; ?>
+                    <?php 
+                       foreach($jrr as $i):
+
+                          $tentang_region=$i['tentang_region'];
+                      ?>
+                    <p class="lead" style="text-align: justify;"><?php echo $tentang_region ?>
                     </p>
+                    <?php endforeach;?>
                 </div>
             </div>
         </div>
@@ -62,18 +77,17 @@
                 </div>
                 <div class="col-md-7">
                     <div class="mt-3 staff-box">
-                        <ul class="list-group list-group-flush">
+                         <?php 
+                       foreach($mc as $i):
 
-                            <?php foreach($mc as $m): ?>
-                                <li class="list-group-item"><a href="#" style="width:20px;"> <i class="fa fa-instagram" ></i></a> <?= $m['nama_anggota'] ?> - <small><?= $m['jabatan']; ?> </small></li> 
-                            <!-- <li class="list-group-item">Muh. Yusril Hardiansyah. B. S.P - General Secretary
-                            </li>
-                            <li class="list-group-item">Luthfiania Andriani - Staff of Education</li>
-                            <li class="list-group-item">Dian Sukma Putri - Social Project Manager</li>
-                            <li class="list-group-item">Nurul Inayah - Staff of Social</li> -->
-                            <?php endforeach; ?>
+                          $nama_anggota=$i['nama_anggota'];
+                          $jabatan=$i['jabatan'];
+                      ?>
+                        <ul class="list-group list-group-flush">
+                            
+                            <li class="list-group-item"><?php echo $nama_anggota ?> - [<?php echo $jabatan ?>]
                         </ul>
-                    </div>
+                        <?php endforeach;?>
                 </div>
             </div>
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 20 Jul 2021 pada 16.57
+-- Waktu pembuatan: 27 Jul 2021 pada 18.45
 -- Versi server: 10.4.20-MariaDB
 -- Versi PHP: 7.4.21
 
@@ -44,7 +44,10 @@ INSERT INTO `community` (`id_community`, `id_region`, `nama_anggota`, `id_jabata
 (2, 2, 'Muhammad Ilyas Arradya', 1, NULL),
 (3, 1, 'Muh. Yusril Hardiansyah. B. S.P', 2, NULL),
 (4, 3, 'Dyaul Mu\'sinat', 3, NULL),
-(5, 1, 'Aqidatul Izzah Ramli', 4, 'WhatsApp Image 2021-07-04 at 18.09.45.jpeg');
+(5, 1, 'Aqidatul Izzah Ramli', 4, 'WhatsApp Image 2021-07-04 at 18.09.45.jpeg'),
+(8, 2, 'Andi Firmansyah', 2, NULL),
+(9, 2, 'Jhon Edgard', 3, NULL),
+(10, 3, 'Pastop Pasaribu', 2, NULL);
 
 -- --------------------------------------------------------
 
@@ -115,6 +118,7 @@ INSERT INTO `jabatan` (`id_jabatan`, `jabatan`) VALUES
 CREATE TABLE `jenis_program` (
   `id_jenis_program` int(2) NOT NULL,
   `jenis_program` varchar(20) NOT NULL,
+  `tentang_jenis_program` varchar(255) NOT NULL,
   `slug_js` varchar(225) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -122,10 +126,11 @@ CREATE TABLE `jenis_program` (
 -- Dumping data untuk tabel `jenis_program`
 --
 
-INSERT INTO `jenis_program` (`id_jenis_program`, `jenis_program`, `slug_js`) VALUES
-(1, 'Sosial', 'sosial'),
-(2, 'Edukasi', 'edukasi'),
-(3, 'Ekonomi', 'ekonomi');
+INSERT INTO `jenis_program` (`id_jenis_program`, `jenis_program`, `tentang_jenis_program`, `slug_js`) VALUES
+(1, 'Sosial', 'membantu menjelaskan cara kerja masyarakat, mengeksplorasi segala hal mulai dari pemicu pertumbuhan ekonomi dan penyebab pengangguran hingga apa yang membuat orang bahagia. Informasi ini sangat penting dan dapat digunakan untuk berbagai tujuan. Antara lai', 'sosial'),
+(2, 'Edukasi', 'suatu proses pembelajaran yang dilakukan baik secara formal maupun non formal yang bertujuan untuk mendidik, memberikan ilmu pengetahuan, serta mengembangkan potensi diri yang ada dalam diri setiap manusia, kemudian mewujudkan proses pembelajaran tersebut', 'edukasi'),
+(3, 'Ekonomi', 'salah satu cabang ilmu yang mempelajari perilaku serta tindakan manusia dalam memenuhi kebutuhan hidupnya. Tujuan utama keberadaan sistem ekonomi sendiri adalah dapat menciptakan kesejahteraan yang besar serta merata.', 'ekonomi'),
+(4, 'Teknologi', ' keseluruhan sarana untuk menyediakan barang-barang yang diperlukan bagi kelangsungan dan kenyamanan hidup manusia. Penggunaan teknologi oleh manusia diawali dengan pengubahan sumber daya alam menjadi alat-alat sederhana. Penemuan prasejarah tentang kemam', 'teknologi');
 
 -- --------------------------------------------------------
 
@@ -151,7 +156,9 @@ INSERT INTO `pengguna` (`id_pengguna`, `id_community`, `username`, `password`, `
 (2, 2, 'ilyas', '$2y$10$JRQHPac0c6/yss6gTwltJ.FuR7HV49X50tdJioutxj8l5QLJo5TR.', 'User', 'Aktif'),
 (3, 3, 'yusril', '$2y$10$JRQHPac0c6/yss6gTwltJ.FuR7HV49X50tdJioutxj8l5QLJo5TR.', 'User', 'Aktif'),
 (4, 4, 'dyaul', '$2y$10$JRQHPac0c6/yss6gTwltJ.FuR7HV49X50tdJioutxj8l5QLJo5TR.', 'User', 'Aktif'),
-(5, 5, 'aqi', '$2y$10$9SmPxOqqCvdR4rR3HU7FdOEHLcCFb8oE6Qsi7m8Vkq7guKMYNaEjG', 'User', 'Tidak Aktif');
+(5, 5, 'aqi', '$2y$10$9SmPxOqqCvdR4rR3HU7FdOEHLcCFb8oE6Qsi7m8Vkq7guKMYNaEjG', 'User', 'Tidak Aktif'),
+(6, 1, 'andrichardws', '$2y$10$JMJh5PMzdMRoExKHJFWdHulzEj6HT.y4PWW8yvDHmDUbH36E1fkx6', 'Administrator', 'Aktif'),
+(7, 8, 'andi', '$2y$10$Uiz1fJ7mJe7b877dixgTyunQic8ZH0mEZFcrMq3R4H1FLTCQZRvTq', 'User', 'Aktif');
 
 -- --------------------------------------------------------
 
@@ -184,7 +191,8 @@ INSERT INTO `program` (`id_program`, `id_jenis_program`, `id_pengguna`, `judul_p
 (9, 3, 3, 'Pembagian Makanan', 'Vice President Corporate Social Responsibility & Small Medium Entreprise and Private Partnership (CSR SMEPP) Pertamina Arya Dwi Paramita (kedua kanan) bersama Manager CSR Pertamina Dian Hapsari (tengah) membagikan makanan kepada warga di Kelurahan Lagoa, Jakarta Utara. Warga menerima makanan dari Posko Masak, sinergi Satgas Bencana BUMN DKI Jakarta dan Satgas DPR RI. Satgas hadir untuk memenuhi kebutuhan pokok masyarakat yang terimbas kebijakan Covid-19, salah satunya di wilayah Jakarta Utara.', '14063753_638884306273953_5410159303819113362_n.jpg', 'pembagian-makanan'),
 (10, 3, 3, 'Peningkatan Harga', 'Inflasi merupakan keadaan ekonomi di mana harga-harga barang naik secara terus menerus selama kurun waktu tertentu. Kenaikan harga barang digolongkan secara umum, di mana sebagian besar harga barang khususnya komoditas utama mengalami kenaikan harga. Sedangkan sebagian kecil komoditas yang mengalami penurunan harga. Inflasi biasanya hanya terjadi pada momen-momen tertentu seperti Hari Raya Idul Fitri, Natal, Tahun Baru, maupun momen pesta demokrasi.', 'naik.jpg', 'peningkatan-harga'),
 (11, 2, 2, 'Metode Pembelajar Bagi Tunanetra', 'Pendidikan bagi anak sangatlah krusial dan penting. Pendidikan yang baik dapat merangsang pertumbuhan pengetahuan dan kemampuan anak sedari dini. Setiap anak perlu menerima pendidikannya dengan baik, tak terkecuali anak tunanetra. \r\n\r\nAda banyak contoh seorang penderita tunanetra yang memiliki kelebihan di bidang musik, olahraga, sastra bahkan seni.\r\n\r\nNama-nama seperti Stevie Wonder, Franklin Delano Roosevelt, dan Helen Keller telah diakui dunia melalui bakat dan kepandaian mereka. Mereka menerima pendidikan yang dapat mengasah kemampuan mereka hingga bisa terkenal seperti saat ini. \r\n\r\nPendidikan bagi anak tunanetra cukup berbeda dengan anak-anak pada umumnya.', 'tuna.jpg', 'metode-pembelajar-bagi-tunanetra'),
-(12, 3, 1, 'Pemerintah Ekonomi Kerakyatan', 'Direktur Jenderal Pembangunan dan Pemberdayaan Masyarakat Kemendes Ahmad Erani Yustika mengatakan, konsep ekonomi kerakyatan akan diterapkan lebih konkret. Menurutnya, yang dimaksud konsep ekonomi kerakyatan adalah menerapkan berbagai program ekonomi untuk masyarakat yang terintyegrasi.\r\n\r\nSelama ini, masing-masing pihak memiliki program yang berkaitan dengan masyarakat sendiri-sendiri. Seperti Kemendes yang menyalurkan dana desa, lalu penyaluran Kredit Usaha Rakyat (KUR) melalui perbankan, pengembangan pasar rakyat, program logistik untuk masyarakat, pengembangan Usaha Kecil dan Menengah (UKM) dll.\r\n\r\nNah, supaya menjadi satu kesatuan dan memberi dampak nyata bagi masyarakat, semua program itu akan dibuat dalam satu konsep terintegrasi. \"Kami akan membuat satu percontohan di Brebes,\" kata Erani, Jumat (26/2) di Jakarta.', 'ekom.jpg', 'pemerintah-ekonomi-kerakyatan');
+(12, 3, 1, 'Pemerintah Ekonomi Kerakyatan', 'Direktur Jenderal Pembangunan dan Pemberdayaan Masyarakat Kemendes Ahmad Erani Yustika mengatakan, konsep ekonomi kerakyatan akan diterapkan lebih konkret. Menurutnya, yang dimaksud konsep ekonomi kerakyatan adalah menerapkan berbagai program ekonomi untuk masyarakat yang terintyegrasi.\r\n\r\nSelama ini, masing-masing pihak memiliki program yang berkaitan dengan masyarakat sendiri-sendiri. Seperti Kemendes yang menyalurkan dana desa, lalu penyaluran Kredit Usaha Rakyat (KUR) melalui perbankan, pengembangan pasar rakyat, program logistik untuk masyarakat, pengembangan Usaha Kecil dan Menengah (UKM) dll.\r\n\r\nNah, supaya menjadi satu kesatuan dan memberi dampak nyata bagi masyarakat, semua program itu akan dibuat dalam satu konsep terintegrasi. \"Kami akan membuat satu percontohan di Brebes,\" kata Erani, Jumat (26/2) di Jakarta.', 'ekom.jpg', 'pemerintah-ekonomi-kerakyatan'),
+(13, 2, 2, 'Manfaat Daring di Masa Sekarang', 'Online learning adalah proses belajar mengajar yang memanfaatkan internet dan media digital dalam penyampaian materinya. Metode online learning dianggap lebih dekat dengan generasi pelajar saat ini yang dikenal sangat menyatu dengan produk-produk teknologi. Hal ini merupakan salah satu bentuk digitalisasi dalam dunia pendidikan yang memiliki banyak manfaat.', 'daring_1.jpeg', '');
 
 -- --------------------------------------------------------
 
@@ -195,6 +203,7 @@ INSERT INTO `program` (`id_program`, `id_jenis_program`, `id_pengguna`, `judul_p
 CREATE TABLE `region` (
   `id_region` int(2) NOT NULL,
   `region` varchar(20) NOT NULL,
+  `tentang_region` varchar(255) NOT NULL,
   `link_web` varchar(20) DEFAULT NULL,
   `slug_r` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -203,11 +212,11 @@ CREATE TABLE `region` (
 -- Dumping data untuk tabel `region`
 --
 
-INSERT INTO `region` (`id_region`, `region`, `link_web`, `slug_r`) VALUES
-(1, 'Makassar', NULL, 'makassar'),
-(2, 'Bandung', NULL, 'bandung'),
-(3, 'Medan', NULL, 'medan'),
-(4, 'Pusat', NULL, 'pusat');
+INSERT INTO `region` (`id_region`, `region`, `tentang_region`, `link_web`, `slug_r`) VALUES
+(1, 'Makassar', 'Makassar merupakan kota metropolitan terbesar di kawasan Indonesia Timur dan pada masa lalu pernah menjadi ibu kota Negara Indonesia Timur dan Provinsi Sulawesi. Makassar terletak di pesisir barat daya Pulau Sulawesi dan berbatasan dengan Selat Makassar d', NULL, 'makassar'),
+(2, 'Bandung', 'Bandung adalah kota metropolitan terbesar di Provinsi Jawa Barat, sekaligus menjadi ibu kota provinsi tersebut. Kota ini terletak 140 km sebelah tenggara Jakarta, dan merupakan kota terbesar di wilayah Pulau Jawa bagian barat. Sedangkan wilayah Bandung Ra', NULL, 'bandung'),
+(3, 'Medan', 'Medan adalah ibu kota provinsi Sumatra Utara, Indonesia. Kota ini merupakan kota terbesar ketiga di Indonesia setelah DKI Jakarta dan Surabaya, serta kota terbesar di luar pulau Jawa. Kota Medan merupakan pintu gerbang wilayah Indonesia bagian barat denga', NULL, 'medan'),
+(4, 'Pusat', 'Pusat adalah tempat yang letaknya di bagian tengah Istana Merdeka letaknya di kota Jakarta 2 titik yang di tengah-tengah benar (dalam bulatan bola, lingkaran, dan sebagainya) bumi lingkaran 3 pusar 4 pokok pangkal atau yang menjadi pumpunan (berbagai-baga', NULL, 'pusat');
 
 --
 -- Indexes for dumped tables
@@ -269,7 +278,7 @@ ALTER TABLE `region`
 -- AUTO_INCREMENT untuk tabel `community`
 --
 ALTER TABLE `community`
-  MODIFY `id_community` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_community` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT untuk tabel `events`
@@ -287,19 +296,19 @@ ALTER TABLE `jabatan`
 -- AUTO_INCREMENT untuk tabel `jenis_program`
 --
 ALTER TABLE `jenis_program`
-  MODIFY `id_jenis_program` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_jenis_program` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `pengguna`
 --
 ALTER TABLE `pengguna`
-  MODIFY `id_pengguna` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_pengguna` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT untuk tabel `program`
 --
 ALTER TABLE `program`
-  MODIFY `id_program` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_program` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT untuk tabel `region`

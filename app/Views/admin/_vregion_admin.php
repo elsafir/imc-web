@@ -55,7 +55,7 @@
                       <tr>
                         <th style="width:10px;">No</th>
                         <th>Regional</th>
-                        <th>Latar Belakang</th>
+                        <th>Tentang</th>
                         <th style="width:10px;">Aksi</th>
                       </tr>
                     </thead>
@@ -66,13 +66,13 @@
                           $id_region=$i['id_region'];
                           $slug=$i['slug_r'];
                           $region=$i['region'];
-                          $latarbelakang=$i['latarbelakang'];
+                          $tentang_region=$i['tentang_region'];
                         
                         ?>
                       <tr>
                         <td><?= $no++; ?></td>
                         <td><?= $region; ?></td> 
-                        <td><?= substr($latarbelakang, 0, 400); ?></td>
+                        <td><?= substr($tentang_region, 0, 400); ?></td>
                         <td>
                           <!-- <span class="badge bg-warning"><a href="#" data-toggle="modal" data-target="#edit-data"><i class="fa fa-edit"> Ubah</i></a></span> -->
                           <span class="badge bg-warning"><a href="#" data-toggle="modal" data-target="#edit-data<?php echo $id_region; ?>" id="btn-edit"><i class="fa fa-edit"> Ubah</i></a></span>
@@ -83,8 +83,8 @@
                     <tfoot>
                       <tr>
                         <th>No</th>
-                        <th>Judul</th>
-                        <th>Detail</th>
+                        <th>Regional</th>
+                        <th>Tentang</th>
                         <th>Aksi</th>
                       </tr>
                     </tfoot>
@@ -127,8 +127,8 @@
                           <input class="form-control" type="text" placeholder="Nama Regional" style="width: 100%;" name="region" required autofocus> 
                         </div>
                         <div class="form-group">
-                          <label>Latar Belakang Regional*</label>
-                          <textarea class="form-control" rows="3" placeholder="Latar Belakang Regional" style="width: 100%; height: 200px;" name="latarbelakang" required></textarea>
+                          <label>Tentang Regional*</label>
+                          <textarea class="form-control" rows="3" placeholder="Tentang..." style="width: 100%; height: 200px;" name="tentang_region" required></textarea>
                         </div>
                       </div>
 
@@ -157,7 +157,7 @@
                         $id_region=$i['id_region'];
                         $slug=$i['slug_r'];
                         $region=$i['region'];
-                        $latarbelakang=$i['latarbelakang'];
+                        $tentang_region=$i['tentang_region'];
                       
                       ?>
                       
@@ -191,8 +191,8 @@
                           <input class="form-control" type="text" placeholder="Nama Regional" style="width: 100%;" name="region" value="<?= $region; ?>" required autofocus> 
                         </div>
                         <div class="form-group">
-                          <label>Latar Belakang Regional*</label>
-                          <textarea class="form-control" rows="3" placeholder="Latar Belakang Regional" style="width: 100%; height: 200px;" name="latarbelakang" required><?= $latarbelakang; ?></textarea>
+                          <label>Tentang Regional*</label>
+                          <textarea class="form-control" rows="3" placeholder="Tentang Regional" style="width: 100%; height: 200px;" name="tentang_region" required><?= $tentang_region; ?></textarea>
                         </div>
                       </div>
 

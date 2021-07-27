@@ -8,9 +8,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
+                                      
                     <div class="full">
-                        <h3>Program Kami</h3>
+                        <h3>Detail Program</h3>
                     </div>
+                  
                 </div>
             </div>
         </div>

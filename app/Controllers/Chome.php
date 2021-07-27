@@ -8,12 +8,6 @@ use App\Models\Mcommunity;
 
 class Chome extends BaseController
 {
-	protected $mRegion;
-
-	public function __construct()
-	{
-		$this->mRegion = new Mregional();
-	}
 
 	public function index()
 	{
@@ -24,7 +18,6 @@ class Chome extends BaseController
 		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
 		$x['et']= $model2->tampilEventsTerbaru()->getResultArray();
 		$x['me']= $model2->tampilMenuEvents()->getResultArray();
-		$x['region']= $this->mRegion->findAll();
 		return view('frontend/_vhome_front',$x);
 	}
 
@@ -35,7 +28,6 @@ class Chome extends BaseController
 		$x['jp1']= $model->tampilJenisProgram1($slug_js)->getResultArray();
 		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
 		$x['mp']= $model->tampilMenuProgram($slug_js)->getResultArray();
-		$x['region']= $this->mRegion->findAll();
 		return view('frontend/_vprogram_front',$x);
 	}
 
@@ -46,7 +38,6 @@ class Chome extends BaseController
 		$x['jp']= $model->tampilJenisProgram()->getResultArray();
 		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
 		$x['me']= $model2->tampilMenuEvents()->getResultArray();
-		$x['region']= $this->mRegion->findAll();
 		return view('frontend/_vevents_front',$x);
 	}
 
@@ -56,7 +47,6 @@ class Chome extends BaseController
 		$x['jp']= $model->tampilJenisProgram()->getResultArray();
 		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
 		$x['dp']= $model->tampilDetailProgram($slug_p)->getResultArray();
-		$x['region']= $this->mRegion->findAll();
 		return view('frontend/_vdetailprogram_front',$x);
 	}
 
@@ -67,24 +57,16 @@ class Chome extends BaseController
 		$x['jp']= $model->tampilJenisProgram()->getResultArray();
 		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
 		$x['de']= $model2->tampilDetailEvents($slug_e)->getResultArray();
-		$x['region']= $this->mRegion->findAll();
 		return view('frontend/_vdetailevents_front',$x);
 	}
 
 	public function detailCommunity($slug_r){
 		$model = new Mprogram();
 		$model1 = new Mregional();
-		$model2 = new Mcommunity();
 		$x['jp']= $model->tampilJenisProgram()->getResultArray();
 		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
-		$x['mc']= $model2->tampilMenuCommunity($slug_r)->getResultArray();
-		$x['region']= $this->mRegion->findAll();
-		$x['regionn']= $this->mRegion->getRegional($slug_r);
-
-		// jika region tidak ada 
-		if (empty($x['regionn'])){
-			throw new \CodeIgniter\Exceptions\PageNotFoundException('Regional ' . $slug_r . ' tidak ditemukan.');
-		}
+		$x['jrr']= $model1->tampilJenisRegionn($slug_r)->getResultArray();
+		$x['mc']= $model1->tampilMenuCommunity($slug_r)->getResultArray();
 		return view('frontend/_vcommunity_front',$x);
 	}
 

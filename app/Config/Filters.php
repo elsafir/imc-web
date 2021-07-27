@@ -67,6 +67,7 @@ class Filters extends BaseConfig
 			[
 				'Cadmin',
 				'Cuser',
+				
 				'Ccommunity_admin',
 				'Ccommunity_admin/*',
 				'Ccommunity_user',

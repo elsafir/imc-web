@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\Mcommunity;
-use App\Models\Mregion;
+use App\Models\Mregional;
 use App\Models\Mjabatan;
 
 class Ccommunity_admin extends BaseController{
@@ -19,7 +19,7 @@ class Ccommunity_admin extends BaseController{
 
 
         $model = new Mcommunity();
-        $model1 = new Mregion();
+        $model1 = new Mregional();
         $model2 = new Mjabatan();
 
 		$x['data']= $model->tampilCommunity()->getResultArray();

@@ -26,7 +26,7 @@ class Mregional extends Model
     }
     
     public function tampilRegion(){
-        $query= $this->db->query("SELECT * FROM region");
+        $query= $this->db->query("SELECT * FROM region WHERE region != 'Pusat'");
 		return $query; 
     }
 
@@ -35,9 +35,14 @@ class Mregional extends Model
 		return $query; 
     }
 
-    public function tampilMenuCommunity($slug){
+    public function tampilJenisRegionn($slug_r){
+        $query= $this->db->query("SELECT * FROM region WHERE slug_r = '$slug_r' ");
+        return $query; 
+    }
 
-        $query= $this->db->query( "SELECT * FROM community INNER JOIN region ON community.id_region = region.id_region INNER JOIN jabatan ON community.id_jabatan = jabatan.id_jabatan WHERE region.slug_r='$slug'");
+    public function tampilMenuCommunity($slug_r){
+
+        $query= $this->db->query( "SELECT * FROM community INNER JOIN region ON community.id_region = region.id_region INNER JOIN jabatan ON community.id_jabatan = jabatan.id_jabatan WHERE region.slug_r='$slug_r'");
         return $query;   
     }
 

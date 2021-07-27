@@ -93,15 +93,11 @@
                                 <span class="caret"></span></a>
                             <div class="container">
                                 <ul class="dropdown-menu">
-                                    <?php foreach($region as $r): ?>
-                                    <li><a href="/community/<?= $r['slug_r']; ?>">IMC <?= $r['region']; ?></a></li>
-                                    <?php endforeach; ?>
-
-                                    <!-- <//?php foreach($jr as $i):
+                                    <?php foreach($jr as $i):
                                     $slug_r=$i['slug_r'];
                                     $region=$i['region'];?>
-                                    <li><a href="<//?= base_url('Chome/menuCommunity/') ?>/<//?php echo $slug_r; ?>"><//?php echo $region ?></a></li>
-                                    <//?php endforeach ?> -->
+                                    <li><a href="<?= base_url('Chome/detailCommunity/') ?>/<?php echo $slug_r; ?>">IMC <?php echo $region ?></a></li>
+                                    <?php endforeach ?>
                                 </ul>
                             </div>
                         </div>

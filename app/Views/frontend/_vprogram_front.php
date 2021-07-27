@@ -11,9 +11,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
+                    <?php
+                              foreach($jp1 as $i):
+                              $jenis_program=$i['jenis_program'];
+                              ?>
                     <div class="full">
-                        <h3>Program Kami - </h3>
+                        <h3><?php echo $jenis_program ?></h3>
                     </div>
+                    <?php endforeach;?>
                 </div>
             </div>
         </div>

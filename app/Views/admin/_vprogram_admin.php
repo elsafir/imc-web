@@ -422,9 +422,7 @@
           </div>
           <!-- /.modal-content -->
         </div>
-        <!-- /.modal-dialog -->
-      </div>
-      <!-- /.modal -->
+        <!-- /.modal -->
       <!-- =============================================== -->
 <?php endforeach;?>
 

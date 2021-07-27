@@ -31,6 +31,8 @@ class Mprogram extends Model{
 		return $query;
     }
 
+
+
 		public function tampilJenisProgram1($slug_js){
         $query= $this->db->query("SELECT * FROM jenis_program where slug_js='$slug_js'");
 		return $query;
