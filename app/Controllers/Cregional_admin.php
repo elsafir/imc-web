@@ -54,7 +54,7 @@ class Cregional_admin extends BaseController{
 		//fitur bawaan ci buat save
 		$this->mRegional->save([
 			'region' => $this->request->getVar('region'),
-			'slug' => $slug, 
+			'slug_r' => $slug, 
 			'latarbelakang' => $this->request->getVar('latarbelakang')
 		]);
 
@@ -78,7 +78,6 @@ class Cregional_admin extends BaseController{
 
 		if (!$this->validate([
 			'region' => $rule_region
-			
 		])) {
 
 			return redirect()->to('/Cregional_admin')->with('gagal', '<b>DATA GAGAL DIUBAH!</b> Nama regional sebelumnya sudah terdaftar');
