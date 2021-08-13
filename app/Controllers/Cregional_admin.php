@@ -55,7 +55,8 @@ class Cregional_admin extends BaseController{
 		$this->mRegional->save([
 			'region' => $this->request->getVar('region'),
 			'slug_r' => $slug, 
-			'latarbelakang' => $this->request->getVar('latarbelakang')
+			'tentang_region' => $this->request->getVar('tentang_region'),
+			'link_web' => $this->request->getVar('link_web')
 		]);
 
 		session()->setFlashdata('berhasil', 'DATA BERHASIL DISIMPAN');
@@ -87,7 +88,8 @@ class Cregional_admin extends BaseController{
         
 		$data = [
 			'region'    	=> $this->request->getPost('region'),
-			'latarbelakang' => $this->request->getPost('latarbelakang'),
+			'tentang_region' => $this->request->getPost('tentang_region'),
+			'link_web' => $this->request->getPost('link_web'),
 			'slug_r'   		=> $slug
 		];
 
@@ -120,7 +122,7 @@ class Cregional_admin extends BaseController{
 	// 	   	'id_region'		=> $id_region,
 	// 		'region' 		=> $this->request->getVar('region'),
 	// 		'slug_r' 		=> $slug, 
-	// 		'latarbelakang' => $this->request->getVar('latarbelakang')
+	// 		'tentang_region' => $this->request->getVar('tentang_region')
 	// 	];
 
 	// 	$model->ubahRegional($data,$id_region);

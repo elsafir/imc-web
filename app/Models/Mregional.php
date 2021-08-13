@@ -8,7 +8,7 @@ class Mregional extends Model
 {
     protected $table      = 'region';
     protected $primaryKey = 'id_region';
-    protected $allowedFields = ['region', 'slug_r', 'latarbelakang']; //ini field yang boleh diisi
+    protected $allowedFields = ['region', 'slug_r', 'tentang_region','link_web']; //ini field yang boleh diisi
 
     protected $useTimestamps = false;
 
@@ -28,6 +28,11 @@ class Mregional extends Model
     public function tampilRegion(){
         $query= $this->db->query("SELECT * FROM region WHERE region != 'Pusat'");
 		return $query; 
+    }
+
+    public function tentangRegion($id_region){
+        $query= $this->db->query("SELECT * FROM region WHERE id_region='$id_region'");
+        return $query; 
     }
 
 	public function tampilJenisRegion(){

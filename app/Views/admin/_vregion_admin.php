@@ -56,6 +56,7 @@
                         <th style="width:10px;">No</th>
                         <th>Regional</th>
                         <th>Tentang</th>
+                        <th>Website</th>
                         <th style="width:10px;">Aksi</th>
                       </tr>
                     </thead>
@@ -67,12 +68,14 @@
                           $slug=$i['slug_r'];
                           $region=$i['region'];
                           $tentang_region=$i['tentang_region'];
+                          $link_web=$i['link_web'];
                         
                         ?>
                       <tr>
                         <td><?= $no++; ?></td>
                         <td><?= $region; ?></td> 
                         <td><?= substr($tentang_region, 0, 400); ?></td>
+                        <td><?= $link_web; ?></td> 
                         <td>
                           <!-- <span class="badge bg-warning"><a href="#" data-toggle="modal" data-target="#edit-data"><i class="fa fa-edit"> Ubah</i></a></span> -->
                           <span class="badge bg-warning"><a href="#" data-toggle="modal" data-target="#edit-data<?php echo $id_region; ?>" id="btn-edit"><i class="fa fa-edit"> Ubah</i></a></span>
@@ -85,6 +88,7 @@
                         <th>No</th>
                         <th>Regional</th>
                         <th>Tentang</th>
+                        <th>Website</th>
                         <th>Aksi</th>
                       </tr>
                     </tfoot>
@@ -124,11 +128,15 @@
                         </div>           
                         <div class="form-group">
                           <label>Nama Regional*</label>
-                          <input class="form-control" type="text" placeholder="Nama Regional" style="width: 100%;" name="region" required autofocus> 
+                          <input class="form-control" type="text" placeholder="Nama Regional" style="width: 200px;" name="region" required autofocus> 
                         </div>
                         <div class="form-group">
                           <label>Tentang Regional*</label>
-                          <textarea class="form-control" rows="3" placeholder="Tentang..." style="width: 100%; height: 200px;" name="tentang_region" required></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Tentang..." style="width: 400px;" name="tentang_region" required></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label>Link Website*</label>
+                          <input class="form-control" type="text" placeholder="Link Website" style="width: 400px;" name="link_web" required autofocus> 
                         </div>
                       </div>
 
@@ -158,6 +166,7 @@
                         $slug=$i['slug_r'];
                         $region=$i['region'];
                         $tentang_region=$i['tentang_region'];
+                        $link_web=$i['link_web'];
                       
                       ?>
                       
@@ -188,11 +197,15 @@
                         </div>           
                         <div class="form-group">
                         <label>Nama Regional*</label>
-                          <input class="form-control" type="text" placeholder="Nama Regional" style="width: 100%;" name="region" value="<?= $region; ?>" required autofocus> 
+                          <input class="form-control" type="text" placeholder="Nama Regional" style="width: 200px;" name="region" value="<?= $region; ?>" required autofocus> 
                         </div>
                         <div class="form-group">
                           <label>Tentang Regional*</label>
-                          <textarea class="form-control" rows="3" placeholder="Tentang Regional" style="width: 100%; height: 200px;" name="tentang_region" required><?= $tentang_region; ?></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Tentang Regional" style="width: 400px" name="tentang_region" required><?= $tentang_region; ?></textarea>
+                        </div>
+                        <div class="form-group">
+                        <label>Link Website*</label>
+                          <input class="form-control" type="text" placeholder="Link Website" style="width: 400px;" name="link_web" value="<?= $link_web; ?>" required autofocus> 
                         </div>
                       </div>
 

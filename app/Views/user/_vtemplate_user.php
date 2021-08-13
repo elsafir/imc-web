@@ -149,6 +149,15 @@
               </p>
             </a>
           </li>
+
+          <li class="nav-item">
+            <a href="<?= base_url('CtentangRegional_user') ?>" class="nav-link">
+              <i class="nav-icon fas fa-archway"></i>
+              <p>
+                Tentang Region
+              </p>
+            </a>
+          </li>
           
 
           <li class="nav-item">
