@@ -5,6 +5,7 @@ use App\Models\Mprogram;
 use App\Models\Mregional;
 use App\Models\Mevents;
 use App\Models\Mcommunity;
+use Config\View;
 
 class Chome extends BaseController
 {
@@ -70,5 +71,37 @@ class Chome extends BaseController
 		return view('frontend/_vcommunity_front',$x);
 	}
 
+	public function about(){
+		$model = new Mprogram();
+		$model1 = new Mregional();
+		$model2 = new Mevents();
+		$x['jp']= $model->tampilJenisProgram()->getResultArray();
+		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
+		$x['et']= $model2->tampilEventsTerbaru()->getResultArray();
+		$x['me']= $model2->tampilMenuEvents()->getResultArray();
+		return View('frontend/_vabout_front', $x);
+	}
 
+
+	public function team(){
+		$model = new Mprogram();
+		$model1 = new Mregional();
+		$model2 = new Mevents();
+		$x['jp']= $model->tampilJenisProgram()->getResultArray();
+		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
+		$x['et']= $model2->tampilEventsTerbaru()->getResultArray();
+		$x['me']= $model2->tampilMenuEvents()->getResultArray();
+		return View('frontend/_vteam_front', $x);
+	}
+
+	public function contact(){
+		$model = new Mprogram();
+		$model1 = new Mregional();
+		$model2 = new Mevents();
+		$x['jp']= $model->tampilJenisProgram()->getResultArray();
+		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
+		$x['et']= $model2->tampilEventsTerbaru()->getResultArray();
+		$x['me']= $model2->tampilMenuEvents()->getResultArray();
+		return View('frontend/_vcontact_front', $x);
+	}
 }
