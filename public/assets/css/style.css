@@ -374,8 +374,8 @@ a.navbar-brand {
 }
 
 a.navbar-brand img {
-	height: 70px !important;
-	width: 70px !important;
+	height: 80px !important;
+	width: 80px !important;
 }
 
 .top-header .navbar .navbar-collapse ul li a.active {}
@@ -457,9 +457,7 @@ a.navbar-brand img {
 .full > img {
     width: 100%;
 }
-.blog_img_popular {
-    margin-bottom: 30px;
-}
+
 /* search bar
 
 .search-box {

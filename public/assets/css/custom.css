@@ -159,7 +159,7 @@
 
 .program .card:hover p{
 	color: #fff;
-} 
+}
 
 #economy .card:hover{
 	background: #257fac;
@@ -189,7 +189,7 @@
     display: block;
     transition: all 0.3s;
   }
-  
+
   /* Vertical line */
   .collapsible-link::after {
     content: '';
@@ -202,15 +202,15 @@
     display: block;
     transition: all 0.3s;
   }
-  
+
   .collapsible-link[aria-expanded='true']::after {
     transform: rotate(90deg) translateX(-1px);
   }
-  
+
   .collapsible-link[aria-expanded='true']::before {
     transform: rotate(180deg);
   }
-  
+
 
 .dropdown .btn{
     background: none;
@@ -228,12 +228,12 @@
     .navbar .nav-item:not(:last-child) {
     margin-right: 35px;
   }
-   
+
 
   .dropdown-toggle::after {
-     transition: transform 0.15s linear; 
+     transition: transform 0.15s linear;
   }
-   
+
   .show.dropdown .dropdown-toggle::after {
     transform: translateY(3px);
   }
@@ -241,11 +241,11 @@
     .navbar .nav-item:not(:last-child) {
     margin-right: 35px;
   }
-   
+
     .dropdown-toggle::after {
-     transition: transform 0.15s linear; 
+     transition: transform 0.15s linear;
   }
-   
+
   .show.dropdown .dropdown-toggle::after {
     transform: translateY(3px);
   }
@@ -256,7 +256,7 @@
   }
 
   .active-cyan-2 input.form-control[type=text]:focus:not([readonly]) {
-    border-bottom: 2px solid #095a83; 
+    border-bottom: 2px solid #095a83;
     box-shadow: none;
     width: 250px !important;
   }
@@ -279,7 +279,7 @@
   #events img{
       box-shadow: 10px 10px 15px rgba(0, 0, 0, .2);
   }
-  
+
   .community p{
         margin-top: 30px;
   }
@@ -291,8 +291,8 @@
 .staff-box{
     box-shadow: 10px 20px 10px 5px rgb(198, 198, 202);
     height:280px;
-    width:auto; 
-    overflow:auto; 
+    width:auto;
+    overflow:auto;
     max-width:100%;
     font-family: 'Poppins', sans-serif;
     color: #000000;
@@ -324,18 +324,18 @@
 ::-webkit-scrollbar {
     width: 10px;
   }
-  
+
   /* Track */
   ::-webkit-scrollbar-track {
     background: #fff;
     border-radius: 5px;
   }
-  
+
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #0a6796;
     border-radius: 5px;  }
-  
+
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #107cb3;
@@ -383,9 +383,9 @@
 
     #parallax_4 .heading_main h2 {
         font-size: 25px !important;
-      
+
     }
-    
+
     .active-cyan-2 input.form-control[type=text]:focus:not([readonly]) {
         width: auto !important;
       }
@@ -405,8 +405,8 @@
         box-shadow: 10px 20px 10px 5px rgb(198, 198, 202);
         height:280px;
         width:auto;
-        border:1px solid #095a83; 
-        overflow:auto; 
+        border:1px solid #095a83;
+        overflow:auto;
         max-width:100%;
         font-family: 'Poppins', sans-serif;
         color: #000000;
@@ -436,4 +436,3 @@
 }
 
 }
-
