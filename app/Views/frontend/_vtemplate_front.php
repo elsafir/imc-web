@@ -69,7 +69,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
                         <li><a class="nav-link active" href="<?= base_url('Chome') ?>">Home</a></li>
-                        <li><a class="nav-link" href="about.html">About</a></li>
+                        <li><a class="nav-link" href="<?= base_url('Chome/about') ?>">About</a></li>
                         <div class="dropdown">
                             <a class="btn dropdown-toggle" data-toggle="dropdown">Program
                                 <span class="caret"></span></a>
@@ -86,7 +86,7 @@
                             
 
                         </div>
-                        <li><a class="nav-link" href="team.html">Team</a></li>
+                        <li><a class="nav-link" href="<?= base_url('Chome/team') ?>">Team</a></li>
                         <li><a class="nav-link" href="<?= base_url('Chome/menuEvents') ?>">Events</a></li>
                         <div class="dropdown">
                             <a class="btn dropdown-toggle" data-toggle="dropdown">Community
@@ -101,7 +101,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li><a class="nav-link" href="<?= base_url('Chome/contact') ?>">Contact</a></li>
 
                         <!-- Search form -->
                         <!-- Search form -->
