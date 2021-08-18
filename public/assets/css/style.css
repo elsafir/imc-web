@@ -933,6 +933,108 @@ span.icon img {
 	color: #095a83;
 }
 
+.contact-left {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.contact-left input[type='text'],.contact-left input[type='number'],.contact-left input[type='email'] {
+  font-size: 1em;
+  font-weight: 400;
+  color: #737373;
+  padding: 0.4em 0.5em;
+  width: 100%;
+  margin: 0em 0em 1em 0em;
+  outline: none;
+}
+.contact-left textarea {
+  font-size: 1em;
+  font-weight: 400;
+  color: #737373;
+  width: 100%;
+  height: 10em;
+  resize: none;
+  outline: none;
+  margin: 0em 0em 0.5em 0em;
+  padding: 0.4em 0.5em 0.5em 0.5em;
+}
+.contact-left input[type='submit'] {
+  font-size: 1em;
+  font-weight: 400;
+  color: #fff;
+  padding: 0.51em 2em 0.51em 2em;
+  border: none;
+  background: #002147;
+  outline: none;
+  margin: 0em 0em 0em 0em;
+}
+.contact-left input[type='submit']:hover {
+  background: #ffc107;
+	color: black;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.contact-left input::placeholder,.contact-left textarea::placeholder{
+	color:black;
+	opacity: 0.5
+}
+p.statusMsg{font-size:18px;}
+p.succdiv{color: #008000;}
+p.errordiv{color:#E80000;}
+/* .contact-left h3 {
+  font-size: 2em;
+  color: #002147;
+  margin-bottom: 0.6em;
+  font-family: 'Oswald', sans-serif;
+} */
+
+.sosmed ul{
+	display: flex;
+	margin: 2em 0;
+	width: 100%;
+}
+.sosmed .fa{
+	display: flex;
+	font-size: 2.5em;
+	padding-right: 10px;
+}
+.sosmed-out ul li{
+	line-height: 1em;
+	height: 100%;
+	font-size: 15px;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	display: flex;
+	margin: 0 2px
+}
+.sosmed-out ul a:hover .fa-instagram,.sosmed-out ul a:hover .fa-facebook-square,.sosmed-out ul a:hover .fa-whatsapp,.sosmed-out ul a:hover .fa-envelope,.sosmed-out ul a:hover .fa-youtube{
+	color: white;
+}
+.sosmed-out ul a:hover .ig{
+	background-color: #CE125B;
+	color: white;
+}
+.sosmed-out ul a:hover .fb{
+	background-color: #3B5998;
+	color: white;
+}
+.sosmed-out ul a:hover .wa{
+	background-color: #25D366;
+	color: white;
+}
+.sosmed-out ul a:hover .email{
+	background-color: #B23121;
+	color: white;
+}
+.sosmed-out ul a:hover .yt{
+	background-color: #C4302B;
+	color: white;
+}
+
+
 .about-m ul {
 	display: block;
 	text-align: center;
@@ -2780,7 +2882,9 @@ section.inner_banner h3 {
 	font-size: 16px;
 	line-height: 25px;
 }
-
+.hihi{
+	background-color: red!important;
+}
 a.showMore {
 	display:block;
 	font-size:12px;
