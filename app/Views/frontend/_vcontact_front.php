@@ -2,7 +2,7 @@
 
 <?= $this->section('content_front'); ?>
 
-<!-- FORM Contact -->
+<!-- FORM Contact mail SMTP-->
 <?php
 $statusMsg = '';
 $msgClass = '';
