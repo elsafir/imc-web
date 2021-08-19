@@ -24,7 +24,7 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>0</h3>
+                <h3><?php echo $community; ?></h3>
 
                 <p>Data Anggota Komunitas</p>
               </div>
@@ -39,7 +39,7 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>0</h3>
+                <h3><?php echo $program; ?></h3>
 
                 <p>Data Program</p>
               </div>
@@ -54,7 +54,7 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>0</h3>
+                <h3><?php echo $events; ?></h3>
 
                 <p>Data Events</p>
               </div>
@@ -69,7 +69,7 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>0</h3>
+                <h3><?php echo $pengguna; ?></h3>
 
                 <p>Data Pengguna</p>
               </div>

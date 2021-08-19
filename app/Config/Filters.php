@@ -90,6 +90,9 @@ class Filters extends BaseConfig
 				'Cregional_admin',
 				'Cregional_admin/*',
 
+				'CtentangRegional_user',
+				'CtentangRegional_user/*',
+
 				'Cprogram_admin',
 				'Cprogram_admin/*',
 				'Cprogram_user',
