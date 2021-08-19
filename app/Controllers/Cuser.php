@@ -13,8 +13,15 @@ class Cuser extends BaseController{
 		}else{
 			return redirect()->to(site_url('Clogin'));
 		}
+
+
+		$db = \Config\Database::connect();
+		$x['community'] = $db->table('community')->countAll();
+		$x['program'] = $db->table('program')->countAll();
+		$x['events'] = $db->table('events')->countAll();
+		$x['pengguna'] = $db->table('pengguna')->countAll();
 		
-		return view('user/_vdashboard_user');
+		return view('user/_vdashboard_user',$x);
 	}
 
 

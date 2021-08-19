@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Controllers;
 use App\Models\Mcommunity;
 use App\Models\Mregional;

@@ -15,6 +15,13 @@ class Cadmin extends BaseController{
 			return redirect()->to(site_url('Clogin'));
 		}
 
-		return view('admin/_vdashboard_admin');
+		$db = \Config\Database::connect();
+		$x['community'] = $db->table('community')->countAll();
+		$x['program'] = $db->table('program')->countAll();
+		$x['events'] = $db->table('events')->countAll();
+		$x['pengguna'] = $db->table('pengguna')->countAll();
+		
+		return view('admin/_vdashboard_admin',$x);
+
 	}
 }

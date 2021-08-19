@@ -28,6 +28,10 @@
   <link rel="stylesheet" href="/assets2/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
 
 
+    <!-- export dataTables -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css">
+
+
 
 </head>
 <body class="hold-transition sidebar-mini">
@@ -125,7 +129,13 @@
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="/assets2/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <!-- <img src="/assets2/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image"> -->
+          <?php if (session('foto_anggota') != NULL): ?>
+                      <img src="/img/<?php echo session('foto_anggota') ?>" class="img-circle elevation-2" alt="User Image">
+                        <?php else: ?>
+
+                      <img src="/img/noimage.jpg" class="img-circle elevation-2" alt="User Image">
+                      <?php endif; ?>
         </div>
         <div class="info">
           <a href="#" class="d-block"><?php echo session('nama_anggota') ?></a>
@@ -411,21 +421,149 @@
 <script src="/assets2/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
 
 
+<!-- Filter dataTables -->
+<script src="<?php echo base_url()?>/assets/js/filterDropDown.js"></script>
+
+
+<!-- export dataTables -->
+<script src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
+<!-- <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.flash.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.print.min.js"></script>
+
+
 <!-- page script -->
 <script>
 
-    $(function () {
-    $("#example1").DataTable();
-     $("#example2").DataTable();
-    $('#example3').DataTable({
-      "paging": true,
-      "lengthChange": false,
-      "searching": false,
-      "ordering": true,
-      "info": true,
-      "autoWidth": false,
+
+    //Filter data community dan Export admin
+  $(function () {
+    $("#example-community").DataTable({
+
+  
+       dom: '<"html5buttons"B>lTfgitp',
+            buttons: [ {
+                        extend: 'copy', text:'<i class="fa fa-file" aria-hidden="true"> Copy',title: 'Data Community',
+                        exportOptions: { columns: [ 0, 1, 2, 3 ] }
+                    },
+                    {
+                        extend: 'csv', text:'<i class="fa fa-file-csv" aria-hidden="true"> Csv',title: 'Data Community',
+                        exportOptions: { columns: [ 0, 1, 2, 3 ] }
+                    },
+                    {
+                        extend: 'excel', text:'<i class="fa fa-file-excel" aria-hidden="true"> Excel',title: 'Data Community',
+                        exportOptions: { columns: [ 0, 1, 2, 3 ] }
+                    },
+                    {
+                        extend: 'pdf', text:'<i class="fa fa-file-pdf" aria-hidden="true"> PDF',title: 'Data Community',
+                        exportOptions: { columns: [ 0, 1, 2, 3 ] },
+                        customize : function(doc) {
+                        doc.content[1].table.widths = [ '10%', '20%', '40%', '30%' ];}
+                    },
+                    {
+                        extend: 'print', text:'<i class="fa fa-print" aria-hidden="true"> Print',title: 'Data Community',
+                        exportOptions: { columns: [ 0, 1, 2, 3 ] }
+                    } ],
+
+
+          // Definition of filter to display
+          filterDropDown: {                   
+            columns: [
+              { 
+                idx: 1,
+                title:"Pilih Region"
+              },
+              { 
+                idx: 3,
+                 title:"Pilih Jabatan"
+              }
+            ],
+            bootstrap: true,
+            label:"Cari: "
+          }
+
+         
     });
+    
   });
+
+
+
+      //Export data program 
+  $(function () {
+    $("#example-program").DataTable({
+
+  
+       dom: '<"html5buttons"B>lTfgitp',
+            buttons: [ {
+                        extend: 'copy', text:'<i class="fa fa-file" aria-hidden="true"> Copy',title: 'Data Program',
+                        exportOptions: { columns: [ 0, 1, 2, 3 ] }
+                    },
+                    {
+                        extend: 'csv', text:'<i class="fa fa-file-csv" aria-hidden="true"> Csv',title: 'Data Program',
+                        exportOptions: { columns: [ 0, 1, 2, 3 ] }
+                    },
+                    {
+                        extend: 'excel', text:'<i class="fa fa-file-excel" aria-hidden="true"> Excel',title: 'Data Program',
+                        exportOptions: { columns: [ 0, 1, 2, 3 ] }
+                    },
+                    {
+                        extend: 'pdf', text:'<i class="fa fa-file-pdf" aria-hidden="true"> PDF',title: 'Data Program',
+                        exportOptions: { columns: [ 0, 1, 2, 3 ] },
+                        customize : function(doc) {
+                        doc.content[1].table.widths = [ '10%', '10%', '30%', '50%' ];}
+                    },
+                    {
+                        extend: 'print', text:'<i class="fa fa-print" aria-hidden="true"> Print',title: 'Data Program',
+                        exportOptions: { columns: [ 0, 1, 2, 3 ] }
+                    } ]
+
+         
+    });
+    
+  });
+
+
+          //Export data events 
+  $(function () {
+    $("#example-events").DataTable({
+
+  
+       dom: '<"html5buttons"B>lTfgitp',
+            buttons: [ {
+                        extend: 'copy', text:'<i class="fa fa-file" aria-hidden="true"> Copy',title: 'Data Events',
+                        exportOptions: { columns: [ 0, 1, 2 ] }
+                    },
+                    {
+                        extend: 'csv', text:'<i class="fa fa-file-csv" aria-hidden="true"> Csv',title: 'Data Events',
+                        exportOptions: { columns: [ 0, 1, 2 ] }
+                    },
+                    {
+                        extend: 'excel', text:'<i class="fa fa-file-excel" aria-hidden="true"> Excel',title: 'Data Events',
+                        exportOptions: { columns: [ 0, 1, 2 ] }
+                    },
+                    {
+                        extend: 'pdf', text:'<i class="fa fa-file-pdf" aria-hidden="true"> PDF',title: 'Data Events',
+                        exportOptions: { columns: [ 0, 1, 2 ] },
+                        customize : function(doc) {
+                        doc.content[1].table.widths = [ '5%', '20%', '70%' ];}
+                    },
+                    {
+                        extend: 'print', text:'<i class="fa fa-print" aria-hidden="true"> Print',title: 'Data Events',
+                        exportOptions: { columns: [ 0, 1, 2 ] }
+                    } ]
+
+         
+    });
+    
+  });
+
+
+
+
 
 </script>
 

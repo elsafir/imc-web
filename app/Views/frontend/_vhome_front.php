@@ -16,7 +16,7 @@
             <?php 
                        foreach($et as $i):
 
-                          $id_events=$i['id_events'];
+                          $slug_e=$i['slug_e'];
                           $nama_anggota=$i['nama_anggota'];
                           $judul_events=$i['judul_events'];
                           $detail_events=$i['detail_events'];
@@ -36,7 +36,7 @@
                   <?php endif; ?>  <br>
                 
                 <p><?php echo substr($detail_events, 0, 90); ?></p>
-                <a class="btn btn-outline-blue" href="<?= base_url('Chome/detailEvents/') ?>/<?php echo $id_events; ?>">Read More >></a>
+                <a class="btn btn-outline-blue" href="<?= base_url('Chome/detailEvents/') ?>/<?php echo $slug_e; ?>">Read More >></a>
             </div>
             <?php endforeach;?>
 
@@ -165,7 +165,7 @@
                 <?php 
                        foreach($me as $i):
 
-                          $id_events=$i['id_events'];
+                          $slug_e=$i['slug_e'];
                           $nama_anggota=$i['nama_anggota'];
                           $judul_events=$i['judul_events'];
                           $detail_events=$i['detail_events'];
@@ -190,7 +190,7 @@
                                     <h3 class="lead"><?php echo $judul_events ?></h3>
                                     <p><b>- <?php echo $nama_anggota ?> -</b></p>
                                     <p><?php echo substr($detail_events, 0, 90); ?></p>
-                                       <a class="btn btn-outline-blue" href="<?= base_url('Chome/detailEvents/') ?>/<?php echo $id_events; ?>">Read More >></a>
+                                       <a class="btn btn-outline-blue" href="<?= base_url('Chome/detailEvents/') ?>/<?php echo $slug_e; ?>">Read More >></a>
                                 </div>
                             </div>
                         </a>

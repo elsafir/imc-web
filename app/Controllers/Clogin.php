@@ -41,7 +41,8 @@ class Clogin extends BaseController{
                     'level'  		=> $user->level,
                     'status'  		=> $user->status,
                     'id_region'  	=> $user->id_region,
-                    'region'  		=> $user->region
+                    'region'  		=> $user->region,
+                    'foto_anggota'  => $user->foto_anggota
                 ];
 
 				// $params = ['id_pengguna' => $user->id_pengguna];
@@ -69,7 +70,8 @@ class Clogin extends BaseController{
                     'nama_anggota'  => $user->nama_anggota,
                     'level'  		=> $user->level,
                     'id_region'  	=> $user->id_region,
-                    'region'  		=> $user->region
+                    'region'  		=> $user->region,
+                    'foto_anggota'  => $user->foto_anggota
                 ];
                 
 				session()->set($params);
