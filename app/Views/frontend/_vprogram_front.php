@@ -26,7 +26,7 @@
 
     <!-- end section -->
 
-
+<br><br><br>
 
     <!--section-->
     <section class="program" id="economy">
@@ -35,13 +35,13 @@
                 <div class="container">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12" >
                               <?php
                               foreach($jp1 as $i):
                               $tentang_jenis_program=$i['tentang_jenis_program'];
                               ?>
-                                <div class="heading_main text_align_center mt-3 mb-3">
-                                    <h4><?php echo $tentang_jenis_program ?></h4>
+                                <div class="text_align_center mt-3 mb-3" ">
+                                    <h3><?php echo $tentang_jenis_program ?></h3>
                                 </div>
                                 <?php endforeach;?>
                             </div>
@@ -57,7 +57,7 @@
                           $slug_p=$i['slug_p'];
                       ?>
                             <div class="col-md-4 mt-3 mb-3" id="row_1">
-                                <div class="card">
+                                <div class="card" style="border-radius:10px!important;">
                                     <div class="card-body">
                                         <div class="text_align_center">
                                             <h2><span><?php echo $judul_program ?></span></h2>
@@ -79,11 +79,7 @@
                                     </div>
                                 </div>
                             </div>
-
-
-                                <?php endforeach;?>
-
-
+                         <?php endforeach;?>
                         </div>
                     </div>
                 </div>
@@ -91,5 +87,5 @@
         </div>
     </section>
     <!--close section-->
-
+<br><br><br>
     <?= $this->endSection(); ?>
