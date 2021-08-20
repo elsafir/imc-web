@@ -156,11 +156,10 @@
                     <div class="footer_blog footer_menu white_fonts">
                         <h3>Quick links</h3>
                         <ul>
-                            <li><a href="#">> Home</a></li>
-                            <li><a href="#">> Program</a></li>
-                            <li><a href="#">> Team</a></li>
-                            <li><a href="#">> Events</a></li>
-                            <li><a href="#">> Contact</a></li>
+                            <li><a href="/Chome">> Home</a></li>
+                            <li><a href="/Chome/team">> Team</a></li>
+                            <li><a href="/Chome/menuEvents">> Events</a></li>
+                            <li><a href="/Chome/contact">> Contact</a></li>
                         </ul>
                     </div>
                 </div>
