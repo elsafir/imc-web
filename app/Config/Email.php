@@ -33,7 +33,7 @@ class Email extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $protocol = 'mail';
+	public $protocol = 'mail';  //ganti dengan 'smtp' - Untuk via Hosting
 
 	/**
 	 * The server path to Sendmail.
@@ -47,28 +47,28 @@ class Email extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $SMTPHost;
+	public $SMTPHost;  //bisa dengan public $SMTPHost = 'namadomain.com'; bisa nama domain atau mail server pada setup email di cPanel Hosting
 
 	/**
 	 * SMTP Username
 	 *
 	 * @var string
 	 */
-	public $SMTPUser;
+	public $SMTPUser;  //bisa dengan public $SMTPUser = 'email@domain.com'; Alamat email SMTP
 
 	/**
 	 * SMTP Password
 	 *
 	 * @var string
 	 */
-	public $SMTPPass;
+	public $SMTPPass; //bisa dengan public $SMTPPass = 'password email diatas'; kalau verifikasi 2 autentifikasi pada email bisa dengan masuk ke keamanan email dan klik detail untuk dapat generate password untuk keamanan dari email tersebut atau kalau gak make 2 verifikasi bisa aktifkan less secure apps menjadi ON
 
 	/**
 	 * SMTP Port
 	 *
 	 * @var integer
 	 */
-	public $SMTPPort = 25;
+	public $SMTPPort = 25; //defaultnya memang 25 untuk via SMTP email bisa dengan 465 - SSL atau 587 - TLS
 
 	/**
 	 * SMTP Timeout (in seconds)

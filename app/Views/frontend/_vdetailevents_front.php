@@ -16,7 +16,7 @@
         </div>
     </section>
 
-                  <?php 
+                  <?php
                        foreach($de as $i):
 
                           $id_events=$i['id_events'];
@@ -33,7 +33,7 @@
                     <div class="full">
                         <div class="text_align_center " id="events">
                             <h2><span><?php echo $judul_events; ?></span></h2>
-                            <p><b>- <?php echo $nama_anggota ?> -</b></p>
+                            <p style="16px"><b>- <?php echo $nama_anggota ?> -</b></p>
                         </div>
                     </div>
                 </div>
@@ -41,23 +41,23 @@
                 <div class="col-md-4">
                     <?php if ($foto_events != NULL): ?>
                     <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
-                    <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;"/>
+                    <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 450px; height: 350px;object-fit: cover;object-position: center;border-radius:2px;"/>
                   </a>
                     <?php else: ?>
                       <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
-                    <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;"/>
+                    <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 450px; height: 350px;object-fit: cover;object-position: center;border-radius:2px;"/>
                   </a>
-                  <?php endif; ?> 
+                  <?php endif; ?>
                 </div>
             </div>
         </div>
         <div class="container mt-5">
             <div class="row">
-                    <p style="text-indent: 50px; text-align: justify; letter-spacing: 3px;"><?php echo $detail_events; ?></p>
+                    <p style="text-indent: 50px; text-align: justify; letter-spacing: 0;font-size:18px;font-family: 'Poppins', sans-serif;"><?php echo $detail_events; ?></p>
             </div>
 
         </div>
     </section>
     <!--close section-->
      <?php endforeach;?>
-        <?= $this->endSection(); ?> 
+        <?= $this->endSection(); ?>
