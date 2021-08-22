@@ -561,6 +561,38 @@
     
   });
 
+  //Export data region 
+  $(function () {
+  $("#example-region").DataTable({
+      dom: '<"html5buttons"B>lTfgitp',
+          buttons: [ {
+                      extend: 'copy', text:'<i class="fa fa-file" aria-hidden="true"> Copy',title: 'Data Region',
+                      exportOptions: { columns: [ 0, 1, 2 ] }
+                  },
+                  {
+                      extend: 'csv', text:'<i class="fa fa-file-csv" aria-hidden="true"> Csv',title: 'Data Region',
+                      exportOptions: { columns: [ 0, 1, 2 ] }
+                  },
+                  {
+                      extend: 'excel', text:'<i class="fa fa-file-excel" aria-hidden="true"> Excel',title: 'Data Region',
+                      exportOptions: { columns: [ 0, 1, 2 ] }
+                  },
+                  {
+                      extend: 'pdf', text:'<i class="fa fa-file-pdf" aria-hidden="true"> PDF',title: 'Data Region',
+                      exportOptions: { columns: [ 0, 1, 2 ] },
+                      customize : function(doc) {
+                      doc.content[1].table.widths = [ '5%', '20%', '70%' ];}
+                  },
+                  {
+                      extend: 'print', text:'<i class="fa fa-print" aria-hidden="true"> Print',title: 'Data Region',
+                      exportOptions: { columns: [ 0, 1, 2 ] }
+                  } ]
+
+        
+  });
+  
+});
+
 
 
 
