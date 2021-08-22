@@ -28,10 +28,18 @@
 
 
     <section class="community">
+        <br><br>
+
+        <?php foreach($jrr as $i):
+        $foto_region=$i['foto_region'];
+        ?>
 
         <div class="">
-            <center> <img src="/img/logo-backgound.png" style="width:700px;" alt="" class="img-fluid"></center>
+            <center>
+                <img src="/img/<?php echo $foto_region; ?>" class="img-fluid mb-2" style="width: 500px;"/>
+            </center>
         </div>
+        <?php endforeach;?>
 
         
 
