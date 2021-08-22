@@ -42,22 +42,35 @@ class Cregional_admin extends BaseController{
 		if (!$this->validate([
 			'region' => 'required|is_unique[region.region]',
 		])) {
-			//untuk mengirimkan eror
-			// $validation = \Config\Services::validation(); 
-
 			return redirect()->to('/Cregional_admin')->with('gagal', '<b>DATA GAGAL DITAMBAHKAN!</b> Nama regional sebelumnya sudah terdaftar');
 		}
 
       	//agar slug ambil dari judul region, trus spasi berubah jd -
 		$slug = url_title($this->request->getVar('region'), '-', true);
 
-		//fitur bawaan ci buat save
-		$this->mRegional->save([
-			'region' => $this->request->getVar('region'),
-			'slug_r' => $slug, 
-			'tentang_region' => $this->request->getVar('tentang_region'),
-			'link_web' => $this->request->getVar('link_web')
-		]);
+		$validation_foto = $this->validate([
+            'file_upload' => 'uploaded[file_upload]|mime_in[file_upload,image/jpg,image/jpeg,image/gif,image/png]|max_size[file_upload,4096]'
+        ]);
+
+		if ($validation_foto == FALSE) {
+			$this->mRegional->save([
+				'region' => $this->request->getVar('region'),
+				'slug_r' => $slug, 
+				'tentang_region' => $this->request->getVar('tentang_region'),
+				'link_web' => $this->request->getVar('link_web')
+			]);
+		} else {
+		   $upload = $this->request->getFile('file_upload');
+		   $upload->move('img');
+
+		   $this->mRegional->save([
+			'region' 		=> $this->request->getVar('region'),
+			'slug_r' 		=> $slug, 
+			'tentang_region'=> $this->request->getVar('tentang_region'),
+			'link_web' 		=> $this->request->getVar('link_web'),
+			'foto_region'	=> $upload->getName(),
+			]);
+		}
 
 		session()->setFlashdata('berhasil', 'DATA BERHASIL DISIMPAN');
 		return redirect()->to('/Cregional_admin');
@@ -70,7 +83,7 @@ class Cregional_admin extends BaseController{
         $id_region = $this->request->getPost('id_region');
 		$regionLama = $this->request->getPost('regionlama');
 
-		//cek region youtube
+		//cek nama region 
 		if ($regionLama == $this->request->getVar('region')){
 			$rule_region = 'required';
 		} else {
@@ -86,48 +99,41 @@ class Cregional_admin extends BaseController{
         
         $slug = url_title($this->request->getPost('region'), '-', true);
         
-		$data = [
-			'region'    	=> $this->request->getPost('region'),
-			'tentang_region' => $this->request->getPost('tentang_region'),
-			'link_web' => $this->request->getPost('link_web'),
-			'slug_r'   		=> $slug
-		];
+		$validation = $this->validate([
+            'file_upload' => 'uploaded[file_upload]|mime_in[file_upload,image/jpg,image/jpeg,image/gif,image/png]|max_size[file_upload,4096]'
+        ]);
+
+		if ($validation == FALSE) {
+			$data = array(
+				'region'    	=> $this->request->getPost('region'),
+				'tentang_region'=> $this->request->getPost('tentang_region'),
+				'link_web' 		=> $this->request->getPost('link_web'),
+				'slug_r'   		=> $slug
+			);
+		} else {
+		   $upload = $this->request->getFile('file_upload');
+		   $upload->move('img');
+
+			$data = array(
+				'region'    	=> $this->request->getPost('region'),
+				'tentang_region'=> $this->request->getPost('tentang_region'),
+				'link_web'	 	=> $this->request->getPost('link_web'),
+				'slug_r'   		=> $slug,
+				'foto_region'	=> $upload->getName()
+			);
+		}
+
+		// $data = [
+		// 	'region'    	=> $this->request->getPost('region'),
+		// 	'tentang_region' => $this->request->getPost('tentang_region'),
+		// 	'link_web' => $this->request->getPost('link_web'),
+		// 	'slug_r'   		=> $slug
+		// ];
 
         $model->ubahRegional($data,$id_region);
 
         return redirect()->to('/Cregional_admin')->with('berhasil', 'DATA BERHASIL DIUBAH');
     }
 
-
-
-
-
-
-	// ubah versi gabisa input nama region sama
-    // public function ubah(){ 
-	// 	$model = new Mregional();
-
-    //     $id_region = $this->request->getPost('id_region');
-
-	// 	if (!$this->validate([
-	// 		'region' => 'required|is_unique[region.region]',
-	// 	])) {
-
-	// 		return redirect()->to('/Cregional_admin')->with('gagal', '<b>DATA GAGAL DIUBAH!</b> Nama regional tidak boleh sama dengan yang sudah terdaftar');
-	// 	}
-        
-	// 	$slug = url_title($this->request->getPost('region'), '-', true);
-
-    //    	$data = [
-	// 	   	'id_region'		=> $id_region,
-	// 		'region' 		=> $this->request->getVar('region'),
-	// 		'slug_r' 		=> $slug, 
-	// 		'tentang_region' => $this->request->getVar('tentang_region')
-	// 	];
-
-	// 	$model->ubahRegional($data,$id_region);
-
-    //     return redirect()->to('/Cregional_admin')->with('berhasil', 'DATA BERHASIL DIUBAH');
-    // }
 	
 }

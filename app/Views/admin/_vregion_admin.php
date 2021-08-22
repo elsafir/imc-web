@@ -28,6 +28,7 @@
             <?php } ?>
 
 
+            
             <!-- CARD -->
               <div class="card card-primary card-outline">
 
@@ -50,12 +51,13 @@
 
                 <!-- CARD BODY -->
                 <div class="card-body">
-                  <table id="example1" class="table table-bordered table-striped">
+                  <table id="example-region" class="table table-bordered table-striped">
                     <thead>
                       <tr>
                         <th style="width:10px;">No</th>
                         <th>Regional</th>
                         <th>Tentang</th>
+                        <th>Foto</th>
                         <th>Website</th>
                         <th style="width:10px;">Aksi</th>
                       </tr>
@@ -69,12 +71,24 @@
                           $region=$i['region'];
                           $tentang_region=$i['tentang_region'];
                           $link_web=$i['link_web'];
+                          $foto_region=$i['foto_region'];
                         
                         ?>
                       <tr>
                         <td><?= $no++; ?></td>
                         <td><?= $region; ?></td> 
                         <td><?= substr($tentang_region, 0, 400); ?></td>
+                        <td>
+                            <?php if ($foto_region != NULL): ?>
+                              <a href="/img/<?php echo $foto_region; ?>" data-toggle="lightbox" data-title="sample 1 - white">
+                                <img src="/img/<?php echo $foto_region; ?>" class="img-fluid mb-2" alt="white sample" style="width: 200px; height: 100px;"/>
+                              </a>
+                              <?php else: ?>
+                                <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
+                              <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 200px; height: 100px;"/>
+                                </a>
+                            <?php endif; ?>
+                      </td>
                         <td><?= $link_web; ?></td> 
                         <td>
                           <!-- <span class="badge bg-warning"><a href="#" data-toggle="modal" data-target="#edit-data"><i class="fa fa-edit"> Ubah</i></a></span> -->
@@ -88,6 +102,7 @@
                         <th>No</th>
                         <th>Regional</th>
                         <th>Tentang</th>
+                        <th>Foto</th>
                         <th>Website</th>
                         <th>Aksi</th>
                       </tr>
@@ -139,6 +154,10 @@
                           <input class="form-control" type="text" placeholder="Link Website" style="width: 400px;" name="link_web" required autofocus> 
                         </div>
                       </div>
+                      <div class="form-group">
+                          <label for="formGroupExampleInput">Upload Foto*</label>
+                          <input type="file" name="file_upload" class="form-control">
+                        </div>
 
                       <div class="modal-footer">
                         <button class="btn btn-primary" type="submit"><i class="fa fa-check"></i></button>
@@ -167,6 +186,7 @@
                         $region=$i['region'];
                         $tentang_region=$i['tentang_region'];
                         $link_web=$i['link_web'];
+                        $foto_region=$i['foto_region'];
                       
                       ?>
                       
@@ -197,15 +217,29 @@
                         </div>           
                         <div class="form-group">
                         <label>Nama Regional*</label>
-                          <input class="form-control" type="text" placeholder="Nama Regional" style="width: 200px;" name="region" value="<?= $region; ?>" required autofocus> 
+                          <input class="form-control" type="text" placeholder="Nama Regional" style="width: 100%;" name="region" value="<?= $region; ?>" required autofocus> 
                         </div>
                         <div class="form-group">
                           <label>Tentang Regional*</label>
-                          <textarea class="form-control" rows="3" placeholder="Tentang Regional" style="width: 400px" name="tentang_region" required><?= $tentang_region; ?></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Tentang Regional" style="width: 100%; height:200px;" name="tentang_region" required><?= $tentang_region; ?></textarea>
                         </div>
                         <div class="form-group">
                         <label>Link Website*</label>
-                          <input class="form-control" type="text" placeholder="Link Website" style="width: 400px;" name="link_web" value="<?= $link_web; ?>" required autofocus> 
+                          <input class="form-control" type="text" placeholder="Link Website" style="width: 100%;" name="link_web" value="<?= $link_web; ?>" required autofocus> 
+                        </div>
+                        <div class="form-group">
+                          <label for="formGroupExampleInput">Upload Foto*</label>
+                          
+                          <?php if ($foto_region != NULL): ?>
+                            <a href="/img/<?php echo $foto_region; ?>" data-toggle="lightbox" data-title="sample 1 - white">
+                              <img src="/img/<?php echo $foto_region; ?>" class="img-fluid mb-2" alt="white sample" style="width: 100px; height: 100px;"/>
+                            </a>
+                          <?php else: ?>
+                            <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
+                              <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 100px; height: 100px;"/>
+                            </a>
+                          <?php endif; ?>
+                        <input type="file" name="file_upload" class="form-control">
                         </div>
                       </div>
 

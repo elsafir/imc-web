@@ -8,7 +8,7 @@ class Mregional extends Model
 {
     protected $table      = 'region';
     protected $primaryKey = 'id_region';
-    protected $allowedFields = ['region', 'slug_r', 'tentang_region','link_web']; //ini field yang boleh diisi
+    protected $allowedFields = ['region', 'slug_r', 'foto_region', 'tentang_region','link_web']; //ini field yang boleh diisi
 
     protected $useTimestamps = false;
 
