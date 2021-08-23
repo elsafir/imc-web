@@ -20,6 +20,9 @@
     <link rel="shortcut icon" href="#" type="image/x-icon" />
     <link rel="apple-touch-icon" href="#" />
 
+    <!-- Fontawesome 5.15.3 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
     <!-- Pogo Slider CSS -->
@@ -111,6 +114,16 @@
                                 aria-label="Search">
                         </form>
                         <li><a class="nav-link" href="<?= base_url('/Clogin'); ?>">Login</a></li>
+
+                        <!-- Mode-Dark -->
+                        <div class="slide-dark">
+                          <input type="checkbox" class="mode-checkbox" id="chk" />
+                          <label class="mode-label" for="chk">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <div class="ball"></div>
+                          </label>
+                        </div>
                     </ul>
                 </div>
                 <!--<div class="search-box">
@@ -218,6 +231,13 @@
 
 
     <script>
+      // mode-dark
+      const chk = document.getElementById('chk');
+
+      chk.addEventListener('change', () => {
+        document.body.classList.toggle('mode-dark');
+      });
+      // Akhir Mode-Dark
 
         // JS MENU TEMPLATE
         /* counter js */
