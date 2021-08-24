@@ -884,7 +884,7 @@ span.icon img {
 }
 
 .about-main-info h2 span {
-  color: #12385b;
+  color: var(--warna-text-title); /* default color #12385b */
 }
 
 .about-main-info {
@@ -1159,7 +1159,7 @@ p.errordiv {
 
 .about-main-info h2 {
   font-size: 40px;
-  color: #095a83;
+  color: var(--warna-text-title);
   font-weight: 500;
 }
 
