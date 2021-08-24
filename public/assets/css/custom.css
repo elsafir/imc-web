@@ -299,7 +299,7 @@
 }
 
 .staff-box {
-  box-shadow: 10px 20px 10px 5px rgb(198, 198, 202);
+  box-shadow: 10px 20px 10px 5px var(--warna-text-gray); /* default rgb(198, 198, 202) */
   height: 280px;
   width: auto;
   overflow: auto;

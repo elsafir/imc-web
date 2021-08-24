@@ -26,7 +26,8 @@
   --warna-utama: #fafafa;
   --warna-dark-mode: #292c35;
   --warna-second: #fff;
-  --warna-filter: brightness(1);
+  /* --warna-filter: brightness(1); */
+  --warna-filter-icon-home: invert(0);
   --warna-text-gray: #666666;
   --warna-text: #000;
   --warna-text-title: #095a83;
@@ -37,7 +38,8 @@
   --warna-utama: #292c35;
   --warna-dark-mode: #edf2fc;
   --warna-second: #2e3a48;
-  --warna-filter: brightness(8.5);
+  /* --warna-filter: brightness(8.5); */
+  --warna-filter-icon-home: invert(0.9);
   --warna-text-gray: #a8a4a4;
   --warna-text: #fff;
   --warna-text-title: #1a73c5;
@@ -101,7 +103,13 @@ body {
   background-color: var(--warna-utama) !important;
   overflow-x: hidden !important;
 }
-
+.image-home {
+  max-width: 80% !important;
+  height: 80% !important;
+  position: relative;
+  top: -1em;
+  left: 4em;
+}
 a {
   color: #1f1f1f;
   text-decoration: none !important;
@@ -131,6 +139,7 @@ h6 {
 
 h1 {
   font-size: 24px;
+  color: var(--warna-text);
 }
 
 h2 {
@@ -445,8 +454,7 @@ a.navbar-brand {
 
 a.navbar-brand img {
   height: 80px !important;
-  width: 80px !important;
-  filter: var(--warna-filter); /* mode-dark-nav */
+  width: 90px !important;
 }
 
 .top-header .navbar .navbar-collapse ul li a.active {
@@ -761,7 +769,7 @@ a.navbar-brand img {
 .tab_menu {
   width: 100%;
   height: 110px;
-  background: #fff;
+  background: var(--warna-second);
   float: left;
   border-radius: 10px;
   margin-top: -50px;
@@ -804,6 +812,7 @@ a.navbar-brand img {
   text-align: center;
   width: 100%;
   float: left;
+  color: var(--warna-dark-mode);
 }
 
 .tab_menu ul li {
@@ -822,6 +831,9 @@ span.icon {
 
 span.icon img {
   height: 35px;
+}
+span.icon-color img {
+  filter: var(--warna-filter-icon-home);
 }
 
 /*------------------------------------------------------------------ About -------------------------------------------------------------------*/
@@ -911,6 +923,7 @@ span.icon img {
 
 #contact_request .card {
   border: none;
+  background-color: var(--warna-second);
 }
 
 #contact_request .btn {
@@ -1003,7 +1016,7 @@ span.icon img {
   position: relative;
 }
 .contact h2 span {
-  color: #095a83;
+  color: var(--warna-text-title);
 }
 
 .contact-left {
@@ -1039,7 +1052,7 @@ span.icon img {
   color: #fff;
   padding: 0.51em 2em 0.51em 2em;
   border: none;
-  background: #002147;
+  background: var(--warna-text-title);
   outline: none;
   margin: 0em 0em 0em 0em;
 }
@@ -1071,7 +1084,6 @@ p.errordiv {
   margin-bottom: 0.6em;
   font-family: 'Oswald', sans-serif;
 } */
-
 .sosmed ul {
   display: flex;
   margin: 2em 0;
@@ -1688,7 +1700,7 @@ p.count-text {
 }
 
 #team h3 {
-  color: #000;
+  color: var(--warna-text);
   font-size: 18px;
   font-weight: 600;
   padding: 0;
@@ -1696,7 +1708,7 @@ p.count-text {
 }
 
 #team h4 {
-  color: #095a83;
+  color: var(--warna-text);
   font-size: 16px;
   padding: 0;
   margin-top: 10px;
@@ -1745,6 +1757,7 @@ p.count-text {
 
 #team .card {
   border: none;
+  background-color: var(--warna-second);
 }
 
 .team_member_img:hover .social_icon_team,
@@ -1896,10 +1909,22 @@ p.count-text {
 }
 
 @media only screen and (max-width: 767.98px) {
+  /* Search for Mobile */
+  .box-searchh {
+    margin-left: none !important;
+    width: 36.5% !important;
+  }
+  .active-cyan-2 .fa,
+  .active-cyan-2 .fa {
+    display: none;
+  }
+  .slide-dark {
+    margin-bottom: 2em !important;
+  }
+
   a.navbar-brand img {
     height: 80px !important;
-    width: 80px !important;
-    filter: var(--warna-filter);
+    width: 90px !important;
   }
 
   .top-header {
