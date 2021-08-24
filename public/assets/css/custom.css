@@ -5,9 +5,9 @@
   --warna-search: #095a83;
 }
 .mode-dark {
-  --warna-search: #fff;
   --warna-utama: #292c35;
   --warna-dark-mode: #edf2fc;
+  --warna-search: #fff;
 }
 
 /** ADD YOUR AWESOME CODES HERE **/
@@ -31,11 +31,11 @@
   text-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2) !important;
   margin-top: 10px;
   text-transform: uppercase;
-  color: #000000;
+  color: var(--warna-dark-mode);
 }
 
 .parallax_3 .lead:hover {
-  color: #ffffff !important;
+  color: var(--warna-utama) !important;
 }
 
 .parallax_3 {
@@ -111,7 +111,7 @@
 }
 
 #visi-misi .lead {
-  color: #000000;
+  color: var(--warna-text-gray);
 }
 
 .about-main-info {
@@ -120,7 +120,7 @@
 
 #parallax_6 h2 {
   font-size: 23px;
-  color: #095a83;
+  color: var(--warna-text-title);
   font-weight: 500;
 }
 
@@ -185,6 +185,7 @@
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   height: auto;
+  background-color: var(--warna-second);
 }
 
 .collapsible-link::before {
@@ -260,6 +261,7 @@
 .dropdown-menu {
   border: 1px solid #095a83 !important;
   border-radius: 15px;
+  background-color: var(--warna-utama);
 }
 
 .active-cyan-2 input.form-control[type="text"]:focus:not([readonly]) {
@@ -279,8 +281,8 @@
 
 .active-cyan-2 .fa,
 .active-cyan-2 .fa {
-  color: var(--warna-search);
-  padding-right: 10px;
+  color: var(--warna-search); /* mode-dark-nav */
+  padding-right: 4px;
   cursor: pointer;
 }
 
@@ -371,7 +373,7 @@
 
   #parallax_6 h2 {
     font-size: 20px;
-    color: #095a83;
+    color: var(--warna-text-title);
     font-weight: 500;
   }
 

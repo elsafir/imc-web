@@ -25,16 +25,30 @@
 :root {
   --warna-utama: #fafafa;
   --warna-dark-mode: #292c35;
+  --warna-second: #fff;
+  --warna-filter: brightness(1);
+  --warna-text-gray: #666666;
+  --warna-text: #000;
+  --warna-text-title: #095a83;
+  --warna-footer: #002147;
+  --warna-footer-year: #05254b;
 }
 .mode-dark {
   --warna-utama: #292c35;
   --warna-dark-mode: #edf2fc;
+  --warna-second: #2e3a48;
+  --warna-filter: brightness(8.5);
+  --warna-text-gray: #a8a4a4;
+  --warna-text: #fff;
+  --warna-text-title: #1a73c5;
+  --warna-footer: #2e3a48;
+  --warna-footer-year: #38485c;
 }
 /* Awal Dark Mode */
 .slide-dark {
-  position: absolute;
-  top: 2.7em;
-  right: 13em;
+  position: relative;
+  top: 0.8em;
+  right: -2em;
 }
 .mode-checkbox {
   opacity: 0;
@@ -44,7 +58,7 @@
   background-color: #111;
   border-radius: 50px;
   cursor: pointer;
-  border: 1px solid var(--warna-dark-mode);
+  border: 1px solid var(--warna-dark-mode); /*mode-dark-nav*/
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -60,7 +74,7 @@
   position: absolute;
   top: 1px;
   left: 2px;
-  height: 16px;
+  height: 18px;
   width: 18px;
   transform: translateX(0px);
   transition: transform 0.2s linear;
@@ -80,7 +94,7 @@
 /* AKhir Dark Mode */
 
 body {
-  color: #666666;
+  color: var(--warna-text); /* mode-dark-text */
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   line-height: 1.80857;
@@ -111,7 +125,7 @@ h6 {
   padding: 0 0 10px 0;
   font-weight: normal;
   line-height: 120% !important;
-  color: #1f1f1f;
+  color: var(--warna-dark-mode); /* mode-dark-content */
   margin: 0;
 }
 
@@ -198,7 +212,7 @@ a,
 .lead {
   font-size: 18px;
   line-height: 30px;
-  color: #767676;
+  color: #767676; /* default #767676 */
   margin: 0;
   padding: 0;
 }
@@ -394,10 +408,11 @@ button:focus {
 }
 
 /*------------------------------------------------------------------ HEADER -------------------------------------------------------------------*/
-
+/* mode-dark-nav */
 .top-header .navbar {
+  box-shadow: 0 0 3px var(--warna-dark-mode);
   padding: 5px 0px;
-  background-color: var(--warna-utama);
+  background-color: var(--warna-second);
   color: var(--warna-dark-mode);
 }
 
@@ -420,7 +435,7 @@ button:focus {
   padding: 7px 10px;
   position: relative;
   font-weight: 400;
-  color: var(--warna-dark-mode);
+  color: var(--warna-dark-mode); /*mode-dark-nav*/
 }
 
 a.navbar-brand {
@@ -431,6 +446,7 @@ a.navbar-brand {
 a.navbar-brand img {
   height: 80px !important;
   width: 80px !important;
+  filter: var(--warna-filter); /* mode-dark-nav */
 }
 
 .top-header .navbar .navbar-collapse ul li a.active {
@@ -922,6 +938,7 @@ span.icon img {
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   height: 350px;
+  background-color: var(--warna-second);
 }
 
 #card-hover .card:hover {
@@ -1132,7 +1149,7 @@ p.errordiv {
 }
 
 .about-main-info {
-  background-color: #fff !important;
+  background-color: var(--warna-utama) !important;
 }
 
 #visi-misi p {
@@ -1190,7 +1207,7 @@ p.errordiv {
   display: flex;
   width: 25px;
   height: 100px;
-  background: #fff;
+  background: var(--warna-utama);
   position: absolute;
   z-index: 11;
   top: 0;
@@ -1882,6 +1899,7 @@ p.count-text {
   a.navbar-brand img {
     height: 80px !important;
     width: 80px !important;
+    filter: var(--warna-filter);
   }
 
   .top-header {
@@ -2134,7 +2152,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .footer-box {
-  background: #002147;
+  background: var(--warna-footer);
   padding: 30px 0;
 }
 
@@ -2211,7 +2229,7 @@ select.form-control:not([size]):not([multiple]) {
   font-size: 16px;
   font-weight: 300;
   line-height: 30px;
-  color: #4a4a49;
+  color: var(--warna-text-gray);
 }
 
 .text_align_center {
@@ -2296,7 +2314,7 @@ select.form-control:not([size]):not([multiple]) {
   color: #095a83;
 }
 .heading_main h2 span {
-  color: #095a83;
+  color: var(--warna-text-title);
 }
 
 .heading_main p.large {
@@ -2360,6 +2378,9 @@ p.section_count {
 .full {
   float: left;
   width: 100%;
+}
+.full > p {
+  color: var(--warna-text-gray);
 }
 
 .heading_main {
@@ -2470,7 +2491,7 @@ ul.social_icon li {
 }
 
 .footer_bottom {
-  background: #05254b;
+  background: var(--warna-footer-year); /* default Color: #05254b */
   padding: 0px 0;
 }
 
@@ -2600,7 +2621,7 @@ ul.bottom_menu li {
 
 section.inner_banner {
   min-height: 80px !important;
-  background: #002147;
+  background: var(--warna-footer);
 }
 
 section.inner_banner h3 {
