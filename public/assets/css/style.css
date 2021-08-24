@@ -2352,7 +2352,7 @@ select.form-control:not([size]):not([multiple]) {
   margin: 0 0 30px 0;
   font-family: "Raleway", sans-serif;
   position: relative;
-  color: #07528d;
+  color: var(--warna-text-title);
   background-image: url(../images/heading_main_border.png);
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -2895,13 +2895,13 @@ section.inner_banner h3 {
 }
 
 #events h1 {
-  color: #12385b;
+  color: var(--warna-text-title);
   font-size: 25px;
   font-weight: bold;
 }
 
 #events h1:hover {
-  color: black !important;
+  color: var(--warna-dark-mode) !important;
   transition: 0.3s;
 }
 

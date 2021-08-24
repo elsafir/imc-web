@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- last update : Sabtu, 27 Juni 2020 -->
-<!-- Updated by : Ridwan Satrio Haikusuma -->
+<!-- last update : Sabtu, 27 Juni 2020 ... 2021 -->
+<!-- Updated by : Ridwan Satrio Haikusuma ... riz -->
 
 <head>
     <meta charset="utf-8">
