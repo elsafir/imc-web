@@ -68,10 +68,6 @@ if(isset($_POST['submit'])){
     }
 }
 ?>
-
-
-<br><br><br>
-
 <!-- section -->
 <section class="inner_banner">
 		<div class="container">

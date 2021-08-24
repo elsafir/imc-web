@@ -1,16 +1,15 @@
 <?= $this->extend('frontend/_vtemplate_front'); ?>
 
-<?= $this->section('content_front'); ?>    
+<?= $this->section('content_front'); ?>
 <!-- CONTENT -->
 <!-- CONTENT -->
 <!-- CONTENT -->
-<br><br><br>
     <!-- section -->
     <section class="inner_banner">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-    
+
                     <div class="full">
                         <?php foreach($jrr as $i):
 
@@ -19,7 +18,7 @@
                         <h3>IMC <?php echo $region ?></h3>
                         <?php endforeach;?>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -41,12 +40,12 @@
         </div>
         <?php endforeach;?>
 
-        
+
 
         <div class="container mb-5 mt-5">
             <div class="row">
                 <div class="col-md-13">
-                    <?php 
+                    <?php
                        foreach($jrr as $i):
 
                           $tentang_region=$i['tentang_region'];
@@ -59,7 +58,7 @@
         </div>
     </section>
 
-  
+
     <!--section 1-->
     <div class="container">
         <div class="row">
@@ -85,23 +84,22 @@
                 </div>
                 <div class="col-md-7">
                     <div class="mt-3 staff-box">
-                         <?php 
+                         <?php
                        foreach($mc as $i):
 
                           $nama_anggota=$i['nama_anggota'];
                           $jabatan=$i['jabatan'];
                       ?>
                         <ul class="list-group list-group-flush">
-                            
+
                             <li class="list-group-item"><?php echo $nama_anggota ?> - [<?php echo $jabatan ?>]
                         </ul>
                         <?php endforeach;?>
                 </div>
             </div>
 
-            
+
         </div>
     </section>
     <!--end section-->
 <?= $this->endSection(); ?>
-

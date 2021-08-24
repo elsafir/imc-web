@@ -2,8 +2,6 @@
 
 <?= $this->section('content_front'); ?>  
 
-<br><br><br>
-
 	<!-- section -->
 	<section class="inner_banner">
 		<div class="container">
