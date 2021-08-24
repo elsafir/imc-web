@@ -54,9 +54,21 @@ class Cevents_admin extends BaseController{
             );
          }
 
+        $judul_events = $this->request->getPost('judul_events');
+        $cek = $model->cekjudulEvents($judul_events)->getRow();
+
+        if ($cek) {
+
+            return redirect()->to('/Cevents_admin')->with('gagal', '<b>DATA GAGAL DITAMBAHKAN!</b> Nama judul events sebelumnya sudah terdaftar');
+        }else{
+
 
         $model->tambahEvents($data);
         return redirect()->to('/Cevents_admin')->with('berhasil', 'DATA BERHASIL DISIMPAN');
+
+        }
+
+
     }
 
 
