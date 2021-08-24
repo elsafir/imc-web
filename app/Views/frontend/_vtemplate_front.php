@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- last update : Sabtu, 27 Juni 2020 -->
-<!-- Updated by : Ridwan Satrio Haikusuma -->
+<!-- last update : 2021 ..... Sabtu, 27 Juni 2020  -->
+<!-- Updated by :  Web Dev IMC 2021 ....Ridwan Satrio Haikusuma -->
 
 <head>
     <meta charset="utf-8">
@@ -19,6 +19,9 @@
     <!-- Site Icons -->
     <link rel="shortcut icon" href="#" type="image/x-icon" />
     <link rel="apple-touch-icon" href="#" />
+
+    <!-- Fontawesome 5.15.3 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -58,7 +61,7 @@
     <header class="top-header">
         <nav class="navbar header-nav navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="/assets/images/company-profile/IMC - background putih.jpg"
+                <a class="navbar-brand" href="index.html"><img src="/assets/images/company-profile/IMC - background full colour.jpg"
                         alt="Logo IMC"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd"
                     aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
@@ -105,12 +108,22 @@
 
                         <!-- Search form -->
                         <!-- Search form -->
-                        <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2" style="margin-left:1em;">
+                        <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2 box-searchh" style="margin-left:1em;">
                             <i class="fa fa-search" aria-hidden="true"></i><input
                                 class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
                                 aria-label="Search">
                         </form>
                         <li><a class="nav-link" href="<?= base_url('/Clogin'); ?>">Login</a></li>
+
+                        <!-- Mode-Dark -->
+                        <div class="slide-dark">
+                          <input type="checkbox" class="mode-checkbox" id="chk" />
+                          <label class="mode-label" for="chk">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <div class="ball"></div>
+                          </label>
+                        </div>
                     </ul>
                 </div>
                 <!--<div class="search-box">
@@ -218,6 +231,11 @@
 
 
     <script>
+      const chk = document.getElementById('chk');
+
+      chk.addEventListener('change', () => {
+        document.body.classList.toggle('mode-dark');
+      });
 
         // JS MENU TEMPLATE
         /* counter js */
