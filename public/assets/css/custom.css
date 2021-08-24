@@ -156,7 +156,7 @@
 
 .program .card h2 {
   font-size: 25px;
-  color: #345e85;
+  color: var(--warna-text-title);
   font-weight: 700;
 }
 
