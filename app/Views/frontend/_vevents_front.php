@@ -1,9 +1,8 @@
 <?= $this->extend('frontend/_vtemplate_front'); ?>
 
-<?= $this->section('content_front'); ?>    
+<?= $this->section('content_front'); ?>
 
     <!-- section -->
-    <br><br><br>
     <section class="inner_banner">
         <div class="container">
             <div class="row">
@@ -20,7 +19,7 @@
     <!--Section-->
     <section id="events">
         <div class="container">
-            <?php 
+            <?php
                        foreach($me as $i):
 
                           $id_events=$i['id_events'];
@@ -41,11 +40,11 @@
                               <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
                             <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;"/>
                           </a>
-                          <?php endif; ?> 
+                          <?php endif; ?>
                     </div>
                 </div>
 
-                
+
 
                 <div class="col-md-5">
                     <div class="container">
@@ -58,12 +57,12 @@
                     </div>
                 </div>
             </div>
-            
+
              <?php endforeach;?>
-            
+
 
         </div>
     </section>
     <!--End Section-->
 
-<?= $this->endSection(); ?> 
+<?= $this->endSection(); ?>
