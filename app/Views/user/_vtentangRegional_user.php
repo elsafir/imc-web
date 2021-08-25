@@ -42,6 +42,7 @@
                         $slug=$i['slug_r'];
                         $tentang_region=$i['tentang_region'];
                         $link_web=$i['link_web'];
+                        $foto_region=$i['foto_region'];
                       
                       ?>
 
@@ -60,26 +61,36 @@
                           <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                           <h4><i class="icon fa fa-info"></i> Keterangan :</h4>
                           <p>Isilah form Tentang Regional anda dengan lengkap, terutama yang bertanda (*)</p>
-                        </div>         
+                        </div>       
+
 
                           <div class="form-group">
                         <label>Link Website</label>
-                          <input class="form-control" type="text" placeholder="Link Website" style="width: 400px;" name="link_web" value="<?= $link_web; ?>" required autofocus> 
+                          <input class="form-control" type="text" placeholder="Link Website" style="width: 100%;" name="link_web" value="<?= $link_web; ?>" required autofocus> 
                         </div>
-
-
+                        
                         <div class="form-group">
                           <label>Tentang Regional*</label>
-                          <textarea class="form-control" rows="3" placeholder="Tentang..." style="height:300px;" name="tentang_region" required=""><?= $tentang_region; ?></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Tentang..." style="height:400px;" name="tentang_region" required=""><?= $tentang_region; ?></textarea>
                         </div>
 
                         </div>
 
-
-
-
-
-
+                        <div class="form-group" >
+                          <label for="formGroupExampleInput">Upload Foto*</label>
+                            
+                            <?php if ($foto_region != NULL): ?>
+                              <a href="/img/<?php echo $foto_region; ?>" data-toggle="lightbox" data-title="sample 1 - white">
+                                <img src="/img/<?php echo $foto_region; ?>" class="img-fluid mb-2" alt="white sample" style="width: 150px;"/>
+                              </a>
+                            <?php else: ?>
+                              
+                              <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
+                                <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 100px; height: 100px;"/>
+                              </a>
+                            <?php endif; ?>
+                          <input type="file" name="file_upload" class="form-control">
+                        </div>
 
                         <div class="modal-footer">
                           <button class="btn btn-primary" type="submit">Simpan</button>

@@ -29,13 +29,37 @@ class CtentangRegional_user extends BaseController{
         $model = new mRegional();
         $id_region = $this->request->getPost('id_region');
 
-        $data = array(
+        $validation = $this->validate([
+            'file_upload' => 'uploaded[file_upload]|mime_in[file_upload,image/jpg,image/jpeg,image/gif,image/png]|max_size[file_upload,4096]'
+        ]);
 
-	      'id_region'    => $this->request->getPost('id_region'),
-	      'slug_r'    => $this->request->getPost('slug'),
-	      'tentang_region' => $this->request->getPost('tentang_region'),
-	      'link_web' => $this->request->getPost('link_web')
-        );
+        if ($validation == FALSE) {
+			$data = array(
+                'id_region'    => $this->request->getPost('id_region'),
+                'slug_r'    => $this->request->getPost('slug'),
+                'tentang_region' => $this->request->getPost('tentang_region'),
+                'link_web' => $this->request->getPost('link_web')
+			);
+		} else {
+		   $upload = $this->request->getFile('file_upload');
+		   $upload->move('img');
+
+			$data = array(
+				'id_region'     => $this->request->getPost('id_region'),
+                'slug_r'        => $this->request->getPost('slug'),
+                'tentang_region'=> $this->request->getPost('tentang_region'),
+                'link_web'      => $this->request->getPost('link_web'),
+                'foto_region'   => $upload->getName()
+			);
+		}
+
+        // $data = array(
+
+	    //   'id_region'    => $this->request->getPost('id_region'),
+	    //   'slug_r'    => $this->request->getPost('slug'),
+	    //   'tentang_region' => $this->request->getPost('tentang_region'),
+	    //   'link_web' => $this->request->getPost('link_web')
+        // );
 
        
         $model->ubahRegional($data,$id_region);
