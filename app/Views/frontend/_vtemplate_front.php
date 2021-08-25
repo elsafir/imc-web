@@ -201,7 +201,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p class="crp">© 2020</p>
+                    <p class="crp">© 2021</p>
                 </div>
             </div>
         </div>
