@@ -26,7 +26,7 @@ class Mregional extends Model
     }
     
     public function tampilRegion(){
-        $query= $this->db->query("SELECT * FROM region WHERE region != 'Pusat'");
+        $query= $this->db->query("SELECT * FROM region");
 		return $query; 
     }
 

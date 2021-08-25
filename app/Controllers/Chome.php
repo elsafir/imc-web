@@ -22,6 +22,31 @@ class Chome extends BaseController
 		return view('frontend/_vhome_front',$x);
 	}
 
+	public function search(){
+
+		$model = new Mprogram();
+		$model1 = new Mregional();
+		$model2 = new Mevents();
+		$x['jp']= $model->tampilJenisProgram()->getResultArray();
+		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
+		$x['et']= $model2->tampilEventsTerbaru()->getResultArray();
+		$x['me']= $model2->tampilMenuEvents()->getResultArray();
+		
+		$db = \Config\Database::connect();
+		$cari = $this->request->getPost('cari');
+
+		$x['cr_pr'] = $db->query( "SELECT * FROM program INNER JOIN jenis_program ON program.id_jenis_program = jenis_program.id_jenis_program INNER JOIN pengguna ON program.id_pengguna=pengguna.id_pengguna  INNER JOIN community ON pengguna.id_community = community.id_community WHERE jenis_program LIKE '%$cari%' OR judul_program LIKE '%$cari%' OR detail_program LIKE '%$cari%'")->getResultArray();
+
+		$x['cr_ev'] = $db->query( "SELECT * FROM events INNER JOIN pengguna ON events.id_pengguna=pengguna.id_pengguna  INNER JOIN community ON pengguna.id_community = community.id_community WHERE judul_events LIKE '%$cari%' OR detail_events LIKE '%$cari%'")->getResultArray();
+
+		$x['cr_cm'] = $db->query( "SELECT * FROM community INNER JOIN region ON community.id_region=region.id_region INNER JOIN jabatan ON community.id_jabatan=jabatan.id_jabatan WHERE region LIKE '%$cari%' OR nama_anggota LIKE '%$cari%' OR  jabatan LIKE '%$cari%'")->getResultArray();
+
+		// $x['cr'] = $query->getRow();
+		
+		return view('frontend/_vsearch_front',$x);
+	}
+
+
 	public function menuProgram($slug_js){
 		$model = new Mprogram();
 		$model1 = new Mregional();

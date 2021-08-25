@@ -3,7 +3,6 @@
 <?= $this->section('content_front'); ?>
   <!-- section -->
 
-<br><br><br><br>
     <section class="inner_banner">
         <div class="container">
             <div class="row">

@@ -1,8 +1,7 @@
 <?= $this->extend('frontend/_vtemplate_front'); ?>
 
-<?= $this->section('content_front'); ?>  
+<?= $this->section('content_front'); ?>
 
-<br><br><br><br>
 <section class="inner_banner">
         <div class="container">
             <div class="row">

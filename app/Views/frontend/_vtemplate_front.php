@@ -108,11 +108,14 @@
 
                         <!-- Search form -->
                         <!-- Search form -->
-                        <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2 box-searchh" style="margin-left:1em;">
-                            <i class="fa fa-search" aria-hidden="true"></i><input
+                        <form method="post" action="/Chome/search" class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2 box-searchh" style="margin-left:1em;">
+                            <i class="fa fa-search" aria-hidden="true"></i><input name="cari" 
                                 class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
                                 aria-label="Search">
                         </form>
+
+
+
                         <li><a class="nav-link" href="<?= base_url('/Clogin'); ?>">Login</a></li>
 
                         <!-- Mode-Dark -->

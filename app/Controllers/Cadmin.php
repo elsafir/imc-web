@@ -20,8 +20,10 @@ class Cadmin extends BaseController{
 		$x['program'] = $db->table('program')->countAll();
 		$x['events'] = $db->table('events')->countAll();
 		$x['pengguna'] = $db->table('pengguna')->countAll();
+
 		
 		return view('admin/_vdashboard_admin',$x);
 
 	}
+
 }

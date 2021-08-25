@@ -66,4 +66,9 @@ class Mevents extends Model{
         return $query;
     }
 
+        public function cekjudulEvents($judulEvents){
+         $query = $this->db->table('events')->getWhere(array('judul_events' => $judulEvents));
+         return $query;
+    }
+
 }

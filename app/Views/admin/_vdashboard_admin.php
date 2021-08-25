@@ -31,7 +31,7 @@
               <div class="icon">
                 <i class="fa fa-users"></i>
               </div>
-              <a href="#" class="small-box-footer">Selengkapnya <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="<?= base_url('Ccommunity_admin') ?>" class="small-box-footer">Selengkapnya <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -46,7 +46,7 @@
               <div class="icon">
                 <i class="fa fa-chart-line"></i>
               </div>
-              <a href="" class="small-box-footer">Selengkapnya <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="<?= base_url('Cprogram_admin') ?>" class="small-box-footer">Selengkapnya <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -61,7 +61,7 @@
               <div class="icon">
                 <i class="nav-icon fas fa-book"></i>
               </div>
-              <a href="" class="small-box-footer">Selengkapnya <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="<?= base_url('Cevents_admin') ?>" class="small-box-footer">Selengkapnya <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -76,7 +76,7 @@
               <div class="icon">
                 <i class="fa fa-user"></i>
               </div>
-              <a href="" class="small-box-footer">Selengkapnya <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="<?= base_url('CkelolaUser_admin') ?>" class="small-box-footer">Selengkapnya <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->

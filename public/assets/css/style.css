@@ -426,7 +426,7 @@ button:focus {
 }
 
 .top-header {
-  position: absolute;
+  position: sticky;
   top: 0px;
   left: 0px;
   z-index: 20;

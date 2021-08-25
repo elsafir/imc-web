@@ -3,22 +3,21 @@
 <?= $this->section('content_front'); ?>
   <!-- section -->
 
-<br><br><br><br>
     <section class="inner_banner">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                                      
+
                     <div class="full">
                         <h3>Detail Program</h3>
                     </div>
-                  
+
                 </div>
             </div>
         </div>
     </section>
 
-                  <?php 
+                  <?php
                   $no=1;
                        foreach($dp as $i):
 
@@ -51,7 +50,7 @@
                       <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
                     <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;"/>
                   </a>
-                  <?php endif; ?> 
+                  <?php endif; ?>
                 </div>
             </div>
         </div>
@@ -64,4 +63,4 @@
     </section>
     <!--close section-->
      <?php endforeach;?>
-        <?= $this->endSection(); ?> 
+        <?= $this->endSection(); ?>
