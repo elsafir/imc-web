@@ -1,15 +1,15 @@
 <?= $this->extend('frontend/_vtemplate_front'); ?>
 
-<?= $this->section('content_front'); ?>    
+<?= $this->section('content_front'); ?>
 
     <!-- section -->
-    <br><br><br>
     <section class="inner_banner">
         <div class="container">
-            <div class="row">
+            <div class="row" style="position:sticky;margin-bottom: 16em;">
                 <div class="col-12">
                     <div class="full">
                         <h3>Pencarian</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -18,9 +18,9 @@
     <!--section-->
 
     <!--Section-->
-    <section id="events">
+    <section id="events" style="position:relative;top:-16em;">
         <div class="container">
-            <?php 
+            <?php
                        foreach($cr_ev as $i):
 
                           $id_events=$i['id_events'];
@@ -41,11 +41,11 @@
                               <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
                             <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;"/>
                           </a>
-                          <?php endif; ?> 
+                          <?php endif; ?>
                     </div>
                 </div>
 
-                
+
 
                 <div class="col-md-5">
                     <div class="container">
@@ -58,9 +58,9 @@
                     </div>
                 </div>
             </div>
-            
+
              <?php endforeach;?>
-            
+
 
         </div>
 
@@ -97,11 +97,11 @@
                               <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
                             <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;"/>
                           </a>
-                          <?php endif; ?> 
+                          <?php endif; ?>
                     </div>
                 </div>
 
-                
+
 
                 <div class="col-md-5">
                     <div class="container">
@@ -114,9 +114,9 @@
                     </div>
                 </div>
             </div>
-            
+
              <?php endforeach;?>
-            
+
 
         </div>
 
@@ -130,7 +130,7 @@
 
 
         <div class="container">
-            <?php 
+            <?php
                        foreach($cr_cm as $i):
 
                           $id_community=$i['id_community'];
@@ -150,11 +150,11 @@
                               <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
                             <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;"/>
                           </a>
-                          <?php endif; ?> 
+                          <?php endif; ?>
                     </div>
                 </div>
 
-                
+
 
                 <div class="col-md-5">
                     <div class="container">
@@ -163,12 +163,12 @@
                     </div>
                 </div>
             </div>
-            
+
              <?php endforeach;?>
-            
+
 
         </div>
     </section>
     <!--End Section-->
 
-<?= $this->endSection(); ?> 
+<?= $this->endSection(); ?>
