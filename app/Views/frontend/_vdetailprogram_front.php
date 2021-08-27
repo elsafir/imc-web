@@ -56,7 +56,7 @@
         </div>
         <div class="container mt-5">
             <div class="row">
-                    <p style="text-indent: 50px; text-align: justify; letter-spacing: 3px;"><?php echo $detail_program; ?></p>
+                    <p style="text-indent: 50px; text-align: justify; letter-spacing: 1px;"><?php echo $detail_program; ?></p>
             </div>
 
         </div>
