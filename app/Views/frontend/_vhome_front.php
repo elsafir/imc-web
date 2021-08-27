@@ -99,7 +99,7 @@
     <section class="about-us" id="parallax_1">
         <div class="container layout_padding padding_bottom-0 mb-5">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 gettoknow">
                     <img src="/assets/images/company-profile/IMC - background full colour.jpg" alt="#" class="img-fluid image-home">
                 </div>
                 <div class="col-md-6">
@@ -130,7 +130,7 @@
             <div class="row justify-content-around flex-md-row-reverse align-items-center">
                 <div class="col-md-4 mb-5 mt-5">
                     <div class="container">
-                        <img src="/assets/images/p1.png" alt="" class="img-fluid rounded-circle">
+                        <img src="/assets/images/p1.png" alt="" class="img-fluid rounded-circle imagep_2">
                     </div>
                 </div>
                 <div class="col-md-6 mb-5">
@@ -172,7 +172,7 @@
                           $foto_events=$i['foto_events'];
                       ?>
 
-                <div class="col-md-4 mb-5 mt-3 p-3">
+                <div class="col-md-4 mb-5 mt-3 p-3 mobile2">
                     <div class="container">
 
                         <a href="">

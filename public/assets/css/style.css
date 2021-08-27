@@ -21,6 +21,12 @@
 /*------------------------------------------------------------------
     SKELETON
 -------------------------------------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 /* Mode-Dark */
 :root {
   --warna-utama: #fafafa;
@@ -1911,6 +1917,37 @@ p.count-text {
 }
 
 @media only screen and (max-width: 767.98px) {
+  /* Home */
+  #parallax_2 .container {
+    margin-top: 15px;
+    max-width: 80% !important;
+  }
+  .imagep_2 {
+    max-width: 50%;
+    display: flex;
+    margin: auto;
+  }
+
+  #parallax_1 .gettoknow {
+    width: 70%;
+    margin: auto;
+  }
+
+  /* Mobile Responsive */
+  .mobile2 {
+    flex: 0 0 88.3333% !important;
+    max-width: 100%;
+    margin: auto;
+  }
+  .imc-foot-icon {
+    width: 50% !important;
+    display: flex;
+    margin: auto;
+  }
+  .footer_blog {
+    margin-top: 0px !important;
+  }
+
   /* Search for Mobile */
   .box-searchh {
     margin-left: none !important;
@@ -2007,7 +2044,7 @@ p.count-text {
   }
 
   .pogoSlider--navBottom .pogoSlider-nav {
-    top: 110px !important;
+    top: 310px !important;
   }
 
   .lead {

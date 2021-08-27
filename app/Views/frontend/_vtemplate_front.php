@@ -17,7 +17,8 @@
     <meta name="author" content="">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <!-- Favicon Image -->
+    <link rel="shortcut icon" href="/assets/images/company-profile/IMC - background full colour.jpg" type="image/x-icon" />
     <link rel="apple-touch-icon" href="#" />
 
     <!-- Fontawesome 5.15.3 -->
@@ -109,7 +110,7 @@
                         <!-- Search form -->
                         <!-- Search form -->
                         <form method="post" action="/Chome/search" class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2 box-searchh" style="margin-left:1em;">
-                            <i class="fa fa-search" aria-hidden="true"></i><input name="cari" 
+                            <i class="fa fa-search" aria-hidden="true"></i><input name="cari"
                                 class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
                                 aria-label="Search">
                         </form>
@@ -164,7 +165,7 @@
                 <div class="col-md-3">
                     <div class="footer_blog">
                         <div class="full margin-bottom_30">
-                            <img src="/assets/images/company-profile/IMC - background full colour.jpg" alt="#" />
+                            <img src="/assets/images/company-profile/IMC - background full colour.jpg" alt="#" class="imc-foot-icon"/>
                         </div>
                     </div>
                 </div>
@@ -204,7 +205,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p class="crp">© 2021</p>
+                    <p class="crp">&copy; 2021</p>
                 </div>
             </div>
         </div>

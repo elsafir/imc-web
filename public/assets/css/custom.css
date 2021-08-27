@@ -120,7 +120,7 @@
 
 #parallax_6 h2 {
   font-size: 23px;
-  color: var(--warna-text-title);
+  /* color: var(--warna-text-title); */
   font-weight: 500;
 }
 
@@ -267,7 +267,7 @@
 .active-cyan-2 input.form-control[type="text"]:focus:not([readonly]) {
   border-bottom: 2px solid #095a83;
   box-shadow: none;
-  width: 250px !important;
+  width: 150px !important;
 }
 .active-cyan-2 input.form-control[type="text"] {
   border-bottom: 2px solid #095a83;
@@ -276,7 +276,7 @@
   border-left: transparent;
   border-right: transparent;
   border-radius: 0px;
-  width: 150px !important;
+  width: 130px !important;
 }
 
 .active-cyan-2 .fa,
@@ -284,6 +284,11 @@
   color: var(--warna-search); /* mode-dark-nav */
   padding-right: 4px;
   cursor: pointer;
+}
+
+.mt-2,
+.my-2 {
+  margin-right: 3em;
 }
 
 #events img {
@@ -368,13 +373,41 @@
 }
 
 @media only screen and (max-width: 992px) {
+  .box-searchh {
+    margin-left: none !important;
+    width: 29.9%;
+  }
+
+  #parallax_2 .container {
+    margin-top: 20px;
+  }
+  /* Home Mobile */
+  .mobile2 {
+    flex: 0 0 45.333333%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .imc-foot-icon {
+    margin-top: 5em;
+  }
+
+  .mt-2,
+  .my-2 {
+    margin-right: 0;
+  }
+
+  .slide-dark {
+    margin-bottom: 2em !important;
+  }
+
   #parallax_4 {
     margin-top: -50px;
   }
 
   #parallax_6 h2 {
     font-size: 20px;
-    color: var(--warna-text-title);
+    /* color: var(--warna-text-title); */
     font-weight: 500;
   }
 
