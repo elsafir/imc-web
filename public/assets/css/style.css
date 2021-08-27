@@ -26,6 +26,7 @@
   --warna-utama: #fafafa;
   --warna-dark-mode: #292c35;
   --warna-second: #fff;
+  --warna-card: #f8f9fa;
   /* --warna-filter: brightness(1); */
   --warna-filter-icon-home: invert(0);
   --warna-text-gray: #666666;
@@ -38,6 +39,7 @@
   --warna-utama: #292c35;
   --warna-dark-mode: #edf2fc;
   --warna-second: #2e3a48;
+  --warna-card: #292c35;
   /* --warna-filter: brightness(8.5); */
   --warna-filter-icon-home: invert(0.9);
   --warna-text-gray: #a8a4a4;
@@ -1757,7 +1759,7 @@ p.count-text {
 
 #team .card {
   border: none;
-  background-color: var(--warna-second);
+  background-color: var(--warna-card);
 }
 
 .team_member_img:hover .social_icon_team,

@@ -292,6 +292,7 @@
 
 .community p {
   margin-top: 30px;
+  color: var(--warna-text-gray);
 }
 
 .contact_map i {
@@ -299,8 +300,8 @@
 }
 
 .staff-box {
-  box-shadow: 10px 20px 10px 5px var(--warna-text-gray); /* default rgb(198, 198, 202) */
-  height: 280px;
+  box-shadow: 10px 20px 10px 5px var(--warna-footer); /* default rgb(198, 198, 202) */
+  height: auto;
   width: auto;
   overflow: auto;
   max-width: 100%;

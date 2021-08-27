@@ -35,7 +35,7 @@
 
         <div class="">
             <center>
-                <img src="/img/<?php echo $foto_region; ?>" class="img-fluid mb-2" style="width: 500px;"/>
+                <img src="/img/<?php echo $foto_region; ?>" class="img-fluid mb-2" style="width: 500px;border-radius:5px;"/>
             </center>
         </div>
         <?php endforeach;?>
