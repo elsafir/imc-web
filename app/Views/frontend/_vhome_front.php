@@ -8,7 +8,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h1><b>NEW EVENT!!!</b></h1>
-             <button type="button" class="btn btn-danger" data-dismiss="modal" >Close</button>
+             <button type="button" class="btn btn-dark" data-dismiss="modal" >Close</button>
             <!--  <h4 class="modal-title">Cara Membuat Auto Pop Up Responsive Menggunakan Bootstrap</h4> -->
           </div>
           <div class="modal-body">
@@ -36,7 +36,7 @@
                   <?php endif; ?>  <br>
 
                 <p><?php echo substr($detail_events, 0, 90); ?></p>
-                <a class="btn btn-outline-blue" href="<?= base_url('Chome/detailEvents/') ?>/<?php echo $slug_e; ?>">Read More >></a>
+                <a class="btn btn-outline-blue" href="<?= base_url('Chome/detailEvents/') ?>/<?php echo $slug_e; ?>" style="border:1px solid black">Read More >></a>
             </div>
             <?php endforeach;?>
 

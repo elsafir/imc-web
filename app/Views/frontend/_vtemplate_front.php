@@ -62,7 +62,7 @@
     <header class="top-header">
         <nav class="navbar header-nav navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="/assets/images/company-profile/IMC - background full colour.jpg"
+                <a class="navbar-brand" href="<?= base_url('Chome') ?>"><img src="/assets/images/company-profile/IMC - background full colour.jpg"
                         alt="Logo IMC"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd"
                     aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">

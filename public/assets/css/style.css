@@ -54,6 +54,10 @@
   --warna-footer: #2e3a48;
   --warna-footer-year: #38485c;
 }
+.modal-content {
+  background-color: var(--warna-utama) !important;
+  border: 1px solid var(--warna-dark-mode) !important;
+}
 /* Awal Dark Mode */
 .slide-dark {
   position: relative;
