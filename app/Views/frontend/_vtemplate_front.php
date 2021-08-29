@@ -238,8 +238,17 @@
       const chk = document.getElementById('chk');
 
       chk.addEventListener('change', () => {
-        document.body.classList.toggle('mode-dark');
+        // document.body.classList.toggle('mode-dark');
+        chk.checked?document.body.classList.add("mode-dark"):document.body.classList.remove("mode-dark");
+        localStorage.setItem('darkModeStatus', chk.checked);
       });
+
+      window.addEventListener('load', (event) => {
+          if(localStorage.getItem('darkModeStatus')=="true"){
+            document.body.classList.add("mode-dark");
+            document.getElementById('chk').checked = true;
+          }
+        });
 
         // JS MENU TEMPLATE
         /* counter js */
