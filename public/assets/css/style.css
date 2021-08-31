@@ -2061,6 +2061,19 @@ p.count-text {
   }
 }
 
+@media only screen and (max-width: 578px) {
+  .box-searchh {
+    margin-left: none !important;
+    width: auto !important;
+  }
+  .active-cyan-2 .text-searchh {
+    width: 100% !important;
+  }
+  .mr-3 {
+    margin-right: auto !important;
+  }
+}
+
 /*------------------------------------------------------------------ Blog -------------------------------------------------------------------*/
 
 .blog-box {
