@@ -10,6 +10,8 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Edit Responsive Css -->
+  <link rel="stylesheet" href="/assets2/dist/css/responsive.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="/assets2/plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
@@ -280,7 +282,7 @@
                   <i class="far fa-circle nav-icon"></i>
                   <p>Jabatan</p>
                 </a>
-              </li>            
+              </li>
             </ul>
           </li>
 
@@ -441,7 +443,7 @@
 
     $(function () {
     $("#example1").DataTable();
-   
+
   });
 
 
@@ -450,7 +452,7 @@
   $(function () {
     $("#example-community").DataTable({
 
-  
+
        dom: '<"html5buttons"B>lTfgitp',
             buttons: [ {
                         extend: 'copy', text:'<i class="fa fa-file" aria-hidden="true"> Copy',title: 'Data Community',
@@ -477,13 +479,13 @@
 
 
           // Definition of filter to display
-          filterDropDown: {                   
+          filterDropDown: {
             columns: [
-              { 
+              {
                 idx: 1,
                 title:"Pilih Region"
               },
-              { 
+              {
                 idx: 3,
                  title:"Pilih Jabatan"
               }
@@ -492,18 +494,18 @@
             label:"Cari: "
           }
 
-         
+
     });
-    
+
   });
 
 
 
-      //Export data program 
+      //Export data program
   $(function () {
     $("#example-program").DataTable({
 
-  
+
        dom: '<"html5buttons"B>lTfgitp',
             buttons: [ {
                         extend: 'copy', text:'<i class="fa fa-file" aria-hidden="true"> Copy',title: 'Data Program',
@@ -528,17 +530,17 @@
                         exportOptions: { columns: [ 0, 1, 2, 3 ] }
                     } ]
 
-         
+
     });
-    
+
   });
 
 
-          //Export data events 
+          //Export data events
   $(function () {
     $("#example-events").DataTable({
 
-  
+
        dom: '<"html5buttons"B>lTfgitp',
             buttons: [ {
                         extend: 'copy', text:'<i class="fa fa-file" aria-hidden="true"> Copy',title: 'Data Events',
@@ -563,12 +565,12 @@
                         exportOptions: { columns: [ 0, 1, 2 ] }
                     } ]
 
-         
+
     });
-    
+
   });
 
-  //Export data region 
+  //Export data region
   $(function () {
   $("#example-region").DataTable({
       dom: '<"html5buttons"B>lTfgitp',
@@ -595,9 +597,9 @@
                       exportOptions: { columns: [ 0, 1, 2, 4] }
                   } ]
 
-        
+
   });
-  
+
 });
 
 
