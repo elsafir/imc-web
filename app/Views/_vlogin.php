@@ -14,6 +14,7 @@
 
     <!-- Main css -->
     <link rel="stylesheet" href="/assets1/css/style1.css">
+    <link rel="stylesheet" href="/assets/css/vlogin.css">
 </head>
 <body>
 
@@ -42,11 +43,6 @@
                         </div> -->
                         <!-- <?php endif; ?> -->
 
-                        
-
-
-
-
                         <form action="<?= base_url('Clogin/loginProses') ?>" method="POST" class="register-form" id="login-form">
                            
                             <div class="form-group">
@@ -68,11 +64,11 @@
                             </div>
                         </form>
                         <div class="social-login">
-                            <span class="social-label">Or login with</span>
+                            <span class="social-label">Follow us</span>
                             <ul class="socials">
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
+                                <li><a href="https://www.facebook.com/imconnectid/"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/imconnectid/"><i class="display-flex-center zmdi zmdi-instagram"></i></a></li>
+                                <li><a href="https://vt.tiktok.com/ZSJ3FvHeK/"><i class="display-flex-center zmdi zmdi-tiktok"></i></a></li>
                             </ul>
                         </div>
                     </div>
