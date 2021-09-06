@@ -203,9 +203,11 @@
 
                       <form role="form" name="myform" method="post" action="/CjenisProgram_admin/update" enctype="multipart/form-data">
 
+
                         <div class="modal-body">
 
                         <input type="hidden" name="id_jenis_program" value="<?php echo $id_jenis_program;?>">
+                        <input type="hidden" name="jenis_program_lama" value="<?php echo $jenis_program;?>">
 
                         <div class="form-group">
                           <label>Jenis Program*</label>

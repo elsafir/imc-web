@@ -24,6 +24,14 @@ class CjenisProgram_admin extends ResourceController{
 
 		$model = new \App\Models\Mjenisprogram();
 
+		//validasi inputan
+		if (!$this->validate([
+			'judul_program' => 'required|is_unique[jenis_program.jenis_program]', //[namatable.field]
+		])) {
+			return redirect()->to('/CjenisProgram_admin')->with('gagal', '<b>DATA GAGAL DITAMBAHKAN!</b> Jenis Program sebelumnya sudah terdaftar');
+		}
+
+      	//agar slug ambil dari judul region, trus spasi berubah jd -
 		$slug = url_title($this->request->getPost('jenis_program'), '-', true);
 
 		 $data = array(
@@ -41,9 +49,25 @@ class CjenisProgram_admin extends ResourceController{
 
 	public function update($id = null){
 
+		$id_jenis_program = $this->request->getPost('id_jenis_program');
+		$jenis_program_lama = $this->request->getPost('jenis_program_lama');
+
+		//cek nama jenis program yang baru dengan yang lama 
+		if ($jenis_program_lama == $this->request->getVar('jenis_program')){
+			$rule_region = 'required';
+		} else {
+			$rule_region = 'required|is_unique[jenis_program.jenis_program]';
+		}
+
+		if (!$this->validate([
+			'jenis_program' => $rule_region
+		])) {
+
+			return redirect()->to('/CjenisProgram_admin')->with('gagal', '<b>DATA GAGAL DIUBAH!</b> Jenis Program sebelumnya sudah terdaftar');
+		}
+
 		$slug = url_title($this->request->getPost('jenis_program'), '-', true);
 
-		$id_jenis_program = $this->request->getPost('id_jenis_program');
 
 		$data = [
 		'jenis_program'	=> $this->request->getVar('jenis_program'),

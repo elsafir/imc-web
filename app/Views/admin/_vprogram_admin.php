@@ -23,6 +23,12 @@
                 </div>
             <?php } ?>
 
+            <?php if(!empty(session()->getFlashdata('gagal'))){ ?>
+                <div class="alert alert-danger">
+                    <?php echo session()->getFlashdata('gagal');?>
+                </div>
+            <?php } ?>
+
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambah-data">
                   <i class="fa fa-plus"></i> Tambah Data
                 </button>
@@ -299,10 +305,19 @@
       </div>
       <!-- /.modal -->
 <!-- ============================================================================== -->
+<?php endforeach ?>
 
 
-
-
+<?php 
+                foreach($data as $i):
+                    $id_program=$i['id_program'];
+                    $id_jenis_program=$i['id_jenis_program'];
+                    $id_pengguna=$i['id_pengguna'];
+                    $jenis_program=$i['jenis_program'];
+                    $judul_program=$i['judul_program'];
+                    $detail_program=$i['detail_program'];
+                    $foto_program=$i['foto_program'];
+                ?>
   <!-- =====================MODAL EDIT DATA========================= -->    
 <div class="modal fade" id="edit-data<?php echo $id_program;?>" data-backdrop="static">
         <div class="modal-dialog modal-lg">
@@ -320,6 +335,8 @@
 
                         <input type="hidden" name="id_program" value="<?php echo $id_program;?>">
                         <input type="hidden" name="id_pengguna" value="<?php echo $id_pengguna;?>">
+                        <input type="hidden" name="judul_program_lama" value="<?php echo $judul_program;?>">
+                        
                         <div class="form-group">
                             <label for="exampleSelect1">Jenis Program*</label>
                             <select class="form-control" style="width: 200px;" name="id_jenis_program" required>
@@ -336,20 +353,13 @@
                                   <?php echo $jenis_program ?>
                                   
                                 </option>
-                                <?php endforeach ?>
-
-
-
+                                
                             </select>
-
-
-
                         </div>
 
                         <div class="form-group">
                           <label>Judul Program*</label>
                           <input class="form-control" type="text" placeholder="Judul Program" style="width: 400px;" name="judul_program" required="" value="<?php echo $judul_program;?>">
-
                         </div>
 
 
@@ -372,16 +382,7 @@
                           <input type="file" name="file_upload" class="form-control"> 
                         </div> 
 
-
-                       
-
                         </div>
-
-
-
-
-
-
 
                         <div class="modal-footer">
                           <button class="btn btn-primary" type="submit"><i class="fa fa-check"></i></button>
@@ -397,9 +398,7 @@
                   </div>
                   <!-- /.modal -->
 <!-- =============================================== -->
-
-
-
+<?php endforeach ?>
 
 
 <!-- =====================MODAL HAPUS DATA========================= -->
