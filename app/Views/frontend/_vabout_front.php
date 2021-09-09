@@ -31,9 +31,9 @@
 					<div class="col-md-4"></div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row text-ek">
 				<div class="col-md-6 text_align_left">
-					<div class="container">
+					<div class="container" style="text-align:justify;">
 						<p>Indonesia Millennial Connect merupakan wadah pengembangan diri bagi pemuda pemudi di seluruh
 							Indonesia, Berfokus kepada tiga bidang yang menjadi faktor penentu kesejahteraan dalam
 							pemberdayaan masyarakat yaitu pendidikan, sosial dan ekonomi. Kami fokus pada kolaborasi
@@ -41,7 +41,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 text_align_left">
-					<div class="container">
+					<div class="container" style="text-align:justify;">
 						<p>Indonesia Millennial Connect merupakan wadah pengembangan diri bagi pemuda pemudi di seluruh
 							Indonesia, Berfokus kepada tiga bidang yang menjadi faktor penentu kesejahteraan dalam
 							pemberdayaan masyarakat yaitu pendidikan, sosial dan ekonomi. Kami fokus pada kolaborasi
@@ -60,7 +60,7 @@
 					</div>
 				</div>
 				<h2 class="heading_main text_align_center">Visi</h2>
-				<p class="lead">"Menjadi pelopor terdepan bagi terwujudnya kehidupan masyarakat yang lebih baik dengan
+				<p class="lead" style="text-align:justify;">"Menjadi pelopor terdepan bagi terwujudnya kehidupan masyarakat yang lebih baik dengan
 					bergerak bersama generasi muda mandiri yang memiliki jiwa sosial dan semangat kemanusiaan dalam
 					memberikan manfaat di berbagai aspek sosial, pendidikan dan ekonomi."</p>
 			</div>
