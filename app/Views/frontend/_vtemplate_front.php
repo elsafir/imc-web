@@ -39,7 +39,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <!-- PAGES ABOUT RESPONSIVE -->
-    <link rel="stylesheet" href="/assets/css/about-eka.css">
+    <link rel="stylesheet" href="/assets/css/responsive-eka.css">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
