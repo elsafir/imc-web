@@ -69,9 +69,9 @@
 					<div class="col-md-12">
 						<h2 class="heading_main text_align_center mb-5">Misi</h2>
 					</div>
-					<div class="col-md-4 mb-5">
-						<div class="card">
-							<div class="card-body">
+					<div class="col-md-4 mb-5 responsive">
+						<div class="card card-ek">
+							<div class="card-body card-ek-2">
 								<img src="images/348-3488432_youth-clipart-diverse-group-person-hand-raised-clipart.png"
 									alt="" class="img-fluid rounded-circle w-50 mb-3">
 								<p>Memberdayakan potensi pemuda pemudi dalam meningkatkan peran nya sebagai generasi
@@ -81,9 +81,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 mb-5">
-						<div class="card">
-							<div class="card-body">
+					<div class="col-md-4 mb-5 responsive">
+						<div class="card card-ek">
+							<div class="card-body card-ek-2">
 								<img src="images/348-3488432_youth-clipart-diverse-group-person-hand-raised-clipart.png"
 									alt="" class="img-fluid rounded-circle w-50 mb-3">
 								<p>Merencanakan dan melaksanakan program-program inovatif serta bermanfaat yang berpusat
@@ -93,9 +93,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="card">
-							<div class="card-body">
+					<div class="col-md-4 responsive">
+						<div class="card card-ek">
+							<div class="card-body card-ek-2">
 								<img src="images/348-3488432_youth-clipart-diverse-group-person-hand-raised-clipart.png"
 									alt="" class="img-fluid rounded-circle w-50 mb-3">
 								<p>Bersinergi dan berproses bersama dengan pemuda dan pemudi dalam menjaga dan
