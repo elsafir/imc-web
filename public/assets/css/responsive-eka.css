@@ -1,0 +1,28 @@
+/* RESPPONSIVE ABOUT MISI ==============================*/
+.responsive {
+  width: 80%;
+}
+@media screen and (max-width: 765px) {
+  .responsive {
+    margin: auto;
+  }
+  .card-ek {
+    height: 50px;
+  }
+  .card-ek-2 {
+    height: 50px !important;
+  }
+}
+/* END RESPPONSIVE ABOUT MISI ==========================*/
+
+/* RESPONSIVE FOOTER =================================== */
+@media screen and (max-width: 759px) {
+  .resp-footer {
+    visibility: hidden;
+    display: none;
+  }
+  .resp-footer img {
+    visibility: hidden;
+  }
+}
+/* END RESPONSIVE FOOTER =================================== */

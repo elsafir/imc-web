@@ -73,17 +73,17 @@
                 <div class="col-md-12">
                     <div class="tab_menu">
                         <ul>
-                            <li><a href="#"><span class="icon icon-color"><img src="/assets/images/i4.png"
+                            <li><a href="Chome/menuProgram/sosial"><span class="icon icon-color"><img src="/assets/images/i4.png"
                                             alt="#" /></span><span>Social</span></a></li>
-                            <li><a href="#"><span class="icon icon-color"><img src="/assets/images/i2.png"
+                            <li><a href="/Chome/menuProgram/edukasi"><span class="icon icon-color"><img src="/assets/images/i2.png"
                                             alt="#" /></span><span>Education</span></a></li>
-                            <li><a href="#"><span class="icon icon-color"><img src="/assets/images/i3.png"
+                            <li><a href="/Chome/menuProgram/ekonomi"><span class="icon icon-color"><img src="/assets/images/i3.png"
                                             alt="#" /></span><span>Economy</span></a></li>
-                            <li><a href="#"><span class="icon"><img src="/assets/images/i5.png"
+                            <li><a href="https://www.google.com/maps/search/Jl.+Amal+Bakti+No.43+RT.7%2FRW.2,+Rengas+Kec.+Ciputat+Tim.+Kota+Tangerang+Selatan,+Banten+15412/@-6.278277,106.748071,16z?hl=id"><span class="icon"><img src="/assets/images/i5.png"
                                             alt="#" /></span><span>Location</span></a></li>
-                            <li><a href="#"><span class="icon"><img src="/assets/images/i6.png"
+                            <li><a href="/Chome/contact"><span class="icon"><img src="/assets/images/i6.png"
                                             alt="#" /></span><span style="color:white!important;">Email</span></a></li>
-                            <li><a href="#"><span class="icon"><img
+                            <li><a href="/Chome/contact"><span class="icon"><img
                                             src="/assets/images/kisspng-computer-icons-portable-network-graphics-email-cli-navy-blue-phone-41-icon-free-navy-blue-phone-ico-5c498dabea4809.9820699415483242679596.png"
                                             alt="#" /></span><span style="color:white!important;">Call
                                         Us</span></a></li>
