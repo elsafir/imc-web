@@ -222,8 +222,8 @@
 
 <?php 
                 foreach($data as $i):
-                   $id_community=$i['id_community'];
-                   $id_region=$i['id_region'];
+                    $id_community=$i['id_community'];
+                    $id_region=$i['id_region'];
                     $region=$i['region'];
                     $nama_anggota=$i['nama_anggota'];
                     $id_jabatan=$i['id_jabatan'];
@@ -291,6 +291,7 @@
                     <div class="col-sm-10">
                       <input type="text" class="form-control" disabled="" placeholder="Jabatan" name="jabatan" value="<?php echo $jabatan;?>" style="width: 200px;" required>
                     </div>
+                    
                   </div>
 
                    <hr>
@@ -403,15 +404,7 @@
                           <input type="file" name="file_upload" class="form-control">
                         </div> 
 
-
-                       
-
                         </div>
-
-
-
-
-
 
 
                         <div class="modal-footer">

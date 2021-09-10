@@ -9,6 +9,7 @@
 <?= $this->endSection(); ?>  
 
 <?= $this->section('content_admin'); ?>
+
 <!-- ============================================================================== -->    
 
            <div class="row">
@@ -130,9 +131,7 @@
   <!-- ============================================================================== -->
 
 
-
-
- <!-- =====================MODAL TAMBAH DATA========================= -->    
+  <!-- =====================MODAL TAMBAH DATA========================= -->    
 <div class="modal fade" id="tambah-data" data-backdrop="static">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -211,10 +210,6 @@
 
 
 
-
-
-
-
 <?php 
                 foreach($data as $i):
                     $id_program=$i['id_program'];
@@ -283,11 +278,11 @@
 
                   <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Detail Program*</label>
-                    <div class="col-sm-10">
+                        <div class="col-sm-10">
                           <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 400px; height: 200px;" name="detail_program" disabled><?php echo $detail_program;?></textarea>
                         </div>
                         
-                        </div>
+                       
                   </div>
 
                    <hr>
@@ -305,19 +300,9 @@
       </div>
       <!-- /.modal -->
 <!-- ============================================================================== -->
-<?php endforeach ?>
 
 
-<?php 
-                foreach($data as $i):
-                    $id_program=$i['id_program'];
-                    $id_jenis_program=$i['id_jenis_program'];
-                    $id_pengguna=$i['id_pengguna'];
-                    $jenis_program=$i['jenis_program'];
-                    $judul_program=$i['judul_program'];
-                    $detail_program=$i['detail_program'];
-                    $foto_program=$i['foto_program'];
-                ?>
+
   <!-- =====================MODAL EDIT DATA========================= -->    
 <div class="modal fade" id="edit-data<?php echo $id_program;?>" data-backdrop="static">
         <div class="modal-dialog modal-lg">
@@ -353,6 +338,7 @@
                                   <?php echo $jenis_program ?>
                                   
                                 </option>
+                                <?php endforeach ?>
                                 
                             </select>
                         </div>
@@ -398,7 +384,6 @@
                   </div>
                   <!-- /.modal -->
 <!-- =============================================== -->
-<?php endforeach ?>
 
 
 <!-- =====================MODAL HAPUS DATA========================= -->
@@ -418,12 +403,15 @@
               <button type="submit" class="btn btn-primary">Yakin</button>
             </div>
           </form>
-          </div>
+         </div>
           <!-- /.modal-content -->
         </div>
-        <!-- /.modal -->
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
       <!-- =============================================== -->
 <?php endforeach;?>
+
 
 
 

@@ -374,9 +374,11 @@
               <button type="submit" class="btn btn-primary">Yakin</button>
             </div>
           </form>
-          </div>
+           </div>
           <!-- /.modal-content -->
         </div>
+        <!-- /.modal-dialog -->
+      </div>
       <!-- /.modal -->
       <!-- =============================================== -->
 <?php endforeach;?>
