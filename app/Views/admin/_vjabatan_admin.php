@@ -129,7 +129,7 @@
                         
                         <div class="form-group">
                           <label>jabatan*</label>
-                          <input class="form-control" type="text" placeholder="Jabatan" style="width: 400px;" name="jabatan" required>
+                          <input class="form-control" type="text" placeholder="Jabatan" style="width: 100%;" name="jabatan" required>
                         </div>
                     
                
@@ -184,7 +184,7 @@
                         
                         <div class="form-group">
                           <label>jabatan*</label>
-                          <input class="form-control" type="text" placeholder="Judul jabatan" style="width: 400px;" name="jabatan" required="" value="<?php echo $jabatan;?>" required>
+                          <input class="form-control" type="text" placeholder="Judul jabatan" style="width: 100%;" name="jabatan" required="" value="<?php echo $jabatan;?>" required>
 
                         </div>
 

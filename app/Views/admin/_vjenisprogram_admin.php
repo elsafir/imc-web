@@ -145,13 +145,13 @@
             
                         <div class="form-group">
                           <label>Jenis Program*</label>
-                          <input class="form-control" type="text" placeholder="Jenis Program" style="width: 200px;" name="jenis_program" required>
+                          <input class="form-control" type="text" placeholder="Jenis Program" style="width: 100%;" name="jenis_program" required>
                         </div>
 
 
                         <div class="form-group">
                           <label>Tentang Jenis Program*</label>
-                          <textarea class="form-control" rows="3" placeholder="Tentang ..." style="width: 400px; height: 200px;" name="tentang_jenis_program" required></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Tentang ..." style="width: 100%; height: 200px;" name="tentang_jenis_program" required></textarea>
                         </div>
 
 
@@ -211,14 +211,14 @@
 
                         <div class="form-group">
                           <label>Jenis Program*</label>
-                          <input class="form-control" type="text" placeholder="Jenis Program" style="width: 200px;" name="jenis_program" required="" value="<?php echo $jenis_program;?>">
+                          <input class="form-control" type="text" placeholder="Jenis Program" style="width: 100%;" name="jenis_program" required="" value="<?php echo $jenis_program;?>">
 
                         </div>
 
 
                          <div class="form-group">
                           <label>Tentang Jenis Program</label>
-                          <textarea class="form-control" rows="3" placeholder="Tentang ..." style="width: 400px; height: 200px;" name="tentang_jenis_program" required=""><?php echo $tentang_jenis_program;?></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Tentang ..." style="width: 100%; height: 200px;" name="tentang_jenis_program" required=""><?php echo $tentang_jenis_program;?></textarea>
                         </div>
 
 

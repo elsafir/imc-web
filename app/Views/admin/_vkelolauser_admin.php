@@ -156,7 +156,7 @@
 
                         <div class="form-group">
                               <label for="exampleSelect1">Nama Anggota*</label>
-                              <select class="form-control" style="width: 400px;" name="id_community" required>
+                              <select class="form-control" style="width: 100%;" name="id_community" required>
                                 <option value="== PILIH ==">== PILIH ==</option>
                                 <?php foreach($cm as $i):
                                 $id_community=$i['id_community'];
@@ -173,19 +173,19 @@
 
                         <div class="form-group">
                           <label>Username*</label>
-                          <input class="form-control" type="text" placeholder="Username" style="width: 200px;" name="username" required>
+                          <input class="form-control" type="text" placeholder="Username" style="width: 100%;" name="username" required>
                         </div>
 
 
                         <div class="form-group">
                           <label>Password*</label>
-                          <input class="form-control" type="text" placeholder="Password" style="width: 200px;" name="password" required>
+                          <input class="form-control" type="text" placeholder="Password" style="width: 100%;" name="password" required>
                         </div>
 
                       
                         <div class="form-group">
                             <label for="exampleSelect1">Level*</label>
-                            <select class="form-control" style="width: 200px;" name="level" required>
+                            <select class="form-control" style="width: 100%;" name="level" required>
                               <option value="== PILIH ==">== PILIH ==</option>
                               <option value="Administrator">Administrator</option>
                               <option value="User">User</option>
@@ -194,7 +194,7 @@
 
                         <div class="form-group">
                             <label for="exampleSelect1">Status*</label>
-                            <select class="form-control" style="width: 200px;" name="status" required>
+                            <select class="form-control" style="width: 100%;" name="status" required>
                               <option value="== PILIH ==">== PILIH ==</option>
                               <option value="Aktif">Aktif</option>
                               <option value="Tidak Aktif">Tidak Aktif</option>
@@ -259,7 +259,7 @@
 
                         <div class="form-group">
                           <label>Username*</label>
-                          <input class="form-control" type="text" placeholder="Username" style="width: 200px;" name="username" required="" value="<?php echo $username;?>">
+                          <input class="form-control" type="text" placeholder="Username" style="width: 100%;" name="username" required="" value="<?php echo $username;?>">
 
                         </div>
 
@@ -272,7 +272,7 @@
 
                          <div class="form-group">
                             <label for="exampleSelect1">Level*</label>
-                            <select class="form-control" style="width: 200px;" name="level" required>
+                            <select class="form-control" style="width: 100%;" name="level" required>
                               <option value="== PILIH ==">== PILIH ==</option>
                               <option <?php if ($level == "Administrator") { echo "selected"; } ?> value="Administrator">Administrator</option>
                               <option <?php if ($level == "User") { echo "selected"; } ?> value="User">User</option>
@@ -283,7 +283,7 @@
 
                         <div class="form-group">
                             <label for="exampleSelect1">Status*</label>
-                            <select class="form-control" style="width: 200px;" name="status" required>
+                            <select class="form-control" style="width: 100%;" name="status" required>
                               <option value="== PILIH ==">== PILIH ==</option>
                               <option <?php if ($status == "Aktif") { echo "selected"; } ?> value="Aktif">Aktif</option>
                             <option <?php if ($status == "Tidak Aktif") { echo "selected"; } ?> value="Tidak Aktif">Tidak Aktif</option>
