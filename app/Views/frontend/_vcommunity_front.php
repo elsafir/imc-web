@@ -44,7 +44,7 @@
 
         <div class="container mb-5 mt-5">
             <div class="row">
-                <div class="col-md-13">
+                <div class="col-md-13 tentang">
                     <?php
                        foreach($jrr as $i):
 

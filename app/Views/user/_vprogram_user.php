@@ -151,7 +151,7 @@
 
                         <div class="form-group">
                               <label for="exampleSelect1">Jenis Program*</label>
-                              <select class="form-control" style="width: 200px;" name="id_jenis_program" required>
+                              <select class="form-control" style="width: 100%;" name="id_jenis_program" required>
                                 <option value="== PILIH ==">== PILIH ==</option>
                                 <?php foreach($jp as $i):
                                 $id_jenis_program=$i['id_jenis_program'];
@@ -167,13 +167,13 @@
 
                         <div class="form-group">
                           <label>Judul Program*</label>
-                          <input class="form-control" type="text" placeholder="Judul Program" style="width: 400px;" name="judul_program" required>
+                          <input class="form-control" type="text" placeholder="Judul Program" style="width: 100%;" name="judul_program" required>
                         </div>
 
 
                         <div class="form-group">
                           <label>Detail Program*</label>
-                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 400px; height: 200px;" name="detail_program" required></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 100%; height: 200px;" name="detail_program" required></textarea>
                         </div>
 
 
@@ -262,7 +262,7 @@
               <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Jenis Program*</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" placeholder="Jenis Program" disabled="" name="jenis_program" value="<?php echo $jenis_program;?>" style="width: 200px;">
+                      <input type="text" class="form-control" placeholder="Jenis Program" disabled="" name="jenis_program" value="<?php echo $jenis_program;?>" style="width: 100%;">
                     </div>
                   </div>
 
@@ -270,7 +270,7 @@
                   <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Judul Program*</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" disabled="" placeholder="Judul Program" name="judul_program" value="<?php echo $judul_program;?>" style="width: 400px;">
+                      <input type="text" class="form-control" disabled="" placeholder="Judul Program" name="judul_program" value="<?php echo $judul_program;?>" style="width: 100%;">
                     </div>
                   </div>
 
@@ -278,7 +278,7 @@
                   <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Detail Program*</label>
                     <div class="col-sm-10">
-                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 400px; height: 200px;" name="detail_program" disabled><?php echo $detail_program;?></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 100%; height: 200px;" name="detail_program" disabled><?php echo $detail_program;?></textarea>
                         </div>
                         
                         </div>
@@ -322,7 +322,7 @@
                         <input type="hidden" name="id_pengguna" value="<?php echo $id_pengguna;?>">
                         <div class="form-group">
                             <label for="exampleSelect1">Jenis Program*</label>
-                            <select class="form-control" style="width: 200px;" name="id_jenis_program" required>
+                            <select class="form-control" style="width: 100%;" name="id_jenis_program" required>
                               <option value="== PILIH ==">== PILIH ==</option>
                               <?php foreach($jp as $i):
                                 $id_jenis_programm=$i['id_jenis_program'];
@@ -348,14 +348,14 @@
 
                         <div class="form-group">
                           <label>Judul Program*</label>
-                          <input class="form-control" type="text" placeholder="Judul Program" style="width: 400px;" name="judul_program" required="" value="<?php echo $judul_program;?>">
+                          <input class="form-control" type="text" placeholder="Judul Program" style="width: 100%;" name="judul_program" required="" value="<?php echo $judul_program;?>">
 
                         </div>
 
 
                         <div class="form-group">
                           <label>Detail Program</label>
-                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 400px; height: 200px;" name="detail_program" required=""><?php echo $detail_program;?></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 100%; height: 200px;" name="detail_program" required=""><?php echo $detail_program;?></textarea>
                         </div>
 
                         <div class="form-group">

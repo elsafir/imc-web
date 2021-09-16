@@ -143,15 +143,15 @@
                         </div>           
                         <div class="form-group">
                           <label>Nama Regional*</label>
-                          <input class="form-control" type="text" placeholder="Nama Regional" style="width: 200px;" name="region" required autofocus> 
+                          <input class="form-control" type="text" placeholder="Nama Regional" style="width: 100%;" name="region" required autofocus> 
                         </div>
                         <div class="form-group">
                           <label>Tentang Regional*</label>
-                          <textarea class="form-control" rows="3" placeholder="Tentang..." style="width: 400px;" name="tentang_region" required></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Tentang..." style="width: 100%;" name="tentang_region" required></textarea>
                         </div>
                         <div class="form-group">
                           <label>Link Website*</label>
-                          <input class="form-control" type="text" placeholder="Link Website" style="width: 400px;" name="link_web" required autofocus> 
+                          <input class="form-control" type="text" placeholder="Link Website" style="width: 100%;" name="link_web" required autofocus> 
                         </div>
                       </div>
                       <div class="form-group">

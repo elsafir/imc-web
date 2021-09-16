@@ -155,13 +155,13 @@
 
                         <div class="form-group">
                           <label>Judul Events*</label>
-                          <input class="form-control" type="text" placeholder="Judul Events" style="width: 400px;" name="judul_events" required>
+                          <input class="form-control" type="text" placeholder="Judul Events" style="width: 100%;" name="judul_events" required>
                         </div>
 
 
                         <div class="form-group">
                           <label>Detail Events*</label>
-                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 400px; height: 200px;" name="detail_events" required></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 100%; height: 200px;" name="detail_events" required></textarea>
                         </div>
 
 
@@ -249,7 +249,7 @@
                   <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Judul Events*</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" disabled="" placeholder="Judul Events" name="judul_events" value="<?php echo $judul_events;?>" style="width: 400px;" required>
+                      <input type="text" class="form-control" disabled="" placeholder="Judul Events" name="judul_events" value="<?php echo $judul_events;?>" style="width: 100%;" required>
                     </div>
                   </div>
 
@@ -257,7 +257,7 @@
                   <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Detail Events*</label>
                     <div class="col-sm-10">
-                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 400px; height: 200px;" name="detail_events" disabled><?php echo $detail_events;?></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 100%; height: 200px;" name="detail_events" disabled><?php echo $detail_events;?></textarea>
                         </div>
 
                         </div>
@@ -303,14 +303,14 @@
 
                         <div class="form-group">
                           <label>Judul Events*</label>
-                          <input class="form-control" type="text" placeholder="Judul Events" style="width: 400px;" name="judul_events" required="" value="<?php echo $judul_events;?>">
+                          <input class="form-control" type="text" placeholder="Judul Events" style="width: 100%;" name="judul_events" required="" value="<?php echo $judul_events;?>">
 
                         </div>
 
 
                         <div class="form-group">
                           <label>Detail events</label>
-                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 400px; height: 200px;" name="detail_events" required=""><?php echo $detail_events;?></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 100%; height: 200px;" name="detail_events" required=""><?php echo $detail_events;?></textarea>
                         </div>
 
                         <div class="form-group">
