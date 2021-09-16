@@ -154,9 +154,10 @@
                         </div>
 
 
-                        <div class="form-group">
-                              <label for="exampleSelect1">Nama Anggota*</label>
-                              <select class="form-control" style="width: 400px;" name="id_community" required>
+                        
+                          <div class="form-group">
+                            <label>Nama Anggota*</label>
+                            <select class="form-control select2bs4" style="width: 400px;">
                                 <option value="== PILIH ==">== PILIH ==</option>
                                 <?php foreach($cm as $i):
                                 $id_community=$i['id_community'];
@@ -167,7 +168,12 @@
 
 
                               </select>
-                          </div><hr>
+                          </div>
+
+
+                          <hr>
+
+                           
                     
 
 
