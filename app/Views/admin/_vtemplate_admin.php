@@ -19,6 +19,10 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
+  <!-- Select2 -->
+  <link rel="stylesheet" href="/assets2/plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="/assets2/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+
 
     <!-- bootstrap datepicker -->
   <link rel="stylesheet" href="/assets2/assets/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css ">
@@ -415,6 +419,8 @@
 <script src="/assets2/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="/assets2/dist/js/demo.js"></script>
+<!-- Select2 -->
+<script src="/assets2/plugins/select2/js/select2.full.min.js"></script>
 
 <!-- DataTables -->
 <script src="/assets2/plugins/datatables/jquery.dataTables.js"></script>
@@ -443,6 +449,15 @@
     $("#example1").DataTable();
    
   });
+
+     $(function () {
+      
+    //Initialize Select2 Elements
+    $('.select2bs4').select2({
+      theme: 'bootstrap4'
+    })
+
+    });
 
 
 
