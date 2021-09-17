@@ -35,6 +35,8 @@
     <!-- export dataTables -->
   <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css">
 
+  <!-- CSS RESPONSIVE EKA -->
+  <link rel="stylesheet" href="/assets/css/responsive-eka-dashboard.css">
 
 
 </head>
@@ -72,8 +74,11 @@
     <ul class="navbar-nav ml-auto">
 
       <li class="nav-item">
-    <span style="font-size: 23px; margin-right: 20px;">Indonesia Millenial Connect</span>
-          <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#logout">Log Out</button>
+          <span class="imc-head-responsive" style="font-size: 23px; margin-right: 20px;">Indonesia Millenial Connect</span>
+          <div class="resp-btn-dashboard">
+            <button type="button" class="btn btn-danger resp-btn-dashboard" data-toggle="modal" data-target="#logout">Log Out</button>
+          </div>
+          
       </li>
 
 
