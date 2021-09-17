@@ -1,3 +1,7 @@
+.resp-btn-dashboard {
+  display: inline;
+}
+
 /* RESPONSIVE HEADER DASHBOARD ADMIN ============================ */
 @media screen and (max-width: 900px) {
   .imc-head-responsive {
@@ -7,9 +11,6 @@
 }
 /* END RESPONSIVE HEADER DASHBOARD ADMIN ============================ */
 
-.resp-btn-dashboard {
-  display: inline;
-}
 /* RESPONSIVE DASHBOARD ADMIN =================================== */
 @media screen and (max-width: 759px) {
   .resp-community {
@@ -24,8 +25,38 @@
   }
   .resp-btn-dashboard {
     padding: 2px;
-    /* display: none !important;
-    visibility: hidden !important; */
   }
 }
 /* END RESPONSIVE DASHBOARD ADMIN =================================== */
+
+/* RESPONSIVE DASHBOARD KELOLA USER =================================== */
+@media screen and (max-width: 1000px) {
+  .resp-keluser-5 {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 759px) {
+  .resp-keluser-5 {
+    display: none !important;
+    visibility: hidden;
+  }
+  .resp-keluser-4 {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 500px) {
+  .resp-keluser-5 {
+    display: none !important;
+    visibility: hidden;
+  }
+  .resp-keluser-3 {
+    display: none !important;
+    visibility: hidden;
+  }
+  .resp-btn-dashboard {
+    padding: 2px;
+  }
+}
+/* END RESPONSIVE DASHBOARD KELOLA USER =================================== */

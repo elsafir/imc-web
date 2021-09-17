@@ -53,8 +53,8 @@
                 <tr>
                   <th style="width:10px;">No</th>
                   <th>Judul</th>
-                  <th>Detail</th>
-                  <th>Foto</th>
+                  <th class="resp-community">Detail</th>
+                  <th class="resp-community">Foto</th>
                   <th style="width:10px;">Aksi</th>
                 </tr>
                 </thead>
@@ -73,9 +73,9 @@
                 <tr>
                   <td><?php echo $no++; ?></td>
                   <td><?php echo $judul_events; ?></td>
-                  <td><?php echo substr($detail_events, 0, 200); ?></td>
+                  <td class="resp-community"><?php echo substr($detail_events, 0, 200); ?></td>
 
-                  <td>
+                  <td class="resp-community">
 
                     <?php if ($foto_events != NULL): ?>
                         <a href="/img/<?php echo $foto_events; ?>" data-toggle="lightbox" data-title="sample 1 - white">
@@ -92,9 +92,7 @@
 
                   <td>
                     <span class="badge bg-success"><a href="#" data-toggle="modal" data-target="#lihat-data<?php echo $id_events;?>"><i class="fa fa-eye"> Lihat</i></a></span>
-
                     <span class="badge bg-warning"><a href="#" data-toggle="modal" data-target="#edit-data<?php echo $id_events;?>"><i class="fa fa-edit"> Ubah</i></a></span>
-
                     <span class="badge bg-danger"><a href="#" data-toggle="modal" data-target="#hapus-data<?php echo $id_events;?>"><i class="fa fa-edit"> Hapus</i></a></span>
                   </td>
                 </tr>
@@ -106,8 +104,8 @@
                 <tr>
                   <th>No</th>
                   <th>Judul</th>
-                  <th>Detail</th>
-                  <th>Foto</th>
+                  <th class="resp-community">Detail</th>
+                  <th class="resp-community">Foto</th>
                   <th>Aksi</th>
                 </tr>
                 </tfoot>

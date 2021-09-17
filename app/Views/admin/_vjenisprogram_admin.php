@@ -53,7 +53,7 @@
                 <tr>
                   <th style="width:10px;">No</th>
                   <th>Jenis Program</th>
-                  <th>Tentang</th>
+                  <th class="resp-community">Tentang</th>
                   <th style="width:10px;">Aksi</th>
                 </tr>
                 </thead>
@@ -72,7 +72,7 @@
                 <tr>
                   <td><?php echo $no++; ?></td> 
                   <td><?php echo $jenis_program; ?></td>
-                  <td><?php echo substr($tentang_jenis_program, 0, 200); ?></td>
+                  <td class="resp-community"><?php echo substr($tentang_jenis_program, 0, 200); ?></td>
 
 
 
@@ -89,8 +89,8 @@
                 <tfoot>
                 <tr>
                   <th style="width:10px;">No</th>
-                   <th>Jenis Program</th>
-                  <th>Tentang</th>
+                  <th>Jenis Program</th>
+                  <th class="resp-community">Tentang</th>
                   <th style="width:10px;">Aksi</th>
                 </tr>
                 </tfoot>
