@@ -23,6 +23,12 @@
                 </div>
             <?php } ?>
 
+            <?php if(!empty(session()->getFlashdata('gagal'))){ ?>
+                <div class="alert alert-danger">
+                    <?php echo session()->getFlashdata('gagal');?>
+                </div>
+            <?php } ?>
+
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambah-data">
                   <i class="fa fa-plus"></i> Tambah Data
                 </button>
@@ -294,7 +300,8 @@
 
                         <input type="hidden" name="id_events" value="<?php echo $id_events;?>">
                         <input type="hidden" name="id_pengguna" value="<?php echo $id_pengguna;?>">
-                        
+                        <input type="hidden" name="eventlama" value="<?php echo $judul_events;?>">
+
 
                         <div class="form-group">
                           <label>Judul events*</label>
