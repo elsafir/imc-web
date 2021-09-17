@@ -15,10 +15,15 @@ class Cevents_user extends BaseController{
             return redirect()->to(site_url('Clogin'));
         }
 
-        $id_pengguna = session('id_pengguna');
+        // $id_pengguna = session('id_pengguna');
 
+        // $model = new Mevents();
+		// $x['data']= $model->tampilEventsUser($id_pengguna)->getResultArray();
+        // return view('user/_vevent_user', $x);
+
+        $id_region = session('id_region');
         $model = new Mevents();
-		$x['data']= $model->tampilEventsUser($id_pengguna)->getResultArray();
+		$x['data']= $model->tampilEventsUser($id_region)->getResultArray();
         return view('user/_vevent_user', $x);
     }
     public function tambah(){
