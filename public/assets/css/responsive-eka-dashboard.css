@@ -1,0 +1,31 @@
+/* RESPONSIVE HEADER DASHBOARD ADMIN ============================ */
+@media screen and (max-width: 900px) {
+  .imc-head-responsive {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+/* END RESPONSIVE HEADER DASHBOARD ADMIN ============================ */
+
+.resp-btn-dashboard {
+  display: inline;
+}
+/* RESPONSIVE DASHBOARD ADMIN =================================== */
+@media screen and (max-width: 759px) {
+  .resp-community {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 500px) {
+  .resp-community-kcl {
+    display: none !important;
+    visibility: hidden;
+  }
+  .resp-btn-dashboard {
+    padding: 2px;
+    /* display: none !important;
+    visibility: hidden !important; */
+  }
+}
+/* END RESPONSIVE DASHBOARD ADMIN =================================== */

@@ -44,11 +44,11 @@
               <table id="example-community" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th style="width:10px;">No</th>
+                  <th class="resp-community-kcl" style="width:10px;" >No</th>
                   <th>Region</th>
                   <th>Nama Anggota</th>
-                  <th>jabatan</th>
-                  <th style="width:100px;">Foto</th>
+                  <th class="resp-community">jabatan</th>
+                  <th class="resp-community"style="width:100px;">Foto</th>
                   <th style="width:10px;">Aksi</th>
                 </tr>
                 </thead>
@@ -66,12 +66,12 @@
                       ?>
 
                 <tr>
-                  <td><?php echo $no++; ?></td> 
+                  <td class="resp-community-kcl"><?php echo $no++; ?></td> 
                   <td><?php echo $region; ?></td>
                   <td><?php echo $nama_anggota?></td>
-                  <td><?php echo $jabatan?></td>
+                  <td class="resp-community"><?php echo $jabatan?></td>
 
-                  <td>
+                  <td class="resp-community">
 
                     <?php if ($foto_anggota != NULL): ?>
                         <a href="/img/<?php echo $foto_anggota; ?>" data-toggle="lightbox" data-title="sample 1 - white">
@@ -100,11 +100,11 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                  <th>No</th>
+                  <th class="resp-community-kcl">No</th>
                   <th>Region</th>
                   <th>Nama Anggota</th>
-                  <th>jabatan</th>
-                  <th>Foto</th>
+                  <th class="resp-community">jabatan</th>
+                  <th class="resp-community">Foto</th>
                   <th>Aksi</th>
                 </tr>
                 </tfoot>
