@@ -23,8 +23,7 @@
 
     <!-- end section -->
 
-<br><br><br>
-
+<br>
     <!--section-->
     <section class="program" id="economy">
         <div class="container">
@@ -32,13 +31,13 @@
                 <div class="container">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-12" >
+                            <div class="col-md-12">
                               <?php
                               foreach($jp1 as $i):
                               $tentang_jenis_program=$i['tentang_jenis_program'];
                               ?>
-                                <div class="text_align_center mt-3 mb-3" ">
-                                    <h3><?php echo $tentang_jenis_program ?></h3>
+                                <div class=" mt-3 mb-3" style="text-align: justify;">
+                                    <?php echo $tentang_jenis_program ?></>
                                 </div>
                                 <?php endforeach;?>
                             </div>

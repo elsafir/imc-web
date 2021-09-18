@@ -50,7 +50,7 @@
 
                           $tentang_region=$i['tentang_region'];
                       ?>
-                    <p class="lead" style="text-align: justify;"><?php echo $tentang_region ?>
+                    <p  style="text-align: justify;"><?php echo $tentang_region ?>
                     </p>
                     <?php endforeach;?>
                 </div>
