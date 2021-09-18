@@ -37,10 +37,10 @@
                     </div>
                 </div>
                 <div class="col-md-4"></div>
-                <div class="col-md-4">
+                <div class="col-md-4" style="text-align:center;">
                     <?php if ($foto_events != NULL): ?>
                     <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
-                    <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 450px; height: 350px;object-fit: cover;object-position: center;border-radius:2px;"/>
+                    <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 450px; height: 350px;object-position: center;border-radius:2px;"/>
                   </a>
                     <?php else: ?>
                       <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
@@ -51,8 +51,8 @@
             </div>
         </div>
         <div class="container mt-5">
-            <div class="row">
-                    <p style="text-indent: 50px; text-align: justify; letter-spacing: 0;font-size:18px;font-family: 'Poppins', sans-serif;"><?php echo $detail_events; ?></p>
+            <div class="row text-detailevents">
+                    <p style="text-indent: 50px; text-align: justify; letter-spacing: 0;font-size:18px;font-family: 'Poppins', sans-serif;margin-bottom:5vw;"><?php echo $detail_events; ?></p>
             </div>
 
         </div>
