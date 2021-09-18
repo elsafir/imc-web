@@ -80,7 +80,7 @@
           <div class="resp-btn-dashboard">
             <button type="button" class="btn btn-danger resp-btn-dashboard" data-toggle="modal" data-target="#logout">Log Out</button>
           </div>
-          
+
       </li>
 
 
@@ -131,7 +131,7 @@
       <img src="/assets2/dist/img/AdminLTELogo.png"
            alt="AdminLTE Logo"
            class="brand-image img-circle elevation-3"
-           style="opacity: .8">
+           style="opacity: 0.8">
       <span class="brand-text font-weight-light">IMCONNECT</span>
     </a>
 
@@ -459,7 +459,7 @@
   });
 
      $(function () {
-      
+
     //Initialize Select2 Elements
     $('.select2bs4').select2({
       theme: 'bootstrap4'
