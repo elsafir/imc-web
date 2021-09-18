@@ -1922,6 +1922,11 @@ p.count-text {
 }
 
 @media only screen and (max-width: 767.98px) {
+  /* Events */
+  .hvr-radial-out {
+    margin-bottom: 3em;
+  }
+
   /* Home */
   #parallax_2 .container {
     margin-top: 15px;
@@ -2063,6 +2068,10 @@ p.count-text {
 }
 
 @media only screen and (max-width: 578px) {
+  .hvr-radial-out {
+    width: 23vw;
+    font-size: 3vw;
+  }
   .box-searchh {
     margin-left: none !important;
     width: auto !important;
