@@ -26,6 +26,13 @@ class Cprogram_admin extends BaseController{
 
         $id_pengguna = session('id_pengguna');
 
+        //validasi inputan
+		if (!$this->validate([
+			'judul_program' => 'required|is_unique[program.judul_program]', //[namatable.field]
+		])) {
+			return redirect()->to('/Cprogram_admin')->with('gagal', '<b>DATA GAGAL DITAMBAHKAN!</b> Judul Program sebelumnya sudah terdaftar. Silahkan gunakan judul yang berbeda');
+		}
+
         $model = new Mprogram();
         // $data = array(
         //     'id_jenis_program'  => $this->request->getPost('id_jenis_program'),
@@ -84,6 +91,22 @@ class Cprogram_admin extends BaseController{
         $i = 0;
 
         $id_program = $this->request->getPost('id_program');
+		$judul_program_lama = $this->request->getPost('judul_program_lama');
+
+		//cek judul program 
+		if ($judul_program_lama == $this->request->getVar('judul_program')){
+			$rule_program = 'required';
+		} else {
+			$rule_program = 'required|is_unique[program.judul_program]';
+		}
+
+        if (!$this->validate([
+			'judul_program' => $rule_program
+		])) {
+
+			return redirect()->to('/Cprogram_admin')->with('gagal', '<b>DATA GAGAL DIUBAH!</b> Judul program sebelumnya sudah terdaftar');
+		}
+
         $validation = $this->validate([
             'file_upload' => 'uploaded[file_upload]|mime_in[file_upload,image/jpg,image/jpeg,image/gif,image/png]|max_size[file_upload,4096]'
         ]);

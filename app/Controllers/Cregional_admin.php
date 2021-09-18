@@ -40,7 +40,7 @@ class Cregional_admin extends BaseController{
         
 		//validasi inputan
 		if (!$this->validate([
-			'region' => 'required|is_unique[region.region]',
+			'region' => 'required|is_unique[region.region]', //[namatable.field]
 		])) {
 			return redirect()->to('/Cregional_admin')->with('gagal', '<b>DATA GAGAL DITAMBAHKAN!</b> Nama regional sebelumnya sudah terdaftar');
 		}

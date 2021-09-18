@@ -9,6 +9,7 @@
 <?= $this->endSection(); ?>  
 
 <?= $this->section('content_admin'); ?>
+
 <!-- ============================================================================== -->    
 
            <div class="row">
@@ -20,6 +21,12 @@
                 <?php if(!empty(session()->getFlashdata('berhasil'))){ ?>
                 <div class="alert alert-success">
                     <?php echo session()->getFlashdata('berhasil');?>
+                </div>
+            <?php } ?>
+
+            <?php if(!empty(session()->getFlashdata('gagal'))){ ?>
+                <div class="alert alert-danger">
+                    <?php echo session()->getFlashdata('gagal');?>
                 </div>
             <?php } ?>
 
@@ -44,11 +51,11 @@
               <table id="example-program" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th style="width:10px;">No</th>
+                  <th class="resp-community-kcl" style="width:10px;">No</th>
                   <th>Jenis</th>
                   <th>Judul</th>
-                  <th>Detail</th>
-                  <th>Foto</th>
+                  <th class="resp-community">Detail</th>
+                  <th class="resp-community">Foto</th>
                   <th style="width:10px;">Aksi</th>
                 </tr>
                 </thead>
@@ -66,12 +73,12 @@
                       ?>
 
                 <tr>
-                  <td><?php echo $no++; ?></td> 
+                  <td class="resp-community-kcl"><?php echo $no++; ?></td> 
                   <td><?php echo $jenis_program; ?></td>
                   <td><?php echo $judul_program; ?></td>
-                  <td><?php echo substr($detail_program, 0, 200); ?></td>
+                  <td class="resp-community"><?php echo substr($detail_program, 0, 200); ?></td>
 
-                  <td>
+                  <td class="resp-community">
 
                     <?php if ($foto_program != NULL): ?>
                         <a href="/img/<?php echo $foto_program; ?>" data-toggle="lightbox" data-title="sample 1 - white">
@@ -100,11 +107,11 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                  <th>No</th>
+                  <th class="resp-community-kcl">No</th>
                   <th>Jenis</th>
                   <th>Judul</th>
-                  <th>Detail</th>
-                  <th>Foto</th>
+                  <th class="resp-community">Detail</th>
+                  <th class="resp-community">Foto</th>
                   <th>Aksi</th>
                 </tr>
                 </tfoot>
@@ -124,9 +131,7 @@
   <!-- ============================================================================== -->
 
 
-
-
- <!-- =====================MODAL TAMBAH DATA========================= -->    
+  <!-- =====================MODAL TAMBAH DATA========================= -->    
 <div class="modal fade" id="tambah-data" data-backdrop="static">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -151,7 +156,7 @@
 
                         <div class="form-group">
                               <label for="exampleSelect1">Jenis Program*</label>
-                              <select class="form-control" style="width: 200px;" name="id_jenis_program" required>
+                              <select class="form-control" style="width: 100%;" name="id_jenis_program" required>
                                 <option value="== PILIH ==">== PILIH ==</option>
                                 <?php foreach($jp as $i):
                                 $id_jenis_program=$i['id_jenis_program'];
@@ -167,13 +172,13 @@
 
                         <div class="form-group">
                           <label>Judul Program*</label>
-                          <input class="form-control" type="text" placeholder="Judul Program" style="width: 400px;" name="judul_program" required>
+                          <input class="form-control" type="text" placeholder="Judul Program" style="width: 100%;" name="judul_program" required>
                         </div>
 
 
                         <div class="form-group">
                           <label>Detail Program*</label>
-                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 400px; height: 200px;" name="detail_program" required></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 100%; height: 200px;" name="detail_program" required></textarea>
                         </div>
 
 
@@ -202,10 +207,6 @@
                   </div>
                   <!-- /.modal -->
 <!-- =============================================== -->
-
-
-
-
 
 
 
@@ -262,7 +263,7 @@
               <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Jenis Program*</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" placeholder="Jenis Program" disabled="" name="jenis_program" value="<?php echo $jenis_program;?>" style="width: 200px;">
+                      <input type="text" class="form-control" placeholder="Jenis Program" disabled="" name="jenis_program" value="<?php echo $jenis_program;?>" style="width: 100%;">
                     </div>
                   </div>
 
@@ -270,18 +271,18 @@
                   <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Judul Program*</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" disabled="" placeholder="Judul Program" name="judul_program" value="<?php echo $judul_program;?>" style="width: 400px;">
+                      <input type="text" class="form-control" disabled="" placeholder="Judul Program" name="judul_program" value="<?php echo $judul_program;?>" style="width: 400p100%x;">
                     </div>
                   </div>
 
 
                   <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Detail Program*</label>
-                    <div class="col-sm-10">
-                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 400px; height: 200px;" name="detail_program" disabled><?php echo $detail_program;?></textarea>
+                        <div class="col-sm-10">
+                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 100%; height: 200px;" name="detail_program" disabled><?php echo $detail_program;?></textarea>
                         </div>
                         
-                        </div>
+                       
                   </div>
 
                    <hr>
@@ -302,7 +303,6 @@
 
 
 
-
   <!-- =====================MODAL EDIT DATA========================= -->    
 <div class="modal fade" id="edit-data<?php echo $id_program;?>" data-backdrop="static">
         <div class="modal-dialog modal-lg">
@@ -320,9 +320,11 @@
 
                         <input type="hidden" name="id_program" value="<?php echo $id_program;?>">
                         <input type="hidden" name="id_pengguna" value="<?php echo $id_pengguna;?>">
+                        <input type="hidden" name="judul_program_lama" value="<?php echo $judul_program;?>">
+                        
                         <div class="form-group">
                             <label for="exampleSelect1">Jenis Program*</label>
-                            <select class="form-control" style="width: 200px;" name="id_jenis_program" required>
+                            <select class="form-control" style="width: 100%;" name="id_jenis_program" required>
                               <option value="== PILIH ==">== PILIH ==</option>
                               <?php foreach($jp as $i):
                                 $id_jenis_programm=$i['id_jenis_program'];
@@ -337,25 +339,19 @@
                                   
                                 </option>
                                 <?php endforeach ?>
-
-
-
+                                
                             </select>
-
-
-
                         </div>
 
                         <div class="form-group">
                           <label>Judul Program*</label>
-                          <input class="form-control" type="text" placeholder="Judul Program" style="width: 400px;" name="judul_program" required="" value="<?php echo $judul_program;?>">
-
+                          <input class="form-control" type="text" placeholder="Judul Program" style="width: 100%;" name="judul_program" required="" value="<?php echo $judul_program;?>">
                         </div>
 
 
                         <div class="form-group">
                           <label>Detail Program</label>
-                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 400px; height: 200px;" name="detail_program" required=""><?php echo $detail_program;?></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 100%; height: 200px;" name="detail_program" required=""><?php echo $detail_program;?></textarea>
                         </div>
 
                         <div class="form-group">
@@ -372,16 +368,7 @@
                           <input type="file" name="file_upload" class="form-control"> 
                         </div> 
 
-
-                       
-
                         </div>
-
-
-
-
-
-
 
                         <div class="modal-footer">
                           <button class="btn btn-primary" type="submit"><i class="fa fa-check"></i></button>
@@ -397,9 +384,6 @@
                   </div>
                   <!-- /.modal -->
 <!-- =============================================== -->
-
-
-
 
 
 <!-- =====================MODAL HAPUS DATA========================= -->
@@ -419,12 +403,15 @@
               <button type="submit" class="btn btn-primary">Yakin</button>
             </div>
           </form>
-          </div>
+         </div>
           <!-- /.modal-content -->
         </div>
-        <!-- /.modal -->
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
       <!-- =============================================== -->
 <?php endforeach;?>
+
 
 
 

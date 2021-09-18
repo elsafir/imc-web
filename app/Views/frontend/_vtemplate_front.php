@@ -38,6 +38,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
+    <!-- PAGES ABOUT RESPONSIVE -->
+    <link rel="stylesheet" href="/assets/css/responsive-eka.css">
+
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -158,14 +161,14 @@
 
     <!-- Start Footer -->
     <footer class="footer-box">
-        <div class="container">
+        <div class="container footer-ek">
 
             <div class="row">
 
-                <div class="col-md-3">
-                    <div class="footer_blog">
-                        <div class="full margin-bottom_30">
-                            <img src="/assets/images/company-profile/IMC - background full colour.jpg" alt="#" class="imc-foot-icon"/>
+                <div class="col-md-3 resp-footer">
+                    <div class="footer_blog resp-footer">
+                        <div class="full margin-bottom_30 resp-footer">
+                            <img src="/assets/images/company-profile/IMC - background full colour.jpg" alt="#" class="imc-foot-icon resp-footer"/>
                         </div>
                     </div>
                 </div>

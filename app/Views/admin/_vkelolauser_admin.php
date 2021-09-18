@@ -50,13 +50,13 @@
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th style="width:10px;">No</th>
+                  <th class="resp-keluser-3" style="width:10px;">No</th>
                   <th>Region</th>
                   <th>Nama Anggota</th>
-                  <th>Username</th>
-                  <th>Password</th>
-                  <th>Level</th>
-                  <th>Status</th>
+                  <th class="resp-keluser-3">Username</th>
+                  <th class="resp-keluser-4">Password</th>
+                  <th class="resp-keluser-5">Level</th>
+                  <th class="resp-keluser-5">Status</th>
                   <th style="width:10px;">Aksi</th>
                 </tr>
                 </thead>
@@ -76,13 +76,13 @@
                       ?>
 
                 <tr>
-                  <td><?php echo $no++; ?></td> 
+                  <td class="resp-keluser-3"><?php echo $no++; ?></td> 
                   <td><?php echo $region; ?></td>
                   <td><?php echo $nama_anggota; ?></td>
-                  <td><?php echo $username; ?></td>
-                  <td><?php echo substr($password, 0, 20); ?></td>
-                  <td><?php echo $level; ?></td>
-                  <td><?php echo $status; ?></td>
+                  <td class="resp-keluser-3"><?php echo $username; ?></td>
+                  <td class="resp-keluser-4"><?php echo substr($password, 0, 20); ?></td>
+                  <td class="resp-keluser-5"><?php echo $level; ?></td>
+                  <td class="resp-keluser-5"><?php echo $status; ?></td>
 
 
                   <td>
@@ -97,13 +97,13 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                  <th>No</th>
+                  <th class="resp-keluser-3">No</th>
                   <th>Region</th>
                   <th>Nama Anggota</th>
-                  <th>Username</th>
-                  <th>Password</th>
-                  <th>Level</th>
-                  <th>Status</th>
+                  <th class="resp-keluser-3">Username</th>
+                  <th class="resp-keluser-4">Password</th>
+                  <th class="resp-keluser-5">Level</th>
+                  <th class="resp-keluser-5">Status</th>
                   <th>Aksi</th>
                 </tr>
                 </tfoot>
@@ -154,9 +154,10 @@
                         </div>
 
 
-                        <div class="form-group">
-                              <label for="exampleSelect1">Nama Anggota*</label>
-                              <select class="form-control" style="width: 400px;" name="id_community" required>
+                        
+                          <div class="form-group">
+                            <label>Nama Anggota*</label>
+                            <select class="form-control select2bs4" style="width: 400px;">
                                 <option value="== PILIH ==">== PILIH ==</option>
                                 <?php foreach($cm as $i):
                                 $id_community=$i['id_community'];
@@ -167,25 +168,30 @@
 
 
                               </select>
-                          </div><hr>
+                          </div>
+
+
+                          <hr>
+
+                           
                     
 
 
                         <div class="form-group">
                           <label>Username*</label>
-                          <input class="form-control" type="text" placeholder="Username" style="width: 200px;" name="username" required>
+                          <input class="form-control" type="text" placeholder="Username" style="width: 100%;" name="username" required>
                         </div>
 
 
                         <div class="form-group">
                           <label>Password*</label>
-                          <input class="form-control" type="text" placeholder="Password" style="width: 200px;" name="password" required>
+                          <input class="form-control" type="text" placeholder="Password" style="width: 100%;" name="password" required>
                         </div>
 
                       
                         <div class="form-group">
                             <label for="exampleSelect1">Level*</label>
-                            <select class="form-control" style="width: 200px;" name="level" required>
+                            <select class="form-control" style="width: 100%;" name="level" required>
                               <option value="== PILIH ==">== PILIH ==</option>
                               <option value="Administrator">Administrator</option>
                               <option value="User">User</option>
@@ -194,7 +200,7 @@
 
                         <div class="form-group">
                             <label for="exampleSelect1">Status*</label>
-                            <select class="form-control" style="width: 200px;" name="status" required>
+                            <select class="form-control" style="width: 100%;" name="status" required>
                               <option value="== PILIH ==">== PILIH ==</option>
                               <option value="Aktif">Aktif</option>
                               <option value="Tidak Aktif">Tidak Aktif</option>
@@ -259,7 +265,7 @@
 
                         <div class="form-group">
                           <label>Username*</label>
-                          <input class="form-control" type="text" placeholder="Username" style="width: 200px;" name="username" required="" value="<?php echo $username;?>">
+                          <input class="form-control" type="text" placeholder="Username" style="width: 100%;" name="username" required="" value="<?php echo $username;?>">
 
                         </div>
 
@@ -272,7 +278,7 @@
 
                          <div class="form-group">
                             <label for="exampleSelect1">Level*</label>
-                            <select class="form-control" style="width: 200px;" name="level" required>
+                            <select class="form-control" style="width: 100%;" name="level" required>
                               <option value="== PILIH ==">== PILIH ==</option>
                               <option <?php if ($level == "Administrator") { echo "selected"; } ?> value="Administrator">Administrator</option>
                               <option <?php if ($level == "User") { echo "selected"; } ?> value="User">User</option>
@@ -283,7 +289,7 @@
 
                         <div class="form-group">
                             <label for="exampleSelect1">Status*</label>
-                            <select class="form-control" style="width: 200px;" name="status" required>
+                            <select class="form-control" style="width: 100%;" name="status" required>
                               <option value="== PILIH ==">== PILIH ==</option>
                               <option <?php if ($status == "Aktif") { echo "selected"; } ?> value="Aktif">Aktif</option>
                             <option <?php if ($status == "Tidak Aktif") { echo "selected"; } ?> value="Tidak Aktif">Tidak Aktif</option>

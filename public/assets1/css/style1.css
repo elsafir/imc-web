@@ -676,14 +676,7 @@ label.valid:after {
   }
 
   .signin-image {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 50px;
-    order: 2;
-    -moz-order: 2;
-    -webkit-order: 2;
-    -o-order: 2;
-    -ms-order: 2;
+    display: none;
   }
 
   .signup-form,

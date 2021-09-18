@@ -1,0 +1,41 @@
+/* RESPPONSIVE ABOUT MISI ==============================*/
+.responsive {
+  width: 80%;
+}
+@media screen and (max-width: 765px) {
+  .responsive {
+    margin: auto;
+  }
+  .card-ek {
+    height: 50px;
+  }
+  .card-ek-2 {
+    height: 50px !important;
+  }
+}
+/* END RESPPONSIVE ABOUT MISI ==========================*/
+
+/* RESPONSIVE FOOTER =================================== */
+@media screen and (max-width: 759px) {
+  .resp-footer {
+    visibility: hidden;
+    display: none;
+  }
+  .resp-footer img {
+    visibility: hidden;
+  }
+}
+/* END RESPONSIVE FOOTER =================================== */
+
+/* RESPONSIVE DETAIL COMMUNITY =================================== */
+@media screen and (max-width: 759px) {
+  .community img {
+    width: 70% !important;
+  }
+  .community .tentang {
+    /* width: 80% !important; */
+    margin-right: 30px !important;
+    margin-left: 30px !important;
+  }
+}
+/* END RESPONSIVE DETAIL COMMUNITY =================================== */

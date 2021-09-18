@@ -21,6 +21,10 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
+  <!-- Select2 -->
+  <link rel="stylesheet" href="/assets2/plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="/assets2/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+
 
     <!-- bootstrap datepicker -->
   <link rel="stylesheet" href="/assets2/assets/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css ">
@@ -33,6 +37,8 @@
     <!-- export dataTables -->
   <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css">
 
+  <!-- CSS RESPONSIVE EKA -->
+  <link rel="stylesheet" href="/assets/css/responsive-eka-dashboard.css">
 
 
 </head>
@@ -70,8 +76,11 @@
     <ul class="navbar-nav ml-auto">
 
       <li class="nav-item">
-    <span style="font-size: 23px; margin-right: 20px;">Indonesia Millenial Connect</span>
-          <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#logout">Log Out</button>
+          <span class="imc-head-responsive" style="font-size: 23px; margin-right: 20px;">Indonesia Millenial Connect</span>
+          <div class="resp-btn-dashboard">
+            <button type="button" class="btn btn-danger resp-btn-dashboard" data-toggle="modal" data-target="#logout">Log Out</button>
+          </div>
+          
       </li>
 
 
@@ -418,6 +427,8 @@
 <script src="/assets2/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="/assets2/dist/js/demo.js"></script>
+<!-- Select2 -->
+<script src="/assets2/plugins/select2/js/select2.full.min.js"></script>
 
 <!-- DataTables -->
 <script src="/assets2/plugins/datatables/jquery.dataTables.js"></script>
@@ -446,6 +457,15 @@
     $("#example1").DataTable();
 
   });
+
+     $(function () {
+      
+    //Initialize Select2 Elements
+    $('.select2bs4').select2({
+      theme: 'bootstrap4'
+    })
+
+    });
 
 
 

@@ -53,7 +53,7 @@
                 <tr>
                   <th style="width:10px;">No</th>
                   <th>Jenis Program</th>
-                  <th>Tentang</th>
+                  <th class="resp-community">Tentang</th>
                   <th style="width:10px;">Aksi</th>
                 </tr>
                 </thead>
@@ -72,7 +72,7 @@
                 <tr>
                   <td><?php echo $no++; ?></td> 
                   <td><?php echo $jenis_program; ?></td>
-                  <td><?php echo substr($tentang_jenis_program, 0, 200); ?></td>
+                  <td class="resp-community"><?php echo substr($tentang_jenis_program, 0, 200); ?></td>
 
 
 
@@ -89,8 +89,8 @@
                 <tfoot>
                 <tr>
                   <th style="width:10px;">No</th>
-                   <th>Jenis Program</th>
-                  <th>Tentang</th>
+                  <th>Jenis Program</th>
+                  <th class="resp-community">Tentang</th>
                   <th style="width:10px;">Aksi</th>
                 </tr>
                 </tfoot>
@@ -145,13 +145,13 @@
             
                         <div class="form-group">
                           <label>Jenis Program*</label>
-                          <input class="form-control" type="text" placeholder="Jenis Program" style="width: 200px;" name="jenis_program" required>
+                          <input class="form-control" type="text" placeholder="Jenis Program" style="width: 100%;" name="jenis_program" required>
                         </div>
 
 
                         <div class="form-group">
                           <label>Tentang Jenis Program*</label>
-                          <textarea class="form-control" rows="3" placeholder="Tentang ..." style="width: 400px; height: 200px;" name="tentang_jenis_program" required></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Tentang ..." style="width: 100%; height: 200px;" name="tentang_jenis_program" required></textarea>
                         </div>
 
 
@@ -203,20 +203,22 @@
 
                       <form role="form" name="myform" method="post" action="/CjenisProgram_admin/update" enctype="multipart/form-data">
 
+
                         <div class="modal-body">
 
                         <input type="hidden" name="id_jenis_program" value="<?php echo $id_jenis_program;?>">
+                        <input type="hidden" name="jenis_program_lama" value="<?php echo $jenis_program;?>">
 
                         <div class="form-group">
                           <label>Jenis Program*</label>
-                          <input class="form-control" type="text" placeholder="Jenis Program" style="width: 200px;" name="jenis_program" required="" value="<?php echo $jenis_program;?>">
+                          <input class="form-control" type="text" placeholder="Jenis Program" style="width: 100%;" name="jenis_program" required="" value="<?php echo $jenis_program;?>">
 
                         </div>
 
 
                          <div class="form-group">
                           <label>Tentang Jenis Program</label>
-                          <textarea class="form-control" rows="3" placeholder="Tentang ..." style="width: 400px; height: 200px;" name="tentang_jenis_program" required=""><?php echo $tentang_jenis_program;?></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Tentang ..." style="width: 100%; height: 200px;" name="tentang_jenis_program" required=""><?php echo $tentang_jenis_program;?></textarea>
                         </div>
 
 
