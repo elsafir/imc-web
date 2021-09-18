@@ -7,17 +7,17 @@
 <?= $this->section('breadcrumb'); ?>
 <li class="breadcrumb-item"><i class="nav-icon fas fa-copy"></i> Data Master</li>
 <li class="breadcrumb-item active"><i class="far fa-circle nav-icon"></i> Jenis Program</li>
-<?= $this->endSection(); ?>  
+<?= $this->endSection(); ?>
 
 <?= $this->section('content_admin'); ?>
-<!-- ============================================================================== -->    
+<!-- ============================================================================== -->
 
            <div class="row">
           <div class="col-md-12">
 
           <div class="card card-primary card-outline">
               <div class="card-header">
-                
+
                 <?php if(!empty(session()->getFlashdata('berhasil'))){ ?>
                 <div class="alert alert-success">
                     <?php echo session()->getFlashdata('berhasil');?>
@@ -51,15 +51,15 @@
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th style="width:10px;">No</th>
+                  <th style="width:10px;" class="number-jp">No</th>
                   <th>Jenis Program</th>
-                  <th class="resp-community">Tentang</th>
+                  <th class="resp-community" style="width:100%;">Tentang</th>
                   <th style="width:10px;">Aksi</th>
                 </tr>
                 </thead>
                 <tbody>
 
-                  <?php 
+                  <?php
                   $no=1;
                        foreach($data as $i):
 
@@ -70,7 +70,7 @@
                       ?>
 
                 <tr>
-                  <td><?php echo $no++; ?></td> 
+                  <td class="number-jp"><?php echo $no++; ?></td>
                   <td><?php echo $jenis_program; ?></td>
                   <td class="resp-community"><?php echo substr($tentang_jenis_program, 0, 200); ?></td>
 
@@ -84,20 +84,20 @@
                 </tr>
 
                 <?php endforeach;?>
-                
+
                 </tbody>
                 <tfoot>
                 <tr>
-                  <th style="width:10px;">No</th>
+                  <th style="width:10px;" class="number-jp">No</th>
                   <th>Jenis Program</th>
                   <th class="resp-community">Tentang</th>
                   <th style="width:10px;">Aksi</th>
                 </tr>
                 </tfoot>
               </table>
-           
 
-                
+
+
               </div>
               <!-- /.card-body -->
             </div>
@@ -112,7 +112,7 @@
 
 
 
- <!-- =====================MODAL TAMBAH DATA========================= -->    
+ <!-- =====================MODAL TAMBAH DATA========================= -->
 <div class="modal fade" id="tambah-data" data-backdrop="static">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -142,7 +142,7 @@
 
 
 
-            
+
                         <div class="form-group">
                           <label>Jenis Program*</label>
                           <input class="form-control" type="text" placeholder="Jenis Program" style="width: 100%;" name="jenis_program" required>
@@ -155,7 +155,7 @@
                         </div>
 
 
-         
+
 
                         </div>
 
@@ -181,7 +181,7 @@
 
 
 
-<?php 
+<?php
                 foreach($data as $i):
                     $id_jenis_program=$i['id_jenis_program'];
                     $jenis_program=$i['jenis_program'];
@@ -190,7 +190,7 @@
                 ?>
 
 
-  <!-- =====================MODAL EDIT DATA========================= -->    
+  <!-- =====================MODAL EDIT DATA========================= -->
 <div class="modal fade" id="edit-data<?php echo $id_jenis_program;?>" data-backdrop="static">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -222,7 +222,7 @@
                         </div>
 
 
-                       
+
 
                         </div>
 
