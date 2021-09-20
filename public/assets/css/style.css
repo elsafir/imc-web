@@ -2068,6 +2068,11 @@ p.count-text {
 }
 
 @media only screen and (max-width: 578px) {
+  /* About */
+  #card-hover .card {
+    overflow: auto;
+  }
+
   /* Detail Events */
   #events h2 {
     font-size: 7vw !important;
