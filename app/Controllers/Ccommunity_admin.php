@@ -43,7 +43,9 @@ class Ccommunity_admin extends BaseController{
              $data = array(
         'id_region' => $this->request->getPost('id_region'),
         'nama_anggota'   => $this->request->getPost('nama_anggota'),
-        'id_jabatan'   => $this->request->getPost('id_jabatan')
+        'id_jabatan'   => $this->request->getPost('id_jabatan'),
+        'email_anggota' => $this->request->getPost('email_anggota'),
+        'instagram_anggota' => $this->request->getPost('instagram_anggota')
         );
          } else {
             $upload = $this->request->getFile('file_upload');
@@ -53,6 +55,8 @@ class Ccommunity_admin extends BaseController{
             'id_region' => $this->request->getPost('id_region'),
             'nama_anggota'   => $this->request->getPost('nama_anggota'),
             'id_jabatan'   => $this->request->getPost('id_jabatan'),
+            'email_anggota' => $this->request->getPost('email_anggota'),
+            'instagram_anggota' => $this->request->getPost('instagram_anggota'),
             'foto_anggota'             => $upload->getName()
             );
          }
@@ -75,7 +79,9 @@ class Ccommunity_admin extends BaseController{
              $data = array(
             'id_region' => $this->request->getPost('id_region'),
             'nama_anggota'   => $this->request->getPost('nama_anggota'),
-            'id_jabatan'   => $this->request->getPost('id_jabatan')
+            'id_jabatan'   => $this->request->getPost('id_jabatan'),
+            'email_anggota' => $this->request->getPost('email_anggota'),
+            'instagram_anggota' => $this->request->getPost('instagram_anggota'),
         );
          } else {
 
@@ -92,6 +98,8 @@ class Ccommunity_admin extends BaseController{
             'id_region' => $this->request->getPost('id_region'),
             'nama_anggota'   => $this->request->getPost('nama_anggota'),
             'id_jabatan'   => $this->request->getPost('id_jabatan'),
+            'email_anggota' => $this->request->getPost('email_anggota'),
+            'instagram_anggota' => $this->request->getPost('instagram_anggota'),
             'foto_anggota'            => $upload->getName()
             );
          }
@@ -107,7 +115,7 @@ class Ccommunity_admin extends BaseController{
         $model = new Mcommunity();
         $model->deleteCommunity($id_community);
 
-        return redirect()->to('/Ccommunity_admin');
+        return redirect()->to('/Ccommunity_admin')->with('berhasil', 'DATA BERHASIL DIUBAH');
     }
 
 
