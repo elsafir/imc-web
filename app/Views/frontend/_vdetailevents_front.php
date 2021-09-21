@@ -23,6 +23,7 @@
                           $judul_events=$i['judul_events'];
                           $detail_events=$i['detail_events'];
                           $foto_events=$i['foto_events'];
+                          $linkdaftar_event=$i['linkdaftar_event'];
                       ?>
     <!--section-->
     <section class="event">
@@ -52,9 +53,14 @@
         </div>
         <div class="container mt-5">
             <div class="row">
-                    <p style="text-indent: 50px; text-align: justify; letter-spacing: 0;font-size:18px;font-family: 'Poppins', sans-serif;"><?php echo $detail_events; ?></p>
+                    <p style="text-indent: 50px; text-align: justify; letter-spacing: 0;font-size:17px;font-family: 'Poppins', sans-serif;"><?php echo $detail_events; ?></p>
             </div>
 
+            <div class="container-btnevent">
+                <a href="<?php echo $linkdaftar_event; ?>">
+                    Form Pendaftaran
+                </a>
+            </div>
         </div>
     </section>
     <!--close section-->

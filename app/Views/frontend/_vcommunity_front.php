@@ -75,10 +75,17 @@
                 <div class="col-md-5">
                     <div class="card">
                         <div class="card-body text-center">
-                            <img src="images/p1.png" alt="">
-                            <h3>Muhammad Ilyas Arradya</h3>
-                            <h4>Regional Manager</h4>
-                            <li><a href=""><i class="fa fa-instagram fa-2x mt-3"></i></a></li>
+                            <?php foreach($rm as $i):
+                                $nama_anggota=$i['nama_anggota'];  
+                                $instagram_anggota=$i['instagram_anggota'];
+                                $foto_anggota=$i['foto_anggota'];
+                                $jabatan=$i['jabatan'];
+                            ?>
+                                <img src="/img/<?= $foto_anggota; ?> " alt="">
+                                <h3><?= $nama_anggota; ?></h3>
+                                <h4><?= $jabatan; ?></h4>
+                                <li><a href="<?= $instagram_anggota; ?>"><i class="fa fa-instagram fa-2x mt-3"></i></a></li>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                 </div>

@@ -60,3 +60,26 @@
   }
 }
 /* END RESPONSIVE DASHBOARD KELOLA USER =================================== */
+
+/* RESPONSIVE DASHBOARD COMMUNITY ADMIN & PROGRAM USER =================================== */
+@media screen and (max-width: 1200px) {
+  .resp-com-1 {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 759px) {
+  .resp-com-2 {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .resp-com-3 {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .resp-com-3 {
+    display: none !important;
+  }
+}
+/* END RESPONSIVE DASHBOARD COMMUNITY  & PROGRAM USER =================================== */
