@@ -84,24 +84,24 @@
                                 <img src="/img/<?= $foto_anggota; ?> " alt="">
                                 <h3><?= $nama_anggota; ?></h3>
                                 <h4><?= $jabatan; ?></h4>
-                                <li><a href="<?= $instagram_anggota; ?>"><i class="fa fa-instagram fa-2x mt-3"></i></a></li>
+                                <li><a href=" https://www.instagram.com/<?= $instagram_anggota; ?>/"><i class="fa fa-instagram fa-2x mt-3"></i></a></li>
                             <?php endforeach; ?>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-7">
                     <div class="mt-3 staff-box">
-                         <?php
-                       foreach($mc as $i):
-
-                          $nama_anggota=$i['nama_anggota'];
-                          $jabatan=$i['jabatan'];
-                      ?>
                         <ul class="list-group list-group-flush">
-
-                            <li class="list-group-item"><?php echo $nama_anggota ?> - [<?php echo $jabatan ?>]
-                        </ul>
+                        <?php
+                            foreach($mc as $i):
+                                $nama_anggota=$i['nama_anggota'];
+                                $jabatan=$i['jabatan'];
+                                $instagram_anggota=$i['instagram_anggota'];
+                        ?>
+                        <li class="list-group-item" style="padding-top: 0 !important; "><?php echo $nama_anggota ?> - [<?php echo $jabatan ?>] - <a href=" https://www.instagram.com/<?= $instagram_anggota; ?>/"><i class="fa fa-instagram fa-2x mt-3"></i></a>
                         <?php endforeach;?>
+                        </ul>
+                        
                 </div>
             </div>
 
