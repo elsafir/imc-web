@@ -56,8 +56,22 @@
   --warna-footer-year: #38485c;
 }
 .modal-content {
+  position: relative;
+  top: 6em;
   background-color: var(--warna-utama) !important;
   border: 1px solid var(--warna-dark-mode) !important;
+  animation: kebawah 2s cubic-bezier(0.46, 0.03, 0.52, 0.96) !important;
+}
+
+@keyframes kebawah {
+  0% {
+    top: -8em;
+    opacity: 0.5;
+  }
+  100% {
+    top: 6em;
+    opacity: 1;
+  }
 }
 /* Awal Dark Mode */
 .slide-dark {
