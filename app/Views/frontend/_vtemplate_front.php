@@ -72,9 +72,9 @@
                         alt="Logo IMC"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd"
                     aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span class="toggler-atas"></span>
+                    <span class="toggler-tengah"></span>
+                    <span class="toggler-bawah"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
@@ -377,6 +377,13 @@
 
 
          $('#modal').modal('show');
+
+         // Animasi icon span di navbar-toggler
+         const gerak = document.querySelector(".navbar-toggler");
+
+         gerak.addEventListener('click', ()=>{
+           gerak.classList.toggle('close');
+         })
     </script>
 </body>
 

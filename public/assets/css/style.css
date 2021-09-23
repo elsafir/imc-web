@@ -558,6 +558,21 @@ a.navbar-brand img {
   background: #d4a81e;
 }
 
+/* animasi icon span di navbar-toggler */
+.navbar-toggler.close {
+  margin: 15px 15px;
+  padding: 8px 8px;
+}
+.navbar-toggler.close span.toggler-tengah {
+  display: none;
+}
+.navbar-toggler.close span.toggler-atas {
+  transform: translateY(150%) rotate(45deg);
+}
+.navbar-toggler.close span.toggler-bawah {
+  transform: translateY(-150%) rotate(-45deg);
+}
+
 .tab_menu {
   overflow: scroll;
 }
