@@ -447,9 +447,12 @@ button:focus {
 /* mode-dark-nav */
 .top-header .navbar {
   box-shadow: 0 0 3px var(--warna-dark-mode);
-  padding: 5px 0px;
+  padding: 0px;
   background-color: var(--warna-second);
   color: var(--warna-dark-mode);
+}
+.form-inline {
+  flex-flow: row !important;
 }
 
 .top-header {
