@@ -114,14 +114,10 @@
                             <h2><span>Get To </span> Know Us</h2>
                         </div>
                         <div class="full">
-                            <p>Indonesia Millenial Connect merupakan wadah pengembangan diri bagi pemuda
-                                pemudi di
-                                seluruh Indonesia, berfokus kepada tiga bidang yang menjadi faktor
-                                penentu kesejahteraan
-                                dalam pemberdayaan masyarakat yaitu pendidikan, sosial, dan ekonomi.</p>
+                            <p style="text-align: justify;">Indonesia Millennial Connect merupakan organisasi non profit yang concern pada pengembangan diri bagi pemuda/i Indonesia baik yang berada di dalam maupun luar negeri, berfokus kepada tiga bidang yang menjadi faktor penentu kesejahteraan dalam pemberdayaan masyarakat yaitu pendidikan, sosial, dan ekonomi. </p>
                         </div>
                         <div class="full">
-                            <a class="hvr-radial-out button-theme mb-5" href="about.html">About more</a>
+                            <a class="hvr-radial-out button-theme mb-5" href="/Chome/about">About more</a>
                         </div>
                     </div>
                 </div>
