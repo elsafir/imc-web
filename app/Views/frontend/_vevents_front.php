@@ -34,23 +34,21 @@
                     <div class="container">
                         <?php if ($foto_events != NULL): ?>
                             <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
-                            <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;"/>
+                            <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 300px; height: 300px;"/>
                           </a>
                             <?php else: ?>
                               <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
-                            <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;"/>
+                            <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 300px; height: 300px;"/>
                           </a>
                           <?php endif; ?>
                     </div>
                 </div>
 
-
-
-                <div class="col-md-5">
+                <div class="col-md-7">
                     <div class="container">
                         <h1><?php echo $judul_events ?></h1>
                         <p><b>- <?php echo $nama_anggota ?> -</b></p>
-                        <p><?php echo substr($detail_events, 0, 90); ?></p>
+                        <p><?php echo substr($detail_events, 0, 200); ?></p>
                         <div class="full">
                             <a class="hvr-radial-out button-theme" href="<?= base_url('Chome/detailEvents/') ?>/<?php echo $slug_e; ?>">Read more</a>
                         </div>

@@ -18,7 +18,7 @@ class Chome extends BaseController
 		$x['jp']= $model->tampilJenisProgram()->getResultArray();
 		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
 		$x['et']= $model2->tampilEventsTerbaru()->getResultArray();
-		$x['me']= $model2->tampilMenuEvents()->getResultArray();
+		$x['me']= $model2->tampilMenuEventsHome()->getResultArray();
 		return view('frontend/_vhome_front',$x);
 	}
 

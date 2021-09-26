@@ -32,9 +32,13 @@ class Mevents extends Model{
     }
 
 
-    public function tampilMenuEvents(){
+    public function tampilMenuEventsHome(){
+        $query= $this->db->query( "SELECT * FROM events INNER JOIN pengguna ON events.id_pengguna=pengguna.id_pengguna  INNER JOIN community ON pengguna.id_community = community.id_community ORDER BY id_events DESC LIMIT 3");
+        return $query;
+    }
 
-        $query= $this->db->query( "SELECT * FROM events INNER JOIN pengguna ON events.id_pengguna=pengguna.id_pengguna  INNER JOIN community ON pengguna.id_community = community.id_community ORDER BY id_events");
+    public function tampilMenuEvents(){
+        $query= $this->db->query( "SELECT * FROM events INNER JOIN pengguna ON events.id_pengguna=pengguna.id_pengguna  INNER JOIN community ON pengguna.id_community = community.id_community ORDER BY id_events DESC");
         return $query;
     }
 
