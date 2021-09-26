@@ -24,14 +24,20 @@
                       ?>
             <div class="text_align_center">
                 <h2><span style="font-weight: bold;"><?php echo $judul_events; ?></span></h2>
-                 <p><b>- <?php echo $nama_anggota ?> -</b></p><br>
+                 <p>
+                     <!-- <b>- 
+                         <//?php echo $nama_anggota ?> 
+                         -
+                        </b> -->
+                    </p>
+                    <br>
                  <?php if ($foto_events != NULL): ?>
                     <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
-                    <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 300px;height: 300px;margin-top: -2em"/>
+                    <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 250px;height: 250px;margin-top: -2em"/>
                   </a>
                     <?php else: ?>
                       <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
-                    <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 300px;height: 300px;margin-top: -2em"/>
+                    <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 250px;height: 250px;margin-top: -2em"/>
                   </a>
                   <?php endif; ?>  <br>
 
@@ -188,7 +194,7 @@
                           </a>
                           <?php endif; ?>
                                     <h3 class="lead"><?php echo $judul_events ?></h3>
-                                    <p><b>- <?php echo $nama_anggota ?> -</b></p>
+                                    <p></p>
                                     <p><?php echo substr($detail_events, 0, 90); ?></p>
                                        <a class="btn btn-outline-blue" href="<?= base_url('Chome/detailEvents/') ?>/<?php echo $slug_e; ?>">Read More >></a>
                                 </div>
