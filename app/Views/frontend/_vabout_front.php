@@ -1,6 +1,6 @@
 <?= $this->extend('frontend/_vtemplate_front'); ?>
 
-<?= $this->section('content_front'); ?>  
+<?= $this->section('content_front'); ?>
 
 	<!-- section -->
 	<section class="inner_banner">
@@ -91,7 +91,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 responsive">
+					<div class="col-md-4 mb-5 responsive">
 						<div class="card card-ek">
 							<div class="card-body card-ek-2">
 								<img src="images/348-3488432_youth-clipart-diverse-group-person-hand-raised-clipart.png"

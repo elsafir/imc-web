@@ -1131,8 +1131,13 @@ p.errordiv {
 } */
 .sosmed ul {
   display: flex;
+  flex-wrap: wrap;
   margin: 2em 0;
   width: 100%;
+}
+.sosmed ul a {
+  flex: 0 0 18%;
+  margin: auto;
 }
 .sosmed .fa {
   display: flex;
@@ -1957,6 +1962,19 @@ p.count-text {
     flex: 0 0 45.444444%;
     max-width: 33.333333% !important;
     margin: auto;
+  }
+}
+@media (max-width: 1199px) {
+  .sosmed ul a {
+    flex: 0 0 25%;
+  }
+  .sosmed ul a:last-child {
+    margin-top: 0.5rem;
+  }
+}
+@media (max-width: 978px) {
+  .sosmed ul a {
+    flex: 0 0 50%;
   }
 }
 #row_1 {
