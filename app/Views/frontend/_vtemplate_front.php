@@ -96,7 +96,21 @@
 
 
                         </div>
-                        <li><a class="nav-link" href="<?= base_url('Chome/team') ?>">Team</a></li>
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" data-toggle="dropdown">Team
+                                <span class="caret"></span></a>
+                            <div class="container">
+                                <ul class="dropdown-menu">
+                                  <li><a class="nav-link" href="<?= base_url('Chome/team') ?>">IMC Pusat</a></li>
+                                  <li><a>?Page Regional?</a></li>
+                                    <!-- <?php foreach($jr as $i):
+                                    $slug_r=$i['slug_r'];
+                                    $region=$i['region'];?>
+                                    <li><a href="<?= base_url('Chome/detailCommunity/') ?>/<?php echo $slug_r; ?>">IMC <?php echo $region ?></a></li>
+                                  <?php endforeach ?> TINGGAL UBAH UNTUK PAGE REGIONAL  -->
+                                </ul>
+                            </div>
+                        </div>
                         <li><a class="nav-link" href="<?= base_url('Chome/menuEvents') ?>">Events</a></li>
                         <div class="dropdown">
                             <a class="btn dropdown-toggle" data-toggle="dropdown">Community
