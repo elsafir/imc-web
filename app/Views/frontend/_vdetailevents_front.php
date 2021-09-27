@@ -28,7 +28,7 @@
     <!--section-->
     <section class="event">
         <div class="container">
-            <div class="row">
+            <div class="row" style="flex-direction:column;">
                 <div class="col-md-12 mt-5">
                     <div class="full">
                         <div class="text_align_center " id="events">
