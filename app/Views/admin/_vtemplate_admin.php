@@ -1,4 +1,3 @@
-<<<<<<< current
 <!DOCTYPE html>
 <html>
 <head>
