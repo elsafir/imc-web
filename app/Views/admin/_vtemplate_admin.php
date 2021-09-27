@@ -404,7 +404,7 @@
 <!-- =========================================================================== -->
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.0.3-pre
+      <!-- <b>Version</b> 3.0.3-pre -->
     </div>
     <strong>Copyright &copy; 2020-2021 <a href="#">IMC</a>.</strong> All rights
     reserved.

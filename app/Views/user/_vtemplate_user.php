@@ -25,10 +25,11 @@
    <!-- export dataTables -->
   <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css">
     <!-- CSS RESPONSIVE EKA -->
-    <link rel="stylesheet" href="/assets/css/responsive-eka-dashboard.css">
+  <link rel="stylesheet" href="/assets/css/responsive-eka-dashboard.css">
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="/assets/css/responsive-all-user.css">
 
 
-  
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -62,7 +63,7 @@
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
-    
+
       <li class="nav-item">
      <span class="imc-head-responsive" style="font-size: 23px; margin-right: 20px;">Indonesia Millenial Connect</span>
           <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#logout">Log Out</button>
@@ -86,7 +87,7 @@
   <div class="modal fade" id="logout">
         <div class="modal-dialog">
           <div class="modal-content">
-            
+
             <div class="modal-body">
               <p><b>Apakah anda yakin ingin keluar?</b></p>
             </div>
@@ -140,13 +141,13 @@
         </div>
       </div>
 
-     
+
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-         
+
           <li class="nav-item">
             <a href="<?= base_url('Cuser') ?>" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -164,7 +165,7 @@
               </p>
             </a>
           </li>
-          
+
 
           <li class="nav-item">
             <a href="<?= base_url('Ccommunity_user') ?>" class="nav-link">
@@ -219,7 +220,7 @@
             </a>
           </li> -->
 
-        
+
           <hr>
           <li class="nav-item">
             <a href="<?= base_url('Chome') ?>"  target="_blank" class="nav-link">
@@ -229,14 +230,14 @@
               </p>
             </a>
           </li>
-         
-         
-          
-            
-          
-          
-          
-    
+
+
+
+
+
+
+
+
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -319,9 +320,9 @@
 <!-- =========================================================================== -->
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.0.3-pre
+      <!-- <b>Version</b> 3.0.3-pre -->
     </div>
-    <strong>Copyright &copy; 2020-2021 <a href="#">AndrichardWS</a>.</strong> All rights
+    <strong>Copyright &copy; 2020-2021 <a href="#">IMC</a>.</strong> All rights
     reserved.
   </footer>
 
@@ -365,12 +366,12 @@
 <!-- page script -->
 <script>
 
- 
+
   //Filter data community dan Export
   $(function () {
     $("#example-community").DataTable({
 
-  
+
        dom: '<"html5buttons"B>lTfgitp',
             buttons: [ {
                         extend: 'copy', text:'<i class="fa fa-file" aria-hidden="true"> Copy',title: 'Data Community',
@@ -395,18 +396,18 @@
                         exportOptions: { columns: [ 0, 1, 2 ] }
                     } ]
 
-         
+
     });
-    
+
   });
 
 
 
-      //Export data program 
+      //Export data program
   $(function () {
     $("#example-program").DataTable({
 
-  
+
        dom: '<"html5buttons"B>lTfgitp',
             buttons: [ {
                         extend: 'copy', text:'<i class="fa fa-file" aria-hidden="true"> Copy',title: 'Data Program',
@@ -431,17 +432,17 @@
                         exportOptions: { columns: [ 0, 1, 2, 3 ] }
                     } ]
 
-         
+
     });
-    
+
   });
 
 
-          //Export data events 
+          //Export data events
   $(function () {
     $("#example-events").DataTable({
 
-  
+
        dom: '<"html5buttons"B>lTfgitp',
             buttons: [ {
                         extend: 'copy', text:'<i class="fa fa-file" aria-hidden="true"> Copy',title: 'Data Events',
@@ -466,9 +467,9 @@
                         exportOptions: { columns: [ 0, 1, 2 ] }
                     } ]
 
-         
+
     });
-    
+
   });
 
 </script>
