@@ -94,6 +94,7 @@ class Chome extends BaseController
 		$x['rm']= $model1->tampilRegionManager()->getResultArray();
 		$x['jrr']= $model1->tampilJenisRegionn($slug_r)->getResultArray();
 		$x['mc']= $model1->tampilMenuCommunity($slug_r)->getResultArray();
+		$x['er']=$model1->tampilEventsRegional($slug_r)->getResultArray();
 		return view('frontend/_vcommunity_front',$x);
 	}
 
