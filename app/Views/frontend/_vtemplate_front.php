@@ -107,7 +107,11 @@
                                     $slug_r=$i['slug_r'];
                                     $region=$i['region'];?>
                                     <li><a href="<?= base_url('Chome/detailCommunity/') ?>/<?php echo $slug_r; ?>">IMC <?php echo $region ?></a></li>
+<<<<<<< HEAD
                                   <?php endforeach ?> TINGGAL UBAH UNTUK PAGE REGIONAL (Copas Page Teams aja)  -->
+=======
+                                  <?php endforeach ?> TINGGAL UBAH UNTUK PAGE REGIONAL  -->
+>>>>>>> c0bdeee058cf00ce09d715ab6e925aaeaad0bdf8
                                 </ul>
                             </div>
                         </div>
