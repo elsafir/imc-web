@@ -15,8 +15,17 @@ class Cevents_user extends BaseController{
             return redirect()->to(site_url('Clogin'));
         }
 
+<<<<<<< HEAD
         $id_region = session('id_region');
+=======
+        // $id_pengguna = session('id_pengguna');
 
+        // $model = new Mevents();
+		// $x['data']= $model->tampilEventsUser($id_pengguna)->getResultArray();
+        // return view('user/_vevent_user', $x);
+>>>>>>> eb95bf56b91c8493b38d2e488adafd8cf1423e40
+
+        $id_region = session('id_region');
         $model = new Mevents();
 		$x['data']= $model->tampilEventsUser($id_region)->getResultArray();
         return view('user/_vevent_user', $x);
@@ -39,6 +48,7 @@ class Cevents_user extends BaseController{
         'id_pengguna' =>  $id_pengguna,
         'judul_events'   => $this->request->getPost('judul_events'),
         'detail_events'   => $this->request->getPost('detail_events'),
+        'linkdaftar_event' => $this->request->getPost('linkdaftar_event'),
         'slug_e'   => $slug
         );
          } else {
@@ -50,13 +60,22 @@ class Cevents_user extends BaseController{
             'judul_events'    => $this->request->getPost('judul_events'),
             'detail_events'  => $this->request->getPost('detail_events'),
             'foto_events'             => $upload->getName(),
+            'linkdaftar_event' => $this->request->getPost('linkdaftar_event'),
             'slug_e'   => $slug
             );
          }
 
+        $judul_events = $this->request->getPost('judul_events');
+        $cek = $model->cekjudulEvents($judul_events)->getRow();
+
+        if ($cek) {
+            return redirect()->to('/Cevents_user')->with('gagal', '<b>DATA GAGAL DITAMBAHKAN!</b> Judul events sebelumnya sudah terdaftar');
+        }else{
 
         $model->tambahEvents($data);
         return redirect()->to('/Cevents_user')->with('berhasil', 'DATA BERHASIL DISIMPAN');
+    
+        }
     }
 
 
@@ -64,6 +83,22 @@ class Cevents_user extends BaseController{
         $model = new Mevents();
 
         $id_events = $this->request->getPost('id_events');
+        $eventlama = $this->request->getPost('judul_event');
+
+        //cek nama event 
+		if ($eventlama == $this->request->getVar('judul_event')){
+			$rule_event = 'required';
+		} else {
+			$rule_event = 'required|is_unique[event.judul_event]';
+		}
+
+        if (!$this->validate([
+			'judul_event' => $rule_event
+		])) {
+
+			return redirect()->to('/Cevents_user')->with('gagal', '<b>DATA GAGAL DIUBAH!</b> Judul event sebelumnya sudah terdaftar. Silahlan masukkan judul yang berbeda');
+		}
+
         $validation = $this->validate([
             'file_upload' => 'uploaded[file_upload]|mime_in[file_upload,image/jpg,image/jpeg,image/gif,image/png]|max_size[file_upload,4096]'
         ]);
@@ -71,15 +106,14 @@ class Cevents_user extends BaseController{
         $slug = url_title($this->request->getPost('judul_events'), '-', true);
 
         if ($validation == FALSE) {
-
-             $data = array(
-        'id_pengguna' => $this->request->getPost('id_pengguna'),
-        'judul_events'   => $this->request->getPost('judul_events'),
-        'detail_events'   => $this->request->getPost('detail_events'),
-        'slug_e'   => $slug
-        );
+            $data = array(
+                'id_pengguna' => $this->request->getPost('id_pengguna'),
+                'judul_events'   => $this->request->getPost('judul_events'),
+                'detail_events'   => $this->request->getPost('detail_events'),
+                'linkdaftar_event' => $this->request->getPost('linkdaftar_event'),
+                'slug_e'   => $slug
+            );
          } else {
-
             $dt = $model->pilihEvents($id_events)->getRow();
             $foto = $dt->foto_events;
             $path = '../public/img/';
@@ -94,13 +128,13 @@ class Cevents_user extends BaseController{
             'judul_events'    => $this->request->getPost('judul_events'),
             'detail_events'  => $this->request->getPost('detail_events'),
             'foto_events'            => $upload->getName(),
+            'linkdaftar_event' => $this->request->getPost('linkdaftar_event'),
             'slug_e'   => $slug
             );
          }
 
 
         $model->ubahEvents($data,$id_events);
-
         return redirect()->to('/Cevents_user')->with('berhasil', 'DATA BERHASIL DIUBAH');
     }
 
@@ -110,6 +144,6 @@ class Cevents_user extends BaseController{
 
         $model->deleteEvents($id_events);
 
-        return redirect()->to('/Cevents_user');
+        return redirect()->to('/Cevents_user')->with('berhasil', 'DATA BERHASIL DIHAPUS');
     }
 }

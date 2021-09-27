@@ -39,6 +39,7 @@ class Cevents_admin extends BaseController{
         'id_pengguna' =>  $id_pengguna,
         'judul_events'   => $this->request->getPost('judul_events'),
         'detail_events'   => $this->request->getPost('detail_events'),
+        'linkdaftar_event' => $this->request->getPost('linkdaftar_event'),
         'slug_e'   => $slug
         );
          } else {
@@ -50,6 +51,7 @@ class Cevents_admin extends BaseController{
             'judul_events'    => $this->request->getPost('judul_events'),
             'detail_events'  => $this->request->getPost('detail_events'),
             'foto_events'             => $upload->getName(),
+            'linkdaftar_event' => $this->request->getPost('linkdaftar_event'),
             'slug_e'   => $slug
             );
          }
@@ -88,6 +90,7 @@ class Cevents_admin extends BaseController{
         'id_pengguna' => $this->request->getPost('id_pengguna'),
         'judul_events'   => $this->request->getPost('judul_events'),
         'detail_events'   => $this->request->getPost('detail_events'),
+        'linkdaftar_event' => $this->request->getPost('linkdaftar_event'),
         'slug_e'   => $slug
         );
          } else {
@@ -106,6 +109,7 @@ class Cevents_admin extends BaseController{
             'judul_events'    => $this->request->getPost('judul_events'),
             'detail_events'  => $this->request->getPost('detail_events'),
             'foto_events'            => $upload->getName(),
+            'linkdaftar_event' => $this->request->getPost('linkdaftar_event'),
             'slug_e'   => $slug
             );
          }
@@ -122,7 +126,7 @@ class Cevents_admin extends BaseController{
 
         $model->deleteEvents($id_events);
 
-        return redirect()->to('/Cevents_admin');
+        return redirect()->to('/Cevents_admin')->with('berhasil', 'DATA BERHASIL DIHAPUS');
     }
 
 }

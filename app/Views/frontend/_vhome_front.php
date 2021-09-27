@@ -24,14 +24,20 @@
                       ?>
             <div class="text_align_center">
                 <h2><span style="font-weight: bold;"><?php echo $judul_events; ?></span></h2>
-                 <p><b>- <?php echo $nama_anggota ?> -</b></p><br>
+                 <p>
+                     <!-- <b>- 
+                         <//?php echo $nama_anggota ?> 
+                         -
+                        </b> -->
+                    </p>
+                    <br>
                  <?php if ($foto_events != NULL): ?>
                     <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
-                    <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;"/>
+                    <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 250px;height: 250px;margin-top: -2em"/>
                   </a>
                     <?php else: ?>
                       <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
-                    <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;"/>
+                    <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 250px;height: 250px;margin-top: -2em"/>
                   </a>
                   <?php endif; ?>  <br>
 
@@ -108,14 +114,10 @@
                             <h2><span>Get To </span> Know Us</h2>
                         </div>
                         <div class="full">
-                            <p>Indonesia Millenial Connect merupakan wadah pengembangan diri bagi pemuda
-                                pemudi di
-                                seluruh Indonesia, berfokus kepada tiga bidang yang menjadi faktor
-                                penentu kesejahteraan
-                                dalam pemberdayaan masyarakat yaitu pendidikan, sosial, dan ekonomi.</p>
+                            <p style="text-align:justify; text-indent: 0.5in;">Indonesia Millennial Connect merupakan organisasi non profit yang concern pada pengembangan diri bagi pemuda/i Indonesia baik yang berada di dalam maupun luar negeri, berfokus kepada tiga bidang yang menjadi faktor penentu kesejahteraan dalam pemberdayaan masyarakat yaitu pendidikan, sosial, dan ekonomi. </p>
                         </div>
                         <div class="full">
-                            <a class="hvr-radial-out button-theme mb-5" href="about.html">About more</a>
+                            <a class="hvr-radial-out button-theme mb-5" href="/Chome/about">About more</a>
                         </div>
                     </div>
                 </div>
@@ -128,22 +130,14 @@
     <section id="parallax_2">
         <div class="container mt-5">
             <div class="row justify-content-around flex-md-row-reverse align-items-center">
-                <div class="col-md-4 mb-5 mt-5">
+                <!-- <div class="col-md-4 mb-5 mt-5">
                     <div class="container">
                         <img src="/assets/images/p1.png" alt="" class="img-fluid rounded-circle imagep_2">
                     </div>
-                </div>
-                <div class="col-md-6 mb-5">
-                    <div class="container">
-                        <p class="lead speech_leader_word text-center">"Lorem ipsum dolor sit amet
-                            consectetur
-                            adipisicing elit.
-                            Voluptatibus ea sit
-                            adipisci. Rerum
-                            assumenda necessitatibus corrupti quasi facere quibusdam vero laudantium, et
-                            reprehenderit
-                            sint
-                            accusantium nihil, architecto expedita doloremque ullam."</p>
+                </div> -->
+                <div class="col-md-6 mb-5 mt-5">
+                    <div class="container mt-5 mb-5">
+                        <p class="lead speech_leader_word text-center">"Satu-satunya batasan untuk meraih mimpi kita adalah keragu-raguan kita akan hari ini. Marilah kita maju dengan keyakinan yang aktif dan kuat." <br> - Franklin Roosevelt</p>
                     </div>
                 </div>
             </div>
@@ -188,7 +182,7 @@
                           </a>
                           <?php endif; ?>
                                     <h3 class="lead"><?php echo $judul_events ?></h3>
-                                    <p><b>- <?php echo $nama_anggota ?> -</b></p>
+                                    <p></p>
                                     <p><?php echo substr($detail_events, 0, 90); ?></p>
                                        <a class="btn btn-outline-blue" href="<?= base_url('Chome/detailEvents/') ?>/<?php echo $slug_e; ?>">Read More >></a>
                                 </div>
@@ -209,27 +203,22 @@
     </section>
     <!--end section-->
 
-
+    
 
     <!--start section-->
     <section id="parallax_5">
-        <div class="container">
-            <div class="row mt-5 mb-5">
-                <div class="col-md-5">
+        <div class="container pb-5">
+            <div class="row mt-5 mb-5 ">
+                <div class="col-md-5 mt-5">
                     <img src="/assets/images/WhatsApp Image 2020-08-17 at 22.42.50.jpeg" t="#" class="img-fluid">
                 </div>
                 <div class="col-md-7">
                     <div class="full">
                         <div class="heading_main text_align_center mt-5">
-                            <h2><span>Milenial Peduli </span> Sesama</h2>
+                            <h2><span>Milenial </span> Merajut Kasih</h2>
                         </div>
-                        <div class="full text-center">
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Vero, ipsa
-                                excepturi! Quam quaerat atque reprehenderit dolorum repellat quos
-                                quisquam, perferendis
-                                possimus sed itaque. Perferendis non minus odio, cupiditate consectetur
-                                magnam.</p>
+                        <div class="full text-center" style="padding-right: 50px; padding-left: 50px;">
+                            <p class="lead" style="text-align:justify; text-indent: 0.5in;">Millenial Merajut Kasih merupakan kegiatan Aksi Sosial dan IMC Tanggap Bencana yang bertujuan untuk membantu saudara-saudara kita yang terkena dampak dari pandemi COVID-19 dan juga saudara-saudara kita yang perekonomianya masih terkendala. Bantuan sosial yang diberikan dalam bentuk sumbangan bahan pokok makanan bagi wilayah Sekitar Jakarta, Bandung, Makassar, Medan, Surabaya, Malang, Palembang, dan Yogyakarta.</p>
                         </div>
                     </div>
                 </div>
@@ -271,9 +260,8 @@
                 </div>
                 <div class="col-md-6 mb-5">
                     <div class="text_align_center">
-                        <h2><span>"Ikuti Kami Di Social Media Untuk Mendapatkan Informasi Mengenai
-                                Events, Volunteer dan
-                                perkembangan Indonesia Millenial Connect"</h2>
+                        <h2><p>"Ikuti Kami Di Sosial Media Untuk Mendapatkan Informasi Mengenai
+                                Events, Volunteer dan perkembangan Indonesia Millenial Connect"</h2>
                     </div>
                 </div>
             </div>

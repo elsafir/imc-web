@@ -10,6 +10,8 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Edit Responsive Css -->
+  <link rel="stylesheet" href="/assets2/dist/css/responsive.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="/assets2/plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
@@ -35,6 +37,8 @@
     <!-- export dataTables -->
   <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css">
 
+  <!-- CSS RESPONSIVE EKA -->
+  <link rel="stylesheet" href="/assets/css/responsive-eka-dashboard.css">
 
 
 </head>
@@ -56,7 +60,7 @@
       </li>
     </ul>
 
-    <!-- SEARCH FORM -->
+    <!-- SEARCH FORM. -->
     <form class="form-inline ml-3">
       <div class="input-group input-group-sm">
         <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
@@ -72,8 +76,11 @@
     <ul class="navbar-nav ml-auto">
 
       <li class="nav-item">
-    <span style="font-size: 23px; margin-right: 20px;">Indonesia Millenial Connect</span>
-          <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#logout">Log Out</button>
+          <span class="imc-head-responsive" style="font-size: 23px; margin-right: 20px;">Indonesia Millenial Connect</span>
+          <div class="resp-btn-dashboard">
+            <button type="button" class="btn btn-danger resp-btn-dashboard" data-toggle="modal" data-target="#logout">Log Out</button>
+          </div>
+
       </li>
 
 
@@ -124,11 +131,12 @@
       <img src="/assets2/dist/img/AdminLTELogo.png"
            alt="AdminLTE Logo"
            class="brand-image img-circle elevation-3"
-           style="opacity: .8">
+           style="opacity: 0.8">
       <span class="brand-text font-weight-light">IMCONNECT</span>
     </a>
 
     <!-- Sidebar -->
+    <!-- Responsive Aside -->
     <div class="sidebar">
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
@@ -284,7 +292,7 @@
                   <i class="far fa-circle nav-icon"></i>
                   <p>Jabatan</p>
                 </a>
-              </li>            
+              </li>
             </ul>
           </li>
 
@@ -396,9 +404,9 @@
 <!-- =========================================================================== -->
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.0.3-pre
+      <!-- <b>Version</b> 3.0.3-pre -->
     </div>
-    <strong>Copyright &copy; 2020-2021 <a href="#">AndrichardWS</a>.</strong> All rights
+    <strong>Copyright &copy; 2020-2021 <a href="#">IMC</a>.</strong> All rights
     reserved.
   </footer>
 
@@ -447,11 +455,11 @@
 
     $(function () {
     $("#example1").DataTable();
-   
+
   });
 
      $(function () {
-      
+
     //Initialize Select2 Elements
     $('.select2bs4').select2({
       theme: 'bootstrap4'
@@ -465,7 +473,7 @@
   $(function () {
     $("#example-community").DataTable({
 
-  
+
        dom: '<"html5buttons"B>lTfgitp',
             buttons: [ {
                         extend: 'copy', text:'<i class="fa fa-file" aria-hidden="true"> Copy',title: 'Data Community',
@@ -492,13 +500,13 @@
 
 
           // Definition of filter to display
-          filterDropDown: {                   
+          filterDropDown: {
             columns: [
-              { 
+              {
                 idx: 1,
                 title:"Pilih Region"
               },
-              { 
+              {
                 idx: 3,
                  title:"Pilih Jabatan"
               }
@@ -507,18 +515,18 @@
             label:"Cari: "
           }
 
-         
+
     });
-    
+
   });
 
 
 
-      //Export data program 
+      //Export data program
   $(function () {
     $("#example-program").DataTable({
 
-  
+
        dom: '<"html5buttons"B>lTfgitp',
             buttons: [ {
                         extend: 'copy', text:'<i class="fa fa-file" aria-hidden="true"> Copy',title: 'Data Program',
@@ -543,17 +551,17 @@
                         exportOptions: { columns: [ 0, 1, 2, 3 ] }
                     } ]
 
-         
+
     });
-    
+
   });
 
 
-          //Export data events 
+          //Export data events
   $(function () {
     $("#example-events").DataTable({
 
-  
+
        dom: '<"html5buttons"B>lTfgitp',
             buttons: [ {
                         extend: 'copy', text:'<i class="fa fa-file" aria-hidden="true"> Copy',title: 'Data Events',
@@ -578,12 +586,12 @@
                         exportOptions: { columns: [ 0, 1, 2 ] }
                     } ]
 
-         
+
     });
-    
+
   });
 
-  //Export data region 
+  //Export data region
   $(function () {
   $("#example-region").DataTable({
       dom: '<"html5buttons"B>lTfgitp',
@@ -610,9 +618,9 @@
                       exportOptions: { columns: [ 0, 1, 2, 4] }
                   } ]
 
-        
+
   });
-  
+
 });
 
 

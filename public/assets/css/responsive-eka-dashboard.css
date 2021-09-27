@@ -1,0 +1,103 @@
+.resp-btn-dashboard {
+  display: inline;
+}
+
+/* RESPONSIVE HEADER DASHBOARD ADMIN ============================ */
+@media screen and (max-width: 900px) {
+  .imc-head-responsive {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+/* END RESPONSIVE HEADER DASHBOARD ADMIN ============================ */
+
+/* RESPONSIVE DASHBOARD ADMIN =================================== */
+@media screen and (max-width: 759px) {
+  /* .resp-community {
+    display: none !important;
+    visibility: hidden;
+  } */
+}
+@media screen and (max-width: 435px) {
+  /*tambahan media queries */
+  .resp-community {
+    display: none;
+    visibility: hidden;
+  }
+  .number-jp {
+    display: none;
+    visibility: hidden;
+  }
+  div.dataTables_wrapper div.dataTables_filter input {
+    width: 50vw;
+  }
+  .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .resp-community-kcl {
+    display: none !important;
+    visibility: hidden;
+  }
+  .resp-btn-dashboard {
+    padding: 2px;
+  }
+}
+/* END RESPONSIVE DASHBOARD ADMIN =================================== */
+
+/* RESPONSIVE DASHBOARD KELOLA USER =================================== */
+@media screen and (max-width: 1000px) {
+  .resp-keluser-5 {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 759px) {
+  .resp-keluser-5 {
+    display: none !important;
+    visibility: hidden;
+  }
+  .resp-keluser-4 {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 500px) {
+  .resp-keluser-5 {
+    display: none !important;
+    visibility: hidden;
+  }
+  .resp-keluser-3 {
+    display: none !important;
+    visibility: hidden;
+  }
+  .resp-btn-dashboard {
+    padding: 2px;
+  }
+}
+/* END RESPONSIVE DASHBOARD KELOLA USER =================================== */
+
+/* RESPONSIVE DASHBOARD COMMUNITY ADMIN & PROGRAM USER =================================== */
+@media screen and (max-width: 1200px) {
+  .resp-com-1 {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 759px) {
+  .resp-com-2 {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .resp-com-3 {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .resp-com-3 {
+    display: none !important;
+  }
+}
+/* END RESPONSIVE DASHBOARD COMMUNITY  & PROGRAM USER =================================== */

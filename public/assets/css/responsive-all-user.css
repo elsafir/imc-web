@@ -1,0 +1,24 @@
+.navbar-expand {
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 992px) {
+  .user-panel,
+  .user-panel .info {
+    flex-direction: column !important;
+    margin: auto !important;
+  }
+  .mb-3 {
+    margin: 1rem 0 !important;
+  }
+  .user-panel .image {
+    text-align: center !important;
+  }
+  .user-panel img {
+    width: 6rem !important;
+  }
+  .user-panel .info {
+    text-align: center !important;
+    margin-top: 1rem !important;
+  }
+}
