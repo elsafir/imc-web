@@ -55,6 +55,10 @@ class Mregional extends Model
         return $query;   
     }
 
+    public function tampilEventsRegional($slug_r){
 
+        $query= $this->db->query( "SELECT * FROM events INNER JOIN pengguna ON events.id_pengguna=pengguna.id_pengguna INNER JOIN community ON pengguna.id_community=community.id_community INNER JOIN region ON community.id_region=region.id_region WHERE region.slug_r='$slug_r'");
+        return $query;
+    }
 
 }
