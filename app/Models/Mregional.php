@@ -46,10 +46,19 @@ class Mregional extends Model
     }
 
     public function tampilMenuCommunity($slug_r){
-
         $query= $this->db->query( "SELECT * FROM community INNER JOIN region ON community.id_region = region.id_region INNER JOIN jabatan ON community.id_jabatan = jabatan.id_jabatan WHERE region.slug_r='$slug_r'");
         return $query;   
     }
 
+    public function tampilRegionManager(){
+        $query= $this->db->query( "SELECT * FROM community INNER JOIN jabatan ON community.id_jabatan = jabatan.id_jabatan INNER JOIN region ON community.id_region = region.id_region WHERE community.id_region != 4 AND community.id_jabatan = 1");
+        return $query;   
+    }
+
+    public function tampilEventsRegional($slug_r){
+
+        $query= $this->db->query( "SELECT * FROM events INNER JOIN pengguna ON events.id_pengguna=pengguna.id_pengguna INNER JOIN community ON pengguna.id_community=community.id_community INNER JOIN region ON community.id_region=region.id_region WHERE region.slug_r='$slug_r'");
+        return $query;
+    }
 
 }

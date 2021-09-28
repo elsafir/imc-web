@@ -41,6 +41,9 @@
     <!-- PAGES ABOUT RESPONSIVE -->
     <link rel="stylesheet" href="/assets/css/responsive-eka.css">
 
+    <!-- BUTTON PADA DETAIL EVENT  -->
+    <link rel="stylesheet" href="/assets/css/style_ek.css">
+
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -69,9 +72,9 @@
                         alt="Logo IMC"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd"
                     aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span class="toggler-atas"></span>
+                    <span class="toggler-tengah"></span>
+                    <span class="toggler-bawah"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
@@ -93,7 +96,21 @@
 
 
                         </div>
-                        <li><a class="nav-link" href="<?= base_url('Chome/team') ?>">Team</a></li>
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" data-toggle="dropdown">Team
+                                <span class="caret"></span></a>
+                            <div class="container">
+                                <ul class="dropdown-menu">
+                                  <li><a class="nav-link" href="<?= base_url('Chome/team') ?>">IMC Pusat</a></li>
+                                  <li><a>?Page Regional?</a></li>
+                                    <!-- <?php foreach($jr as $i):
+                                    $slug_r=$i['slug_r'];
+                                    $region=$i['region'];?>
+                                    <li><a href="<?= base_url('Chome/detailCommunity/') ?>/<?php echo $slug_r; ?>">IMC <?php echo $region ?></a></li>
+                                  <?php endforeach ?> TINGGAL UBAH UNTUK PAGE REGIONAL (Copas Page Teams aja)  -->
+                                </ul>
+                            </div>
+                        </div>
                         <li><a class="nav-link" href="<?= base_url('Chome/menuEvents') ?>">Events</a></li>
                         <div class="dropdown">
                             <a class="btn dropdown-toggle" data-toggle="dropdown">Community
@@ -114,7 +131,7 @@
                         <!-- Search form -->
                         <form method="post" action="/Chome/search" class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2 box-searchh" style="margin-left:1em;">
                             <i class="fa fa-search" aria-hidden="true"></i><input name="cari"
-                                class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
+                                class="form-control form-control-sm mr-3 w-75 text-searchh" type="text" placeholder="Search"
                                 aria-label="Search">
                         </form>
 
@@ -374,6 +391,13 @@
 
 
          $('#modal').modal('show');
+
+         // Animasi icon span di navbar-toggler
+         const gerak = document.querySelector(".navbar-toggler");
+
+         gerak.addEventListener('click', ()=>{
+           gerak.classList.toggle('close');
+         })
     </script>
 </body>
 

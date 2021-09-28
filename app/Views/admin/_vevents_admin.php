@@ -53,8 +53,9 @@
                 <tr>
                   <th style="width:10px;">No</th>
                   <th>Judul</th>
-                  <th>Detail</th>
-                  <th>Foto</th>
+                  <th class="resp-community">Detail</th>
+                  <th class="resp-community">Link Pendaftaran</th>
+                  <th class="resp-community">Foto</th>
                   <th style="width:10px;">Aksi</th>
                 </tr>
                 </thead>
@@ -68,14 +69,16 @@
                           $judul_events=$i['judul_events'];
                           $detail_events=$i['detail_events'];
                           $foto_events=$i['foto_events'];
+                          $linkdaftar_event=$i['linkdaftar_event'];
                       ?>
 
                 <tr>
                   <td><?php echo $no++; ?></td>
                   <td><?php echo $judul_events; ?></td>
-                  <td><?php echo substr($detail_events, 0, 200); ?></td>
+                  <td class="resp-community"><?php echo substr($detail_events, 0, 200); ?></td>
+                  <td class="resp-community"> <a href="<?php echo $linkdaftar_event; ?>"><?php echo substr($linkdaftar_event, 0, 17); ?>...<?php echo substr($linkdaftar_event, -3); ?></a>    </td>
 
-                  <td>
+                  <td class="resp-community">
 
                     <?php if ($foto_events != NULL): ?>
                         <a href="/img/<?php echo $foto_events; ?>" data-toggle="lightbox" data-title="sample 1 - white">
@@ -92,9 +95,7 @@
 
                   <td>
                     <span class="badge bg-success"><a href="#" data-toggle="modal" data-target="#lihat-data<?php echo $id_events;?>"><i class="fa fa-eye"> Lihat</i></a></span>
-
                     <span class="badge bg-warning"><a href="#" data-toggle="modal" data-target="#edit-data<?php echo $id_events;?>"><i class="fa fa-edit"> Ubah</i></a></span>
-
                     <span class="badge bg-danger"><a href="#" data-toggle="modal" data-target="#hapus-data<?php echo $id_events;?>"><i class="fa fa-edit"> Hapus</i></a></span>
                   </td>
                 </tr>
@@ -106,8 +107,9 @@
                 <tr>
                   <th>No</th>
                   <th>Judul</th>
-                  <th>Detail</th>
-                  <th>Foto</th>
+                  <th class="resp-community">Detail</th>
+                  <th class="resp-community">Link Pendaftaran</th>
+                  <th class="resp-community">Foto</th>
                   <th>Aksi</th>
                 </tr>
                 </tfoot>
@@ -158,10 +160,14 @@
                           <input class="form-control" type="text" placeholder="Judul Events" style="width: 100%;" name="judul_events" required>
                         </div>
 
-
                         <div class="form-group">
                           <label>Detail Events*</label>
                           <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 100%; height: 200px;" name="detail_events" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                          <label>Link Pendaftaran Events*</label>
+                          <input class="form-control" rows="3" placeholder="Link Pendaftaran ..." style="width: 100%;" name="linkdaftar_event" required></input>
                         </div>
 
 
@@ -204,6 +210,7 @@
                     $judul_events=$i['judul_events'];
                     $detail_events=$i['detail_events'];
                     $foto_events=$i['foto_events'];
+                    $linkdaftar_event=$i['linkdaftar_event'];
                 ?>
 
 <!-- =====================MODAL LIHAT DATA========================= -->
@@ -244,8 +251,6 @@
 
               <hr>
 
-
-
                   <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Judul Events*</label>
                     <div class="col-sm-10">
@@ -253,15 +258,24 @@
                     </div>
                   </div>
 
-
                   <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Detail Events*</label>
                     <div class="col-sm-10">
                           <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 100%; height: 200px;" name="detail_events" disabled><?php echo $detail_events;?></textarea>
                         </div>
 
-                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Link *</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" disabled="" placeholder="Link Pendaftaran Events" name="judul_events" value="<?php echo $linkdaftar_event;?>" style="width: 100%;" required>
+                    </div>
                   </div>
+
+                  </div>
+
+                  
 
                    <hr>
 
@@ -304,13 +318,17 @@
                         <div class="form-group">
                           <label>Judul Events*</label>
                           <input class="form-control" type="text" placeholder="Judul Events" style="width: 100%;" name="judul_events" required="" value="<?php echo $judul_events;?>">
-
                         </div>
 
 
                         <div class="form-group">
                           <label>Detail events</label>
                           <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 100%; height: 200px;" name="detail_events" required=""><?php echo $detail_events;?></textarea>
+                        </div>
+
+                        <div class="form-group">
+                          <label>Link Pendaftaran Events*</label>
+                          <input class="form-control" type="text" placeholder="Link Pendaftaran Events" style="width: 100%;" name="linkdaftar_event" required="" value="<?php echo $linkdaftar_event;?>">
                         </div>
 
                         <div class="form-group">
