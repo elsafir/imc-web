@@ -54,11 +54,11 @@
                   <table id="example-region" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th  style="width:10px;">No</th>
+                        <th style="width:10px;">No</th>
                         <th>Regional</th>
-                        <th class="resp-community">Tentang</th>
-                        <th class="resp-community">Foto</th>
-                        <th class="resp-community">Website</th>
+                        <th>Tentang</th>
+                        <th>Foto</th>
+                        <th>Website</th>
                         <th style="width:10px;">Aksi</th>
                       </tr>
                     </thead>
@@ -75,10 +75,10 @@
                         
                         ?>
                       <tr>
-                        <td ><?= $no++; ?></td>
+                        <td><?= $no++; ?></td>
                         <td><?= $region; ?></td> 
-                        <td class="resp-community"><?= substr($tentang_region, 0, 400); ?></td>
-                        <td class="resp-community">
+                        <td><?= substr($tentang_region, 0, 400); ?></td>
+                        <td>
                             <?php if ($foto_region != NULL): ?>
                               <a href="/img/<?php echo $foto_region; ?>" data-toggle="lightbox" data-title="sample 1 - white">
                                 <img src="/img/<?php echo $foto_region; ?>" class="img-fluid mb-2" alt="white sample" style="width: 200px; height: 100px;"/>
@@ -89,7 +89,7 @@
                                 </a>
                             <?php endif; ?>
                       </td>
-                        <td class="resp-community"><?= $link_web; ?></td> 
+                        <td><?= $link_web; ?></td> 
                         <td>
                           <!-- <span class="badge bg-warning"><a href="#" data-toggle="modal" data-target="#edit-data"><i class="fa fa-edit"> Ubah</i></a></span> -->
                           <span class="badge bg-warning"><a href="#" data-toggle="modal" data-target="#edit-data<?php echo $id_region; ?>" id="btn-edit"><i class="fa fa-edit"> Ubah</i></a></span>
@@ -99,11 +99,11 @@
                     </tbody>
                     <tfoot>
                       <tr>
-                        <th >No</th>
+                        <th>No</th>
                         <th>Regional</th>
-                        <th class="resp-community">Tentang</th>
-                        <th class="resp-community">Foto</th>
-                        <th class="resp-community">Website</th>
+                        <th>Tentang</th>
+                        <th>Foto</th>
+                        <th>Website</th>
                         <th>Aksi</th>
                       </tr>
                     </tfoot>
@@ -153,12 +153,11 @@
                           <label>Link Website*</label>
                           <input class="form-control" type="text" placeholder="Link Website" style="width: 100%;" name="link_web" required autofocus> 
                         </div>
-                        <div class="form-group">
+                      </div>
+                      <div class="form-group">
                           <label for="formGroupExampleInput">Upload Foto*</label>
                           <input type="file" name="file_upload" class="form-control">
                         </div>
-                      </div>
-                      
 
                       <div class="modal-footer">
                         <button class="btn btn-primary" type="submit"><i class="fa fa-check"></i></button>

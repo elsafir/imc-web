@@ -51,11 +51,11 @@
               <table id="example-program" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th class="resp-community-kcl" style="width:10px;">No</th>
+                  <th style="width:10px;">No</th>
                   <th>Jenis</th>
                   <th>Judul</th>
-                  <th class="resp-community">Detail</th>
-                  <th class="resp-community">Foto</th>
+                  <th>Detail</th>
+                  <th>Foto</th>
                   <th style="width:10px;">Aksi</th>
                 </tr>
                 </thead>
@@ -73,12 +73,12 @@
                       ?>
 
                 <tr>
-                  <td class="resp-community-kcl"><?php echo $no++; ?></td> 
+                  <td><?php echo $no++; ?></td> 
                   <td><?php echo $jenis_program; ?></td>
                   <td><?php echo $judul_program; ?></td>
-                  <td class="resp-community"><?php echo substr($detail_program, 0, 200); ?></td>
+                  <td><?php echo substr($detail_program, 0, 200); ?></td>
 
-                  <td class="resp-community">
+                  <td>
 
                     <?php if ($foto_program != NULL): ?>
                         <a href="/img/<?php echo $foto_program; ?>" data-toggle="lightbox" data-title="sample 1 - white">
@@ -107,11 +107,11 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                  <th class="resp-community-kcl">No</th>
+                  <th>No</th>
                   <th>Jenis</th>
                   <th>Judul</th>
-                  <th class="resp-community">Detail</th>
-                  <th class="resp-community">Foto</th>
+                  <th>Detail</th>
+                  <th>Foto</th>
                   <th>Aksi</th>
                 </tr>
                 </tfoot>

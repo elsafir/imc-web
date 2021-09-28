@@ -44,12 +44,11 @@
               <table id="example-community" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                <th class="resp-com-3" style="width:10px;" >No</th>
+                  <th style="width:10px;">No</th>
+                  
                   <th>Nama Anggota</th>
                   <th>jabatan</th>
-                  <th class="resp-com-2">Instagram</th>
-                  <th class="resp-com-1">Email</th>
-                  <th class="resp-com-1"style="width:100px;">Foto</th>
+                  <th style="width:100px;">Foto</th>
                   <th style="width:10px;">Aksi</th>
                 </tr>
                 </thead>
@@ -64,18 +63,15 @@
                           $nama_anggota=$i['nama_anggota'];
                           $jabatan=$i['jabatan'];
                           $foto_anggota=$i['foto_anggota'];
-                          $instagram_anggota=$i['instagram_anggota'];
-                          $email_anggota=$i['email_anggota'];
                       ?>
 
                 <tr>
-                  <td class="resp-com-3"><?php echo $no++; ?></td> 
+                  <td><?php echo $no++; ?></td> 
+                 
                   <td><?php echo $nama_anggota?></td>
                   <td><?php echo $jabatan?></td>
-                  <td class="resp-com-2"><?php echo $instagram_anggota?></td>
-                  <td class="resp-com-1"><?php echo $email_anggota?></td>
 
-                  <td class="resp-com-1">
+                  <td>
 
                     <?php if ($foto_anggota != NULL): ?>
                         <a href="/img/<?php echo $foto_anggota; ?>" data-toggle="lightbox" data-title="sample 1 - white">
@@ -104,12 +100,11 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                  <th class="resp-com-3">No</th>
+                  <th>No</th>
+                 
                   <th>Nama Anggota</th>
                   <th>jabatan</th>
-                  <th class="resp-com-2">Instagram</th>
-                  <th class="resp-com-1">Email</th>
-                  <th class="resp-com-1">Foto</th>
+                  <th>Foto</th>
                   <th>Aksi</th>
                 </tr>
                 </tfoot>
@@ -152,6 +147,11 @@
                             <h4><i class="icon fa fa-info"></i> Keterangan :</h4>
                             <p>Isilah form community anda dengan lengkap, terutama yang bertanda (*)</p>
                         </div>
+                    
+
+
+                         
+
 
                         <div class="form-group">
                           <label>Nama Anggota*</label>
@@ -169,18 +169,11 @@
                                 <option value="<?php echo $id_jabatan ?>"><?php echo $jabatan ?></option>
                                 <?php endforeach ?>
 
+
+
                               </select>
                           </div>
 
-                        <div class="form-group">
-                          <label>Instagram Anggota*</label>
-                          <input class="form-control" type="text" placeholder="Instagram Anggota" style="width: 100%;" name="instagram_anggota" required>
-                        </div>
-                        
-                        <div class="form-group">
-                          <label>Email Anggota*</label>
-                          <input class="form-control" type="text" placeholder="Email Anggota" style="width: 100%;" name="email_anggota" required>
-                        </div>
 
                         <div class="form-group">
                           <label for="formGroupExampleInput">Upload Foto*</label>
@@ -223,8 +216,6 @@
                     $id_jabatan=$i['id_jabatan'];
                     $jabatan=$i['jabatan'];
                     $foto_anggota=$i['foto_anggota'];
-                    $instagram_anggota=$i['instagram_anggota'];
-                    $email_anggota=$i['email_anggota'];
                 ?>
 
 <!-- =====================MODAL LIHAT DATA========================= -->    
@@ -289,19 +280,6 @@
                     </div>
                   </div>
 
-                  <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Instagram*</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" disabled="" placeholder="Instagram Anggota" name="instagram_anggota" value="<?php echo $instagram_anggota;?>" style="width: 100%;">
-                    </div>
-                  </div>
-
-                  <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Email*</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" disabled="" placeholder="Email Anggota" name="email_anggota" value="<?php echo $email_anggota;?>" style="width: 100%;">
-                    </div>
-                  </div>
                    <hr>
 
 
@@ -337,12 +315,15 @@
                         <div class="modal-body">
 
                         <input type="hidden" name="id_community" value="<?php echo $id_community;?>">
-                        <input type="hidden" name="id_region" value="<?php echo $id_region;?>">
+
+
                        
+
 
                         <div class="form-group">
                           <label>Nama Anggota*</label>
                           <input class="form-control" type="text" placeholder="Nama Anggota" style="width: 100%;" name="nama_anggota" required="" value="<?php echo $nama_anggota;?>">
+
                         </div>
 
                         <div class="form-group">
@@ -357,20 +338,18 @@
                                   <?php if ($id_jabatan == 
                                   $id_jabatann) { echo "selected"; } ?>
                                   >
+
                                   <?php echo $jabatan ?>
+                                  
                                 </option>
                                 <?php endforeach ?>
-                            </select>
-                        </div>
 
-                        <div class="form-group">
-                          <label>Instagram Anggota*</label>
-                          <input class="form-control" type="text" placeholder="Instagram Anggota" style="width: 100%;" name="instagram_anggota" required="" value="<?php echo $instagram_anggota;?>">
-                        </div>
-                        
-                        <div class="form-group">
-                          <label>Email Anggota*</label>
-                          <input class="form-control" type="text" placeholder="Email Anggota" style="width: 100%;" name="email_anggota" required="" value="<?php echo $email_anggota;?>">
+
+
+                            </select>
+
+
+
                         </div>
 
                         <div class="form-group">

@@ -50,13 +50,13 @@
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th class="resp-keluser-3" style="width:10px;">No</th>
+                  <th style="width:10px;">No</th>
                   <th>Region</th>
                   <th>Nama Anggota</th>
-                  <th class="resp-keluser-3">Username</th>
-                  <th class="resp-keluser-4">Password</th>
-                  <th class="resp-keluser-5">Level</th>
-                  <th class="resp-keluser-5">Status</th>
+                  <th>Username</th>
+                  <th>Password</th>
+                  <th>Level</th>
+                  <th>Status</th>
                   <th style="width:10px;">Aksi</th>
                 </tr>
                 </thead>
@@ -76,13 +76,13 @@
                       ?>
 
                 <tr>
-                  <td class="resp-keluser-3"><?php echo $no++; ?></td> 
+                  <td><?php echo $no++; ?></td> 
                   <td><?php echo $region; ?></td>
                   <td><?php echo $nama_anggota; ?></td>
-                  <td class="resp-keluser-3"><?php echo $username; ?></td>
-                  <td class="resp-keluser-4"><?php echo substr($password, 0, 20); ?></td>
-                  <td class="resp-keluser-5"><?php echo $level; ?></td>
-                  <td class="resp-keluser-5"><?php echo $status; ?></td>
+                  <td><?php echo $username; ?></td>
+                  <td><?php echo substr($password, 0, 20); ?></td>
+                  <td><?php echo $level; ?></td>
+                  <td><?php echo $status; ?></td>
 
 
                   <td>
@@ -97,13 +97,13 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                  <th class="resp-keluser-3">No</th>
+                  <th>No</th>
                   <th>Region</th>
                   <th>Nama Anggota</th>
-                  <th class="resp-keluser-3">Username</th>
-                  <th class="resp-keluser-4">Password</th>
-                  <th class="resp-keluser-5">Level</th>
-                  <th class="resp-keluser-5">Status</th>
+                  <th>Username</th>
+                  <th>Password</th>
+                  <th>Level</th>
+                  <th>Status</th>
                   <th>Aksi</th>
                 </tr>
                 </tfoot>

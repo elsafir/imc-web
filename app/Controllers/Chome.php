@@ -18,7 +18,7 @@ class Chome extends BaseController
 		$x['jp']= $model->tampilJenisProgram()->getResultArray();
 		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
 		$x['et']= $model2->tampilEventsTerbaru()->getResultArray();
-		$x['me']= $model2->tampilMenuEventsHome()->getResultArray();
+		$x['me']= $model2->tampilMenuEvents()->getResultArray();
 		return view('frontend/_vhome_front',$x);
 	}
 
@@ -91,10 +91,8 @@ class Chome extends BaseController
 		$model1 = new Mregional();
 		$x['jp']= $model->tampilJenisProgram()->getResultArray();
 		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
-		$x['rm']= $model1->tampilRegionManager()->getResultArray();
 		$x['jrr']= $model1->tampilJenisRegionn($slug_r)->getResultArray();
 		$x['mc']= $model1->tampilMenuCommunity($slug_r)->getResultArray();
-		$x['er']=$model1->tampilEventsRegional($slug_r)->getResultArray();
 		return view('frontend/_vcommunity_front',$x);
 	}
 

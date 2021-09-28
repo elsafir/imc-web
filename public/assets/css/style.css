@@ -25,7 +25,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 /* Mode-Dark */
@@ -56,22 +55,8 @@
   --warna-footer-year: #38485c;
 }
 .modal-content {
-  position: relative;
-  top: 6em;
   background-color: var(--warna-utama) !important;
   border: 1px solid var(--warna-dark-mode) !important;
-  animation: kebawah 2s cubic-bezier(0.46, 0.03, 0.52, 0.96) !important;
-}
-
-@keyframes kebawah {
-  0% {
-    top: -8em;
-    opacity: 0.5;
-  }
-  100% {
-    top: 6em;
-    opacity: 1;
-  }
 }
 /* Awal Dark Mode */
 .slide-dark {
@@ -447,12 +432,9 @@ button:focus {
 /* mode-dark-nav */
 .top-header .navbar {
   box-shadow: 0 0 3px var(--warna-dark-mode);
-  padding: 0px;
+  padding: 5px 0px;
   background-color: var(--warna-second);
   color: var(--warna-dark-mode);
-}
-.form-inline {
-  flex-flow: row !important;
 }
 
 .top-header {
@@ -556,21 +538,6 @@ a.navbar-brand img {
 
 .navbar-toggler:hover span {
   background: #d4a81e;
-}
-
-/* animasi icon span di navbar-toggler */
-.navbar-toggler.close {
-  margin: 15px 15px;
-  padding: 8px 8px;
-}
-.navbar-toggler.close span.toggler-tengah {
-  display: none;
-}
-.navbar-toggler.close span.toggler-atas {
-  transform: translateY(150%) rotate(45deg);
-}
-.navbar-toggler.close span.toggler-bawah {
-  transform: translateY(-150%) rotate(-45deg);
 }
 
 .tab_menu {
@@ -1131,13 +1098,8 @@ p.errordiv {
 } */
 .sosmed ul {
   display: flex;
-  flex-wrap: wrap;
   margin: 2em 0;
   width: 100%;
-}
-.sosmed ul a {
-  flex: 0 0 18%;
-  margin: auto;
 }
 .sosmed .fa {
   display: flex;
@@ -1957,45 +1919,8 @@ p.count-text {
   height: 100%;
   width: 100%;
 }
-@media (min-width: 1200px) {
-  #row_1 {
-    flex: 0 0 45.444444%;
-    max-width: 33.333333% !important;
-    margin: auto;
-  }
-}
-@media (max-width: 1199px) {
-  .sosmed ul a {
-    flex: 0 0 25%;
-  }
-  .sosmed ul a:last-child {
-    margin-top: 0.5rem;
-  }
-}
-@media (max-width: 978px) {
-  .sosmed ul a {
-    flex: 0 0 50%;
-  }
-}
-#row_1 {
-  flex: 0 0 45.444444%;
-  max-width: 100%;
-  margin: auto;
-}
-@media (min-width: 768px) {
-  .col-md-4 {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-    margin: auto;
-  }
-}
 
 @media only screen and (max-width: 767.98px) {
-  /* Events */
-  .hvr-radial-out {
-    margin-bottom: 3em;
-  }
-
   /* Home */
   #parallax_2 .container {
     margin-top: 15px;
@@ -2013,16 +1938,8 @@ p.count-text {
   }
 
   /* Mobile Responsive */
-  /* .row-box {
-    flex-direction: column;
-  } */
-  #row_1 {
-    flex: 0 0 100% !important;
-    max-width: 100%;
-    margin: auto;
-  }
   .mobile2 {
-    flex: 0 0 83.3333% !important;
+    flex: 0 0 88.3333% !important;
     max-width: 100%;
     margin: auto;
   }
@@ -2079,7 +1996,7 @@ p.count-text {
   #events p {
     font-size: 14px;
     line-height: 30px;
-    /* text-align: justify !important; bisa di gunakan apabila ingin rata kiri */
+    text-align: justify !important;
   }
 
   #events h1 {
@@ -2141,37 +2058,6 @@ p.count-text {
 
   .branches p {
     line-height: 20px;
-  }
-}
-
-@media only screen and (max-width: 578px) {
-  /* About */
-  #card-hover .card {
-    overflow: auto;
-  }
-
-  /* Detail Events */
-  #events h2 {
-    font-size: 7vw !important;
-  }
-  .text-detailevents {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .hvr-radial-out {
-    width: 23vw;
-    font-size: 10px;
-  }
-  .box-searchh {
-    margin-left: none !important;
-    width: auto !important;
-  }
-  .active-cyan-2 .text-searchh {
-    width: 100% !important;
-  }
-  .mr-3 {
-    margin-right: auto !important;
   }
 }
 

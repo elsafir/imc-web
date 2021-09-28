@@ -48,9 +48,7 @@ class Ccommunity_user extends BaseController{
              $data = array(
         'id_region' => $id_region,
         'nama_anggota'   => $this->request->getPost('nama_anggota'),
-        'id_jabatan'   => $this->request->getPost('id_jabatan'),
-        'instagram_anggota' => $this->request->getPost('instagram_anggota'),
-        'email_anggota' => $this->request->getPost('email_anggota')
+        'id_jabatan'   => $this->request->getPost('id_jabatan')
         );
          } else {
             $upload = $this->request->getFile('file_upload');
@@ -60,8 +58,6 @@ class Ccommunity_user extends BaseController{
             'id_region' => $id_region,
             'nama_anggota'   => $this->request->getPost('nama_anggota'),
             'id_jabatan'   => $this->request->getPost('id_jabatan'),
-            'instagram_anggota' => $this->request->getPost('instagram_anggota'),
-            'email_anggota' => $this->request->getPost('email_anggota'),
             'foto_anggota'             => $upload->getName()
             );
          }
@@ -82,11 +78,9 @@ class Ccommunity_user extends BaseController{
         if ($validation == FALSE) {
 
              $data = array(
-            'id_region' => $this->request->getPost('id_region'),
+            'id_region' => $id_region,
             'nama_anggota'   => $this->request->getPost('nama_anggota'),
-            'id_jabatan'   => $this->request->getPost('id_jabatan'),
-            'instagram_anggota' => $this->request->getPost('instagram_anggota'),
-            'email_anggota' => $this->request->getPost('email_anggota')
+            'id_jabatan'   => $this->request->getPost('id_jabatan')
         );
          } else {
 
@@ -100,12 +94,10 @@ class Ccommunity_user extends BaseController{
 
              $data = array(
 
-            'id_region' => $this->request->getPost('id_region'),
+            'id_region' => $id_region,
             'nama_anggota'   => $this->request->getPost('nama_anggota'),
             'id_jabatan'   => $this->request->getPost('id_jabatan'),
-            'foto_anggota'            => $upload->getName(),
-            'instagram_anggota' => $this->request->getPost('instagram_anggota'),
-            'email_anggota' => $this->request->getPost('email_anggota')
+            'foto_anggota'            => $upload->getName()
             );
          }
 
