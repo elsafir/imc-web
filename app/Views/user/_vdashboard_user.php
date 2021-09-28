@@ -20,7 +20,7 @@
               <!-- /.card-header -->
               <div class="card-body">
                 <div class="row">
-                  <div class="col-lg-3 col-6">
+                  <div class="col-lg-4 col-6">
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
@@ -31,11 +31,11 @@
               <div class="icon">
                 <i class="fa fa-users"></i>
               </div>
-              <a href="#" class="small-box-footer">Selengkapnya <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="<?= base_url('Ccommunity_user') ?>" class="small-box-footer">Selengkapnya <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-4 col-6">
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
@@ -46,11 +46,11 @@
               <div class="icon">
                 <i class="fa fa-chart-line"></i>
               </div>
-              <a href="" class="small-box-footer">Selengkapnya <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="<?= base_url('Cprogram_user') ?>" class="small-box-footer">Selengkapnya <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-4 col-6">
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
@@ -61,25 +61,11 @@
               <div class="icon">
                 <i class="nav-icon fas fa-book"></i>
               </div>
-              <a href="" class="small-box-footer">Selengkapnya <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="<?= base_url('Cevents_user') ?>" class="small-box-footer">Selengkapnya <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-danger">
-              <div class="inner">
-                <h3><?php echo $pengguna ?></h3>
-
-                <p>Data Pengguna</p>
-              </div>
-              <div class="icon">
-                <i class="fa fa-user"></i>
-              </div>
-              <a href="" class="small-box-footer">Selengkapnya <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
+         
 
           
                 </div>
