@@ -144,32 +144,6 @@ class Chome extends BaseController
 		return View('frontend/_vteamPusat_front', $x);
 	}
 
-	public function detailTeam($slug_r){
-		$model = new Mprogram();
-		$model1 = new Mregional();
-		$model2 = new Mevents();
-		$x['jp']= $model->tampilJenisProgram()->getResultArray();
-		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
-		$x['jr1']= $model1->tampilJenisRegion()->getResultArray();
-		$x['jr2']= $model1->tampilDetailTeams($slug_r)->getResultArray();
-		$x['et']= $model2->tampilEventsTerbaru()->getResultArray();
-		$x['me']= $model2->tampilMenuEvents()->getResultArray();
-		return View('frontend/_vteam_front', $x);
-	}
-
-	public function detailteamPusat($slug_r){
-		$model = new Mprogram();
-		$model1 = new Mregional();
-		$model2 = new Mevents();
-		$x['jp']= $model->tampilJenisProgram()->getResultArray();
-		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
-		$x['jr1']= $model1->tampilJenisRegion()->getResultArray();
-		$x['jr2']= $model1->tampilDetailTeams($slug_r)->getResultArray();
-		$x['et']= $model2->tampilEventsTerbaru()->getResultArray();
-		$x['me']= $model2->tampilMenuEvents()->getResultArray();
-		return View('frontend/_vteamPusat_front', $x);
-	}
-
 	public function contact(){
 		$model = new Mprogram();
 		$model1 = new Mregional();
