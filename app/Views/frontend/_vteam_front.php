@@ -31,6 +31,7 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body text-center">
+<<<<<<< HEAD
                             <?php foreach($jr2 as $i):
                                     $nama_anggota=$i['nama_anggota'];
                                     $jabatan=$i['jabatan'];
@@ -45,6 +46,18 @@
                                         class="fa fa-instagram fa-2x"></i></a></li>
                             <?php endif; ?>
                             <?php endforeach ?>            
+=======
+
+                            <?php foreach($jr2 as $i):
+                                    $nama_anggota=$i['nama_anggota'];
+                                    $jabatan=$i['jabatan'];?>
+                            <?php if ($jabatan == "Regional Manager"): ?>
+
+                            <img src="images/p1.png" alt="">
+                            <h3>Iqbal Z. Mutaqin</h3>
+                            <h4>Chief Executive Officer</h4>
+                            <li><a href="https://www.instagram.com/iqbaloco/?hl=id"><i class="fa fa-instagram fa-2x"></i></a></li>
+>>>>>>> 2a11325caec6099559741714baed23b28d2b9855
                         </div>
                     </div>
                 </div>
@@ -78,8 +91,78 @@
                 <div class="col-md-7">
                     <div class=" staff-box">
                         <ul class="list-group list-group-flush">
+<<<<<<< HEAD
                             <li class="list-group-item">Abdurrahman Al-Fatih Ifdal - <span> Vice Secretary I</span> <a
                                     href=""><i class="fa fa-instagram"></i></a></li>
+=======
+                             <?php foreach($jr2 as $i):
+                                    $nama_anggota=$i['nama_anggota'];
+                                    $jabatan=$i['jabatan'];?>
+
+                             <?php if ($jabatan == "Vice Secretary" OR $jabatan == "General Secretary"): ?>
+                            <li class="list-group-item"><?php echo $nama_anggota ?> - <span> <?php echo $jabatan ?></span> <a
+                                    href=""><i class="fa fa-instagram"></i></a></li>
+                                     <?php endif; ?>
+                             <?php endforeach ?>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--close SECRETARY Team-->
+
+    <!-- Finance -->
+    <section id="team" class="team_member_img">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text_align_center mb-3 heading_main">
+                    <h2> Finance
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="card">
+                        <?php foreach($Headf as $i):
+                            $nama_anggota=$i['nama_anggota'];
+                            $jabatan=$i['jabatan'];
+                            $instagram_anggota=$i['instagram_anggota'];
+                            $foto_anggota=$i['foto_anggota'];
+                        ?>
+                        <div class="card-body text-center">
+                        <?php if ($foto_anggota != NULL): ?>
+                            <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
+                            <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample"/>
+                          </a>
+                            <?php else: ?>
+                              <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
+                            <img src="/img/noimage.jpg" alt="white sample"/>
+                          </a>
+                          <?php endif; ?>
+                            <!-- <img src="images/p1.png" alt=""> -->
+                            <h3><?= $nama_anggota; ?></h3>
+                            <h4><?= $jabatan; ?></h4>
+                            <li><a href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i
+                                        class="fa fa-instagram fa-2x mt-3"></i></a></li>
+                        </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="staff-box">
+                        <ul class="list-group list-group-flush">
+                        <?php foreach($f as $i):
+                            $nama_anggota=$i['nama_anggota'];
+                            $jabatan=$i['jabatan'];
+                            $instagram_anggota=$i['instagram_anggota'];
+                            $foto_anggota=$i['foto_anggota'];
+                        ?>
+                            <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
+                                    href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
+>>>>>>> 2a11325caec6099559741714baed23b28d2b9855
                             </li>
                             <li class="list-group-item">Yuli Fitrianingsih - <span> Vice Secretary II</span> <a
                                     href=""><i class="fa fa-instagram"></i></a></li>
@@ -119,6 +202,20 @@
                 <div class="col-md-7">
                     <div class=" staff-box">
                         <ul class="list-group list-group-flush">
+<<<<<<< HEAD
+=======
+                        <?php foreach($hrd as $i):
+                            $nama_anggota=$i['nama_anggota'];
+                            $jabatan=$i['jabatan'];
+                            $instagram_anggota=$i['instagram_anggota'];
+                            $foto_anggota=$i['foto_anggota'];
+                        ?>
+                            <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
+                                    href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
+                            </li>
+                        <?php endforeach; ?>
+
+>>>>>>> 2a11325caec6099559741714baed23b28d2b9855
                             <li class="list-group-item">Andi Muhammad Al-Fayed - <span> Accounting</span> <a href=""><i
                                         class="fa fa-instagram"></i></a></li>
                             </li>
@@ -156,6 +253,7 @@
                 <div class="col-md-7">
                     <div class="staff-box">
                         <ul class="list-group list-group-flush">
+<<<<<<< HEAD
                             <li class="list-group-item">Kiki Nur Aisyah - <span> Public Relation</span> &nbsp; <a
                                     href="https://www.instagram.com/kikinur22/?hl=id"><i
                                         class="fa fa-instagram"></i></a>
@@ -179,6 +277,19 @@
                                     href="https://www.instagram.com/raflialvian99/?hl=id"> <i
                                         class="fa fa-instagram"></i></a>
                             </li>
+=======
+                        <?php foreach($hrr as $i):
+                            $nama_anggota=$i['nama_anggota'];
+                            $jabatan=$i['jabatan'];
+                            $instagram_anggota=$i['instagram_anggota'];
+                            $foto_anggota=$i['foto_anggota'];
+                        ?>
+                            <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
+                                    href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
+                            </li>
+                        <?php endforeach; ?>
+                            </li>
+>>>>>>> 2a11325caec6099559741714baed23b28d2b9855
                         </ul>
                     </div>
                 </div>
@@ -212,6 +323,7 @@
                 <div class="col-md-7">
                     <div class="staff-box">
                         <ul class="list-group list-group-flush">
+<<<<<<< HEAD
                             <li class="list-group-item">Jilan Farah - <span> Secretary of Human Resource</span> <a
                                     href=""><i class="fa fa-instagram"></i></a></li>
                             </li>
@@ -233,6 +345,19 @@
                             <li class="list-group-item">Andika Karuniawan R. - <span> Human Resource Development</span>
                                 <a href=""><i class="fa fa-instagram"></i></a></li>
                             </li>
+=======
+                        <?php foreach($bs as $i):
+                            $nama_anggota=$i['nama_anggota'];
+                            $jabatan=$i['jabatan'];
+                            $instagram_anggota=$i['instagram_anggota'];
+                            $foto_anggota=$i['foto_anggota'];
+                        ?>
+                            <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
+                                    href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
+                            </li>
+                        <?php endforeach; ?>
+                            </li>
+>>>>>>> 2a11325caec6099559741714baed23b28d2b9855
                         </ul>
                     </div>
                 </div>
@@ -267,6 +392,7 @@
                 <div class="col-md-7">
                     <div class="staff-box">
                         <ul class="list-group list-group-flush">
+<<<<<<< HEAD
                             <li class="list-group-item">Fachri Zaini - <span> Content Manager</span> <a
                                     href="https://www.instagram.com/fachrizaini/?hl=id"><i
                                         class="fa fa-instagram"></i></a></li>
@@ -311,6 +437,19 @@
                                     href="https://www.instagram.com/rizkyariefs_/?hl=id"><i
                                         class="fa fa-instagram"></i></a></li>
                             </li>
+=======
+                        <?php foreach($cm as $i):
+                            $nama_anggota=$i['nama_anggota'];
+                            $jabatan=$i['jabatan'];
+                            $instagram_anggota=$i['instagram_anggota'];
+                            $foto_anggota=$i['foto_anggota'];
+                        ?>
+                            <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
+                                    href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
+                            </li>
+                        <?php endforeach; ?>
+                            </li>
+>>>>>>> 2a11325caec6099559741714baed23b28d2b9855
                         </ul>
                     </div>
                 </div>
@@ -345,6 +484,7 @@
                 <div class="col-md-7">
                     <div class="staff-box">
                         <ul class="list-group list-group-flush">
+<<<<<<< HEAD
                             <li class="list-group-item">Dwi Nuryani - <span> Staff of Economy</span> <a
                                     href="https://www.instagram.com/dwinuryaniii/?hl=id"><i
                                         class="fa fa-instagram"></i></a></li>
@@ -361,6 +501,19 @@
                                     href="https://www.instagram.com/raihanazmii/?hl=id"><i
                                         class="fa fa-instagram"></i></a></li>
                             </li>
+=======
+                        <?php foreach($v as $i):
+                            $nama_anggota=$i['nama_anggota'];
+                            $jabatan=$i['jabatan'];
+                            $instagram_anggota=$i['instagram_anggota'];
+                            $foto_anggota=$i['foto_anggota'];
+                        ?>
+                            <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
+                                    href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
+                            </li>
+                        <?php endforeach; ?>
+                            </li>
+>>>>>>> 2a11325caec6099559741714baed23b28d2b9855
                         </ul>
                     </div>
                 </div>
@@ -395,6 +548,7 @@
                 <div class="col-md-7">
                     <div class="staff-box">
                         <ul class="list-group list-group-flush">
+<<<<<<< HEAD
                             <li class="list-group-item">Ahmad Sulthan Aulia - <span> Staff of Education</span> <a
                                     href="https://www.instagram.com/ahmadsulthan/?hl=id"><i
                                         class="fa fa-instagram"></i></a></li>
@@ -413,6 +567,77 @@
                             <li class="list-group-item">Zam Zam Jamaludin - <span> Staff of Education</span> <a
                                     href="https://www.instagram.com/azmlmbert19/?hl=id"><i
                                         class="fa fa-instagram"></i></a></li>
+=======
+                        <?php foreach($d as $i):
+                            $nama_anggota=$i['nama_anggota'];
+                            $jabatan=$i['jabatan'];
+                            $instagram_anggota=$i['instagram_anggota'];
+                            $foto_anggota=$i['foto_anggota'];
+                        ?>
+                            <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
+                                    href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
+                            </li>
+                        <?php endforeach; ?>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Graphic Designer  -->
+    <section id="team" class="team_member_img">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text_align_center mb-3 heading_main">
+                    <h2> Web Development	
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <!-- HRR -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="card">
+                        <?php foreach($PicWD as $i):
+                            $nama_anggota=$i['nama_anggota'];
+                            $jabatan=$i['jabatan'];
+                            $instagram_anggota=$i['instagram_anggota'];
+                            $foto_anggota=$i['foto_anggota'];
+                        ?>
+                        <div class="card-body text-center">
+                        <?php if ($foto_anggota != NULL): ?>
+                            <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
+                            <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample"/>
+                          </a>
+                            <?php else: ?>
+                              <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
+                            <img src="/img/noimage.jpg" alt="white sample"/>
+                          </a>
+                          <?php endif; ?>
+                            <!-- <img src="images/p1.png" alt=""> -->
+                            <h3><?= $nama_anggota; ?></h3>
+                            <h4><?= $jabatan; ?></h4>
+                            <li><a href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i
+                                        class="fa fa-instagram fa-2x mt-3"></i></a></li>
+                        </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="staff-box">
+                        <ul class="list-group list-group-flush">
+                        <?php foreach($wd as $i):
+                            $nama_anggota=$i['nama_anggota'];
+                            $jabatan=$i['jabatan'];
+                            $instagram_anggota=$i['instagram_anggota'];
+                            $foto_anggota=$i['foto_anggota'];
+                        ?>
+                            <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
+                                    href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
+>>>>>>> 2a11325caec6099559741714baed23b28d2b9855
                             </li>
                         </ul>
                     </div>
@@ -447,6 +672,7 @@
                 <div class="col-md-7">
                     <div class="staff-box">
                         <ul class="list-group list-group-flush">
+<<<<<<< HEAD
                             <li class="list-group-item">Anugrah Ramadhan B. - <span> Staff of Social</span> <a
                                     href=""><i class="fa fa-instagram"></i></a></li>
                             </li>
@@ -458,6 +684,77 @@
                             </li>
                             <li class="list-group-item">Yasinta Mega Alfina - <span> Staff of Social</span> <a
                                     href=""><i class="fa fa-instagram"></i></a></li>
+=======
+                        <?php foreach($Eco as $i):
+                            $nama_anggota=$i['nama_anggota'];
+                            $jabatan=$i['jabatan'];
+                            $instagram_anggota=$i['instagram_anggota'];
+                            $foto_anggota=$i['foto_anggota'];
+                        ?>
+                            <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
+                                    href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
+                            </li>
+                        <?php endforeach; ?>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--close Economy Team-->
+
+    <!-- Social -->
+    <section id="team" class="team_member_img">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text_align_center mb-3 heading_main">
+                    <h2> Social Project
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="card">
+                        <?php foreach($HeadSos as $i):
+                            $nama_anggota=$i['nama_anggota'];
+                            $jabatan=$i['jabatan'];
+                            $instagram_anggota=$i['instagram_anggota'];
+                            $foto_anggota=$i['foto_anggota'];
+                        ?>
+                        <div class="card-body text-center">
+                        <?php if ($foto_anggota != NULL): ?>
+                            <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
+                            <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample"/>
+                          </a>
+                            <?php else: ?>
+                              <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
+                            <img src="/img/noimage.jpg" alt="white sample"/>
+                          </a>
+                          <?php endif; ?>
+                            <!-- <img src="images/p1.png" alt=""> -->
+                            <h3><?= $nama_anggota; ?></h3>
+                            <h4><?= $jabatan; ?></h4>
+                            <li><a href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i
+                                        class="fa fa-instagram fa-2x mt-3"></i></a></li>
+                        </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="staff-box">
+                        <ul class="list-group list-group-flush">
+                        <?php foreach($Sos as $i):
+                            $nama_anggota=$i['nama_anggota'];
+                            $jabatan=$i['jabatan'];
+                            $instagram_anggota=$i['instagram_anggota'];
+                            $foto_anggota=$i['foto_anggota'];
+                        ?>
+                            <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
+                                    href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
+>>>>>>> 2a11325caec6099559741714baed23b28d2b9855
                             </li>
                         </ul>
                     </div>
