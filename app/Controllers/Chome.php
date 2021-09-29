@@ -4,6 +4,7 @@ namespace App\Controllers;
 use App\Models\Mprogram;
 use App\Models\Mregional;
 use App\Models\Mevents;
+use App\Models\Mteam;
 use App\Models\Mcommunity;
 use Config\View;
 
@@ -114,10 +115,44 @@ class Chome extends BaseController
 		$model = new Mprogram();
 		$model1 = new Mregional();
 		$model2 = new Mevents();
+		$model3 = new Mteam();
 		$x['jp']= $model->tampilJenisProgram()->getResultArray();
 		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
 		$x['et']= $model2->tampilEventsTerbaru()->getResultArray();
 		$x['me']= $model2->tampilMenuEvents()->getResultArray();
+		$x['ceo']= $model3->tampilCEO()->getResultArray();
+		$x['gsc']= $model3->tampilGeneralSecretary()->getResultArray();
+		$x['sc']= $model3->tampilSecretary()->getResultArray();
+		$x['coo']= $model3->tampilCOO()->getResultArray();
+		$x['cpo']= $model3->tampilCPO()->getResultArray();
+		$x['chro']= $model3->tampilCHRO()->getResultArray();
+		$x['cmo']= $model3->tampilCMO()->getResultArray();
+		$x['Headf']= $model3->tampilHeadFinance()->getResultArray();
+		$x['Headhrd']= $model3->tampilHeadHRD()->getResultArray();
+		$x['hrd']= $model3->tampilHRD()->getResultArray();
+		$x['Headhrr']= $model3->tampilHeadHRR()->getResultArray();
+		$x['hrr']= $model3->tampilHRR()->getResultArray();
+		$x['f']= $model3->tampilFinance()->getResultArray();
+		$x['fu']= $model3->tampilFunding()->getResultArray();
+		$x['Headrc']= $model3->tampilHeadRC()->getResultArray();
+		$x['rc']= $model3->tampilRC()->getResultArray();
+		$x['Headbs']= $model3->tampilHeadBs()->getResultArray();
+		$x['bs']= $model3->tampilBs()->getResultArray();
+		$x['HeadMedia']= $model3->tampilHeadMedia()->getResultArray();
+		$x['cm']= $model3->tampilCm()->getResultArray();
+		$x['PicV']= $model3->tampilPicV()->getResultArray();
+		$x['v']= $model3->tampilV()->getResultArray();
+		$x['PicD']= $model3->tampilPicD()->getResultArray();
+		$x['d']= $model3->tampilD()->getResultArray();
+		$x['PicWD']= $model3->tampilPicWD()->getResultArray();
+		$x['wd']= $model3->tampilWD()->getResultArray();
+		$x['HeadEdu']= $model3->tampilHeadEdu()->getResultArray();
+		$x['Edu']= $model3->tampilEdu()->getResultArray();
+		$x['HeadEco']= $model3->tampilHeadEco()->getResultArray();
+		$x['Eco']= $model3->tampilEco()->getResultArray();
+		$x['HeadSos']= $model3->tampilHeadSos()->getResultArray();
+		$x['Sos']= $model3->tampilSos()->getResultArray();
+		
 		return View('frontend/_vteam_front', $x);
 	}
 
