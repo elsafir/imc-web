@@ -101,13 +101,13 @@
                                 <span class="caret"></span></a>
                             <div class="container">
                                 <ul class="dropdown-menu">
-                                  <li><a class="nav-link" href="<?= base_url('Chome/team') ?>">IMC Pusat</a></li>
-                                  <li><a>?Page Regional?</a></li>
-                                    <!-- <?php foreach($jr as $i):
+                                    <?php $slug_r = "pusat" ?>
+                                   <li><a class="nav-link" href="<?= base_url('Chome/detailteamPusat') ?>/<?php echo $slug_r; ?>">IMC Pusat</a></li>
+                                   <?php foreach($jr1 as $i):
                                     $slug_r=$i['slug_r'];
                                     $region=$i['region'];?>
-                                    <li><a href="<?= base_url('Chome/detailCommunity/') ?>/<?php echo $slug_r; ?>">IMC <?php echo $region ?></a></li>
-                                  <?php endforeach ?> TINGGAL UBAH UNTUK PAGE REGIONAL (Copas Page Teams aja)  -->
+                                    <li><a href="<?= base_url('Chome/detailTeam/') ?>/<?php echo $slug_r; ?>">IMC <?php echo $region ?></a></li>
+                                  <?php endforeach ?>
                                 </ul>
                             </div>
                         </div>
