@@ -33,16 +33,18 @@
                         <div class="card-body text-center">
                             <?php foreach($jr2 as $i):
                                     $nama_anggota=$i['nama_anggota'];
-                                    $jabatan=$i['jabatan'];?>
+                                    $jabatan=$i['jabatan'];
+                                    $foto_anggota=$i['foto_anggota'];
+                                    $instagram_anggota=$i['instagram_anggota'];?>
 
-                            <?php if ($jabatan == "Regional Manager"): ?>
-                            <img src="images/p1.png" alt="">
+                            <?php if ($jabatan == "Chief Executive Officer"): ?>        
+                            <img src="/img/<?php echo $foto_anggota; ?>" alt="">
                             <h3><?php echo $nama_anggota ?></h3>
                             <h4><?php echo $jabatan ?></h4>
-                            <li><a href="https://www.instagram.com/iqbaloco/?hl=id"><i
+                            <li><a href="<?php echo $instagram_anggota ?>"><i
                                         class="fa fa-instagram fa-2x"></i></a></li>
                             <?php endif; ?>
-                            <?php endforeach ?>
+                            <?php endforeach ?>            
                         </div>
                     </div>
                 </div>
@@ -76,15 +78,12 @@
                 <div class="col-md-7">
                     <div class=" staff-box">
                         <ul class="list-group list-group-flush">
-                             <?php foreach($jr2 as $i):
-                                    $nama_anggota=$i['nama_anggota'];
-                                    $jabatan=$i['jabatan'];?>
-
-                             <?php if ($jabatan == "Vice Secretary" OR $jabatan == "General Secretary"): ?>
-                            <li class="list-group-item"><?php echo $nama_anggota ?> - <span> <?php echo $jabatan ?></span> <a
+                            <li class="list-group-item">Abdurrahman Al-Fatih Ifdal - <span> Vice Secretary I</span> <a
                                     href=""><i class="fa fa-instagram"></i></a></li>
-                                     <?php endif; ?>
-                             <?php endforeach ?>
+                            </li>
+                            <li class="list-group-item">Yuli Fitrianingsih - <span> Vice Secretary II</span> <a
+                                    href=""><i class="fa fa-instagram"></i></a></li>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -120,9 +119,9 @@
                 <div class="col-md-7">
                     <div class=" staff-box">
                         <ul class="list-group list-group-flush">
-                            <!-- <li class="list-group-item">Andi Muhammad Al-Fayed - <span> Accounting</span> <a href=""><i
+                            <li class="list-group-item">Andi Muhammad Al-Fayed - <span> Accounting</span> <a href=""><i
                                         class="fa fa-instagram"></i></a></li>
-                            </li> -->
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -157,7 +156,7 @@
                 <div class="col-md-7">
                     <div class="staff-box">
                         <ul class="list-group list-group-flush">
-                            <!-- <li class="list-group-item">Kiki Nur Aisyah - <span> Public Relation</span> &nbsp; <a
+                            <li class="list-group-item">Kiki Nur Aisyah - <span> Public Relation</span> &nbsp; <a
                                     href="https://www.instagram.com/kikinur22/?hl=id"><i
                                         class="fa fa-instagram"></i></a>
                             </li>
@@ -179,7 +178,7 @@
                             <li class="list-group-item">Rafli Alviansyah - <span> Business Development</span> <a
                                     href="https://www.instagram.com/raflialvian99/?hl=id"> <i
                                         class="fa fa-instagram"></i></a>
-                            </li> -->
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -213,7 +212,7 @@
                 <div class="col-md-7">
                     <div class="staff-box">
                         <ul class="list-group list-group-flush">
-                            <!-- <li class="list-group-item">Jilan Farah - <span> Secretary of Human Resource</span> <a
+                            <li class="list-group-item">Jilan Farah - <span> Secretary of Human Resource</span> <a
                                     href=""><i class="fa fa-instagram"></i></a></li>
                             </li>
                             <li class="list-group-item">Hanny M. Dhea - <span> Human Resource Recruitment</span> <a
@@ -233,7 +232,7 @@
                             </li>
                             <li class="list-group-item">Andika Karuniawan R. - <span> Human Resource Development</span>
                                 <a href=""><i class="fa fa-instagram"></i></a></li>
-                            </li> -->
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -268,7 +267,7 @@
                 <div class="col-md-7">
                     <div class="staff-box">
                         <ul class="list-group list-group-flush">
-                            <!-- <li class="list-group-item">Fachri Zaini - <span> Content Manager</span> <a
+                            <li class="list-group-item">Fachri Zaini - <span> Content Manager</span> <a
                                     href="https://www.instagram.com/fachrizaini/?hl=id"><i
                                         class="fa fa-instagram"></i></a></li>
                             </li>
@@ -311,7 +310,7 @@
                             <li class="list-group-item">Rizky Arief Saputro - <span> Web Developer</span> <a
                                     href="https://www.instagram.com/rizkyariefs_/?hl=id"><i
                                         class="fa fa-instagram"></i></a></li>
-                            </li> -->
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -346,7 +345,7 @@
                 <div class="col-md-7">
                     <div class="staff-box">
                         <ul class="list-group list-group-flush">
-                            <!-- <li class="list-group-item">Dwi Nuryani - <span> Staff of Economy</span> <a
+                            <li class="list-group-item">Dwi Nuryani - <span> Staff of Economy</span> <a
                                     href="https://www.instagram.com/dwinuryaniii/?hl=id"><i
                                         class="fa fa-instagram"></i></a></li>
                             </li>
@@ -361,7 +360,7 @@
                             <li class="list-group-item">Raihan Azmi Azhari T. - <span> Staff of Economy</span> <a
                                     href="https://www.instagram.com/raihanazmii/?hl=id"><i
                                         class="fa fa-instagram"></i></a></li>
-                            </li> -->
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -396,7 +395,7 @@
                 <div class="col-md-7">
                     <div class="staff-box">
                         <ul class="list-group list-group-flush">
-                            <!-- <li class="list-group-item">Ahmad Sulthan Aulia - <span> Staff of Education</span> <a
+                            <li class="list-group-item">Ahmad Sulthan Aulia - <span> Staff of Education</span> <a
                                     href="https://www.instagram.com/ahmadsulthan/?hl=id"><i
                                         class="fa fa-instagram"></i></a></li>
                             </li>
@@ -414,7 +413,7 @@
                             <li class="list-group-item">Zam Zam Jamaludin - <span> Staff of Education</span> <a
                                     href="https://www.instagram.com/azmlmbert19/?hl=id"><i
                                         class="fa fa-instagram"></i></a></li>
-                            </li> -->
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -448,7 +447,7 @@
                 <div class="col-md-7">
                     <div class="staff-box">
                         <ul class="list-group list-group-flush">
-                            <!-- <li class="list-group-item">Anugrah Ramadhan B. - <span> Staff of Social</span> <a
+                            <li class="list-group-item">Anugrah Ramadhan B. - <span> Staff of Social</span> <a
                                     href=""><i class="fa fa-instagram"></i></a></li>
                             </li>
                             <li class="list-group-item">Jamilatunnisa - <span> Staff of Social</span> <a href=""><i
@@ -459,7 +458,7 @@
                             </li>
                             <li class="list-group-item">Yasinta Mega Alfina - <span> Staff of Social</span> <a
                                     href=""><i class="fa fa-instagram"></i></a></li>
-                            </li> -->
+                            </li>
                         </ul>
                     </div>
                 </div>
