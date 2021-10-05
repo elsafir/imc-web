@@ -131,8 +131,12 @@
 
 
 
+
  <!-- =====================MODAL TAMBAH DATA========================= -->
 <div class="modal fade" id="tambah-data" data-backdrop="static">
+  <!-- ckeditor -->
+<script src="<?= base_url('assets/ckeditor/ckeditor.js'); ?>"></script>
+<!-- endckeditor -->
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
@@ -162,7 +166,7 @@
 
                         <div class="form-group">
                           <label>Detail Events*</label>
-                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 100%; height: 200px;" name="detail_events" required></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 100%; height: 200px;" name="detail_events" id="detail_events" required></textarea>
                         </div>
 
                         <div class="form-group">
@@ -296,8 +300,10 @@
 
 
 
+
   <!-- =====================MODAL EDIT DATA========================= -->
 <div class="modal fade" id="edit-data<?php echo $id_events;?>" data-backdrop="static">
+
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
@@ -306,7 +312,6 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-
                       <form role="form" name="myform" method="post" action="/Cevents_admin/ubah" enctype="multipart/form-data">
 
                         <div class="modal-body">
@@ -323,7 +328,7 @@
 
                         <div class="form-group">
                           <label>Detail events</label>
-                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 100%; height: 200px;" name="detail_events" required=""><?php echo $detail_events;?></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 100%; height: 200px;" name="detail_events" id="detail_events" required=""><?php echo $detail_events;?></textarea>
                         </div>
 
                         <div class="form-group">
@@ -345,16 +350,7 @@
                           <input type="file" name="file_upload" class="form-control">
                         </div>
 
-
-
-
                         </div>
-
-
-
-
-
-
 
                         <div class="modal-footer">
                           <button class="btn btn-primary" type="submit"><i class="fa fa-check"></i></button>
@@ -401,6 +397,9 @@
       <!-- =============================================== -->
 <?php endforeach;?>
 
+<script>
+  CKEDITOR.replace('detail_events');
+</script>
 
 
 <?= $this->endSection(); ?>
