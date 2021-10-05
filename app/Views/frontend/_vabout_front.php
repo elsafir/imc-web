@@ -111,4 +111,40 @@
 	</section>
 	<!--end section-->
 
+	<section class="contact_map " style="margin: 50px;">
+		<div class="sosmed">
+			<div class="sosmed-out">
+				<ul>
+					<a href="https://www.instagram.com/imconnectid/">
+						<li class="list-group-item ig"><i class="fa fa-instagram fa-2x"></i>
+							@imconnectid
+						</li>
+					</a>
+					<a href="https://www.facebook.com/imconnectid/">
+						<li class="list-group-item fb">
+							<i class="fa fa-facebook-square fa-2x"></i> Indonesia Milennial
+							Connect
+						</li>
+					</a>
+					<a href="https://www.youtube.com/IndonesiaMillennialConnect">
+						<li class="list-group-item yt">
+							<i class="fa fa-youtube fa-2x"></i> Indonesia Millenial Connect
+						</li>
+					</a>
+					<a href="https://wa.me/6281298151717">
+						<li class="list-group-item wa">
+							<i class="fa fa-whatsapp fa-2x"></i> +62 812 - 9815 - 1717
+						</li>
+					</a>
+					<a href="mailto:indonesiamillennialconnect@gmail.com">
+						<li class="list-group-item email" id="email">
+							<i class="fa fa-envelope fa-2x"></i>
+							indonesiamillennialconnect <br> @gmail.com
+						</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+		</section>
+
 <?= $this->endSection(); ?>

@@ -108,12 +108,11 @@ if(isset($_POST['submit'])){
 							<div class="card-body">
 								<a href=""><img src="images/undraw_work_together_h63l.png" alt=""
 										class="img-fluid rounded-circle w-50 mb-4"></a>
-								<h1 class="text-bold">Request A Collaboration
+								<h1 class="text-bold">Have A Question about Imconnect Center?
 								</h1>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, saepe natus,
-									placeat
+								<p>Kolaborasi, Donasi, Kerjasama, dll
 								</p>
-								<a class="btn btn-outline-blue" href="register.html">Request >></a>
+								<a class="btn btn-outline-blue" href="register.html">Contact >></a>
 							</div>
 						</div>
 					</div>
@@ -122,12 +121,11 @@ if(isset($_POST['submit'])){
 							<div class="card-body">
 								<a href=""><img src="images/undraw_team_chat_y27k.png" alt=""
 										class="img-fluid rounded-circle w-50 mb-3"></a>
-								<h1 class="text-bold">Have A Question? Ask Us
+								<h1 class="text-bold">Have A Question about Regional Imconnect?
 								</h1>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, saepe natus,
-									placeat
+								<p>Event, Program, dll
 								</p>
-								<a class="btn btn-outline-blue" href="register.html">Ask Us >></a>
+								<a class="btn btn-outline-blue" href="register.html">Contact >></a>
 							</div>
 						</div>
 					</div>
@@ -136,10 +134,9 @@ if(isset($_POST['submit'])){
 							<div class="card-body">
 								<a href=""><img src="images/undraw_programmer_imem.png" alt=""
 										class="img-fluid rounded-circle w-50 mb-3"></a>
-								<h1 class="text-bold">Contact The Admin
+								<h1 class="text-bold">Have A Question about Member Imconnect?
 								</h1>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, saepe natus,
-									placeat
+								<p> Keuntungan, Pembukaan pendaftaran
 								</p>
 								<a class="btn btn-outline-blue" href="register.html">Contact >></a>
 							</div>
@@ -190,18 +187,18 @@ if(isset($_POST['submit'])){
 					<div class="sosmed">
 						<div class="sosmed-out">
 						<ul>
-							<a href="">
+							<a href="https://www.instagram.com/imconnectid/">
 								<li class="list-group-item ig"><i class="fa fa-instagram fa-2x"></i>
 									@imconnectid
 								</li>
 							</a>
-							<a href="">
+							<a href="https://www.facebook.com/imconnectid/">
 								<li class="list-group-item fb">
 									<i class="fa fa-facebook-square fa-2x"></i> Indonesia Milennial
 									Connect
 								</li>
 							</a>
-							<a href="">
+							<a href="https://www.youtube.com/IndonesiaMillennialConnect">
 								<li class="list-group-item yt">
 									<i class="fa fa-youtube fa-2x"></i> Indonesia Millenial Connect
 								</li>

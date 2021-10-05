@@ -89,7 +89,7 @@
                                             alt="#" /></span><span>Location</span></a></li>
                             <li><a href="/Chome/contact"><span class="icon"><img src="/assets/images/i6.png"
                                             alt="#" /></span><span style="color:white!important;">Email</span></a></li>
-                            <li><a href="/Chome/contact"><span class="icon"><img
+                            <li><a href="https://wa.me/6281298151717"><span class="icon"><img
                                             src="/assets/images/kisspng-computer-icons-portable-network-graphics-email-cli-navy-blue-phone-41-icon-free-navy-blue-phone-ico-5c498dabea4809.9820699415483242679596.png"
                                             alt="#" /></span><span style="color:white!important;">Call
                                         Us</span></a></li>
@@ -210,7 +210,7 @@
         <div class="container pb-5">
             <div class="row mt-5 mb-5 ">
                 <div class="col-md-5 mt-5">
-                    <img src="/assets/images/WhatsApp Image 2020-08-17 at 22.42.50.jpeg" t="#" class="img-fluid">
+                    <img src="/img/WhatsApp Image 2021-10-04 at 14.45.17.jpeg" t="#" class="img-fluid">
                 </div>
                 <div class="col-md-7">
                     <div class="full">
