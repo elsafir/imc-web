@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 29 Sep 2021 pada 09.29
+-- Waktu pembuatan: 07 Okt 2021 pada 12.39
 -- Versi server: 10.4.17-MariaDB
 -- Versi PHP: 8.0.0
 
@@ -49,15 +49,13 @@ INSERT INTO `community` (`id_community`, `id_region`, `nama_anggota`, `id_jabata
 (5, 1, 'Aqidatul Izzah Ramli', 4, '', '', 'WhatsApp Image 2021-07-04 at 18.09.45.jpeg'),
 (8, 2, 'Andi Firmansyah', 2, '', '', NULL),
 (9, 2, 'Jhon Edgard', 3, '', '', NULL),
-(10, 3, 'Pastop Pasaribu', 2, '', '', NULL),
-(13, 4, 'Retno Ekayanti', 8, 'retnoekayanti15@gmail.com', 'reykayanti', NULL),
 (17, 4, 'Iqbal Zaenal Muttaqin', 21, '#', '#', '53ae30911bf76d43cc38de850f4417c2.jpg'),
 (18, 4, 'Septia Darmawaty', 2, '-', '#', '696dbf1138348e446ab85ba3de2763f1_1.jpg'),
 (19, 4, 'Muhammad Faizal Arief Firdaus', 3, ' ', ' ', '53ae30911bf76d43cc38de850f4417c2.jpg'),
 (20, 4, 'Puja Saraswati Karosekali', 3, ' ', ' ', NULL),
 (21, 4, 'Luthfiana Andriani', 3, ' ', ' ', NULL),
 (22, 4, 'Fita Fajria', 20, ' ', ' ', 'aef078234c8e2a4914c648814dc3a01f.jpg'),
-(23, 4, 'Renji Eko Sandi', 22, ' ', ' ', '53ae30911bf76d43cc38de850f4417c2.jpg'),
+(23, 4, 'Renji Eko Sandi', 28, ' ', ' ', '53ae30911bf76d43cc38de850f4417c2.jpg'),
 (24, 4, 'Hana Syifarani', 22, ' ', ' ', NULL),
 (25, 4, 'Riska Islamiyah', 22, '#', '#', NULL),
 (26, 4, 'Maudina Mutiarani', 22, ' ', ' ', NULL),
@@ -68,15 +66,15 @@ INSERT INTO `community` (`id_community`, `id_region`, `nama_anggota`, `id_jabata
 (31, 4, 'Yusenda Dika Armanda Hutama', 23, ' ', ' ', NULL),
 (32, 4, 'Putri Ardhiani Marshanda', 23, ' ', ' ', NULL),
 (33, 4, 'Muhamad Sabit Munawar', 23, ' ', ' ', NULL),
-(34, 4, 'Muhammad Ilyas Arradya', 30, ' ', ' ', NULL),
+(34, 4, 'Muhammad Ilyas Arradya', 30, ' ', ' ', '53ae30911bf76d43cc38de850f4417c2_3.jpg'),
 (35, 4, 'Hanny Mustika Dhea', 1, ' ', ' ', NULL),
-(36, 4, 'Riskiadi', 10, ' ', ' ', NULL),
-(37, 4, 'Bangkit Surya Wijaya', 31, ' ', ' ', NULL),
+(36, 4, 'Riskiadi', 10, ' ', ' ', '53ae30911bf76d43cc38de850f4417c2_2.jpg'),
+(37, 4, 'Bangkit Surya Wijaya', 31, ' ', ' ', '0f88ae64aab2a225ce4cbf28dd541935.jpg'),
 (38, 4, 'Nanda David Prasetyo', 11, ' ', ' ', NULL),
 (39, 4, 'Aisya Widya Melati', 32, ' ', ' ', NULL),
 (40, 4, 'Maria Rachel Nethania', 12, ' ', ' ', NULL),
 (41, 4, 'Desra Yanti Gea', 24, ' ', ' ', '696dbf1138348e446ab85ba3de2763f1.jpg'),
-(42, 4, 'Zam Zam Jamaludin', 33, ' ', ' ', NULL),
+(42, 4, 'Zam Zam Jamaludin', 33, ' ', ' ', '0f88ae64aab2a225ce4cbf28dd541935_1.jpg'),
 (43, 4, 'Cecep Fauzan Al rifah', 13, ' ', ' ', NULL),
 (44, 4, 'Christina Yolantiara Sinaga', 34, ' ', ' ', NULL),
 (45, 4, 'Mia Amalia Pramesti', 13, ' ', ' ', NULL),
@@ -99,7 +97,7 @@ INSERT INTO `community` (`id_community`, `id_region`, `nama_anggota`, `id_jabata
 (62, 4, 'Elizabeth Chrisyan Dewi', 11, ' ', ' ', NULL),
 (63, 4, 'Nur Ihsani Afsah Tarihoran', 12, ' ', ' ', NULL),
 (64, 4, 'Jahfal Uno Surya Lazuardi', 7, ' ', ' ', NULL),
-(65, 4, 'Farros Ghifari', 40, ' ', ' ', NULL),
+(65, 4, 'Farros Ghifari', 40, ' ', ' ', '53ae30911bf76d43cc38de850f4417c2_4.jpg'),
 (66, 4, 'Dyaz Nurul Alif Iskandar', 26, ' ', ' ', NULL),
 (67, 4, 'Fakhriza Sidhqi Wafiq Fauzi', 26, ' ', ' ', NULL),
 (68, 4, 'Natasya Hikma Kamila', 9, ' ', ' ', NULL),
@@ -108,7 +106,7 @@ INSERT INTO `community` (`id_community`, `id_region`, `nama_anggota`, `id_jabata
 (71, 4, 'Inez Putri Pramono', 9, ' ', ' ', NULL),
 (72, 4, 'Zulfa Fitriani Nur Alyza', 9, ' ', ' ', NULL),
 (74, 4, 'Muhammad Naufal Ramadhan', 25, '  ', '  ', NULL),
-(75, 4, 'Retno Ekayanti', 41, 'retnoekayanti15@gmail.com', 'reykayanti', NULL),
+(75, 4, 'Retno Ekayanti', 41, 'retnoekayanti15@gmail.com', 'reykayanti', 'aef078234c8e2a4914c648814dc3a01f_2.jpg'),
 (76, 4, 'Leonyta Anggun Nugroho', 16, ' ', ' ', NULL),
 (77, 4, 'Amelia Fadhil Nurlaila', 16, ' ', ' ', NULL),
 (78, 4, 'Zuhratul Husna', 16, ' ', ' ', NULL),
@@ -123,7 +121,16 @@ INSERT INTO `community` (`id_community`, `id_region`, `nama_anggota`, `id_jabata
 (87, 4, 'Rahartini Purnama Asri', 18, ' ', ' ', NULL),
 (88, 4, 'Dinda Ayu Ningsih', 18, ' ', ' ', NULL),
 (89, 4, 'Nicholas Wiguna', 18, ' ', ' ', NULL),
-(90, 4, 'Uutia Khairia', 18, ' ', ' ', NULL);
+(90, 4, 'Uutia Khairia', 18, ' ', ' ', NULL),
+(91, 3, 'Muhammad Rizki Prananda', 42, ' ', ' ', '0f88ae64aab2a225ce4cbf28dd541935_2.jpg'),
+(92, 3, 'Ajeng Desy Ramadhani', 2, 'ajengdesyrmd@gmail.com', ' ', NULL),
+(93, 3, 'Andira Shalsabilla', 29, 'andirashalsabilla@gmail.com', ' ', NULL),
+(94, 3, 'Hanna Viona Sihombing', 43, ' ', ' ', NULL),
+(95, 3, 'Tarisa Tarigan', 8, ' ', ' ', NULL),
+(96, 3, 'Gabby Vanessa', 44, ' ', ' ', NULL),
+(98, 3, 'Roy Farhan Faa \'iz', 34, ' ', ' ', NULL),
+(99, 3, 'Horas Tua Nopriadi Tampubolon', 33, ' ', ' ', NULL),
+(100, 3, 'Lian Martinline Zalukhu', 35, ' ', ' ', NULL);
 
 -- --------------------------------------------------------
 
@@ -148,11 +155,11 @@ CREATE TABLE `events` (
 --
 
 INSERT INTO `events` (`id_events`, `id_pengguna`, `judul_events`, `detail_events`, `foto_events`, `slug_e`, `linkdaftar_event`, `created_at`, `updated_at`) VALUES
-(3, 3, 'ECO TALKS', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur harum officia ipsam quasi autem id quisquam laboriosam reiciendis earum facere excepturi atque quam eius aperiam voluptate incidunt, sit, blanditiis nostrum?', 'feed.jpg', 'eco-talks', 'https://www.youtube.com/watch?v=DyDfgMOUjCI&list=RDL4ulcFtlB6I&index=27', NULL, NULL),
+(3, 3, 'ECO TALKSs', 'ipsum dolor sit amet consectetur adipisicing elit. Consectetur harum officia ipsam quasi autem id quisquam laboriosam reiciendis earum facere excepturi atque quam eius aperiam voluptate incidunt, sit, blanditiis nostrum?', 'feed.jpg', 'eco-talkss', 'https://www.youtube.com/watch?v=DyDfgMOUjCI&list=RDL4ulcFtlB6I&index=27', NULL, NULL),
 (4, 1, 'HTML Events', 'An HTML event can be something the browser does, or something a user does.\r\nHere are some examples of HTML events:\r\n    An HTML web page has finished loading\r\n    An HTML input field was changed\r\n    An HTML button was clicked\r\nOften, when events happen, you may want to do something.\r\nJavaScript lets you execute code when events are detected.\r\nHTML allows event handler attributes, with JavaScript code, to be added to HTML elements.', 'html_2.jpg', 'html-events', 'https://bit.ly/sjoidjdaiodjoaidjoad.com', NULL, NULL),
-(12, 2, 'lalaas', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur harum officia ipsam quasi autem id quisquam laboriosam reiciendis earum facere excepturi atque quam eius aperiam voluptate incidunt, sit, blanditiis nostrum?', 'aufa.jpg', 'lalaas', 'https://www.youtube.com/watch?v=DyDfgMOUjCI&list=RDL4ulcFtlB6I&index=27', NULL, NULL),
+(12, 2, 'lalaas', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur harum officia ipsam quasi autem id \r\n\r\nquisquam laboriosam reiciendis earum facere excepturi atque quam \r\n\r\neius aperiam voluptate incidunt, sit, blanditiis nostrum?', 'aufa.jpg', 'lalaas', 'https://www.youtube.com/watch?v=DyDfgMOUjCI&list=RDL4ulcFtlB6I&index=27', NULL, NULL),
 (18, 1, 'lalaa', 'lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala ', '', 'lalaa', 'https://www.duniailkom.com/tutorial-php-cara-memotong-atau-mengambil-sebagian-string-fungsi-substr/', NULL, NULL),
-(22, 2, 'Test event bandung', 'Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung ', 'feed.jpg', 'test-event-bandung', 'aa', NULL, NULL);
+(22, 2, 'Test event bandung', '<b>Test</b> event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung ', 'feed.jpg', 'test-event-bandung', 'aa', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -179,9 +186,9 @@ INSERT INTO `jabatan` (`id_jabatan`, `jabatan`) VALUES
 (7, 'Business Development'),
 (8, 'Technology Manager'),
 (9, 'Content Manager'),
-(10, 'Chief Human Resource Officer'),
-(11, 'Human Resource Development'),
-(12, 'Human Resource Recruitment'),
+(10, 'Chief Human Resources Officer'),
+(11, 'Human Resources Development'),
+(12, 'Human Resources Recruitment'),
 (13, 'Economy Project'),
 (14, 'Staff of Economy'),
 (16, 'Education Project'),
@@ -209,7 +216,10 @@ INSERT INTO `jabatan` (`id_jabatan`, `jabatan`) VALUES
 (38, 'Head Media'),
 (39, 'PIC Graphic Designer'),
 (40, 'PIC Video Editor'),
-(41, 'PIC Web Development');
+(41, 'PIC Web Development'),
+(42, 'Regional Manager'),
+(43, 'Head Human Resource'),
+(44, 'Head Marketing Communication');
 
 -- --------------------------------------------------------
 
@@ -230,7 +240,7 @@ CREATE TABLE `jenis_program` (
 
 INSERT INTO `jenis_program` (`id_jenis_program`, `jenis_program`, `tentang_jenis_program`, `slug_js`) VALUES
 (1, 'Edukasi', 'Membantu menjelaskan cara kerja masyarakat, mengeksplorasi segala hal mulai dari pemicu pertumbuhan ekonomi dan penyebab pengangguran hingga apa yang membuat orang bahagia. Informasi ini sangat penting dan dapat digunakan untuk berbagai tujuan. membantu menjelaskan cara kerja masyarakat, mengeksplorasi segala hal mulai dari pemicu pertumbuhan ekonomi dan penyebab pengangguran hingga apa yang membuat orang bahagia. Informasi ini sangat penting dan dapat digunakan untuk berbagai tujuan. membantu menjelaskan cara kerja masyarakat, mengeksplorasi segala hal mulai dari pemicu pertumbuhan ekonomi dan penyebab pengangguran hingga apa yang membuat orang bahagia. Informasi ini sangat penting dan dapat digunakan untuk berbagai tujuan. ', 'edukasi'),
-(2, 'Sosial', 'suatu proses pembelajaran yang dilakukan baik secara formal maupun non formal yang bertujuan untuk mendidik, memberikan ilmu pengetahuan, serta mengembangkan potensi diri yang ada dalam diri setiap manusia, kemudian mewujudkan proses pembelajaran tersebut', 'sosial'),
+(2, 'Sosial', 'Sosial Project adalah Salah satu Divisi dari Project Team. Diantaranya ada Ekonomi dan Pendidikan.\r\nSocial Project adalah divisi yang bergerak dalam bidang kemasyarakatan, Kesosialan dan lainnya. Terkhusus untuk turut serta ke lapangan dalam menyelesaikan permasalahan dan kesenjangan sosial.', 'sosial'),
 (3, 'Ekonomi', 'salah satu cabang ilmu yang mempelajari perilaku serta tindakan manusia dalam memenuhi kebutuhan hidupnya. Tujuan utama keberadaan sistem ekonomi sendiri adalah dapat menciptakan kesejahteraan yang besar serta merata.', 'ekonomi'),
 (4, 'Teknologi', ' keseluruhan sarana untuk menyediakan barang-barang yang diperlukan bagi kelangsungan dan kenyamanan hidup manusia. Penggunaan teknologi oleh manusia diawali dengan pengubahan sumber daya alam menjadi alat-alat sederhana. Penemuan prasejarah tentang kemam', 'teknologi');
 
@@ -381,19 +391,19 @@ ALTER TABLE `region`
 -- AUTO_INCREMENT untuk tabel `community`
 --
 ALTER TABLE `community`
-  MODIFY `id_community` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
+  MODIFY `id_community` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 
 --
 -- AUTO_INCREMENT untuk tabel `events`
 --
 ALTER TABLE `events`
-  MODIFY `id_events` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id_events` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT untuk tabel `jabatan`
 --
 ALTER TABLE `jabatan`
-  MODIFY `id_jabatan` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `id_jabatan` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT untuk tabel `jenis_program`

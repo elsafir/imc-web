@@ -34,7 +34,7 @@ class Chome extends BaseController
 		$x['jr1']= $model1->tampilJenisRegion()->getResultArray();
 		$x['et']= $model2->tampilEventsTerbaru()->getResultArray();
 		$x['me']= $model2->tampilMenuEvents()->getResultArray();
-		
+
 		$db = \Config\Database::connect();
 		$cari = $this->request->getPost('cari');
 
@@ -45,7 +45,7 @@ class Chome extends BaseController
 		$x['cr_cm'] = $db->query( "SELECT * FROM community INNER JOIN region ON community.id_region=region.id_region INNER JOIN jabatan ON community.id_jabatan=jabatan.id_jabatan WHERE region LIKE '%$cari%' OR nama_anggota LIKE '%$cari%' OR  jabatan LIKE '%$cari%'")->getResultArray();
 
 		// $x['cr'] = $query->getRow();
-		
+
 		return view('frontend/_vsearch_front',$x);
 	}
 
@@ -62,13 +62,19 @@ class Chome extends BaseController
 	}
 
 	public function menuEvents(){
+		$pager = \Config\Services::pager();//pagination
 		$model = new Mprogram();
 		$model1 = new Mregional();
 		$model2 = new Mevents();
+		$x = [
+				'events' => $model2->paginate(2, 'bootstrap'),
+				'pager' => $model2->pager
+		];//pagination
 		$x['jp']= $model->tampilJenisProgram()->getResultArray();
 		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
 		$x['jr1']= $model1->tampilJenisRegion()->getResultArray();
 		$x['me']= $model2->tampilMenuEvents()->getResultArray();
+
 		return view('frontend/_vevents_front',$x);
 	}
 

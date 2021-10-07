@@ -20,10 +20,11 @@
     <section id="events">
         <div class="container">
             <?php
-                       foreach($me as $i):
+                          foreach($events as $i):
+                          foreach($me as $j){}
 
                           $id_events=$i['id_events'];
-                          $nama_anggota=$i['nama_anggota'];
+                          $nama_anggota=$j['nama_anggota'];
                           $judul_events=$i['judul_events'];
                           $detail_events=$i['detail_events'];
                           $foto_events=$i['foto_events'];
@@ -56,7 +57,9 @@
                 </div>
             </div>
 
-             <?php endforeach;?>
+
+            <?php endforeach;?>
+            <?php echo $pager->links('bootstrap', 'bootstrap_pagination') ?>
 
              <br><br><br>
 
