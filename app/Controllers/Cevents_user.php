@@ -40,24 +40,29 @@ class Cevents_user extends BaseController{
          $slug = url_title($this->request->getPost('judul_events'), '-', true);
  
         if ($validation == FALSE) {
-             $data = array(
-        'id_pengguna' =>  $id_pengguna,
-        'judul_events'   => $this->request->getPost('judul_events'),
-        'detail_events'   => $this->request->getPost('detail_events'),
-        'linkdaftar_event' => $this->request->getPost('linkdaftar_event'),
-        'slug_e'   => $slug
-        );
+            date_default_timezone_set("Asia/Jakarta");
+            $data = array(
+                'id_pengguna'       =>  $id_pengguna,
+                'judul_events'      => $this->request->getPost('judul_events'),
+                'detail_events'     => $this->request->getPost('detail_events'),
+                'linkdaftar_event'  => $this->request->getPost('linkdaftar_event'),
+                'slug_e'            => $slug,
+                'created_at'        => date('Y-m-d H:i:s'),
+                'updated_at'        => date('Y-m-d H:i:s')
+            );
          } else {
             $upload = $this->request->getFile('file_upload');
             $upload->move(WRITEPATH . '../public/img/');
-
-             $data = array(
-              'id_pengguna' =>  $id_pengguna,
-            'judul_events'    => $this->request->getPost('judul_events'),
-            'detail_events'  => $this->request->getPost('detail_events'),
-            'foto_events'             => $upload->getName(),
-            'linkdaftar_event' => $this->request->getPost('linkdaftar_event'),
-            'slug_e'   => $slug
+            date_default_timezone_set("Asia/Jakarta");
+            $data = array(
+                'id_pengguna'       =>  $id_pengguna,
+                'judul_events'      => $this->request->getPost('judul_events'),
+                'detail_events'     => $this->request->getPost('detail_events'),
+                'foto_events'       => $upload->getName(),
+                'linkdaftar_event'  => $this->request->getPost('linkdaftar_event'),
+                'slug_e'            => $slug,
+                'created_at'        => date('Y-m-d H:i:s'),
+                'updated_at'        => date('Y-m-d H:i:s')
             );
          }
 
@@ -102,12 +107,14 @@ class Cevents_user extends BaseController{
         $slug = url_title($this->request->getPost('judul_events'), '-', true);
 
         if ($validation == FALSE) {
+            date_default_timezone_set("Asia/Jakarta");
             $data = array(
-                'id_pengguna' => $this->request->getPost('id_pengguna'),
-                'judul_events'   => $this->request->getPost('judul_events'),
-                'detail_events'   => $this->request->getPost('detail_events'),
-                'linkdaftar_event' => $this->request->getPost('linkdaftar_event'),
-                'slug_e'   => $slug
+                'id_pengguna'       => $this->request->getPost('id_pengguna'),
+                'judul_events'      => $this->request->getPost('judul_events'),
+                'detail_events'     => $this->request->getPost('detail_events'),
+                'linkdaftar_event'  => $this->request->getPost('linkdaftar_event'),
+                'slug_e'            => $slug,
+                'updated_at'        => date('Y-m-d H:i:s')
             );
          } else {
             $dt = $model->pilihEvents($id_events)->getRow();
@@ -117,23 +124,22 @@ class Cevents_user extends BaseController{
 
             $upload = $this->request->getFile('file_upload');
             $upload->move(WRITEPATH . '../public/img/');
+            date_default_timezone_set("Asia/Jakarta");
 
-             $data = array(
-
-            'id_pengguna' => $this->request->getPost('id_pengguna'),
-            'judul_events'    => $this->request->getPost('judul_events'),
-            'detail_events'  => $this->request->getPost('detail_events'),
-            'foto_events'            => $upload->getName(),
-            'linkdaftar_event' => $this->request->getPost('linkdaftar_event'),
-            'slug_e'   => $slug
+            $data = array(
+                'id_pengguna'       => $this->request->getPost('id_pengguna'),
+                'judul_events'      => $this->request->getPost('judul_events'),
+                'detail_events'     => $this->request->getPost('detail_events'),
+                'foto_events'       => $upload->getName(),
+                'linkdaftar_event'  => $this->request->getPost('linkdaftar_event'),
+                'slug_e'            => $slug,
+                'updated_at'        => date('Y-m-d H:i:s')
             );
          }
-
 
         $model->ubahEvents($data,$id_events);
         return redirect()->to('/Cevents_user')->with('berhasil', 'DATA BERHASIL DIUBAH');
     }
-
 
     public function hapus($id_events){
         $model = new Mevents();
