@@ -131,7 +131,7 @@
 							<i class="fa fa-youtube fa-2x"></i> Indonesia Millenial Connect
 						</li>
 					</a>
-					<a href="https://wa.me/6281298151717">
+					<a href="https://wa.me/6282299924484">
 						<li class="list-group-item wa">
 							<i class="fa fa-whatsapp fa-2x"></i> +62 812 - 9815 - 1717
 						</li>

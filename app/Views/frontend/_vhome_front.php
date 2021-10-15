@@ -89,7 +89,7 @@
                                             alt="#" /></span><span>Location</span></a></li>
                             <li><a href="/Chome/contact"><span class="icon"><img src="/assets/images/i6.png"
                                             alt="#" /></span><span style="color:white!important;">Email</span></a></li>
-                            <li><a href="https://wa.me/6281298151717"><span class="icon"><img
+                            <li><a href="https://wa.me/6282299924484"><span class="icon"><img
                                             src="/assets/images/kisspng-computer-icons-portable-network-graphics-email-cli-navy-blue-phone-41-icon-free-navy-blue-phone-ico-5c498dabea4809.9820699415483242679596.png"
                                             alt="#" /></span><span style="color:white!important;">Call
                                         Us</span></a></li>

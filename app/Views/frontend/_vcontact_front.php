@@ -112,7 +112,7 @@ if(isset($_POST['submit'])){
 								</h1>
 								<p>Kolaborasi, Donasi, Kerjasama, dll
 								</p>
-								<a class="btn btn-outline-blue" href="register.html">Contact >></a>
+								<a class="btn btn-outline-blue" href="https://wa.me/6282299924484">Contact >></a>
 							</div>
 						</div>
 					</div>
@@ -125,7 +125,7 @@ if(isset($_POST['submit'])){
 								</h1>
 								<p>Event, Program, dll
 								</p>
-								<a class="btn btn-outline-blue" href="register.html">Contact >></a>
+								<a class="btn btn-outline-blue" href="https://wa.me/6282299924484">Contact >></a>
 							</div>
 						</div>
 					</div>
@@ -138,7 +138,7 @@ if(isset($_POST['submit'])){
 								</h1>
 								<p> Keuntungan, Pembukaan pendaftaran
 								</p>
-								<a class="btn btn-outline-blue" href="register.html">Contact >></a>
+								<a class="btn btn-outline-blue" href="https://wa.me/6282299924484">Contact >></a>
 							</div>
 						</div>
 					</div>
@@ -203,9 +203,9 @@ if(isset($_POST['submit'])){
 									<i class="fa fa-youtube fa-2x"></i> Indonesia Millenial Connect
 								</li>
 							</a>
-							<a href="https://wa.me/6281298151717">
+							<a href="https://wa.me/6282299924484">
 								<li class="list-group-item wa">
-									<i class="fa fa-whatsapp fa-2x"></i> +62 812 - 9815 - 1717
+									<i class="fa fa-whatsapp fa-2x"></i> +62 822-9992-4484
 								</li>
 							</a>
 							<a href="mailto:indonesiamillennialconnect@gmail.com">
@@ -218,138 +218,15 @@ if(isset($_POST['submit'])){
 					</div>
 				</div>
 
-					<!-- <div class="col-md-12 mt-3 mb-5 d-flex sosmed">
-						<ul class="list-group list-group-flush">
-							<a href="">
-								<li class="list-group-item"><i class="fa fa-instagram fa-2x"></i>
-									@imconnectid
-								</li>
-							</a>
-							<a href="">
-								<li class="list-group-item">
-									<i class="fa fa-facebook-square fa-2x"></i> Indonesia Milennial
-									Connect
-								</li>
-							</a>
-							<a href="">
-								<li class="list-group-item">
-									<i class="fa fa-whatsapp fa-2x"></i> +62 812 - 9815 - 1717
-								</li>
-							</a>
-							<a href="">
-								<li class="list-group-item" id="email">
-									<i class="fa fa-envelope fa-2x"></i>
-									indonesiamillennialconnect <br> @gmail.com
-								</li>
-							</a>
-							<a href="">
-								<li class="list-group-item">
-									<i class="fa fa-youtube fa-2x"></i> Indonesia Millenial Connect
-								</li>
-							</a>
-						</ul>
-					</div> -->
 				</div>
 			</div>
 		</section>
 
-		<!-- section sosmed -->
-		<!-- <div class="container text_align_center" id="card-hover">
-			<div class="mb-5 mt-5 text_align_center">
-				<div class="row">
-					<div class="col-md-12 text_align_center heading_main">
-						<h2><span>Also Get Our Latest Content on Social Media </span></h2>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 mb-5 email-contact">
-					<div class="card">
-						<div class="card-body">
-							<a href=""><img src="images/pngfind.com-contact-icons-png-99256.png" alt=""
-									class="img-fluid rounded-circle w-50 mb-3"></a>
-							<h3>Contact Us Through Email
-							</h3>
-							<p>indonesiamillenialconnect@gmail.com</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 mb-5">
-					<div class="card">
-						<div class="card-body">
-							<a href=""><img src="images/PinClipart.com_transformers-clip-art_617291.png" alt=""
-									class="img-fluid rounded-circle w-50 mb-3"></a>
-							<h3>Find More About Us Trough Instagram
-							</h3>
-							<p>@imconnectorg</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 mb-5">
-					<div class="card">
-						<div class="card-body">
-							<a href=""><img
-									src="images/kisspng-social-media-facebook-computer-icons-linkedin-logo-facebook-icon-5aba7f669c0a94.0492483615221717506392.png"
-									alt="" class="img-fluid rounded-circle w-50 mb-3"></a>
-							<h3>Visit Us On Facebook
-							</h3>
-							<p>Indonesia Millenial Connect</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 mb-5">
-					<div class="card">
-						<div class="card-body">
-							<a href=""><img src="images/NicePng_youtube-live-png_856029.png" alt=""
-									class="img-fluid rounded-circle w-50 mb-3"></a>
-							<h3>Visit Us On Facebook
-							</h3>
-							<p>Indonesia Millenial Connect</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
 
 	</section>
 	<!--end section-->
 
-	<!-- section
-	<div class="section layout_padding contact_section" style="background:#f6f6f6;">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-md-8 col-sm-12">
-					<div class="full float-right_img">
-						<img src="images/img10.png" alt="#">
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-12">
-					<div class="contact_form">
-						<form action="contact.html">
-							<fieldset>
-								<div class="full field">
-									<input type="text" placeholder="Your Name" name="your name" />
-								</div>
-								<div class="full field">
-									<input type="email" placeholder="Email Address" name="Email" />
-								</div>
-								<div class="full field">
-									<input type="phn" placeholder="Phone Number" name="Phone number" />
-								</div>
-								<div class="full field">
-									<textarea placeholder="Massage"></textarea>
-								</div>
-								<div class="full field">
-									<div class="center"><button>Send</button></div>
-								</div>
-							</fieldset>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>-->
-	<!-- end section -->
+	
 
 
 <?= $this->endSection(); ?>
