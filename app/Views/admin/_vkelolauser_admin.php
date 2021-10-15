@@ -88,7 +88,7 @@
                   <td>
 
                     <span class="badge bg-warning"><a href="#" data-toggle="modal" data-target="#edit-data<?php echo $id_pengguna;?>"><i class="fa fa-edit"> Ubah</i></a></span>
-
+                    <span class="badge bg-danger"><a href="#" data-toggle="modal" data-target="#hapus-data<?php echo $id_pengguna;?>"><i class="fa fa-edit"> Hapus</i></a></span>
                   </td>
                 </tr>
 

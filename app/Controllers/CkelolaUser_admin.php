@@ -87,8 +87,14 @@ class CkelolaUser_admin extends BaseController{
 
         return redirect()->to('/CkelolaUser_admin')->with('berhasil', 'DATA BERHASIL DIUBAH');
 
+    }
 
+	public function hapus($id_pengguna){
+        $model = new MkelolaUser();
 
+        $model->deletePengguna($id_pengguna);
+
+        return redirect()->to('/CkelolaUser_admin')->with('berhasil', 'DATA BERHASIL DIHAPUS');
     }
 
 

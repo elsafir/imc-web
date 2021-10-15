@@ -38,5 +38,11 @@ class MkelolaUser extends Model{
          return $query;
     }
 
+    public function deletePengguna($id_pengguna){
+
+        $query = $this->db->table('pengguna')->delete(array('id_pengguna' => $id_pengguna));
+        return $query;
+    }
+
 
 }
