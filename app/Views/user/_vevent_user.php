@@ -136,6 +136,7 @@
 
  <!-- =====================MODAL TAMBAH DATA========================= -->    
 <div class="modal fade" id="tambah-data" data-backdrop="static">
+<script src="<?= base_url('assets/ckeditor/ckeditor.js'); ?>"></script>
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
@@ -200,6 +201,9 @@
                   <!-- /.modal -->
 <!-- =============================================== -->
 
+<script>
+  CKEDITOR.replace('detail_events');
+</script>
 
 
 
@@ -215,6 +219,8 @@
                     $detail_events=$i['detail_events'];
                     $foto_events=$i['foto_events'];
                     $linkdaftar_event=$i['linkdaftar_event'];
+                    $created_at=$i['created_at'];
+                    $updated_at=$i['updated_at'];
                 ?>
 
 <!-- =====================MODAL LIHAT DATA========================= -->    
@@ -254,6 +260,7 @@
               <br><br>
               <h4><b>FORM events</b></h4>
               <p><b><?php echo $judul_events;?></b></p>
+              <small><b>Created at : </b> <?= $created_at; ?> <b>|| Updated at: </b> <?= $updated_at; ?> - </small>
             </center>\
             <br>
             <hr>
@@ -295,6 +302,8 @@
 
   <!-- =====================MODAL EDIT DATA========================= -->    
 <div class="modal fade" id="edit-data<?php echo $id_events;?>" data-backdrop="static">
+<script src="<?= base_url('assets/ckeditor/ckeditor.js'); ?>"></script>
+
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
             <div class="modal-header">
@@ -321,7 +330,7 @@
 
                 <div class="form-group">
                   <label>Detail events</label>
-                  <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 100%; height: 200px;" name="detail_events" required=""><?php echo $detail_events;?></textarea>
+                  <textarea class="form-control" rows="3" placeholder="Detail ..." style="width: 100%; height: 200px;" name="detail_events" id="detail_events" required=""><?php echo $detail_events;?></textarea>
                 </div>
 
                 <div class="form-group">
@@ -353,6 +362,10 @@
     <!-- /.modal-content -->
   </div>
   <!-- /.modal-dialog -->
+  <script>
+  CKEDITOR.replace('detail_events');
+</script>
+
 </div>
 <!-- /.modal -->
 <!-- =============================================== -->
@@ -385,7 +398,9 @@
 <?php endforeach;?>
 
 
-
+<script>
+  CKEDITOR.replace('detail_events');
+</script>
 
 
 <?= $this->endSection(); ?>

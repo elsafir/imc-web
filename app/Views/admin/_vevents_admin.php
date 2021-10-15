@@ -70,6 +70,8 @@
                           $detail_events=$i['detail_events'];
                           $foto_events=$i['foto_events'];
                           $linkdaftar_event=$i['linkdaftar_event'];
+                          $created_at=['created_at'];
+                          $updated_at=['updated_at'];
                       ?>
 
                 <tr>
@@ -215,6 +217,8 @@
                     $detail_events=$i['detail_events'];
                     $foto_events=$i['foto_events'];
                     $linkdaftar_event=$i['linkdaftar_event'];
+                    $created_at=$i['created_at'];
+                    $updated_at=$i['updated_at'];
                 ?>
 
 <!-- =====================MODAL LIHAT DATA========================= -->
@@ -251,6 +255,7 @@
 
                 <h4><b>FORM EVENTS</b></h4>
                 <p><b><?php echo $judul_events;?></b></p>
+                <small><b>Created at : </b> <?= $created_at; ?> <b>|| Updated at: </b> <?= $updated_at; ?> - </small>
               </center><br>
 
               <hr>
