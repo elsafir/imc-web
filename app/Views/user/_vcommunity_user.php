@@ -49,7 +49,7 @@
                   <th>jabatan</th>
                   <th class="resp-com-2">Instagram</th>
                   <th class="resp-com-1">Email</th>
-                  <th class="resp-com-1"style="width:100px;">Foto</th>
+                  <!-- <th class="resp-com-1"style="width:100px;">Foto</th> -->
                   <th style="width:10px;">Aksi</th>
                 </tr>
                 </thead>
@@ -75,27 +75,27 @@
                   <td class="resp-com-2"><?php echo $instagram_anggota?></td>
                   <td class="resp-com-1"><?php echo $email_anggota?></td>
 
-                  <td class="resp-com-1">
+                  <!-- <td class="resp-com-1">
 
-                    <?php if ($foto_anggota != NULL): ?>
-                        <a href="/img/<?php echo $foto_anggota; ?>" data-toggle="lightbox" data-title="sample 1 - white">
-                        <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" style="width: 200px; height: 100px;"/>
+                    </?php if ($foto_anggota != NULL): ?>
+                        <a href="/img/</?php echo $foto_anggota; ?>" data-toggle="lightbox" data-title="sample 1 - white">
+                        <img src="/img/</?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" style="width: 200px; height: 100px;"/>
                       </a>
-                        <?php else: ?>
+                        </?php else: ?>
                           <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
                         <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 200px; height: 100px;"/>
                       </a>
-                      <?php endif; ?>
+                      </?php endif; ?>
 
-                  </td>
+                  </td> -->
 
 
-                  <td>
-                    <span class="badge bg-success"><a href="#" data-toggle="modal" data-target="#lihat-data<?php echo $id_community;?>"><i class="fa fa-eye"> Lihat</i></a></span>
+                  <td style="display: flex;">
+                  <abbr title="Lihat"><span class="badge bg-success"><a href="#" data-toggle="modal" data-target="#lihat-data<?php echo $id_community;?>"><i class="fa fa-eye"> </i></a></span></abbr>
 
-                    <span class="badge bg-warning"><a href="#" data-toggle="modal" data-target="#edit-data<?php echo $id_community;?>"><i class="fa fa-edit"> Ubah</i></a></span>
+                  <abbr title="Ubah"><span class="badge bg-warning"><a href="#" data-toggle="modal" data-target="#edit-data<?php echo $id_community;?>"><i class="fa fa-edit"> </i></a></span></abbr>
 
-                    <span class="badge bg-danger"><a href="#" data-toggle="modal" data-target="#hapus-data<?php echo $id_community;?>"><i class="fa fa-edit"> Hapus</i></a></span>
+                  <abbr title="Hapus"><span class="badge bg-danger"><a href="#" data-toggle="modal" data-target="#hapus-data<?php echo $id_community;?>"><i class="fa fa-edit"> </i></a></span></abbr>
                   </td>
                 </tr>
 
@@ -109,7 +109,7 @@
                   <th>jabatan</th>
                   <th class="resp-com-2">Instagram</th>
                   <th class="resp-com-1">Email</th>
-                  <th class="resp-com-1">Foto</th>
+                  <!-- <th class="resp-com-1">Foto</th> -->
                   <th>Aksi</th>
                 </tr>
                 </tfoot>
