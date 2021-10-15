@@ -24,6 +24,8 @@
                           $detail_events=$i['detail_events'];
                           $foto_events=$i['foto_events'];
                           $linkdaftar_event=$i['linkdaftar_event'];
+                          $created_at=$i['created_at'];
+                          $updated_at=$i['updated_at'];
                       ?>
     <!--section-->
     <section class="event">
@@ -32,12 +34,13 @@
                 <div class="col-md-12 mt-5">
                     <div class="full">
                         <div class="text_align_center " id="events">
-                            <h2><span><?php echo $judul_events; ?></span></h2>
-                            <p style="16px"><b>- <?php echo $nama_anggota ?> -</b></p>
+                            <h2 style="margin-bottom: 10px;"><span><?php echo $judul_events; ?></span></h2>
+                            <!-- <p style="16px"><b>- </?php echo $nama_anggota ?> -</b></p> -->
+                            <small><b>Created At : </b><?= $created_at; ?> <b> | Updated At :</b> <?= $updated_at; ?> - </small>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4"></div>
+                <div class="col-md-4" style="margin-top: 50px;"></div>
                 <div class="col-md-4" style="text-align:center;">
                     <?php if ($foto_events != NULL): ?>
                     <a href="#" data-toggle="lightbox" data-title="sample 1 - white">

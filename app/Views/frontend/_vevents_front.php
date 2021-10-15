@@ -29,6 +29,8 @@
                           $detail_events=$i['detail_events'];
                           $foto_events=$i['foto_events'];
                           $slug_e=$i['slug_e'];
+                          $created_at=$i['created_at'];
+                          $updated_at=$i['updated_at'];
                       ?>
             <div class="row justify-content-around  align-items-center">
                 <div class="col-md-4 mb-3 mt-5">
@@ -48,9 +50,9 @@
                 <div class="col-md-7">
                     <div class="container">
                         <h1><?php echo $judul_events ?></h1>
-                        <p><b>- <?php echo $nama_anggota ?> -</b></p>
-                        <p><?php echo substr($detail_events, 0, 200); ?></p>
-                        <div class="full">
+                        <small>Created at : <?= $created_at; ?> | Updated at : <?= $updated_at; ?> - </small>
+                        <p class="mt-3"><?php echo substr($detail_events, 0, 300); ?></p>
+                        <div class="full" >
                             <a class="hvr-radial-out button-theme" href="<?= base_url('Chome/detailEvents/') ?>/<?php echo $slug_e; ?>">Read more</a>
                         </div>
                     </div>
