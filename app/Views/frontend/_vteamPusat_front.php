@@ -39,7 +39,7 @@
                             <?php if ($jabatan == "Chief Executive Officer"): ?>        
                                 <div class="card-body text-center">
                                 <?php if ($foto_anggota != NULL): ?>
-                                    <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
+                                    <a href="/img/<?php echo $foto_anggota; ?>" data-toggle="lightbox" data-title="sample 1 - white">
                                     <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" style=" width: 270px; height: 270px;"/>
                                 </a>
                                     <?php else: ?>
@@ -78,7 +78,7 @@
                             <?php if ($jabatan == "Chief Operating Officer"): ?>        
                         <div class="card-body text-center">
                         <?php if ($foto_anggota != NULL): ?>
-                            <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
+                            <a href="/img/<?php echo $foto_anggota; ?>" data-toggle="lightbox" data-title="sample 1 - white">
                             <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" />
                           </a>
                             <?php else: ?>
@@ -113,7 +113,7 @@
                             <?php if ($jabatan == "Chief Human Resources Officer"): ?>        
                         <div class="card-body text-center">
                         <?php if ($foto_anggota != NULL): ?>
-                            <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
+                            <a href="/img/<?php echo $foto_anggota; ?>" data-toggle="lightbox" data-title="sample 1 - white">
                             <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" />
                           </a>
                             <?php else: ?>
@@ -148,7 +148,7 @@
                             <?php if ($jabatan == "Chief Project Officer"): ?>        
                         <div class="card-body text-center">
                         <?php if ($foto_anggota != NULL): ?>
-                            <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
+                            <a href="/img/<?php echo $foto_anggota; ?>" data-toggle="lightbox" data-title="sample 1 - white">
                             <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" />
                           </a>
                             <?php else: ?>
@@ -183,7 +183,7 @@
                             <?php if ($jabatan == "Chief Marketing Officer"): ?>        
                         <div class="card-body text-center">
                         <?php if ($foto_anggota != NULL): ?>
-                            <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
+                            <a href="/img/<?php echo $foto_anggota; ?>" data-toggle="lightbox" data-title="sample 1 - white">
                             <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" />
                           </a>
                             <?php else: ?>
