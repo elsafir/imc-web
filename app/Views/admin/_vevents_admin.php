@@ -53,9 +53,9 @@
                 <tr>
                   <th style="width:10px;">No</th>
                   <th>Judul</th>
-                  <th class="resp-community">Detail</th>
-                  <th class="resp-community">Link Pendaftaran</th>
-                  <th class="resp-community">Foto</th>
+                  <th class="resp-event-3">Detail</th>
+                  <th class="resp-event-3">Link Pendaftaran</th>
+                  <th class="resp-event-2">Foto</th>
                   <th style="width:10px;">Aksi</th>
                 </tr>
                 </thead>
@@ -77,10 +77,10 @@
                 <tr>
                   <td><?php echo $no++; ?></td>
                   <td><?php echo $judul_events; ?></td>
-                  <td class="resp-community"><?php echo substr($detail_events, 0, 200); ?></td>
-                  <td class="resp-community"> <a href="<?php echo $linkdaftar_event; ?>"><?php echo substr($linkdaftar_event, 0, 17); ?>...<?php echo substr($linkdaftar_event, -3); ?></a>    </td>
+                  <td class="resp-event-3"><?php echo substr($detail_events, 0, 200); ?></td>
+                  <td class="resp-event-3"> <a href="<?php echo $linkdaftar_event; ?>"><?php echo substr($linkdaftar_event, 0, 17); ?>...<?php echo substr($linkdaftar_event, -3); ?></a>    </td>
 
-                  <td class="resp-community">
+                  <td class="resp-event-2">
 
                     <?php if ($foto_events != NULL): ?>
                         <a href="/img/<?php echo $foto_events; ?>" data-toggle="lightbox" data-title="sample 1 - white">
@@ -109,9 +109,9 @@
                 <tr>
                   <th>No</th>
                   <th>Judul</th>
-                  <th class="resp-community">Detail</th>
-                  <th class="resp-community">Link Pendaftaran</th>
-                  <th class="resp-community">Foto</th>
+                  <th class="resp-event-3">Detail</th>
+                  <th class="resp-event-3">Link Pendaftaran</th>
+                  <th class="resp-event-2">Foto</th>
                   <th>Aksi</th>
                 </tr>
                 </tfoot>
@@ -239,8 +239,8 @@
               <div class="alert alert-warning alert-dismissible">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                             <h4><i class="icon fa fa-info"></i> Keterangan :</h4>
-                            <p>Ceklah isi form events anda dengan lengkap, terutama yang bertanda (*). Jika isi form sudah lengkap silakan diunduh. Terimakasih.</p>
-                            <a href="#" class="btn btn-success"><i class="fa fa-download"></i> Cetak Events</a>
+                            <p>Ceklah isi form events anda dengan lengkap, terutama yang bertanda (*).</p>
+                            <!-- <a href="#" class="btn btn-success"><i class="fa fa-download"></i> Cetak Events</a> -->
                         </div>
 
               <center>
@@ -255,7 +255,8 @@
 
                 <h4><b>FORM EVENTS</b></h4>
                 <p><b><?php echo $judul_events;?></b></p>
-                <small><b>Created at : </b> <?= $created_at; ?> <b>|| Updated at: </b> <?= $updated_at; ?> - </small>
+                <small><b>Created at : </b> <?= $created_at; ?> <b>|| Updated at: </b> <?= $updated_at; ?> - </small> <br>
+                <small><a href="<?php echo $linkdaftar_event;?>"><?php echo $linkdaftar_event;?></a></small>
               </center><br>
 
               <hr>
@@ -275,12 +276,7 @@
 
                     </div>
 
-                    <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Link *</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" disabled="" placeholder="Link Pendaftaran Events" name="judul_events" value="<?php echo $linkdaftar_event;?>" style="width: 100%;" required>
-                    </div>
-                  </div>
+                    
 
                   </div>
 

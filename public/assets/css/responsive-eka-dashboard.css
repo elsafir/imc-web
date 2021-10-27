@@ -101,3 +101,26 @@
   }
 }
 /* END RESPONSIVE DASHBOARD COMMUNITY  & PROGRAM USER =================================== */
+
+/* RESPONSIVE DASHBOARD EVENT ADMIN & PROGRAM USER =================================== */
+@media screen and (max-width: 1200px) {
+  .resp-event-1 {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 759px) {
+  .resp-event-2 {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .resp-event-3 {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .resp-event-3 {
+    display: none !important;
+  }
+}
+/* END RESPONSIVE DASHBOARD EVENT  & PROGRAM USER =================================== */
