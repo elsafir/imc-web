@@ -67,10 +67,18 @@ class CkelolaUser_admin extends BaseController{
 	      'level' => $this->request->getPost('level')
         );
 
-       
-        $model->ubahKelolaUser($data,$id_pengguna);
+        $username = $this->request->getPost('username');
+        $cek = $model->cekUsername($username)->getRow();
+       // $hasil = count($cek);
 
-        return redirect()->to('/CkelolaUser_admin')->with('berhasil', 'DATA BERHASIL DIUBAH');
+        if ($cek) {
+
+        	return redirect()->to('/CkelolaUser_admin')->with('gagal', 'DATA TIDAK TERUBAH! USERNAME SUDAH ADA!!!');
+        }else{
+
+            $model->ubahKelolaUser($data,$id_pengguna);
+            return redirect()->to('/CkelolaUser_admin')->with('berhasil', 'DATA BERHASIL DIUBAH');
+        }
     }
 
     public function reset_password(){

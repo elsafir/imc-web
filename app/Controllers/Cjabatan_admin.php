@@ -24,16 +24,41 @@ class Cjabatan_admin extends BaseController{
 
         $id_jabatan = session('id_jabatan');
 
+        
         $model = new Mjabatan();
         $data = [
             'jabatan' => $this->request->getPost('jabatan')
         ];
+
+        //validasi inputan
+		if (!$this->validate([
+			'jabatan' => 'required|is_unique[jabatan.jabatan]', //[namatable.field]
+		])) {
+			return redirect()->to('/Cjabatan_admin')->with('gagal', '<b>DATA GAGAL DITAMBAHKAN!</b> Jabatan sebelumnya sudah terdaftar');
+		}
+        
         //insert data
         $model->tambahJabatan($data);
         return redirect()->to('/Cjabatan_admin')->with('berhasil', 'DATA BERHASIL DISIMPAN');
     }
     public function ubah(){
         $model = new Mjabatan();
+
+        $jabatanlama = $this->request->getPost('jabatanlama');
+
+		//cek nama jabatan 
+		if ($jabatanlama == $this->request->getVar('jabatan')){
+			$rule_jabatan = 'required';
+		} else {
+			$rule_jabatan = 'required|is_unique[jabatan.jabatan]';
+		}
+
+        if (!$this->validate([
+			'jabatan' => $rule_jabatan
+		])) {
+
+			return redirect()->to('/Cjabatan_admin')->with('gagal', '<b>DATA GAGAL DIUBAH!</b> Jabatan sebelumnya sudah terdaftar');
+		}
 
         $id_jabatan = $this->request->getPost('id_jabatan');
         $data = [
