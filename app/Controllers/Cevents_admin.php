@@ -77,6 +77,23 @@ class Cevents_admin extends BaseController{
         $model = new Mevents();
 
         $id_events = $this->request->getPost('id_events');
+
+        $judullama = $this->request->getPost('judullama');
+
+		//cek nama judul 
+		if ($judullama == $this->request->getVar('judul_events')){
+			$rule_judul = 'required';
+		} else {
+			$rule_judul = 'required|is_unique[events.judul_events]';
+		}
+
+		if (!$this->validate([
+			'judul_events' => $rule_judul
+		])) {
+
+			return redirect()->to('/Cevents_admin')->with('gagal', '<b>DATA GAGAL DIUBAH!</b> Judul sebelumnya sudah terdaftar');
+		}
+
         $validation = $this->validate([
             'file_upload' => 'uploaded[file_upload]|mime_in[file_upload,image/jpg,image/jpeg,image/gif,image/png]|max_size[file_upload,4096]'
         ]);
