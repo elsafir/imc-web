@@ -34,21 +34,7 @@
               <a href="<?= base_url('Ccommunity_user') ?>" class="small-box-footer">Selengkapnya <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
-          <!-- ./col -->
-          <div class="col-lg-4 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success">
-              <div class="inner">
-                <h3><?php echo $program ?></h3>
-
-                <p>Data Program</p>
-              </div>
-              <div class="icon">
-                <i class="fa fa-chart-line"></i>
-              </div>
-              <a href="<?= base_url('Cprogram_user') ?>" class="small-box-footer">Selengkapnya <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
+       
           <!-- ./col -->
           <div class="col-lg-4 col-6">
             <!-- small box -->
