@@ -173,7 +173,7 @@
 
                         <div class="form-group">
                           <label>Link Pendaftaran Events*</label>
-                          <input class="form-control" rows="3" placeholder="Link Pendaftaran ..." style="width: 100%;" name="linkdaftar_event" required></input>
+                          <input class="form-control" rows="3" placeholder="Link Pendaftaran ..." style="width: 100%;" name="linkdaftar_event" ></input>
                         </div>
 
 
@@ -335,7 +335,7 @@
 
                         <div class="form-group">
                           <label>Link Pendaftaran Events*</label>
-                          <input class="form-control" type="text" placeholder="Link Pendaftaran Events" style="width: 100%;" name="linkdaftar_event" required="" value="<?php echo $linkdaftar_event;?>">
+                          <input class="form-control" type="text" placeholder="Link Pendaftaran Events" style="width: 100%;" name="linkdaftar_event" value="<?php echo $linkdaftar_event;?>">
                         </div>
 
                         <div class="form-group">

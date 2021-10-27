@@ -61,11 +61,21 @@
 
             </div>
 
-            <div class="container-btnevent">
-                <a href="<?php echo $linkdaftar_event; ?>">
-                    Form Pendaftaran
-                </a>
-            </div>
+            <!-- TAMPILAN FORM DAFTAR -->
+            <?php if ($linkdaftar_event != NULL): ?>
+                <div class="container-btnevent">
+                    <a href="<?php echo $linkdaftar_event; ?>">
+                        Form Pendaftaran
+                    </a>
+                </div>
+            <?php else: ?>
+                <!-- KOSONG -->
+            <?php endif; ?>
+
+
+
+            
+
         </div>
     </section>
     <!--close section-->
