@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 07 Okt 2021 pada 12.39
+-- Waktu pembuatan: 27 Okt 2021 pada 05.04
 -- Versi server: 10.4.17-MariaDB
 -- Versi PHP: 8.0.0
 
@@ -44,9 +44,9 @@ CREATE TABLE `community` (
 INSERT INTO `community` (`id_community`, `id_region`, `nama_anggota`, `id_jabatan`, `email_anggota`, `instagram_anggota`, `foto_anggota`) VALUES
 (1, 4, 'Ayamsakit', 1, 'ayamaalalalalla@gmail.com', 'ayamsakit', 'IMG_8673.JPG'),
 (2, 2, 'Muhammad Ilyas Arradya', 1, 'ilyas@gmail.com', 'layaaas', '44892a2f-547c-4ebf-bfef-53fa803e7d29.jpg'),
-(3, 1, 'Muh. Yusril Hardiansyah. B. S.P', 2, '', '', NULL),
+(3, 1, 'Muh. Yusril Hardiansyah', 2, 'fd', 'df', NULL),
 (4, 3, 'Dyaul Mu\'sinat', 3, '', '', NULL),
-(5, 1, 'Aqidatul Izzah Ramli', 4, '', '', 'WhatsApp Image 2021-07-04 at 18.09.45.jpeg'),
+(5, 1, 'Aqidatul test', 4, 'vfv', ' fvf', 'WhatsApp Image 2021-07-04 at 18.09.45.jpeg'),
 (8, 2, 'Andi Firmansyah', 2, '', '', NULL),
 (9, 2, 'Jhon Edgard', 3, '', '', NULL),
 (17, 4, 'Iqbal Zaenal Muttaqin', 21, '#', '#', '53ae30911bf76d43cc38de850f4417c2.jpg'),
@@ -155,11 +155,12 @@ CREATE TABLE `events` (
 --
 
 INSERT INTO `events` (`id_events`, `id_pengguna`, `judul_events`, `detail_events`, `foto_events`, `slug_e`, `linkdaftar_event`, `created_at`, `updated_at`) VALUES
-(3, 3, 'ECO TALKSs', 'ipsum dolor sit amet consectetur adipisicing elit. Consectetur harum officia ipsam quasi autem id quisquam laboriosam reiciendis earum facere excepturi atque quam eius aperiam voluptate incidunt, sit, blanditiis nostrum?', 'feed.jpg', 'eco-talkss', 'https://www.youtube.com/watch?v=DyDfgMOUjCI&list=RDL4ulcFtlB6I&index=27', NULL, NULL),
-(4, 1, 'HTML Events', 'An HTML event can be something the browser does, or something a user does.\r\nHere are some examples of HTML events:\r\n    An HTML web page has finished loading\r\n    An HTML input field was changed\r\n    An HTML button was clicked\r\nOften, when events happen, you may want to do something.\r\nJavaScript lets you execute code when events are detected.\r\nHTML allows event handler attributes, with JavaScript code, to be added to HTML elements.', 'html_2.jpg', 'html-events', 'https://bit.ly/sjoidjdaiodjoaidjoad.com', NULL, NULL),
-(12, 2, 'lalaas', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur harum officia ipsam quasi autem id \r\n\r\nquisquam laboriosam reiciendis earum facere excepturi atque quam \r\n\r\neius aperiam voluptate incidunt, sit, blanditiis nostrum?', 'aufa.jpg', 'lalaas', 'https://www.youtube.com/watch?v=DyDfgMOUjCI&list=RDL4ulcFtlB6I&index=27', NULL, NULL),
-(18, 1, 'lalaa', 'lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala ', '', 'lalaa', 'https://www.duniailkom.com/tutorial-php-cara-memotong-atau-mengambil-sebagian-string-fungsi-substr/', NULL, NULL),
-(22, 2, 'Test event bandung', '<b>Test</b> event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung ', 'feed.jpg', 'test-event-bandung', 'aa', NULL, NULL);
+(3, 3, 'ECO TALKSs', 'ipsum dolor sit amet consectetur adipisicing elit. ipsum dolor sit amet consectetur adipisicing elit. Consectetur harum officia ipsam quasi autem id quisquam laboriosam reiciendis earum facere excepturi atque quam eius aperiam voluptate incidunt, sit, blanditiis nostrum?Consectetur harum officia ipsam quasi autem id quisquam laboriosam reiciendis earum facere excepturi atque quam eius aperiam voluptate incidunt, sit, blanditiis nostrum?', 'feed.jpg', 'eco-talkss', 'https://www.youtube.com/watch?v=DyDfgMOUjCI&list=RDL4ulcFtlB6I&index=27', '2021-10-18 09:02:06', NULL),
+(4, 1, 'HTML Events', 'An HTML event can be something the browser does, or something a user does.\r\nHere are some examples of HTML events:\r\n    An HTML web page has finished loading\r\n    An HTML input field was changed\r\n    An HTML button was clicked\r\nOften, when events happen, you may want to do something.\r\nJavaScript lets you execute code when events are detected.\r\nHTML allows event handler attributes, with JavaScript code, to be added to HTML elements.', 'html_2.jpg', 'html-events', 'https://bit.ly/sjoidjdaiodjoaidjoad.com', '2021-10-05 09:02:11', NULL),
+(12, 2, 'lalaas', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur harum officia ipsam quasi autem id \r\n\r\nquisquam laboriosam reiciendis earum facere excepturi atque quam \r\n\r\neius aperiam voluptate incidunt, sit, blanditiis nostrum?', 'aufa.jpg', 'lalaas', 'https://www.youtube.com/watch?v=DyDfgMOUjCI&list=RDL4ulcFtlB6I&index=27', '2021-10-18 09:02:14', NULL),
+(18, 1, 'lalaa', 'lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala lala alala ', '', 'lalaa', 'https://www.duniailkom.com/tutorial-php-cara-memotong-atau-mengambil-sebagian-string-fungsi-substr/', '2021-10-18 09:02:19', NULL),
+(22, 2, 'Test event bandung', '<b>Test</b> event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung Test event bandung ', 'feed.jpg', 'test-event-bandung', 'aa', '2021-10-04 09:02:21', NULL),
+(26, 2, 'Test Bandung created at', 'Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at Test Bandung created at ', NULL, 'test-bandung-created-at', 'cdvdv', '2021-10-15 10:18:00', '2021-10-15 10:18:00');
 
 -- --------------------------------------------------------
 
@@ -241,8 +242,7 @@ CREATE TABLE `jenis_program` (
 INSERT INTO `jenis_program` (`id_jenis_program`, `jenis_program`, `tentang_jenis_program`, `slug_js`) VALUES
 (1, 'Edukasi', 'Membantu menjelaskan cara kerja masyarakat, mengeksplorasi segala hal mulai dari pemicu pertumbuhan ekonomi dan penyebab pengangguran hingga apa yang membuat orang bahagia. Informasi ini sangat penting dan dapat digunakan untuk berbagai tujuan. membantu menjelaskan cara kerja masyarakat, mengeksplorasi segala hal mulai dari pemicu pertumbuhan ekonomi dan penyebab pengangguran hingga apa yang membuat orang bahagia. Informasi ini sangat penting dan dapat digunakan untuk berbagai tujuan. membantu menjelaskan cara kerja masyarakat, mengeksplorasi segala hal mulai dari pemicu pertumbuhan ekonomi dan penyebab pengangguran hingga apa yang membuat orang bahagia. Informasi ini sangat penting dan dapat digunakan untuk berbagai tujuan. ', 'edukasi'),
 (2, 'Sosial', 'Sosial Project adalah Salah satu Divisi dari Project Team. Diantaranya ada Ekonomi dan Pendidikan.\r\nSocial Project adalah divisi yang bergerak dalam bidang kemasyarakatan, Kesosialan dan lainnya. Terkhusus untuk turut serta ke lapangan dalam menyelesaikan permasalahan dan kesenjangan sosial.', 'sosial'),
-(3, 'Ekonomi', 'salah satu cabang ilmu yang mempelajari perilaku serta tindakan manusia dalam memenuhi kebutuhan hidupnya. Tujuan utama keberadaan sistem ekonomi sendiri adalah dapat menciptakan kesejahteraan yang besar serta merata.', 'ekonomi'),
-(4, 'Teknologi', ' keseluruhan sarana untuk menyediakan barang-barang yang diperlukan bagi kelangsungan dan kenyamanan hidup manusia. Penggunaan teknologi oleh manusia diawali dengan pengubahan sumber daya alam menjadi alat-alat sederhana. Penemuan prasejarah tentang kemam', 'teknologi');
+(3, 'Ekonomi', 'salah satu cabang ilmu yang mempelajari perilaku serta tindakan manusia dalam memenuhi kebutuhan hidupnya. Tujuan utama keberadaan sistem ekonomi sendiri adalah dapat menciptakan kesejahteraan yang besar serta merata.', 'ekonomi');
 
 -- --------------------------------------------------------
 
@@ -268,7 +268,6 @@ INSERT INTO `pengguna` (`id_pengguna`, `id_community`, `username`, `password`, `
 (2, 2, 'ilyas', '$2y$10$JRQHPac0c6/yss6gTwltJ.FuR7HV49X50tdJioutxj8l5QLJo5TR.', 'User', 'Aktif'),
 (3, 3, 'yusril', '$2y$10$ed3GeI1vFvYilpZSTgzamuLcvDZSyKrCWCjOHt.5staCNQCINK1nC', 'User', 'Aktif'),
 (4, 4, 'dyaul', '$2y$10$JRQHPac0c6/yss6gTwltJ.FuR7HV49X50tdJioutxj8l5QLJo5TR.', 'User', 'Aktif'),
-(5, 5, 'aqi', '$2y$10$9SmPxOqqCvdR4rR3HU7FdOEHLcCFb8oE6Qsi7m8Vkq7guKMYNaEjG', 'User', 'Tidak Aktif'),
 (6, 1, 'andrichardws', '$2y$10$JMJh5PMzdMRoExKHJFWdHulzEj6HT.y4PWW8yvDHmDUbH36E1fkx6', 'Administrator', 'Aktif'),
 (7, 8, 'andi', '$2y$10$W9Q06.DRBqV8Mt/vD7Byhe/txO1mo3q61j7qDqkz1yj0aGbYR.8UC', 'User', 'Aktif');
 
@@ -391,13 +390,13 @@ ALTER TABLE `region`
 -- AUTO_INCREMENT untuk tabel `community`
 --
 ALTER TABLE `community`
-  MODIFY `id_community` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+  MODIFY `id_community` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=102;
 
 --
 -- AUTO_INCREMENT untuk tabel `events`
 --
 ALTER TABLE `events`
-  MODIFY `id_events` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id_events` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT untuk tabel `jabatan`
