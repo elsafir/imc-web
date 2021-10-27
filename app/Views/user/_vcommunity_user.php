@@ -95,7 +95,7 @@
 
                   <abbr title="Ubah"><span class="badge bg-warning"><a href="#" data-toggle="modal" data-target="#edit-data<?php echo $id_community;?>"><i class="fa fa-edit"> </i></a></span></abbr>
 
-                  <abbr title="Hapus"><span class="badge bg-danger"><a href="#" data-toggle="modal" data-target="#hapus-data<?php echo $id_community;?>"><i class="fa fa-edit"> </i></a></span></abbr>
+                  <abbr title="Hapus"><span class="badge bg-danger"><a href="#" data-toggle="modal" data-target="#hapus-data<?php echo $id_community;?>"><i class="fa fa-trash"> </i></a></span></abbr>
                   </td>
                 </tr>
 
