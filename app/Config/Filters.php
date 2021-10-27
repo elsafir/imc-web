@@ -94,9 +94,7 @@ class Filters extends BaseConfig
 				'CtentangRegional_user/*',
 
 				'Cprogram_admin',
-				'Cprogram_admin/*',
-				'Cprogram_user',
-				'Cprogram_user/*'
+				'Cprogram_admin/*'
 
 
 			]

@@ -176,14 +176,14 @@
             </a>
           </li>
 
-          <li class="nav-item">
-            <a href="<?= base_url('Cprogram_user') ?>" class="nav-link">
+          <!-- <li class="nav-item">
+            <a href="</?= base_url('Cprogram_user') ?>" class="nav-link">
               <i class="nav-icon fas fa-chart-line"></i>
               <p>
                 Program
               </p>
             </a>
-          </li>
+          </li> -->
                     <li class="nav-item">
             <a href="<?= base_url('Cevents_user') ?>" class="nav-link">
               <i class="nav-icon fas fa-book"></i>

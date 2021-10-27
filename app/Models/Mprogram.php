@@ -19,19 +19,17 @@ class Mprogram extends Model{
 		return $query;
     }
 
-    public function tampilProgramUser($id_region){
+    // public function tampilProgramUser($id_region){
 
-        $query= $this->db->query( "SELECT * FROM program INNER JOIN jenis_program ON program.id_jenis_program=jenis_program.id_jenis_program INNER JOIN pengguna ON program.id_pengguna=pengguna.id_pengguna INNER JOIN community ON pengguna.id_community=community.id_community INNER JOIN region ON community.id_region=region.id_region WHERE region.id_region='$id_region'");
-        return $query;
-    }
+    //     $query= $this->db->query( "SELECT * FROM program INNER JOIN jenis_program ON program.id_jenis_program=jenis_program.id_jenis_program INNER JOIN pengguna ON program.id_pengguna=pengguna.id_pengguna INNER JOIN community ON pengguna.id_community=community.id_community INNER JOIN region ON community.id_region=region.id_region WHERE region.id_region='$id_region'");
+    //     return $query;
+    // }
 
 
     public function tampilJenisProgram(){
         $query= $this->db->query("SELECT * FROM jenis_program");
 		return $query;
     }
-
-
 
 		public function tampilJenisProgram1($slug_js){
         $query= $this->db->query("SELECT * FROM jenis_program where slug_js='$slug_js'");
