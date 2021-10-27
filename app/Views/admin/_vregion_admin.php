@@ -54,11 +54,11 @@
                   <table id="example-region" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th  style="width:10px;">No</th>
+                        <th  style="width:10px;" class="resp-prog-3">No</th>
                         <th>Regional</th>
-                        <th class="resp-community">Tentang</th>
-                        <th class="resp-community">Foto</th>
-                        <th class="resp-community">Website</th>
+                        <th class="resp-prog-3">Tentang</th>
+                        <th class="resp-prog-2">Foto</th>
+                        <th class="resp-prog-1">Website</th>
                         <th style="width:10px;">Aksi</th>
                       </tr>
                     </thead>
@@ -75,10 +75,10 @@
                         
                         ?>
                       <tr>
-                        <td ><?= $no++; ?></td>
+                        <td class="resp-prog-3" ><?= $no++; ?></td>
                         <td><?= $region; ?></td> 
-                        <td class="resp-community"><?= substr($tentang_region, 0, 400); ?></td>
-                        <td class="resp-community">
+                        <td class="resp-prog-3"><?= substr($tentang_region, 0, 400); ?></td>
+                        <td class="resp-prog-2">
                             <?php if ($foto_region != NULL): ?>
                               <a href="/img/<?php echo $foto_region; ?>" data-toggle="lightbox" data-title="sample 1 - white">
                                 <img src="/img/<?php echo $foto_region; ?>" class="img-fluid mb-2" alt="white sample" style="width: 200px; height: 100px;"/>
@@ -89,7 +89,7 @@
                                 </a>
                             <?php endif; ?>
                       </td>
-                        <td class="resp-community"><?= $link_web; ?></td> 
+                        <td class="resp-prog-1"><?= $link_web; ?></td> 
                         <td>
                           <!-- <span class="badge bg-warning"><a href="#" data-toggle="modal" data-target="#edit-data"><i class="fa fa-edit"> Ubah</i></a></span> -->
                           <span class="badge bg-warning"><a href="#" data-toggle="modal" data-target="#edit-data<?php echo $id_region; ?>" id="btn-edit"><i class="fa fa-edit"> Ubah</i></a></span>
@@ -99,11 +99,11 @@
                     </tbody>
                     <tfoot>
                       <tr>
-                        <th >No</th>
+                        <th class="resp-prog-3">No</th>
                         <th>Regional</th>
-                        <th class="resp-community">Tentang</th>
-                        <th class="resp-community">Foto</th>
-                        <th class="resp-community">Website</th>
+                        <th class="resp-prog-3">Tentang</th>
+                        <th class="resp-prog-2">Foto</th>
+                        <th class="resp-prog-1">Website</th>
                         <th>Aksi</th>
                       </tr>
                     </tfoot>

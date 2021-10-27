@@ -124,3 +124,26 @@
   }
 }
 /* END RESPONSIVE DASHBOARD EVENT  & PROGRAM USER =================================== */
+
+/* RESPONSIVE DASHBOARD PROGRAM ADMIN & PROGRAM USER  & regional =================================== */
+@media screen and (max-width: 1200px) {
+  .resp-prog-1 {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 759px) {
+  .resp-prog-2 {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .resp-prog-3 {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .resp-prog-3 {
+    display: none !important;
+  }
+}
+/* END RESPONSIVE DASHBOARD EVENT  & PROGRAM USER =================================== */

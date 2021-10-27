@@ -52,9 +52,9 @@
                 <tr>
                   <th style="width:10px;">No</th>
                   <th>Judul</th>
-                  <th class="resp-community">Detail</th>
-                  <th class="resp-community">Link Pendaftaran</th>
-                  <th class="resp-community">Foto</th>
+                  <th class="resp-event-3">Detail</th>
+                  <th class="resp-event-2">Link Pendaftaran</th>
+                  <th class="resp-event-1">Foto</th>
                   <th style="width:10px;">Aksi</th>
                 </tr>
                 </thead>
@@ -74,11 +74,11 @@
                 <tr>
                   <td><?php echo $no++; ?></td> 
                   <td><?php echo $judul_events; ?></td>
-                  <td class="resp-community"><?php echo substr($detail_events, 0, 200); ?></td>
-                  <td class="resp-community"> <a href="<?php echo $linkdaftar_event; ?>"><?php echo substr($linkdaftar_event, 0, 17); ?>...<?php echo substr($linkdaftar_event, -3); ?></a>    </td>
+                  <td class="resp-event-3"><?php echo substr($detail_events, 0, 200); ?></td>
+                  <td class="resp-event-2"> <a href="<?php echo $linkdaftar_event; ?>"><?php echo substr($linkdaftar_event, 0, 17); ?>...<?php echo substr($linkdaftar_event, -3); ?></a>    </td>
 
 
-                  <td class="resp-community">
+                  <td class="resp-event-1">
 
                     <?php if ($foto_events != NULL): ?>
                         <a href="/img/<?php echo $foto_events; ?>" data-toggle="lightbox" data-title="sample 1 - white">
@@ -110,9 +110,9 @@
                   <th>No</th>
                  
                   <th>Judul</th>
-                  <th class="resp-community">Detail</th>
-                  <th class="resp-community">Link Pendaftaran</th>
-                  <th class="resp-community">Foto</th>
+                  <th class="resp-event-3">Detail</th>
+                  <th class="resp-event-2">Link Pendaftaran</th>
+                  <th class="resp-event-1">Foto</th>
                   <th>Aksi</th>
                 </tr>
                 </tfoot>
