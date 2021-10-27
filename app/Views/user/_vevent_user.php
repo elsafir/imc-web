@@ -321,7 +321,7 @@
 
                 <input type="hidden" name="id_events" value="<?php echo $id_events;?>">
                 <input type="hidden" name="id_pengguna" value="<?php echo $id_pengguna;?>">
-                <input type="hidden" name="eventlama" value="<?php echo $judul_events;?>">
+                <input type="hidden" name="judullama" value="<?php echo $judul_events;?>">
 
                 <div class="form-group">
                   <label>Judul events*</label>

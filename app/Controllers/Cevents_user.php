@@ -84,20 +84,20 @@ class Cevents_user extends BaseController{
         $model = new Mevents();
 
         $id_events = $this->request->getPost('id_events');
-        $eventlama = $this->request->getPost('judul_event');
+        $judullama = $this->request->getPost('judullama');
 
-        //cek nama event 
-		if ($eventlama == $this->request->getVar('judul_event')){
-			$rule_event = 'required';
+		//cek nama judul 
+		if ($judullama == $this->request->getVar('judul_events')){
+			$rule_judul = 'required';
 		} else {
-			$rule_event = 'required|is_unique[event.judul_event]';
+			$rule_judul = 'required|is_unique[events.judul_events]';
 		}
 
-        if (!$this->validate([
-			'judul_event' => $rule_event
+		if (!$this->validate([
+			'judul_events' => $rule_judul
 		])) {
 
-			return redirect()->to('/Cevents_user')->with('gagal', '<b>DATA GAGAL DIUBAH!</b> Judul event sebelumnya sudah terdaftar. Silahlan masukkan judul yang berbeda');
+			return redirect()->to('/Cevents_user')->with('gagal', '<b>DATA GAGAL DIUBAH!</b> Judul sebelumnya sudah terdaftar');
 		}
 
         $validation = $this->validate([
