@@ -1781,9 +1781,14 @@ p.count-text {
   height: auto;
   background: transparent !important;
 }
-
+/* Team */
+.teamdown {
+  flex-wrap: wrap;
+}
+/* Akhir Team */
 .team_member_img {
   position: relative;
+  margin: auto;
 }
 
 #team .team_member_img img {

@@ -36,7 +36,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                            <?php if ($jabatan == "Chief Executive Officer"): ?>        
+                            <?php if ($jabatan == "Chief Executive Officer"): ?>
                                 <div class="card-body text-center">
                                 <?php if ($foto_anggota != NULL): ?>
                                     <a href="/img/<?php echo $foto_anggota; ?>" data-toggle="lightbox" data-title="sample 1 - white">
@@ -60,10 +60,10 @@
                 <!--end bang iqbal-->
             </div>
     </section>
-    
+
 
     <!-- chief / c-level-->
-    <div class="container" style="display: flex;"> 
+    <div class="container teamdown" style="display: flex;">
         <section id="team_slider" class="team_member_img">
         <div class="container" >
             <div class="row">
@@ -75,7 +75,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                            <?php if ($jabatan == "Chief Operating Officer"): ?>        
+                            <?php if ($jabatan == "Chief Operating Officer"): ?>
                         <div class="card-body text-center">
                         <?php if ($foto_anggota != NULL): ?>
                             <a href="/img/<?php echo $foto_anggota; ?>" data-toggle="lightbox" data-title="sample 1 - white">
@@ -110,7 +110,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                            <?php if ($jabatan == "Chief Human Resources Officer"): ?>        
+                            <?php if ($jabatan == "Chief Human Resources Officer"): ?>
                         <div class="card-body text-center">
                         <?php if ($foto_anggota != NULL): ?>
                             <a href="/img/<?php echo $foto_anggota; ?>" data-toggle="lightbox" data-title="sample 1 - white">
@@ -145,7 +145,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                            <?php if ($jabatan == "Chief Project Officer"): ?>        
+                            <?php if ($jabatan == "Chief Project Officer"): ?>
                         <div class="card-body text-center">
                         <?php if ($foto_anggota != NULL): ?>
                             <a href="/img/<?php echo $foto_anggota; ?>" data-toggle="lightbox" data-title="sample 1 - white">
@@ -180,7 +180,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                            <?php if ($jabatan == "Chief Marketing Officer"): ?>        
+                            <?php if ($jabatan == "Chief Marketing Officer"): ?>
                         <div class="card-body text-center">
                         <?php if ($foto_anggota != NULL): ?>
                             <a href="/img/<?php echo $foto_anggota; ?>" data-toggle="lightbox" data-title="sample 1 - white">
@@ -226,7 +226,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "General Secretary"): ?>        
+                        <?php if ($jabatan == "General Secretary"): ?>
                             <div class="card-body text-center">
                                 <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample"/>
                                 <h3><?= $nama_anggota; ?></h3>
@@ -247,7 +247,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Secretary"): ?>      
+                        <?php if ($jabatan == "Secretary"): ?>
                             <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
                                     href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
                             </li>
@@ -281,7 +281,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Head Finance"): ?>        
+                        <?php if ($jabatan == "Head Finance"): ?>
                             <div class="card-body text-center">
                                 <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample"/>
                                 <h3><?= $nama_anggota; ?></h3>
@@ -302,12 +302,12 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Finance"): ?>      
+                        <?php if ($jabatan == "Finance"): ?>
                             <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
                                     href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
                             </li>
                         <?php endif; ?>
-                        <?php if ($jabatan == "Funding"): ?>      
+                        <?php if ($jabatan == "Funding"): ?>
                             <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
                                     href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
                             </li>
@@ -341,7 +341,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Head Organization Development"): ?>        
+                        <?php if ($jabatan == "Head Organization Development"): ?>
                             <div class="card-body text-center">
                                 <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample"/>
                                 <h3><?= $nama_anggota; ?></h3>
@@ -362,7 +362,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Organization Development"): ?>      
+                        <?php if ($jabatan == "Organization Development"): ?>
                             <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
                                     href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
                             </li>
@@ -396,7 +396,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Head Regional Coordinator"): ?>        
+                        <?php if ($jabatan == "Head Regional Coordinator"): ?>
                             <div class="card-body text-center">
                                 <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample"/>
                                 <h3><?= $nama_anggota; ?></h3>
@@ -417,7 +417,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Regional Coordinator"): ?>      
+                        <?php if ($jabatan == "Regional Coordinator"): ?>
                             <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
                                     href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
                             </li>
@@ -451,7 +451,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Head Human Resources Development"): ?>        
+                        <?php if ($jabatan == "Head Human Resources Development"): ?>
                             <div class="card-body text-center">
                                 <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample"/>
                                 <h3><?= $nama_anggota; ?></h3>
@@ -472,7 +472,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Human Resources Development"): ?>      
+                        <?php if ($jabatan == "Human Resources Development"): ?>
                             <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
                                     href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
                             </li>
@@ -506,7 +506,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Head Human Resources Recruitment"): ?>        
+                        <?php if ($jabatan == "Head Human Resources Recruitment"): ?>
                             <div class="card-body text-center">
                                 <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample"/>
                                 <h3><?= $nama_anggota; ?></h3>
@@ -527,7 +527,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Human Resources Recruitment"): ?>      
+                        <?php if ($jabatan == "Human Resources Recruitment"): ?>
                             <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
                                     href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
                             </li>
@@ -561,7 +561,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Head Education Project"): ?>        
+                        <?php if ($jabatan == "Head Education Project"): ?>
                             <div class="card-body text-center">
                                 <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample"/>
                                 <h3><?= $nama_anggota; ?></h3>
@@ -582,7 +582,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Education Project"): ?>      
+                        <?php if ($jabatan == "Education Project"): ?>
                             <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
                                     href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
                             </li>
@@ -616,7 +616,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Head Social Project"): ?>        
+                        <?php if ($jabatan == "Head Social Project"): ?>
                             <div class="card-body text-center">
                                 <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample"/>
                                 <h3><?= $nama_anggota; ?></h3>
@@ -637,7 +637,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Social Project"): ?>      
+                        <?php if ($jabatan == "Social Project"): ?>
                             <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
                                     href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
                             </li>
@@ -671,7 +671,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Head Economy Project"): ?>        
+                        <?php if ($jabatan == "Head Economy Project"): ?>
                             <div class="card-body text-center">
                                 <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample"/>
                                 <h3><?= $nama_anggota; ?></h3>
@@ -692,7 +692,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Economy Project"): ?>      
+                        <?php if ($jabatan == "Economy Project"): ?>
                             <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
                                     href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
                             </li>
@@ -726,7 +726,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Head Business Development"): ?>        
+                        <?php if ($jabatan == "Head Business Development"): ?>
                             <div class="card-body text-center">
                                 <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample"/>
                                 <h3><?= $nama_anggota; ?></h3>
@@ -747,12 +747,12 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Business Development"): ?>      
+                        <?php if ($jabatan == "Business Development"): ?>
                             <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
                                     href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
                             </li>
                         <?php endif; ?>
-                        <?php if ($jabatan == "Funding"): ?>      
+                        <?php if ($jabatan == "Funding"): ?>
                             <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
                                     href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
                             </li>
@@ -786,7 +786,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Head Public Relation"): ?>        
+                        <?php if ($jabatan == "Head Public Relation"): ?>
                             <div class="card-body text-center">
                                 <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample"/>
                                 <h3><?= $nama_anggota; ?></h3>
@@ -807,12 +807,12 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Public Relation"): ?>      
+                        <?php if ($jabatan == "Public Relation"): ?>
                             <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
                                     href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
                             </li>
                         <?php endif; ?>
-                        <?php if ($jabatan == "Funding"): ?>      
+                        <?php if ($jabatan == "Funding"): ?>
                             <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
                                     href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
                             </li>
@@ -846,7 +846,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Head Media"): ?>        
+                        <?php if ($jabatan == "Head Media"): ?>
                             <div class="card-body text-center">
                                 <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample"/>
                                 <h3><?= $nama_anggota; ?></h3>
@@ -867,7 +867,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Content Manager"): ?>      
+                        <?php if ($jabatan == "Content Manager"): ?>
                             <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
                                     href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
                             </li>
@@ -901,7 +901,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "PIC Graphic Designer"): ?>        
+                        <?php if ($jabatan == "PIC Graphic Designer"): ?>
                             <div class="card-body text-center">
                                 <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample"/>
                                 <h3><?= $nama_anggota; ?></h3>
@@ -922,7 +922,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Graphic Designer"): ?>      
+                        <?php if ($jabatan == "Graphic Designer"): ?>
                             <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
                                     href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
                             </li>
@@ -956,7 +956,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "PIC Video Editor"): ?>        
+                        <?php if ($jabatan == "PIC Video Editor"): ?>
                             <div class="card-body text-center">
                                 <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample"/>
                                 <h3><?= $nama_anggota; ?></h3>
@@ -977,7 +977,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Video Editor"): ?>      
+                        <?php if ($jabatan == "Video Editor"): ?>
                             <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
                                     href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
                             </li>
@@ -1011,7 +1011,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "PIC Web Development"): ?>        
+                        <?php if ($jabatan == "PIC Web Development"): ?>
                             <div class="card-body text-center">
                                 <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample"/>
                                 <h3><?= $nama_anggota; ?></h3>
@@ -1032,7 +1032,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                        <?php if ($jabatan == "Web Development"): ?>      
+                        <?php if ($jabatan == "Web Development"): ?>
                             <li class="list-group-item"><?= $nama_anggota; ?> - <span> <?= $jabatan; ?></span> <a
                                     href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i class="fa fa-instagram"></i></a></li>
                             </li>
@@ -1046,6 +1046,6 @@
     </section>
     <!--close Web Development Team-->
 
-    
+
 
 <?= $this->endSection(); ?>

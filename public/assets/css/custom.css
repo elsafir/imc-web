@@ -42,7 +42,8 @@
   background-image: url();
   background-size: cover;
   background-position: center;
-  display: table;
+  /* display: table; */
+  display: flex;
   background-attachment: fixed;
   width: 100%;
 }

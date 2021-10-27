@@ -35,7 +35,7 @@
                                     $foto_anggota=$i['foto_anggota'];
                                     $instagram_anggota=$i['instagram_anggota'];?>
 
-                            <?php if ($jabatan == "Regional Manager"): ?>        
+                            <?php if ($jabatan == "Regional Manager"): ?>
                                 <div class="card-body text-center">
                                 <?php if ($foto_anggota != NULL): ?>
                                     <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
@@ -58,10 +58,10 @@
                 <div class="col-md-4"></div>
             </div>
     </section>
-    
-    
+
+
 <!-- HEAD-->
-    <div class="container" style="display: flex;"> 
+    <div class="container" style="display: flex;">
         <section id="team_slider" class="team_member_img">
             <div class="container" >
                 <div class="row">
@@ -73,7 +73,7 @@
                                         $foto_anggota=$i['foto_anggota'];
                                         $instagram_anggota=$i['instagram_anggota'];?>
 
-                                <?php if ($jabatan == "General Secretary"): ?>        
+                                <?php if ($jabatan == "General Secretary"): ?>
                             <div class="card-body text-center">
                             <?php if ($foto_anggota != NULL): ?>
                                 <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
@@ -108,7 +108,7 @@
                                         $foto_anggota=$i['foto_anggota'];
                                         $instagram_anggota=$i['instagram_anggota'];?>
 
-                                <?php if ($jabatan == "Head Finance"): ?>        
+                                <?php if ($jabatan == "Head Finance"): ?>
                             <div class="card-body text-center">
                             <?php if ($foto_anggota != NULL): ?>
                                 <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
@@ -143,7 +143,7 @@
                                         $foto_anggota=$i['foto_anggota'];
                                         $instagram_anggota=$i['instagram_anggota'];?>
 
-                                <?php if ($jabatan == "Head Human Resource"): ?>        
+                                <?php if ($jabatan == "Head Human Resource"): ?>
                             <div class="card-body text-center">
                             <?php if ($foto_anggota != NULL): ?>
                                 <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
@@ -178,7 +178,7 @@
                                         $foto_anggota=$i['foto_anggota'];
                                         $instagram_anggota=$i['instagram_anggota'];?>
 
-                                <?php if ($jabatan == "Technology Manager"): ?>        
+                                <?php if ($jabatan == "Technology Manager"): ?>
                             <div class="card-body text-center">
                             <?php if ($foto_anggota != NULL): ?>
                                 <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
@@ -206,7 +206,7 @@
 <!-- end HEAD-->
 
 <!-- HEAD-->
-<div class="container" style="display: flex;"> 
+<div class="container" style="display: flex;">
         <section id="team_slider" class="team_member_img">
             <div class="container" >
                 <div class="row">
@@ -218,7 +218,7 @@
                                         $foto_anggota=$i['foto_anggota'];
                                         $instagram_anggota=$i['instagram_anggota'];?>
 
-                                <?php if ($jabatan == "Head Marketing Communication"): ?>        
+                                <?php if ($jabatan == "Head Marketing Communication"): ?>
                             <div class="card-body text-center">
                             <?php if ($foto_anggota != NULL): ?>
                                 <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
@@ -253,7 +253,7 @@
                                         $foto_anggota=$i['foto_anggota'];
                                         $instagram_anggota=$i['instagram_anggota'];?>
 
-                                <?php if ($jabatan == "Head Social Project"): ?>        
+                                <?php if ($jabatan == "Head Social Project"): ?>
                             <div class="card-body text-center">
                             <?php if ($foto_anggota != NULL): ?>
                                 <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
@@ -288,7 +288,7 @@
                                         $foto_anggota=$i['foto_anggota'];
                                         $instagram_anggota=$i['instagram_anggota'];?>
 
-                                <?php if ($jabatan == "Head Economy Project"): ?>        
+                                <?php if ($jabatan == "Head Economy Project"): ?>
                             <div class="card-body text-center">
                             <?php if ($foto_anggota != NULL): ?>
                                 <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
@@ -323,7 +323,7 @@
                                         $foto_anggota=$i['foto_anggota'];
                                         $instagram_anggota=$i['instagram_anggota'];?>
 
-                                <?php if ($jabatan == "Head Education Project"): ?>        
+                                <?php if ($jabatan == "Head Education Project"): ?>
                             <div class="card-body text-center">
                             <?php if ($foto_anggota != NULL): ?>
                                 <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
