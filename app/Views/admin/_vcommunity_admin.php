@@ -269,8 +269,8 @@
               <div class="alert alert-warning alert-dismissible">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                             <h4><i class="icon fa fa-info"></i> Keterangan :</h4>
-                            <p>Ceklah isi form community anda dengan lengkap, terutama yang bertanda (*). Jika isi form sudah lengkap silakan diunduh. Terimakasih.</p>
-                            <a href="#" class="btn btn-success"><i class="fa fa-download"></i> Cetak Anggota</a>
+                            <p>Ceklah isi form community anda dengan lengkap, terutama yang bertanda (*) Terimakasih.</p>
+                            <!-- <a href="#" class="btn btn-success"><i class="fa fa-download"></i> Cetak Anggota</a> -->
                         </div>
 
               <center>
