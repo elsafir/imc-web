@@ -7,6 +7,7 @@ use CodeIgniter\Model;
 class Mevents extends Model{
 
 	protected $table = 'events';//pagination
+	
 
 	public function tampilEvents(){
 

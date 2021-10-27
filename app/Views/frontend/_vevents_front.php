@@ -60,6 +60,7 @@
             </div>
 
 
+
             <?php endforeach;?>
             <?php echo $pager->links('bootstrap', 'bootstrap_pagination') ?>
 

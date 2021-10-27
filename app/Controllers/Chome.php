@@ -67,13 +67,15 @@ class Chome extends BaseController
 		$model1 = new Mregional();
 		$model2 = new Mevents();
 		$x = [
-				'events' => $model2->paginate(2, 'bootstrap'),
+				'events' => $model2->paginate(10, 'bootstrap'),
+
 				'pager' => $model2->pager
 		];//pagination
 		$x['jp']= $model->tampilJenisProgram()->getResultArray();
 		$x['jr']= $model1->tampilJenisRegion()->getResultArray();
 		$x['jr1']= $model1->tampilJenisRegion()->getResultArray();
 		$x['me']= $model2->tampilMenuEvents()->getResultArray();
+
 
 		return view('frontend/_vevents_front',$x);
 	}
