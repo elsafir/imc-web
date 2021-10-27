@@ -96,7 +96,8 @@
   background-image: url();
   background-size: cover;
   background-position: center;
-  display: table;
+  display: flex;
+  flex-wrap: wrap;
   background-attachment: fixed;
   width: 100%;
 }
@@ -490,6 +491,16 @@
     margin-top: 0rem;
   }
   /* Akhir Home */
+  /* Detail Event */
+  .imagedetailevent {
+    width: 80%;
+    margin: auto;
+  }
 }
 @media only screen and (max-width: 578px) {
+  /* Detail event */
+  .textdetailevent {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }

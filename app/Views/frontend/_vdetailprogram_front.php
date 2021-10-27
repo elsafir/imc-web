@@ -40,8 +40,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
+                <!-- <div class="col-md-4"></div> -->
+                <div class="col-md-4 imagedetailevent">
                     <?php if ($foto_program != NULL): ?>
                     <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
                     <img src="/img/<?php echo $foto_program; ?>" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;"/>
@@ -55,7 +55,7 @@
             </div>
         </div>
         <div class="container mt-5">
-            <div class="row">
+            <div class="row textdetailevent">
                     <p style="text-indent: 50px; text-align: justify; letter-spacing: 1px;"><?php echo $detail_program; ?></p>
             </div>
 
