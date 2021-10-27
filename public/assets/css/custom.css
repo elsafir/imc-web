@@ -373,6 +373,11 @@
 }
 
 @media only screen and (max-width: 992px) {
+  /* Home */
+  #parallax_5 img {
+    margin-top: 10rem;
+  }
+  /* Akhir Home */
   .box-searchh {
     margin-left: none !important;
     width: 29.9%;
@@ -476,4 +481,13 @@
     font-size: 23px;
     color: #405de6;
   }
+}
+@media only screen and (max-width: 767.98px) {
+  /* Home */
+  #parallax_5 img {
+    margin-top: 0rem;
+  }
+  /* Akhir Home */
+}
+@media only screen and (max-width: 578px) {
 }

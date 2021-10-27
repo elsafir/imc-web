@@ -57,7 +57,7 @@
 }
 .modal-content {
   position: relative;
-  top: 6em;
+  top: 4em;
   background-color: var(--warna-utama) !important;
   border: 1px solid var(--warna-dark-mode) !important;
   animation: kebawah 2s cubic-bezier(0.46, 0.03, 0.52, 0.96) !important;
@@ -69,7 +69,7 @@
     opacity: 0.5;
   }
   100% {
-    top: 6em;
+    top: 4em;
     opacity: 1;
   }
 }
@@ -1973,6 +1973,15 @@ p.count-text {
   }
 }
 @media (max-width: 978px) {
+  /* Home */
+  .tab_menu ul {
+    width: 750px;
+  }
+  .image-home {
+    left: 0em;
+  }
+
+  /* Akhir Home */
   .sosmed ul a {
     flex: 0 0 50%;
   }
