@@ -58,6 +58,20 @@ class CkelolaUser_admin extends BaseController{
 
         $model = new MkelolaUser();
         $id_pengguna = $this->request->getPost('id_pengguna');
+        $usernamelama = $this->request->getPost('usernamelama');
+
+        //cek nama username 
+		if ($usernamelama == $this->request->getVar('username')){
+			$rule_username = 'required';
+		} else {
+			$rule_username = 'required|is_unique[pengguna.username]';
+		}
+
+		if (!$this->validate([
+			'username' => $rule_username
+		])) {
+			return redirect()->to('/CkelolaUser_admin')->with('gagal', '<b>DATA GAGAL DIUBAH!</b> Username sebelumnya sudah terdaftar');
+		}
 
         $data = array(
 
@@ -67,18 +81,11 @@ class CkelolaUser_admin extends BaseController{
 	      'level' => $this->request->getPost('level')
         );
 
-        $username = $this->request->getPost('username');
-        $cek = $model->cekUsername($username)->getRow();
-       // $hasil = count($cek);
-
-        if ($cek) {
-
-        	return redirect()->to('/CkelolaUser_admin')->with('gagal', 'DATA TIDAK TERUBAH! USERNAME SUDAH ADA!!!');
-        }else{
+        
 
             $model->ubahKelolaUser($data,$id_pengguna);
             return redirect()->to('/CkelolaUser_admin')->with('berhasil', 'DATA BERHASIL DIUBAH');
-        }
+        
     }
 
     public function reset_password(){

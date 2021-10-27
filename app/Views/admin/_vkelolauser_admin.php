@@ -262,6 +262,8 @@
 
                         <input type="hidden" name="id_pengguna" value="<?php echo $id_pengguna;?>">
                         <input type="hidden" name="id_community" value="<?php echo $id_community;?>">
+                        
+                        <input type="hidden" name="usernamelama" value="<?php echo $username;?>">
 
                         <div class="form-group">
                           <label>Username*</label>
