@@ -124,6 +124,9 @@
 
 <!-- =====================MODAL TAMBAH DATA========================= -->    
 <div class="modal fade" id="tambah-data" data-backdrop="static">
+    <!-- ckeditor -->
+<script src="<?= base_url('assets/ckeditor/ckeditor.js'); ?>"></script>
+
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
@@ -260,5 +263,9 @@
 <!-- ================= AKHIR EDIT DATA ============================== -->
 
 <?php endforeach;?>
+
+<script>
+  CKEDITOR.replace('tentang_region');
+</script>
 
 <?= $this->endSection(); ?>

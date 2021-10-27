@@ -24,7 +24,8 @@
             <?php } ?>
 
              <span class="modal-title"><i class="fa fa-edit"></i> Ubah Data Tentang Regional</span>
-
+  <!-- ckeditor -->
+  <script src="<?= base_url('assets/ckeditor/ckeditor.js'); ?>"></script>
 
                 <div class="card-tools">
                   <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -71,7 +72,7 @@
                         
                         <div class="form-group">
                           <label>Tentang Regional*</label>
-                          <textarea class="form-control" rows="3" placeholder="Tentang..." style="height:400px;" name="tentang_region" required=""><?= $tentang_region; ?></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Tentang..." style="height:300px;" name="tentang_region" required=""><?= $tentang_region; ?></textarea>
                         </div>
 
                         </div>
@@ -113,6 +114,8 @@
 
   <!-- ============================================================================== -->
 
-
+  <script>
+  CKEDITOR.replace('tentang_region');
+</script>
 
 <?= $this->endSection(); ?>
