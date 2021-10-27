@@ -105,7 +105,9 @@
   background-image: url();
   background-size: cover;
   background-position: center;
-  display: table;
+  /* display: table; */
+  display: flex;
+  flex-wrap: wrap;
   background-attachment: fixed;
   width: 100%;
 }
