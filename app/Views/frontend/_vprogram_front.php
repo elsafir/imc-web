@@ -54,12 +54,11 @@
                       ?>
                             <div class="col-md-4 mt-3 mb-3" id="row_1">
                                 <div class="card" style="border-radius:10px!important;">
-                                    <div class="card-body">
+                                    <div class="card-body" style="height:500px;">
                                         <div class="text_align_center">
                                             <h2><span><?php echo $judul_program ?></span></h2>
-                                            <p><b>- <?php echo $nama_anggota ?> -</b></p>
-
-
+                                            <!-- <p><b>- </?php echo $nama_anggota ?> -</b></p> -->
+                                            
                                             <?php if ($foto_program != NULL): ?>
                                                     <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
                                                     <img src="/img/<?php echo $foto_program; ?>" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;"/>

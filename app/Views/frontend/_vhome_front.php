@@ -164,14 +164,15 @@
                           $judul_events=$i['judul_events'];
                           $detail_events=$i['detail_events'];
                           $foto_events=$i['foto_events'];
+                          $created_at=$i['created_at'];
+                          $updated_at=$i['updated_at'];
                       ?>
 
                 <div class="col-md-4 mb-5 mt-3 p-3 mobile2">
                     <div class="container">
-
                         <a href="">
-                            <div class="card ">
-                                <div class="card-body">
+                            <div class="card" style="height:500px;">
+                                <div class="card-body" style="height:520px;">
                                     <?php if ($foto_events != NULL): ?>
                             <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
                             <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;"/>
@@ -182,7 +183,7 @@
                           </a>
                           <?php endif; ?>
                                     <h3 class="lead"><?php echo $judul_events ?></h3>
-                                    <p></p>
+                                    <p><small><?=substr($created_at, 0,10); ?></small></p>
                                     <p><?php echo substr($detail_events, 0, 90); ?></p>
                                        <a class="btn btn-outline-blue" href="<?= base_url('Chome/detailEvents/') ?>/<?php echo $slug_e; ?>">Read More >></a>
                                 </div>
