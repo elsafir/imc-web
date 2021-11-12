@@ -39,3 +39,62 @@
   }
 }
 /* END RESPONSIVE DETAIL COMMUNITY =================================== */
+
+/* RESPONSIVE PROGRAM FRONTEND =================================== */
+.card-program-resp {
+  height: 560px !important;
+}
+@media screen and (max-width: 450px) {
+  .cont-program-ek {
+    margin: 0px !important;
+    padding: 2px;
+    /* background-color: red !important; */
+  }
+  .cont-program-ek .txt-tentang {
+    font-size: 15px !important;
+  }
+  .cont-program-ek .resp-program-ek h2 {
+    font-size: 17px !important;
+  }
+  .cont-program-ek .resp-program-ek p {
+    font-size: 15px !important;
+  }
+  .cont-program-ek .resp-program-ek img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .card-program-resp {
+    height: 380px !important;
+  }
+  .cont-program-ek .resp-program-ek a {
+    font-size: 17px !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .cont-program-ek {
+    margin: 0px !important;
+    padding: 2px;
+    /* background-color: red !important; */
+  }
+  .cont-program-ek .resp-program-ek img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .card-program-resp {
+    height: 380px;
+  }
+}
+/* RESPONSIVE PROGRAM FRONTEND =================================== */
+
+/* RESPONSIVE event-reg FRONTEND =================================== */
+.resp-event-ek .card {
+  height: 460px !important;
+}
+@media screen and (max-width: 450px) {
+  .resp-event-ek {
+    /* background-color: rgb(255, 136, 136) !important; */
+    padding: 0px !important;
+  }
+}
+
+/* RESPONSIVE event-reg FRONTEND =================================== */
