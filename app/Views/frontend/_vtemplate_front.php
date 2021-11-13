@@ -13,7 +13,7 @@
     <!-- Site Metas -->
     <title>Indonesia Millenial Connect</title>
     <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="description" content="Indonesia Millenial Connect merupakan organisasi pengembangan diri bagi pemuda pemudi di seluruh Indonesia"><!-- yang baru -->
     <meta name="author" content="">
 
     <!-- Site Icons -->
@@ -35,8 +35,8 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/custom.css" />
     <!--swiperjs-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">  mempercepat
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
 
     <!-- PAGES ABOUT RESPONSIVE -->
     <link rel="stylesheet" href="/assets/css/responsive-eka.css">

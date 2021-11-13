@@ -35,7 +35,7 @@
 
         <div class="">
             <center>
-                <img src="/img/<?php echo $foto_region; ?>" class="img-fluid mb-2" style="width: 500px;border-radius:5px;"/>
+                <img src="/img/<?php echo $foto_region; ?>" class="img-fluid mb-2" style="width: 500px;border-radius:5px;" loading="lazy" /><!-- yang baru -->
             </center>
         </div>
         <?php endforeach;?>
@@ -145,11 +145,11 @@
                                 <div class="card-body">
                                     <?php if ($foto_events != NULL): ?>
                                         <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
-                                            <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 200px; height: 200px;"/>
+                                            <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 200px; height: 200px;" loading="lazy"/><!-- yang baru -->
                                         </a>
                                     <?php else: ?>
                                         <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
-                                            <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 200px; height: 200px;"/>
+                                            <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 200px; height: 200px;" loading="lazy"/><!-- yang baru -->
                                         </a>
                                     <?php endif; ?>
                                         <h3 class="lead"><?php echo $judul_events ?></h3>

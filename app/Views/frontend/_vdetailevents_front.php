@@ -44,11 +44,11 @@
                 <div class="col-md-4" style="text-align:center;">
                     <?php if ($foto_events != NULL): ?>
                     <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
-                    <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 450px; height: 350px;object-position: center;border-radius:2px;"/>
+                    <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 450px; height: 350px;object-position: center;border-radius:2px;" loading="lazy"/><!-- yang baru -->
                   </a>
                     <?php else: ?>
                       <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
-                    <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 450px; height: 350px;object-fit: cover;object-position: center;border-radius:2px;"/>
+                    <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 450px; height: 350px;object-fit: cover;object-position: center;border-radius:2px;" loading="lazy"/><!-- yang baru -->
                   </a>
                   <?php endif; ?>
                 </div>

@@ -40,7 +40,7 @@
                                 <div class="card-body text-center">
                                 <?php if ($foto_anggota != NULL): ?>
                                     <a href="/img/<?php echo $foto_anggota; ?>" data-toggle="lightbox" data-title="sample 1 - white">
-                                    <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" style=" width: 270px; height: 270px;"/>
+                                    <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" style=" width: 270px; height: 270px;" loading="lazy"/><!-- yang baru -->
                                 </a>
                                     <?php else: ?>
                                     <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
@@ -79,7 +79,7 @@
                         <div class="card-body text-center">
                         <?php if ($foto_anggota != NULL): ?>
                             <a href="/img/<?php echo $foto_anggota; ?>" data-toggle="lightbox" data-title="sample 1 - white">
-                            <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" />
+                            <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" loading="lazy"/><!-- yang baru -->
                           </a>
                             <?php else: ?>
                               <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
@@ -114,7 +114,7 @@
                         <div class="card-body text-center">
                         <?php if ($foto_anggota != NULL): ?>
                             <a href="/img/<?php echo $foto_anggota; ?>" data-toggle="lightbox" data-title="sample 1 - white">
-                            <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" />
+                            <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" loading="lazy"/><!-- yang baru -->
                           </a>
                             <?php else: ?>
                               <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
@@ -149,7 +149,7 @@
                         <div class="card-body text-center">
                         <?php if ($foto_anggota != NULL): ?>
                             <a href="/img/<?php echo $foto_anggota; ?>" data-toggle="lightbox" data-title="sample 1 - white">
-                            <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" />
+                            <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" loading="lazy"/><!-- yang baru -->
                           </a>
                             <?php else: ?>
                               <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
@@ -184,7 +184,7 @@
                         <div class="card-body text-center">
                         <?php if ($foto_anggota != NULL): ?>
                             <a href="/img/<?php echo $foto_anggota; ?>" data-toggle="lightbox" data-title="sample 1 - white">
-                            <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" />
+                            <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" loading="lazy"/><!-- yang baru -->
                           </a>
                             <?php else: ?>
                               <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
@@ -228,7 +228,7 @@
 
                         <?php if ($jabatan == "General Secretary"): ?>
                             <div class="card-body text-center">
-                                <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample"/>
+                                <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample" loading="lazy"/><!-- yang baru -->
                                 <h3><?= $nama_anggota; ?></h3>
                                 <h4><?= $jabatan; ?></h4>
                                 <li><a href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i
@@ -283,7 +283,7 @@
 
                         <?php if ($jabatan == "Head Finance"): ?>
                             <div class="card-body text-center">
-                                <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample"/>
+                                <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample" loading="lazy"/><!-- yang baru -->
                                 <h3><?= $nama_anggota; ?></h3>
                                 <h4><?= $jabatan; ?></h4>
                                 <li><a href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i
@@ -343,7 +343,7 @@
 
                         <?php if ($jabatan == "Head Organization Development"): ?>
                             <div class="card-body text-center">
-                                <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample"/>
+                                <img src="/img/<?php echo $foto_anggota; ?>" alt="white sample" loading="lazy"/><!-- yang baru -->
                                 <h3><?= $nama_anggota; ?></h3>
                                 <h4><?= $jabatan; ?></h4>
                                 <li><a href="https://www.instagram.com/<?= $instagram_anggota; ?>"><i

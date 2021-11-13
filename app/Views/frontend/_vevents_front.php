@@ -37,11 +37,11 @@
                     <div class="container">
                         <?php if ($foto_events != NULL): ?>
                             <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
-                            <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 300px; height: 300px;"/>
+                            <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 300px; height: 300px;" loading="lazy"/><!-- yang baru -->
                           </a>
                             <?php else: ?>
                               <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
-                            <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 300px; height: 300px;"/>
+                            <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 300px; height: 300px;" loading="lazy"/><!-- yang baru -->
                           </a>
                           <?php endif; ?>
                     </div>

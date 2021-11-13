@@ -61,11 +61,11 @@
                                             
                                             <?php if ($foto_program != NULL): ?>
                                                     <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
-                                                    <img src="/img/<?php echo $foto_program; ?>" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;"/>
+                                                    <img src="/img/<?php echo $foto_program; ?>" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;" loading="lazy"/><!-- yang baru -->
                                                   </a>
                                                     <?php else: ?>
                                                       <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
-                                                    <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;"/>
+                                                    <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;" loading="lazy"/><!-- yang baru -->
                                                   </a>
                                                   <?php endif; ?>
                                             <p><?php echo substr($detail_program, 0, 90); ?></p>

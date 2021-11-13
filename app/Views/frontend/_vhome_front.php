@@ -33,11 +33,11 @@
                     <br>
                  <?php if ($foto_events != NULL): ?>
                     <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
-                    <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 250px;height: 250px;margin-top: -2em"/>
+                    <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 250px;height: 250px;margin-top: -2em" loading="lazy"/><!-- yang baru -->
                   </a>
                     <?php else: ?>
                       <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
-                    <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 250px;height: 250px;margin-top: -2em"/>
+                    <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 250px;height: 250px;margin-top: -2em" loading="lazy"/><!-- yang baru -->
                   </a>
                   <?php endif; ?>  <br>
 
@@ -80,19 +80,19 @@
                     <div class="tab_menu">
                         <ul>
                             <li><a href="Chome/menuProgram/sosial"><span class="icon icon-color"><img src="/assets/images/i4.png"
-                                            alt="#" /></span><span>Social</span></a></li>
+                                            alt="#" loading="lazy"/></span><span>Social</span></a></li><!-- yang baru -->
                             <li><a href="/Chome/menuProgram/edukasi"><span class="icon icon-color"><img src="/assets/images/i2.png"
-                                            alt="#" /></span><span>Education</span></a></li>
+                                            alt="#" loading="lazy"/></span><span>Education</span></a></li><!-- yang baru -->
                             <li><a href="/Chome/menuProgram/ekonomi"><span class="icon icon-color"><img src="/assets/images/i3.png"
-                                            alt="#" /></span><span>Economy</span></a></li>
+                                            alt="#" loading="lazy"/></span><span>Economy</span></a></li><!-- yang baru -->
                             <li><a href="https://www.google.com/maps/search/Jl.+Amal+Bakti+No.43+RT.7%2FRW.2,+Rengas+Kec.+Ciputat+Tim.+Kota+Tangerang+Selatan,+Banten+15412/@-6.278277,106.748071,16z?hl=id"><span class="icon"><img src="/assets/images/i5.png"
-                                            alt="#" /></span><span>Location</span></a></li>
+                                            alt="#" loading="lazy"/></span><span>Location</span></a></li><!-- yang baru -->
                             <li><a href="/Chome/contact"><span class="icon"><img src="/assets/images/i6.png"
-                                            alt="#" /></span><span style="color:white!important;">Email</span></a></li>
+                                            alt="#" loading="lazy"/></span><span style="color:white!important;">Email</span></a></li><!-- yang baru -->
                             <li><a href="https://wa.me/6282299924484"><span class="icon"><img
                                             src="/assets/images/kisspng-computer-icons-portable-network-graphics-email-cli-navy-blue-phone-41-icon-free-navy-blue-phone-ico-5c498dabea4809.9820699415483242679596.png"
-                                            alt="#" /></span><span style="color:white!important;">Call
-                                        Us</span></a></li>
+                                            alt="#" loading="lazy"/></span><span style="color:white!important;">Call
+                                        Us</span></a></li><!-- yang baru -->
                         </ul>
                     </div>
                 </div>
@@ -175,11 +175,11 @@
                                 <div class="card-body" style="height:520px;">
                                     <?php if ($foto_events != NULL): ?>
                             <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
-                            <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;"/>
+                            <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;" loading="lazy"/><!-- yang baru -->
                           </a>
                             <?php else: ?>
                               <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
-                            <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;"/>
+                            <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 420px; height: 250px;" loading="lazy"/><!-- yang baru -->
                           </a>
                           <?php endif; ?>
                                     <h3 class="lead"><?php echo $judul_events ?></h3>

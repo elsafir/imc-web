@@ -2,10 +2,10 @@
     IMPORT FONTS
 -------------------------------------------------------------------*/
 
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i");
-@import url("https://fonts.googleapis.com/css?family=Great+Vibes");
-@import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
 /*------------------------------------------------------------------
     IMPORT FILES
@@ -25,7 +25,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Mode-Dark */
@@ -125,7 +125,7 @@
 body {
   color: var(--warna-text); /* mode-dark-text */
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.80857;
   background-color: var(--warna-utama) !important;
   overflow-x: hidden !important;
@@ -322,7 +322,7 @@ button:focus {
   animation-delay: 0s;
   animation-delay: 0s;
   animation-delay: 0s;
-  background-image: url("../images/gb.png");
+  background-image: url('../images/gb.png');
   background-size: 100% 100%;
 }
 
@@ -485,9 +485,6 @@ a.navbar-brand {
 a.navbar-brand img {
   height: 80px !important;
   width: 90px !important;
-}
-
-.top-header .navbar .navbar-collapse ul li a.active {
 }
 .top-header .navbar .navbar-collapse ul li a:hover,
 .top-header .navbar .navbar-collapse ul li a:focus {
@@ -678,7 +675,7 @@ a.navbar-brand img {
 }
 
 .lbox-details::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0px;
   left: 0px;
@@ -689,7 +686,7 @@ a.navbar-brand img {
 
 .lbox-details h1 {
   font-size: 54px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   font-weight: 600;
   position: relative;
@@ -713,7 +710,7 @@ a.navbar-brand img {
 .lbox-details p strong {
   color: #70c6eb;
   font-size: 40px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .lbox-details a.btn {
@@ -921,7 +918,7 @@ span.icon-color img {
 
 .title-box h2 {
   font-size: 75px;
-  font-family: "Great Vibes", cursive;
+  font-family: 'Great Vibes', cursive;
   color: #095a83;
   font-weight: 400;
   padding: 0;
@@ -936,7 +933,7 @@ span.icon-color img {
   font-weight: 700;
   padding: 0 0 15px 0;
   margin: 0 0 30px 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   position: relative;
 }
 
@@ -952,14 +949,11 @@ span.icon-color img {
   font-weight: 700;
   padding: 0 0 15px 0;
   margin: 0 0 30px 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   position: relative;
   background-image: url(../images/heading_main_border.png);
   background-position: center bottom;
   background-repeat: no-repeat;
-}
-
-.about-m {
 }
 
 .about-img {
@@ -1045,7 +1039,7 @@ span.icon-color img {
   font-weight: 700;
   padding: 0 0 15px 0;
   margin: 0 0 30px 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   position: relative;
   background-image: url(../images/heading_main_border.png);
   background-position: center bottom;
@@ -1057,7 +1051,7 @@ span.icon-color img {
   font-weight: 700;
   padding: 0 0 15px 0;
   margin: 0 0 -10px 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   position: relative;
 }
 .contact h2 span {
@@ -1069,9 +1063,9 @@ span.icon-color img {
   width: 100%;
   height: 100%;
 }
-.contact-left input[type="text"],
-.contact-left input[type="number"],
-.contact-left input[type="email"] {
+.contact-left input[type='text'],
+.contact-left input[type='number'],
+.contact-left input[type='email'] {
   font-size: 1em;
   font-weight: 400;
   color: #737373;
@@ -1091,7 +1085,7 @@ span.icon-color img {
   margin: 0em 0em 0.5em 0em;
   padding: 0.4em 0.5em 0.5em 0.5em;
 }
-.contact-left input[type="submit"] {
+.contact-left input[type='submit'] {
   font-size: 1em;
   font-weight: 400;
   color: #fff;
@@ -1101,7 +1095,7 @@ span.icon-color img {
   outline: none;
   margin: 0em 0em 0em 0em;
 }
-.contact-left input[type="submit"]:hover {
+.contact-left input[type='submit']:hover {
   background: #ffc107;
   color: black;
   transition: 0.5s all;
@@ -1265,7 +1259,7 @@ p.errordiv {
 }
 
 .hvr-radial-out:after {
-  content: "";
+  content: '';
   display: flex;
   width: 25px;
   height: 100px;
@@ -1278,7 +1272,7 @@ p.errordiv {
 }
 
 .hvr-radial-out::before {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -1;
   top: 0;
@@ -1411,7 +1405,7 @@ figure.effect-service h2 {
   font-size: 34px;
   color: #ffffff;
   text-align: center;
-  font-family: "Great Vibes", cursive;
+  font-family: 'Great Vibes', cursive;
 }
 
 figure.effect-service p {
@@ -1462,9 +1456,6 @@ figure.effect-service:hover {
   padding: 70px 0px 120px;
 }
 
-.gallery-box ul {
-}
-
 .gallery-box ul li {
   position: relative;
   width: 31.33%;
@@ -1483,7 +1474,7 @@ figure.effect-service:hover {
 }
 
 .gallery-box ul li a::before {
-  content: "";
+  content: '';
   position: absolute;
   background: rgba(233, 19, 39, 0.9);
   width: 100%;
@@ -1829,7 +1820,7 @@ p.count-text {
 
 .our-team:before,
 .our-team:after {
-  content: "";
+  content: '';
   width: 130px;
   height: 150px;
   background: #57cef8;
@@ -1858,11 +1849,8 @@ p.count-text {
   border-color: #3a4149;
 }
 
-#leader .team_member_img img {
-}
-
 .our-team .pic:after {
-  content: "";
+  content: '';
   width: 100%;
   height: 0;
   background: #57cef8;
@@ -2087,9 +2075,6 @@ p.count-text {
     font-size: 14px;
     line-height: 25px;
   }
-
-  #staff img {
-  }
   #events p {
     font-size: 14px;
     line-height: 30px;
@@ -2128,7 +2113,7 @@ p.count-text {
     font-weight: 700;
     padding: 0 0 15px 0;
     margin: 0 0 -5px 0;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     position: relative;
   }
 
@@ -2287,9 +2272,6 @@ p.count-text {
   color: #57cef8;
 }
 
-.contact-block {
-}
-
 .contact-block .form-group .form-control {
   background: #333;
   height: 30px;
@@ -2387,7 +2369,7 @@ select.form-control:not([size]):not([multiple]) {
   font-size: 80px;
   font-weight: 600;
   color: #ffffff;
-  font-family: "Great Vibes", cursive;
+  font-family: 'Great Vibes', cursive;
   padding: 0;
 }
 
@@ -2499,7 +2481,7 @@ select.form-control:not([size]):not([multiple]) {
   font-weight: 700;
   padding: 0 0 15px 0;
   margin: 0 0 30px 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   position: relative;
   background-image: url(../images/heading_main_border.png);
   background-position: left bottom;
@@ -2523,7 +2505,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .heading_main p {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .heading_main p.small_tag {
@@ -2546,7 +2528,7 @@ select.form-control:not([size]):not([multiple]) {
   font-weight: 700;
   padding: 0 0 15px 0;
   margin: 0 0 30px 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   position: relative;
   color: var(--warna-text-title);
   background-image: url(../images/heading_main_border.png);
@@ -2801,7 +2783,7 @@ ul.bottom_menu li {
   background-color: #f9f9f9;
   min-height: 150px;
   text-align: center;
-  background-image: url("../images/slider-01.jpg");
+  background-image: url('../images/slider-01.jpg');
   background-size: cover;
   background-position: center center;
 }
@@ -3149,10 +3131,10 @@ a.showMore {
   margin-top: 20px;
   color: #0077c8;
   text-decoration: none;
-  &::after {
-    content: "+ VIEW MORE";
-  }
-  &.showLess::after {
-    content: "- VIEW LESS";
-  }
+}
+a.showMore::after {
+  content: '+ VIEW MORE';
+}
+a.showMore.showLess::after {
+  content: '- VIEW LESS';
 }

@@ -84,11 +84,11 @@
 
                     <?php if ($foto_events != NULL): ?>
                         <a href="/img/<?php echo $foto_events; ?>" data-toggle="lightbox" data-title="sample 1 - white">
-                        <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 200px; height: 100px;"/>
+                        <img src="/img/<?php echo $foto_events; ?>" class="img-fluid mb-2" alt="white sample" style="width: 200px; height: 100px;" loading="lazy" /> <!-- baru -->
                       </a>
                         <?php else: ?>
                           <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
-                        <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 200px; height: 100px;"/>
+                        <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" style="width: 200px; height: 100px;" loading="lazy" /> <!-- baru -->
                       </a>
                       <?php endif; ?>
 
@@ -245,10 +245,10 @@
 
               <center>
                 <?php if ($foto_events != NULL): ?>
-                      <img src="/img/<?php echo $foto_events; ?>" style="width: 180px; height: 180px;" class="img-circle img-thumbnail">
+                      <img src="/img/<?php echo $foto_events; ?>" style="width: 180px; height: 180px;" class="img-circle img-thumbnail" loading="lazy" ><!-- yang baru -->
                         <?php else: ?>
 
-                      <img src="/img/noimage.jpg" style="width: 180px; height: 180px;" class="img-circle img-thumbnail">
+                      <img src="/img/noimage.jpg" style="width: 180px; height: 180px;" class="img-circle img-thumbnail" loading="lazy"> <!-- yang baru -->
                       <?php endif; ?>
                 <br><br>
 

@@ -71,7 +71,7 @@
 						<div class="card card-ek">
 							<div class="card-body card-ek-2">
 								<img src="images/348-3488432_youth-clipart-diverse-group-person-hand-raised-clipart.png"
-									alt="" class="img-fluid rounded-circle w-50 mb-3">
+									alt="" class="img-fluid rounded-circle w-50 mb-3" loading="lazy"><!-- yang baru -->
 								<p>Memberdayakan potensi pemuda pemudi dalam meningkatkan peran nya sebagai generasi
 									yang berkualitas untuk meningkatkan kesejahteraan sosial dan mengatasi kesenjangan
 									yang ada di masyarakat
@@ -83,7 +83,7 @@
 						<div class="card card-ek">
 							<div class="card-body card-ek-2">
 								<img src="images/348-3488432_youth-clipart-diverse-group-person-hand-raised-clipart.png"
-									alt="" class="img-fluid rounded-circle w-50 mb-3">
+									alt="" class="img-fluid rounded-circle w-50 mb-3" loading="lazy"><!-- yang baru -->
 								<p>Merencanakan dan melaksanakan program-program inovatif serta bermanfaat yang berpusat
 									pada pengabdian para pemuda dalam bekerja sama menyelesaikan isu-isu sosial,
 									pendidikan dan ekonomi yang berada di masyarakat
@@ -95,7 +95,7 @@
 						<div class="card card-ek">
 							<div class="card-body card-ek-2">
 								<img src="images/348-3488432_youth-clipart-diverse-group-person-hand-raised-clipart.png"
-									alt="" class="img-fluid rounded-circle w-50 mb-3">
+									alt="" class="img-fluid rounded-circle w-50 mb-3" loading="lazy"> <!-- yang baru -->
 								<p>Bersinergi dan berproses bersama dengan pemuda dan pemudi dalam menjaga dan
 									mengembangkan keadaan sosial, pendidikan dan ekonomi dalam suatu tatanan masyarakat
 									ke arah yang lebih baik
@@ -111,7 +111,7 @@
 	</section>
 	<!--end section-->
 
-	<section class="contact_map " style="margin: 50px;">
+	<section class="contact_map " style="margin: auto;width:90%;"> <!-- yang baru -->
 		<div class="sosmed">
 			<div class="sosmed-out">
 				<ul>

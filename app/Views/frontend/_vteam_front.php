@@ -39,11 +39,11 @@
                                 <div class="card-body text-center">
                                 <?php if ($foto_anggota != NULL): ?>
                                     <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
-                                    <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" style=" width: 270px; height: 270px;"/>
+                                    <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" style=" width: 270px; height: 270px;" loading="lazy"/><!-- yang baru -->
                                 </a>
                                     <?php else: ?>
                                     <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
-                                    <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample"/>
+                                    <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" loading="lazy"/><!-- yang baru -->
                                 </a>
                                 <?php endif; ?>
                                     <h3><?= $nama_anggota; ?></h3>
@@ -77,11 +77,11 @@
                             <div class="card-body text-center">
                             <?php if ($foto_anggota != NULL): ?>
                                 <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
-                                <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" />
+                                <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" loading="lazy"/><!-- yang baru -->
                             </a>
                                 <?php else: ?>
                                 <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
-                                <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample"/>
+                                <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" loading="lazy"/><!-- yang baru -->
                             </a>
                             <?php endif; ?>
                                 <!-- <img src="images/p1.png" alt=""> -->
@@ -112,11 +112,11 @@
                             <div class="card-body text-center">
                             <?php if ($foto_anggota != NULL): ?>
                                 <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
-                                <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" />
+                                <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" loading="lazy"/><!-- yang baru -->
                             </a>
                                 <?php else: ?>
                                 <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
-                                <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample"/>
+                                <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" loading="lazy"/><!-- yang baru -->
                             </a>
                             <?php endif; ?>
                                 <!-- <img src="images/p1.png" alt=""> -->
@@ -147,11 +147,11 @@
                             <div class="card-body text-center">
                             <?php if ($foto_anggota != NULL): ?>
                                 <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
-                                <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" />
+                                <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" loading="lazy"/><!-- yang baru -->
                                 </a>
                                 <?php else: ?>
                                     <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
-                                <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample"/>
+                                <img src="/img/noimage.jpg" class="img-fluid mb-2" alt="white sample" loading="lazy"/><!-- yang baru -->
                                 </a>
                                 <?php endif; ?>
                                 <!-- <img src="images/p1.png" alt=""> -->
@@ -182,7 +182,7 @@
                             <div class="card-body text-center">
                             <?php if ($foto_anggota != NULL): ?>
                                 <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
-                                <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" />
+                                <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" loading="lazy"/><!-- yang baru -->
                             </a>
                                 <?php else: ?>
                                 <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
@@ -222,7 +222,7 @@
                             <div class="card-body text-center">
                             <?php if ($foto_anggota != NULL): ?>
                                 <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
-                                <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" />
+                                <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" loading="lazy"/><!-- yang baru -->
                             </a>
                                 <?php else: ?>
                                 <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
@@ -257,7 +257,7 @@
                             <div class="card-body text-center">
                             <?php if ($foto_anggota != NULL): ?>
                                 <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
-                                <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" />
+                                <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" loading="lazy"/><!-- yang baru -->
                             </a>
                                 <?php else: ?>
                                 <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
@@ -292,7 +292,7 @@
                             <div class="card-body text-center">
                             <?php if ($foto_anggota != NULL): ?>
                                 <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
-                                <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" />
+                                <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" loading="lazy"/><!-- yang baru -->
                                 </a>
                                 <?php else: ?>
                                     <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
@@ -327,7 +327,7 @@
                             <div class="card-body text-center">
                             <?php if ($foto_anggota != NULL): ?>
                                 <a href="#" data-toggle="lightbox" data-title="sample 1 - white">
-                                <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" />
+                                <img src="/img/<?php echo $foto_anggota; ?>" class="img-fluid mb-2" alt="white sample" loading="lazy"/><!-- yang baru -->
                             </a>
                                 <?php else: ?>
                                 <a href="/img/noimage.jpg" data-toggle="lightbox" data-title="sample 1 - white">
