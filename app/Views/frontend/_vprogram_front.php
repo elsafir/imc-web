@@ -26,17 +26,19 @@
 <br>
     <!--section-->
     <section class="program" id="economy">
-        <div class="container">
-            <div class="container">
+        <div class="container cont-program-ek">
+            <div class="container cont-program-ek">
+                <!-- responsive di assets/css/responsive-eka -->
                 <div class="container">
-                    <div class="container">
+            <div class="container cont-program-ek"> 
+                    <div class="container ">
                         <div class="row">
                             <div class="col-md-12">
                               <?php
                               foreach($jp1 as $i):
                               $tentang_jenis_program=$i['tentang_jenis_program'];
                               ?>
-                                <div class=" mt-3 mb-3" style="text-align: justify;">
+                                <div class=" mt-3 mb-3 txt-tentang" style="text-align: justify;">
                                     <?php echo $tentang_jenis_program ?></>
                                 </div>
                                 <?php endforeach;?>
@@ -53,8 +55,8 @@
                           $slug_p=$i['slug_p'];
                       ?>
                             <div class="col-md-4 mt-3 mb-3" id="row_1">
-                                <div class="card" style="border-radius:10px!important;">
-                                    <div class="card-body" style="height:500px;">
+                                <div class="card resp-program-ek" style="border-radius:10px!important;">
+                                    <div class="card-body card-program-resp" >
                                         <div class="text_align_center">
                                             <h2><span><?php echo $judul_program ?></span></h2>
                                             <!-- <p><b>- </?php echo $nama_anggota ?> -</b></p> -->

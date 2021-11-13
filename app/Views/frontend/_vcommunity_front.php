@@ -59,72 +59,10 @@
     </section>
 
 
-    <!--section 1-->
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col-md-12 text_align_center mb-3 heading_main">
-                <h2>Avengers Regional
-                </h2>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- <section id="team" class="team_member_img">
-        <div class="container mb-5">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <//?php foreach($rm as $i):
-                                $nama_anggota=$i['nama_anggota'];  
-                                $instagram_anggota=$i['instagram_anggota'];
-                                $foto_anggota=$i['foto_anggota'];
-                                $jabatan=$i['jabatan'];
-                            ?>
-                                <img src="/img/<//?= $foto_anggota; ?> " alt="">
-                                <h3><//?= $nama_anggota; ?></h3>
-                                <h4><//?= $jabatan; ?></h4>
-                                <li><a href=" https://www.instagram.com/<//?= $instagram_anggota; ?>/"><i class="fa fa-instagram fa-2x mt-3"></i></a></li>
-                            <//?php endforeach; ?>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="mt-3 staff-box">
-                        <ul class="list-group list-group-flush">
-                        <//?php
-                            foreach($mc as $i):
-                                $nama_anggota=$i['nama_anggota'];
-                                $jabatan=$i['jabatan'];
-                                $instagram_anggota=$i['instagram_anggota'];
-                        ?>
-                        <li class="list-group-item" style="padding-top: 0 !important; "><//?php echo $nama_anggota ?> - [<//?php echo $jabatan ?>] - <a href=" https://www.instagram.com/<//?= $instagram_anggota; ?>/"><i class="fa fa-instagram fa-2x mt-3"></i></a>
-                        <//?php endforeach;?>
-                        </ul>
-                        
-                </div>
-            </div>
-        </div>
-
-         <//?php foreach($er as $i):
-            $judul_events=$i['judul_events'];
-            $detail_events=$i['detail_events'];
-            $judul_events=$i['judul_events'];
-            $detail_events=$i['detail_events'];
-            $foto_events=$i['foto_events'];
-            $slug_e=$i['slug_e'];
-        ?>
-            ini adalah event bandung : <br>
-            <//?= $judul_events; ?>
-            <//?= substr($detail_events, 0, 200); ?>
-            <br><br>
-        <//?php endforeach; ?> 
-    </section> -->
-
     <!--section EVENT REGIONAL-->
     <section id="card-hover" class="parallax_3">
         <div class="container mt-5 text_align_center">
-            <div class="row">
+            <div class="row " >
                 <div class="col-md-12 heading_main heading_main text_align_center">
                     <h2>Events Regional</h2>
                 </div>
@@ -138,8 +76,8 @@
                             $foto_events=$i['foto_events'];
                             $slug_e=$i['slug_e'];
                 ?>
-                <div class="col-md-4 mb-5 mt-3 p-3 mobile2">
-                    <div class="container">
+                <div class="col-md-4 mb-5 mt-3 p-3 mobile2 resp-event-ek">
+                    <div class="container  ">
                         <a href="">
                             <div class="card ">
                                 <div class="card-body">
