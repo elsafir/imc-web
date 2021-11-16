@@ -16,6 +16,14 @@
     <meta name="description" content="Indonesia Millenial Connect merupakan organisasi pengembangan diri bagi pemuda pemudi di seluruh Indonesia"><!-- yang baru -->
     <meta name="author" content="">
 
+    <!-- URL Theme Color untuk Chrome, Firefox OS, Opera dan Vivaldi -->
+    <meta name="theme-color" content="#d4a81e" />
+    <!-- URL Theme Color untuk Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#d4a81e" />
+    <!-- URL Theme Color untuk iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#d4a81e" />
+
     <!-- Site Icons -->
     <!-- Favicon Image -->
     <link rel="shortcut icon" href="/assets/images/company-profile/IMC - background full colour.jpg" type="image/x-icon" />
